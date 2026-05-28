@@ -46,6 +46,8 @@ export interface Supuestos {
   emailsPorMes: number;
   /** Almacenamiento usado en R2 (GB). */
   almacenamientoR2GB: number;
+  /** Cuenta de Cloudflare en plan Workers Paid ($5/mes por cuenta). */
+  cloudflareWorkersPaid: boolean;
   planVercel: "hobby" | "pro";
   planResend: "free" | "pro";
   planNotion: "free" | "plus";

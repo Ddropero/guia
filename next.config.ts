@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // App 100% estática → exportable a Cloudflare Workers Static Assets.
+  output: "export",
 };
 
 export default nextConfig;

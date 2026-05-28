@@ -43,7 +43,7 @@ export const SERVICIOS: Servicio[] = [
     plan: "Workers Paid · $5/mes (toda la cuenta)",
     urlBilling: "https://dash.cloudflare.com/?to=/:account/billing",
     notas:
-      "Backend de COCICP y Flota. El plan Paid cubre ambos Workers de la misma cuenta.",
+      "27 Workers en la cuenta (gastos, clínica, bots, proxies de IA…). El plan Paid se cobra por cuenta y los cubre a todos.",
     activo: true,
   },
   {
@@ -56,7 +56,7 @@ export const SERVICIOS: Servicio[] = [
     plan: "Incluido en Workers Paid · capa gratis amplia",
     urlBilling: "https://dash.cloudflare.com/?to=/:account/workers/d1",
     notas:
-      "Base SQLite de gastos. El volumen actual (~119 filas) está muy por debajo de la capa gratuita.",
+      "15 bases D1 (~10.5 MB en total). Muy por debajo de los 5 GB de la capa gratuita.",
     activo: true,
   },
   {
@@ -69,7 +69,19 @@ export const SERVICIOS: Servicio[] = [
     plan: "$0.015/GB-mes · 10 GB gratis · sin egreso",
     urlBilling: "https://dash.cloudflare.com/?to=/:account/r2",
     notas:
-      "Soportes (PDF/imágenes de facturas). Solo se cobra el almacenamiento sobre los 10 GB gratis.",
+      "13 buckets (soportes, media, docs). 10 GB gratis y sin cargos de egreso; solo se paga el almacenamiento extra.",
+    activo: true,
+  },
+  {
+    id: "cf-kv",
+    nombre: "Cloudflare KV",
+    categoria: "Infraestructura",
+    plataforma: "Cloudflare",
+    modelo: "gratis",
+    tokenEnv: null,
+    plan: "Capa gratis (100k lecturas/día)",
+    urlBilling: "https://dash.cloudflare.com/?to=/:account/workers/kv/namespaces",
+    notas: "6 namespaces (rate-limit, sesiones de bots, educación).",
     activo: true,
   },
   {
@@ -93,7 +105,8 @@ export const SERVICIOS: Servicio[] = [
     tokenEnv: null,
     plan: "Hobby gratis / Pro $20/mes",
     urlBilling: "https://vercel.com/account/billing",
-    notas: "Hosting de este Centro de Costos. En Hobby el costo es $0.",
+    notas:
+      "Alternativa de hosting. Ahora la app corre en Cloudflare Workers (incluida en el plan Paid).",
     activo: true,
   },
   {

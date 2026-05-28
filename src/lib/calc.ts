@@ -31,11 +31,16 @@ export function costoDe(s: Servicio, sup: Supuestos, p: Precios): Desglose {
       break;
     }
     case "cf-workers":
-      fijo = p.workersPaidMes;
-      detalle = "Plan Workers Paid (cuenta completa)";
+      fijo = sup.cloudflareWorkersPaid ? p.workersPaidMes : 0;
+      detalle = sup.cloudflareWorkersPaid
+        ? "Workers Paid · cubre los 27 Workers de la cuenta"
+        : "Plan Free · sin costo base";
       break;
     case "cf-d1":
-      detalle = "Dentro de la capa gratuita";
+      detalle = "15 bases · ~10.5 MB · dentro de la capa gratuita";
+      break;
+    case "cf-kv":
+      detalle = "6 namespaces · capa gratis";
       break;
     case "cf-r2": {
       const gb = Math.max(0, sup.almacenamientoR2GB - p.r2GBGratis);

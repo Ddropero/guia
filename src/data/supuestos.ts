@@ -16,6 +16,7 @@ export const SUPUESTOS_DEFAULT: Supuestos = {
   conversacionesWhatsappPorMes: 30,
   emailsPorMes: 50,
   almacenamientoR2GB: 2,
+  cloudflareWorkersPaid: true,
   planVercel: "hobby",
   planResend: "free",
   planNotion: "free",

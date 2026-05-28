@@ -47,7 +47,26 @@ Admin/Usage, Cloudflare GraphQL Analytics, Twilio Usage, Resend, etc.).
 **Ningún valor de token/secret se guarda en este repositorio.** Solo se listan
 los nombres de las variables para saber qué servicios se facturan.
 
-## Deploy en Vercel
+## Deploy en Cloudflare (Workers Static Assets)
 
-Importar el repo en Vercel; detecta Next.js automáticamente. No requiere
-variables de entorno para la versión de estimación.
+La app es 100% estática (`output: "export"` → carpeta `out/`), así que se sirve
+como sitio estático en Cloudflare Workers. Config en `wrangler.jsonc`.
+
+```bash
+npm run preview:cf   # build + wrangler dev (local)
+npm run deploy:cf    # build + wrangler deploy
+```
+
+El `deploy` necesita credenciales de Cloudflare (NO van en el repo):
+
+```bash
+export CLOUDFLARE_API_TOKEN=...   # token con permiso "Workers Scripts: Edit"
+export CLOUDFLARE_ACCOUNT_ID=12f212a7c813ec3aef9e1d873e19f43e
+npm run deploy:cf
+```
+
+> **Alternativa:** también se puede importar en Vercel (detecta Next.js solo).
+>
+> **Uso en vivo:** lo natural en tu stack (que ya tiene ~27 Workers) es un Worker
+> aparte que exponga el consumo/facturación de cada proveedor y que este frontend
+> consuma — así las keys nunca salen al cliente.

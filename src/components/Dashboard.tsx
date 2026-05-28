@@ -6,6 +6,7 @@ import { PRECIOS } from "@/data/precios";
 import { SUPUESTOS_DEFAULT } from "@/data/supuestos";
 import { calcularTodo } from "@/lib/calc";
 import { fmtUSD, fmtCOP } from "@/lib/format";
+import { CLOUDFLARE } from "@/data/cloudflare";
 import type { Supuestos } from "@/data/tipos";
 
 const COLOR_CAT: Record<string, string> = {
@@ -59,6 +60,45 @@ export default function Dashboard() {
           value={fmtUSD(r.totalAnual)}
           sub={`${cop(r.totalAnual)} COP`}
         />
+      </section>
+
+      <section className="mb-8 rounded-lg border border-line bg-panel p-4">
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+          <h2 className="font-serif text-lg text-fg">Tu Cloudflare</h2>
+          <span className="text-xs text-muted">
+            {CLOUDFLARE.cuenta} · snapshot {CLOUDFLARE.capturadoEn}
+          </span>
+        </div>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <CFNum
+            n={CLOUDFLARE.workers}
+            label="Workers"
+            sub={CLOUDFLARE.planWorkers === "paid" ? "plan Paid" : "plan Free"}
+          />
+          <CFNum
+            n={CLOUDFLARE.d1Bases}
+            label="Bases D1"
+            sub={`~${(CLOUDFLARE.d1TotalBytes / 1048576).toFixed(1)} MB`}
+          />
+          <CFNum n={CLOUDFLARE.r2Buckets} label="Buckets R2" sub="10 GB gratis" />
+          <CFNum n={CLOUDFLARE.kvNamespaces} label="KV namespaces" sub="capa gratis" />
+        </div>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {CLOUDFLARE.grupos.map((g) => (
+            <span
+              key={g.area}
+              className="rounded-full border border-line px-2.5 py-1 text-xs text-muted"
+            >
+              {g.area} <span className="text-fg">{g.workers.length}</span>
+            </span>
+          ))}
+        </div>
+        <p className="mt-3 text-[11px] leading-relaxed text-muted">
+          Una sola cuenta corre toda tu operación. El plan Workers Paid se cobra por
+          cuenta ($5/mes) y cubre los {CLOUDFLARE.workers} Workers; D1 y KV están en
+          capa gratis. El costo variable real está en el uso de IA repartido entre
+          estos Workers.
+        </p>
       </section>
 
       <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
@@ -201,6 +241,13 @@ export default function Dashboard() {
               />
 
               <Toggle
+                label="Cloudflare Workers"
+                off="Free"
+                on="Paid"
+                value={sup.cloudflareWorkersPaid}
+                onChange={(v) => set("cloudflareWorkersPaid", v)}
+              />
+              <Toggle
                 label="Vercel"
                 off="Hobby"
                 on="Pro"
@@ -248,6 +295,16 @@ export default function Dashboard() {
         guarda en este repositorio.
       </footer>
     </main>
+  );
+}
+
+function CFNum({ n, label, sub }: { n: number; label: string; sub: string }) {
+  return (
+    <div className="rounded border border-line bg-panel2 p-3 text-center">
+      <div className="font-serif text-2xl text-info">{n}</div>
+      <div className="text-xs text-fg">{label}</div>
+      <div className="text-[11px] text-muted">{sub}</div>
+    </div>
   );
 }
 
