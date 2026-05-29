@@ -54,10 +54,6 @@ export function costoDe(s: Servicio, sup: Supuestos, p: Precios): Desglose {
     case "cf-pages":
       detalle = "Gratis";
       break;
-    case "vercel":
-      fijo = sup.planVercel === "pro" ? p.vercelProMes : 0;
-      detalle = sup.planVercel === "pro" ? "Plan Pro" : "Plan Hobby (gratis)";
-      break;
     case "twilio":
       uso = sup.mensajesWhatsappPorMes * p.whatsappTwilioPorMensaje;
       detalle = `${sup.mensajesWhatsappPorMes} mensajes/mes · servicio gratis en Meta + fee Twilio`;

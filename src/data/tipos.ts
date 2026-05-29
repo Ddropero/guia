@@ -48,7 +48,6 @@ export interface Supuestos {
   almacenamientoR2GB: number;
   /** Cuenta de Cloudflare en plan Workers Paid ($5/mes por cuenta). */
   cloudflareWorkersPaid: boolean;
-  planVercel: "hobby" | "pro";
   planResend: "free" | "pro";
   planNotion: "free" | "plus";
 }
@@ -70,8 +69,6 @@ export interface Precios {
   /** Resend Pro USD/mes y correos gratis/mes. */
   resendProMes: number;
   resendGratisPorMes: number;
-  /** Vercel Pro, USD/mes. */
-  vercelProMes: number;
   /** Notion Plus, USD/mes por miembro. */
   notionPlusMes: number;
   /** Dominio .com, USD/año. */

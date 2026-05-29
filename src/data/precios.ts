@@ -30,9 +30,6 @@ export const PRECIOS: Precios = {
   resendProMes: 20.0,
   resendGratisPorMes: 3000,
 
-  // Vercel
-  vercelProMes: 20.0,
-
   // Notion Plus (por miembro/mes, facturado anual)
   notionPlusMes: 10.0,
 

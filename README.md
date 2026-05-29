@@ -1,9 +1,9 @@
 # Centro de Costos · Infraestructura & APIs
 
-App web (Next.js + Vercel) que muestra **cuánto cuesta mantener andando** las
-plataformas y APIs que sostienen los sistemas de gastos (COCICP, Flota) y lo
-personal: IA (Claude, Gemini), Cloudflare (Workers, D1, R2, Pages), Vercel,
-Twilio/WhatsApp, Telegram, Resend, Notion, Google y el dominio.
+App web (Next.js, desplegada en Cloudflare) que muestra **cuánto cuesta mantener
+andando** las plataformas y APIs que sostienen los sistemas de gastos (COCICP,
+Flota) y lo personal: IA (Claude, Gemini), Cloudflare (Workers, D1, R2, KV,
+Pages), Twilio/WhatsApp, Telegram, Resend, Notion, Google y el dominio.
 
 No es facturación en vivo: es un **modelo de costos con supuestos editables**,
 sembrado con el uso real observado (~30 facturas/mes). Ajustas los supuestos y
@@ -70,8 +70,6 @@ export CLOUDFLARE_ACCOUNT_ID=12f212a7c813ec3aef9e1d873e19f43e
 npm run deploy:cf
 ```
 
-> **Alternativa:** también se puede importar en Vercel (detecta Next.js solo).
->
 > **Uso en vivo:** lo natural en tu stack (que ya tiene ~27 Workers) es un Worker
 > aparte que exponga el consumo/facturación de cada proveedor y que este frontend
 > consuma — así las keys nunca salen al cliente.

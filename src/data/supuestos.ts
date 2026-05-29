@@ -18,7 +18,6 @@ export const SUPUESTOS_DEFAULT: Supuestos = {
   emailsPorMes: 50,
   almacenamientoR2GB: 2,
   cloudflareWorkersPaid: true,
-  planVercel: "hobby",
   planResend: "free",
   planNotion: "free",
 };

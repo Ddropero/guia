@@ -259,13 +259,6 @@ export default function Dashboard() {
                 onChange={(v) => set("cloudflareWorkersPaid", v)}
               />
               <Toggle
-                label="Vercel"
-                off="Hobby"
-                on="Pro"
-                value={sup.planVercel === "pro"}
-                onChange={(v) => set("planVercel", v ? "pro" : "hobby")}
-              />
-              <Toggle
                 label="Resend"
                 off="Free"
                 on="Pro"
@@ -302,10 +295,9 @@ export default function Dashboard() {
       </div>
 
       <footer className="mt-10 border-t border-line pt-4 text-xs leading-relaxed text-muted">
-        Estimación basada en supuestos editables, no en facturación en vivo. Para
-        conectar el uso real (Anthropic, Cloudflare, etc.), configura keys de
-        solo-lectura como variables de entorno en Vercel. Ningún valor de token se
-        guarda en este repositorio.
+        Estimación basada en supuestos editables. El uso real llega vía el Worker
+        de uso en vivo (Cloudflare); las keys van como secrets del Worker, nunca en
+        el cliente ni en este repositorio.
       </footer>
     </main>
   );

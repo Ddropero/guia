@@ -97,19 +97,6 @@ export const SERVICIOS: Servicio[] = [
     activo: true,
   },
   {
-    id: "vercel",
-    nombre: "Vercel",
-    categoria: "Hosting",
-    plataforma: "Vercel",
-    modelo: "fijo",
-    tokenEnv: null,
-    plan: "Hobby gratis / Pro $20/mes",
-    urlBilling: "https://vercel.com/account/billing",
-    notas:
-      "Alternativa de hosting. Ahora la app corre en Cloudflare Workers (incluida en el plan Paid).",
-    activo: true,
-  },
-  {
     id: "twilio",
     nombre: "Twilio (WhatsApp)",
     categoria: "Mensajería",
