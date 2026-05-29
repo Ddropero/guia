@@ -1,0 +1,35 @@
+name: Deploy a Cloudflare
+
+# Despliega el Centro de Costos a Cloudflare Workers (Static Assets) en cada
+# push a main. La red de Cloudflare Code no puede llegar a api.cloudflare.com,
+# pero los runners de GitHub sí: aquí corre el `wrangler deploy`.
+#
+# Requisito (una sola vez): añadir el secret del repo
+#   Settings → Secrets and variables → Actions → New repository secret
+#   Name: CLOUDFLARE_API_TOKEN   (token con permiso "Workers Scripts: Edit")
+# El account se autodetecta del token (la cuenta es una sola). Si tuvieras
+# varias, añade también CLOUDFLARE_ACCOUNT_ID y pásalo con `accountId:`.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Publicar en Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
