@@ -37,15 +37,20 @@ npm run build    # build de producción
 > ⚠️ Los precios son **aproximados** (referencia `2026-05`). Verifícalos en la
 > consola de cada proveedor.
 
-## Conectar el uso/facturación en vivo (siguiente paso)
+## Uso/facturación en vivo
 
-Para reemplazar las estimaciones por consumo real, configurar keys de
-**solo-lectura** como variables de entorno en Vercel (Settings → Environment
-Variables) y consultar las APIs de uso/billing de cada proveedor (Anthropic
-Admin/Usage, Cloudflare GraphQL Analytics, Twilio Usage, Resend, etc.).
+Implementado en [`workers/uso/`](workers/uso/README.md) (Worker
+`centro-costos-uso`, endpoint `/api/uso`): lee el costo real del mes de
+**Anthropic, Twilio y R2**. Pasos:
 
-**Ningún valor de token/secret se guarda en este repositorio.** Solo se listan
-los nombres de las variables para saber qué servicios se facturan.
+1. Despliega el Worker con sus secrets (ver `workers/uso/README.md`).
+2. Define `NEXT_PUBLIC_USO_URL` = URL del Worker y vuelve a build + deploy del
+   frontend.
+
+El dashboard mostrará **"en vivo"** en los servicios con dato real y
+**"estimado"** en el resto (fallback automático si el Worker no responde).
+
+**Ningún valor de token/secret se guarda en este repositorio** — solo los nombres.
 
 ## Deploy en Cloudflare (Workers Static Assets)
 

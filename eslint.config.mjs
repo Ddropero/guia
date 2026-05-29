@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Worker de uso en vivo: deployable aparte con su propio toolchain.
+    "workers/**",
   ]),
 ]);
 

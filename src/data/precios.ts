@@ -20,8 +20,11 @@ export const PRECIOS: Precios = {
   r2PorGBMes: 0.015,
   r2GBGratis: 10,
 
-  // Twilio WhatsApp — costo combinado por conversación (Meta + Twilio), Colombia
-  whatsappPorConversacion: 0.03,
+  // Twilio WhatsApp — desde jul-2025 se cobra POR MENSAJE (no por conversación).
+  // Los mensajes de servicio (iniciados por el usuario, ventana 24 h) son gratis
+  // en Meta; queda el fee de plataforma de Twilio (~$0.005/mensaje). Las plantillas
+  // de marketing/utilidad sí pagan tarifa de Meta aparte.
+  whatsappTwilioPorMensaje: 0.005,
 
   // Resend
   resendProMes: 20.0,

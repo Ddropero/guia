@@ -1,12 +1,13 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { SERVICIOS } from "@/data/servicios";
 import { PRECIOS } from "@/data/precios";
 import { SUPUESTOS_DEFAULT } from "@/data/supuestos";
 import { calcularTodo } from "@/lib/calc";
 import { fmtUSD, fmtCOP } from "@/lib/format";
 import { CLOUDFLARE } from "@/data/cloudflare";
+import { USO_REAL } from "@/data/uso-real";
 import type { Supuestos } from "@/data/tipos";
 
 const COLOR_CAT: Record<string, string> = {
@@ -21,7 +22,11 @@ const COLOR_CAT: Record<string, string> = {
 
 export default function Dashboard() {
   const [sup, setSup] = useState<Supuestos>(SUPUESTOS_DEFAULT);
-  const r = useMemo(() => calcularTodo(SERVICIOS, sup, PRECIOS), [sup]);
+  const live = useUsoEnVivo();
+  const r = useMemo(
+    () => calcularTodo(SERVICIOS, sup, PRECIOS, live.costos),
+    [sup, live.costos],
+  );
 
   const set = <K extends keyof Supuestos,>(k: K, v: Supuestos[K]) =>
     setSup((s) => ({ ...s, [k]: v }));
@@ -39,6 +44,7 @@ export default function Dashboard() {
             Cuánto cuesta mantener andando tus plataformas y APIs ·{" "}
             {r.desglose.length} servicios
           </p>
+          <FuenteBadge enVivo={!!live.costos} generadoEn={live.generadoEn} />
         </div>
         <div className="text-right">
           <div className="font-serif text-4xl font-semibold text-accent sm:text-5xl">
@@ -129,6 +135,11 @@ export default function Dashboard() {
                             {d.servicio.tokenEnv}
                           </code>
                         )}
+                        {d.enVivo && (
+                          <span className="rounded bg-accent/15 px-1.5 py-0.5 text-[10px] text-accent">
+                            en vivo
+                          </span>
+                        )}
                       </div>
                       <div className="mt-0.5 pl-4 text-xs text-muted">{d.detalle}</div>
                     </td>
@@ -218,11 +229,11 @@ export default function Dashboard() {
                 onChange={(v) => set("analisisPorMes", v)}
               />
               <Range
-                label="WhatsApp conv. / mes"
-                value={sup.conversacionesWhatsappPorMes}
+                label="Mensajes WhatsApp / mes"
+                value={sup.mensajesWhatsappPorMes}
                 min={0}
-                max={300}
-                onChange={(v) => set("conversacionesWhatsappPorMes", v)}
+                max={500}
+                onChange={(v) => set("mensajesWhatsappPorMes", v)}
               />
               <Range
                 label="Correos / mes"
@@ -280,8 +291,10 @@ export default function Dashboard() {
               </label>
             </div>
             <p className="mt-4 border-t border-line pt-3 text-[11px] leading-relaxed text-muted">
-              Precios de referencia ({PRECIOS.actualizado}), aproximados. Edita las
-              tarifas en{" "}
+              Facturas sembradas con tus datos reales de D1 ({USO_REAL.gastosTotales}{" "}
+              gastos · ~{USO_REAL.mesesActivos} meses · ≈
+              {USO_REAL.facturasPorMesEstimado}/mes). Precios de referencia (
+              {PRECIOS.actualizado}), aproximados; edítalos en{" "}
               <code className="text-fg">src/data/precios.ts</code>.
             </p>
           </div>
@@ -295,6 +308,48 @@ export default function Dashboard() {
         guarda en este repositorio.
       </footer>
     </main>
+  );
+}
+
+function useUsoEnVivo() {
+  const [estado, setEstado] = useState<{
+    costos: Record<string, number> | null;
+    generadoEn?: string;
+  }>({ costos: null });
+
+  useEffect(() => {
+    const base = process.env.NEXT_PUBLIC_USO_URL;
+    if (!base) return;
+    const ctrl = new AbortController();
+    fetch(`${base.replace(/\/$/, "")}/api/uso`, { signal: ctrl.signal })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((d) => {
+        if (d && d.costos) setEstado({ costos: d.costos, generadoEn: d.generadoEn });
+      })
+      .catch(() => {});
+    return () => ctrl.abort();
+  }, []);
+
+  return estado;
+}
+
+function FuenteBadge({
+  enVivo,
+  generadoEn,
+}: {
+  enVivo: boolean;
+  generadoEn?: string;
+}) {
+  return (
+    <span className="mt-2 inline-flex items-center gap-1.5 text-xs text-muted">
+      <span
+        className="inline-block h-1.5 w-1.5 rounded-full"
+        style={{ background: enVivo ? "var(--color-accent)" : "var(--color-muted)" }}
+      />
+      {enVivo
+        ? `en vivo${generadoEn ? ` · ${generadoEn.slice(0, 10)}` : ""}`
+        : "estimado (sin Worker de uso)"}
+    </span>
   );
 }
 

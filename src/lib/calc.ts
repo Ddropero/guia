@@ -59,8 +59,8 @@ export function costoDe(s: Servicio, sup: Supuestos, p: Precios): Desglose {
       detalle = sup.planVercel === "pro" ? "Plan Pro" : "Plan Hobby (gratis)";
       break;
     case "twilio":
-      uso = sup.conversacionesWhatsappPorMes * p.whatsappPorConversacion;
-      detalle = `${sup.conversacionesWhatsappPorMes} conversaciones/mes`;
+      uso = sup.mensajesWhatsappPorMes * p.whatsappTwilioPorMensaje;
+      detalle = `${sup.mensajesWhatsappPorMes} mensajes/mes · servicio gratis en Meta + fee Twilio`;
       break;
     case "telegram":
       detalle = "Gratis";
@@ -104,10 +104,17 @@ export function calcularTodo(
   servicios: Servicio[],
   sup: Supuestos,
   p: Precios,
+  live?: Record<string, number> | null,
 ): Resultado {
   const desglose = servicios
     .filter((s) => s.activo)
-    .map((s) => costoDe(s, sup, p))
+    .map((s) => {
+      const d = costoDe(s, sup, p);
+      const lv = live?.[s.id];
+      return lv != null
+        ? { ...d, usoUSD: lv, totalUSD: d.fijoUSD + lv, enVivo: true }
+        : d;
+    })
     .sort((a, b) => b.totalUSD - a.totalUSD);
 
   const totalFijo = desglose.reduce((a, d) => a + d.fijoUSD, 0);

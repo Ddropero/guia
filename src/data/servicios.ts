@@ -116,11 +116,11 @@ export const SERVICIOS: Servicio[] = [
     plataforma: "Twilio",
     modelo: "uso",
     tokenEnv: "TWILIO_AUTH_TOKEN",
-    plan: "Pago por conversación",
+    plan: "Pago por mensaje (~$0.005 Twilio)",
     urlBilling:
       "https://console.twilio.com/us1/billing/manage-billing/billing-overview",
     notas:
-      "Ingreso de facturas por WhatsApp. Costo = conversaciones × (tarifa Meta + Twilio). El sandbox es gratis.",
+      "Ingreso de facturas por WhatsApp. Desde jul-2025 se cobra por mensaje; los de servicio (iniciados por el usuario) son gratis en Meta y solo queda el fee de Twilio.",
     activo: true,
   },
   {

@@ -40,8 +40,8 @@ export interface Supuestos {
   analisisPorMes: number;
   analisisTokensIn: number;
   analisisTokensOut: number;
-  /** Conversaciones de WhatsApp (Twilio) al mes. */
-  conversacionesWhatsappPorMes: number;
+  /** Mensajes de WhatsApp (Twilio) al mes (entrantes + salientes). */
+  mensajesWhatsappPorMes: number;
   /** Correos enviados al mes (Resend). */
   emailsPorMes: number;
   /** Almacenamiento usado en R2 (GB). */
@@ -65,8 +65,8 @@ export interface Precios {
   /** Cloudflare R2, USD por GB-mes y GB incluidos gratis. */
   r2PorGBMes: number;
   r2GBGratis: number;
-  /** Twilio WhatsApp, USD por conversación (Meta + Twilio). */
-  whatsappPorConversacion: number;
+  /** Twilio WhatsApp, USD por mensaje (fee de plataforma de Twilio). */
+  whatsappTwilioPorMensaje: number;
   /** Resend Pro USD/mes y correos gratis/mes. */
   resendProMes: number;
   resendGratisPorMes: number;
@@ -86,4 +86,6 @@ export interface Desglose {
   usoUSD: number;
   totalUSD: number;
   detalle: string;
+  /** true si el costo de uso viene del endpoint de uso en vivo, no de la estimación. */
+  enVivo?: boolean;
 }
