@@ -4,5 +4,8 @@
   "compatibility_date": "2026-05-28",
   "assets": {
     "directory": "./out"
-  }
+  },
+  "routes": [
+    { "pattern": "monitor.davidduque.com", "custom_domain": true }
+  ]
 }
