@@ -1,0 +1,7 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "curso-arte-tutor",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-05-28",
+  "observability": { "enabled": true }
+}

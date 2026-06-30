@@ -73,3 +73,40 @@ npm run deploy:cf
 > **Uso en vivo:** lo natural en tu stack (que ya tiene ~27 Workers) es un Worker
 > aparte que exponga el consumo/facturación de cada proveedor y que este frontend
 > consuma — así las keys nunca salen al cliente.
+
+---
+
+## Curso de Historia del Arte (con tutor de IA)
+
+Sección aparte del dashboard: un **curso completo de Historia del Arte** (13
+módulos, ~80 lecciones, de la prehistoria al arte digital) con un **tutor de IA**
+interactivo. Vive en `/curso` y no afecta al Centro de Costos.
+
+| Pieza | Qué contiene |
+| --- | --- |
+| `curso-historia-del-arte/` | Contenido del curso en Markdown (lecciones, guías y materiales de referencia: glosario, línea de tiempo, índices, banco de evaluación). |
+| `src/lib/curso.ts` | Carga el Markdown en build y lo renderiza a HTML (con `marked`). |
+| `src/app/curso/` | Rutas estáticas: índice, módulo, lección (con tutor) y recursos. |
+| `src/components/TutorPanel.tsx` | Chat del tutor: modos **Dudas**, **Mirar una obra** (socrático) y **Ponme a prueba** (quiz). |
+| `src/components/Progreso.tsx` | Progreso del estudiante en `localStorage` (sin backend). |
+| `workers/tutor/` | Worker `curso-arte-tutor` que llama a la API de Claude en streaming (la key es un secret). |
+
+El contenido se renderiza en build (la app sigue siendo estática). El tutor es lo
+único dinámico y va por el Worker.
+
+### Activar el tutor de IA
+
+1. Despliega el Worker con su secret (ver [`workers/tutor/README.md`](workers/tutor/README.md)):
+   ```bash
+   cd workers/tutor && npm install
+   npx wrangler secret put ANTHROPIC_API_KEY
+   npm run deploy
+   ```
+2. Define `NEXT_PUBLIC_TUTOR_URL` = URL del Worker y vuelve a `npm run build`.
+
+Si `NEXT_PUBLIC_TUTOR_URL` no está definida, el curso funciona igual (lectura,
+progreso, navegación) y el panel del tutor muestra un aviso de configuración.
+
+> **Modelo por tarea (híbrido):** Claude **Haiku 4.5** para chat y cuestionarios
+> (rápido y barato), Claude **Sonnet 5** para el análisis socrático de obras.
+> Ningún valor de key se guarda en el repositorio — solo su nombre.

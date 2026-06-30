@@ -53,3 +53,125 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 9999px;
   background: var(--color-accent);
 }
+
+/* ── Prosa de las lecciones del curso (Markdown renderizado) ── */
+.leccion-prose {
+  font-family: var(--font-serif);
+  color: var(--color-fg);
+  line-height: 1.7;
+  font-size: 1.05rem;
+  max-width: 70ch;
+}
+.leccion-prose h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem;
+  line-height: 1.15;
+}
+.leccion-prose h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2.2rem 0 0.8rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--color-line);
+}
+.leccion-prose h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.6rem 0 0.5rem;
+  color: var(--color-fg);
+}
+.leccion-prose h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 1.2rem 0 0.4rem;
+  color: var(--color-accent2);
+}
+.leccion-prose p {
+  margin: 0 0 1rem;
+}
+.leccion-prose a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.leccion-prose strong {
+  color: #fff;
+  font-weight: 600;
+}
+.leccion-prose em {
+  color: var(--color-fg);
+}
+.leccion-prose ul,
+.leccion-prose ol {
+  margin: 0 0 1rem;
+  padding-left: 1.4rem;
+}
+.leccion-prose li {
+  margin: 0.3rem 0;
+}
+.leccion-prose ul > li {
+  list-style: disc;
+}
+.leccion-prose ol > li {
+  list-style: decimal;
+}
+.leccion-prose blockquote {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-panel);
+  color: var(--color-muted);
+  border-radius: 0 6px 6px 0;
+}
+.leccion-prose code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--color-panel2);
+  padding: 0.12em 0.4em;
+  border-radius: 4px;
+  color: var(--color-accent);
+}
+.leccion-prose pre {
+  background: var(--color-panel);
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 0 0 1rem;
+}
+.leccion-prose pre code {
+  background: transparent;
+  padding: 0;
+  color: var(--color-fg);
+  font-size: 0.85rem;
+}
+.leccion-prose hr {
+  border: none;
+  border-top: 1px solid var(--color-line);
+  margin: 2rem 0;
+}
+.leccion-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  font-family: var(--font-mono);
+}
+.leccion-prose th,
+.leccion-prose td {
+  border: 1px solid var(--color-line);
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+.leccion-prose th {
+  background: var(--color-panel2);
+  color: var(--color-fg);
+  font-weight: 600;
+}
+.leccion-prose img {
+  max-width: 100%;
+  border-radius: 8px;
+}
