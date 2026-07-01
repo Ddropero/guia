@@ -73,3 +73,68 @@ npm run deploy:cf
 > **Uso en vivo:** lo natural en tu stack (que ya tiene ~27 Workers) es un Worker
 > aparte que exponga el consumo/facturación de cada proveedor y que este frontend
 > consuma — así las keys nunca salen al cliente.
+
+---
+
+## Curso de Historia del Arte (con tutor de IA)
+
+Sección aparte del dashboard: un **curso completo de Historia del Arte** (13
+módulos, ~80 lecciones, de la prehistoria al arte digital) con un **tutor de IA**
+interactivo. Vive en `/curso` y no afecta al Centro de Costos.
+
+| Pieza | Qué contiene |
+| --- | --- |
+| `curso-historia-del-arte/` | Contenido del curso en Markdown (lecciones, guías y materiales de referencia: glosario, línea de tiempo, índices, banco de evaluación). |
+| `src/lib/curso.ts` | Carga el Markdown en build y lo renderiza a HTML (con `marked`). |
+| `src/app/curso/` | Rutas estáticas: índice, módulo, lección (con tutor) y recursos. |
+| `src/components/TutorPanel.tsx` | Chat del tutor: modos **Dudas**, **Mirar una obra** (socrático) y **Ponme a prueba** (quiz). |
+| `src/components/Progreso.tsx` | Progreso del estudiante en `localStorage` (sin backend). |
+| `workers/tutor/` | Worker `curso-arte-tutor` que llama a la API de Claude en streaming (la key es un secret). |
+
+El contenido se renderiza en build (la app sigue siendo estática). El tutor es lo
+único dinámico y va por el Worker.
+
+### Activar el tutor de IA
+
+1. Despliega el Worker con su secret (ver [`workers/tutor/README.md`](workers/tutor/README.md)):
+   ```bash
+   cd workers/tutor && npm install
+   npx wrangler deploy                        # crea el dominio tutor.hilvan.org
+   npx wrangler secret put ANTHROPIC_API_KEY
+   ```
+2. Define `NEXT_PUBLIC_TUTOR_URL=https://tutor.hilvan.org` (p. ej. en `.env.local`)
+   y vuelve a `npm run deploy:historia`.
+
+Si `NEXT_PUBLIC_TUTOR_URL` no está definida, el curso funciona igual (lectura,
+progreso, navegación) y el panel del tutor muestra un aviso de configuración.
+
+> **Modelo:** Claude **Sonnet 5** en los tres modos. **Control de gastos** por:
+> caché de prompt (el contexto de la lección se cobra a ~10% tras la 1.ª vez),
+> topes de `max_tokens` por modo, recorte de historial/contexto y pensamiento
+> desactivado. Para tope duro, pon un **límite de gasto mensual** en la consola de
+> Anthropic y una **regla de rate limiting** de Cloudflare sobre `tutor.hilvan.org`.
+> Ningún valor de key se guarda en el repositorio — solo su nombre.
+
+### Galería de obras e imágenes
+
+Cada lección muestra una **galería** de las obras que comenta: ficha + botón
+**"Ver en Google Arts & Culture"** (funciona para todas, incluidas las
+contemporáneas con derechos) y **miniatura** cuando la obra es de dominio público.
+
+- `scripts/construir-obras.mjs` → `src/data/obras.json` (obras por lección; se
+  extrae de las lecciones, sin red).
+- `scripts/fetch-imagenes.mjs` → `src/data/obras-imagenes.json` (miniaturas de
+  **dominio público / licencia libre** desde Wikimedia Commons).
+
+Los enlaces a Arts & Culture funcionan sin más. Para poblar las **miniaturas**
+(necesita salida a internet — córrelo en tu máquina/CI):
+
+```bash
+node scripts/construir-obras.mjs     # solo si cambian las lecciones
+node scripts/fetch-imagenes.mjs      # resuelve miniaturas PD (idempotente)
+npm run deploy:historia              # rebuild + publica las imágenes
+```
+
+Solo se incrustan imágenes con **licencia libre**; el arte del s. XX–XXI se queda
+con su enlace a Arts & Culture. Ningún binario se guarda en el repo (se enlaza la
+miniatura de Wikimedia, con su crédito).

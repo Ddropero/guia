@@ -1,0 +1,2577 @@
+{
+  "00-fundamentos/01-que-es-la-historia-del-arte": [
+    {
+      "titulo": "El hombre de León",
+      "autor": "León de Hohlenstein-Stadel",
+      "q": "El hombre de León León de Hohlenstein-Stadel"
+    },
+    {
+      "titulo": "Máscara funeraria de Tutankamón",
+      "autor": "",
+      "q": "Máscara funeraria de Tutankamón"
+    },
+    {
+      "titulo": "La Gioconda",
+      "autor": "de Leonardo da Vinci",
+      "q": "La Gioconda de Leonardo da Vinci"
+    },
+    {
+      "titulo": "Fuente",
+      "autor": "de Marcel Duchamp",
+      "q": "Fuente de Marcel Duchamp"
+    },
+    {
+      "titulo": "Una vasija de cerámica zuni o un manto Paracas",
+      "autor": "",
+      "q": "Una vasija de cerámica zuni o un manto Paracas"
+    }
+  ],
+  "00-fundamentos/02-analisis-formal-de-la-obra": [
+    {
+      "titulo": "Doríforo",
+      "autor": "de Policleto",
+      "q": "Doríforo de Policleto"
+    },
+    {
+      "titulo": "Catedral gótica (interior de nave): el caso de Chartres",
+      "autor": "",
+      "q": "Catedral gótica : el caso de Chartres"
+    },
+    {
+      "titulo": "Las meninas",
+      "autor": "de Diego Velázquez",
+      "q": "Las meninas de Diego Velázquez"
+    },
+    {
+      "titulo": "La danza (II)",
+      "autor": "de Henri Matisse",
+      "q": "La danza de Henri Matisse"
+    },
+    {
+      "titulo": "Composición",
+      "autor": "de Piet Mondrian",
+      "q": "Composición de Piet Mondrian"
+    }
+  ],
+  "00-fundamentos/03-iconografia-e-iconologia": [
+    {
+      "titulo": "El matrimonio Arnolfini",
+      "autor": "de Jan van Eyck",
+      "q": "El matrimonio Arnolfini de Jan van Eyck"
+    },
+    {
+      "titulo": "Anunciación",
+      "autor": "La",
+      "q": "Anunciación La"
+    },
+    {
+      "titulo": "La primavera",
+      "autor": "de Sandro Botticelli",
+      "q": "La primavera de Sandro Botticelli"
+    },
+    {
+      "titulo": "Los embajadores",
+      "autor": "de Hans Holbein el Joven",
+      "q": "Los embajadores de Hans Holbein el Joven"
+    },
+    {
+      "titulo": "Capilla Sixtina",
+      "autor": "Programa iconográfico: la",
+      "q": "Capilla Sixtina Programa iconográfico: la"
+    }
+  ],
+  "00-fundamentos/04-medios-y-tecnicas": [
+    {
+      "titulo": "El matrimonio Arnolfini",
+      "autor": "Jan van Eyck",
+      "q": "El matrimonio Arnolfini Jan van Eyck"
+    },
+    {
+      "titulo": "Frescos de la Capilla Sixtina (bóveda), Miguel Ángel (1508-1512)",
+      "autor": "",
+      "q": "Frescos de la Capilla Sixtina , Miguel Ángel"
+    },
+    {
+      "titulo": "David",
+      "autor": "Miguel Ángel",
+      "q": "David Miguel Ángel"
+    },
+    {
+      "titulo": "La gran ola de Kanagawa",
+      "autor": "Katsushika Hokusai",
+      "q": "La gran ola de Kanagawa Katsushika Hokusai"
+    },
+    {
+      "titulo": "Mosaicos de San Vital, Rávena (h. 547)",
+      "autor": "",
+      "q": "Mosaicos de San Vital, Rávena"
+    },
+    {
+      "titulo": "Latas de sopa Campbell",
+      "autor": "Andy Warhol",
+      "q": "Latas de sopa Campbell Andy Warhol"
+    }
+  ],
+  "00-fundamentos/05-metodos-historiografia-y-canon": [
+    {
+      "titulo": "Vidas de los más excelentes pintores, escultores y arquitectos",
+      "autor": "de Giorgio Vasari",
+      "q": "Vidas de los más excelentes pintores, escultores y arquitectos de Giorgio Vasari"
+    },
+    {
+      "titulo": "Historia del arte de la Antigüedad",
+      "autor": "de J. J. Winckelmann",
+      "q": "Historia del arte de la Antigüedad de J. J. Winckelmann"
+    },
+    {
+      "titulo": "Conceptos fundamentales de la historia del arte",
+      "autor": "de Heinrich Wölfflin",
+      "q": "Conceptos fundamentales de la historia del arte de Heinrich Wölfflin"
+    },
+    {
+      "titulo": "Mujer con balanza",
+      "autor": "la obra como campo de pruebas",
+      "q": "Mujer con balanza la obra como campo de pruebas"
+    },
+    {
+      "titulo": "Mujeres de Argel en su aposento",
+      "autor": "de Eugène Delacroix y la mirada orientalista",
+      "q": "Mujeres de Argel en su aposento de Eugène Delacroix y la mirada orientalista"
+    },
+    {
+      "titulo": "\"¿Por qué no ha habido grandes mujeres artistas?\", de Linda Nochlin",
+      "autor": "",
+      "q": "¿Por qué no ha habido grandes mujeres artistas?, de Linda Nochlin"
+    }
+  ],
+  "01-prehistoria-y-civilizaciones/01-arte-prehistorico": [
+    {
+      "titulo": "Venus de Willendorf",
+      "autor": "",
+      "q": "Venus de Willendorf"
+    },
+    {
+      "titulo": "Sala de los toros, cueva de Lascaux",
+      "autor": "",
+      "q": "Sala de los toros, cueva de Lascaux"
+    },
+    {
+      "titulo": "Techo de los bisontes (Sala de los Polícromos), Altamira",
+      "autor": "",
+      "q": "Techo de los bisontes , Altamira"
+    },
+    {
+      "titulo": "Panel de los leones / Panel de los caballos, cueva de Chauvet",
+      "autor": "",
+      "q": "Panel de los leones / Panel de los caballos, cueva de Chauvet"
+    },
+    {
+      "titulo": "Recinto D (pilares en T), Göbekli Tepe",
+      "autor": "",
+      "q": "Recinto D , Göbekli Tepe"
+    },
+    {
+      "titulo": "Stonehenge",
+      "autor": "",
+      "q": "Stonehenge"
+    }
+  ],
+  "01-prehistoria-y-civilizaciones/02-mesopotamia": [
+    {
+      "titulo": "Cabeza de Warka (Dama de Uruk)",
+      "autor": "",
+      "q": "Cabeza de Warka"
+    },
+    {
+      "titulo": "Estatuillas orantes de Tell Asmar",
+      "autor": "",
+      "q": "Estatuillas orantes de Tell Asmar"
+    },
+    {
+      "titulo": "Estandarte de Ur",
+      "autor": "",
+      "q": "Estandarte de Ur"
+    },
+    {
+      "titulo": "Estela de la victoria de Naram-Sin",
+      "autor": "",
+      "q": "Estela de la victoria de Naram-Sin"
+    },
+    {
+      "titulo": "Estela del Código de Hammurabi",
+      "autor": "",
+      "q": "Estela del Código de Hammurabi"
+    },
+    {
+      "titulo": "Relieves de la caza del león de Asurbanipal",
+      "autor": "",
+      "q": "Relieves de la caza del león de Asurbanipal"
+    }
+  ],
+  "01-prehistoria-y-civilizaciones/03-egipto-antiguo": [
+    {
+      "titulo": "Paleta de Narmer",
+      "autor": "",
+      "q": "Paleta de Narmer"
+    },
+    {
+      "titulo": "Pirámides y Gran Esfinge de Guiza",
+      "autor": "",
+      "q": "Pirámides y Gran Esfinge de Guiza"
+    },
+    {
+      "titulo": "El escriba sentado",
+      "autor": "",
+      "q": "El escriba sentado"
+    },
+    {
+      "titulo": "Tríada de Micerino (Menkaura) y la reina",
+      "autor": "",
+      "q": "Tríada de Micerino y la reina"
+    },
+    {
+      "titulo": "Busto de Nefertiti",
+      "autor": "",
+      "q": "Busto de Nefertiti"
+    },
+    {
+      "titulo": "Máscara funeraria de Tutankamón",
+      "autor": "",
+      "q": "Máscara funeraria de Tutankamón"
+    }
+  ],
+  "01-prehistoria-y-civilizaciones/04-arte-egeo": [
+    {
+      "titulo": "Ídolo cicládico femenino (tipo \"de brazos cruzados\")",
+      "autor": "",
+      "q": "Ídolo cicládico femenino"
+    },
+    {
+      "titulo": "Vasija de estilo de Kamares",
+      "autor": "",
+      "q": "Vasija de estilo de Kamares"
+    },
+    {
+      "titulo": "Fresco de los saltos del toro (Taurocatapsia)",
+      "autor": "",
+      "q": "Fresco de los saltos del toro"
+    },
+    {
+      "titulo": "Diosa de las serpientes",
+      "autor": "",
+      "q": "Diosa de las serpientes"
+    },
+    {
+      "titulo": "Puerta de los Leones",
+      "autor": "",
+      "q": "Puerta de los Leones"
+    },
+    {
+      "titulo": "Máscara funeraria llamada \"de Agamenón\"",
+      "autor": "",
+      "q": "Máscara funeraria llamada de Agamenón"
+    }
+  ],
+  "02-antiguedad-clasica/01-grecia-arcaica": [
+    {
+      "titulo": "Ánfora monumental del Dipilón",
+      "autor": "",
+      "q": "Ánfora monumental del Dipilón"
+    },
+    {
+      "titulo": "kouros",
+      "autor": "Kouros de Nueva York",
+      "q": "kouros Kouros de Nueva York"
+    },
+    {
+      "titulo": "Kore con peplo (Peplos Kore)",
+      "autor": "",
+      "q": "Kore con peplo"
+    },
+    {
+      "titulo": "Ánfora de Exequias: Aquiles y Áyax jugando a los dados",
+      "autor": "",
+      "q": "Ánfora de Exequias: Aquiles y Áyax jugando a los dados"
+    },
+    {
+      "titulo": "Ánfora bilingüe del Pintor de Andócides",
+      "autor": "",
+      "q": "Ánfora bilingüe del Pintor de Andócides"
+    },
+    {
+      "titulo": "Templo de Apolo en Corinto y el orden dórico temprano",
+      "autor": "",
+      "q": "Templo de Apolo en Corinto y el orden dórico temprano"
+    }
+  ],
+  "02-antiguedad-clasica/02-grecia-clasica": [
+    {
+      "titulo": "Auriga de Delfos",
+      "autor": "",
+      "q": "Auriga de Delfos"
+    },
+    {
+      "titulo": "Dios de Artemisión (Zeus o Poseidón)",
+      "autor": "",
+      "q": "Dios de Artemisión"
+    },
+    {
+      "titulo": "Discóbolo de Mirón",
+      "autor": "",
+      "q": "Discóbolo de Mirón"
+    },
+    {
+      "titulo": "Doríforo de Policleto",
+      "autor": "",
+      "q": "Doríforo de Policleto"
+    },
+    {
+      "titulo": "El Partenón y su escultura (Acrópolis de Atenas)",
+      "autor": "",
+      "q": "El Partenón y su escultura"
+    },
+    {
+      "titulo": "Hermes con Dioniso niño, de Praxíteles",
+      "autor": "",
+      "q": "Hermes con Dioniso niño, de Praxíteles"
+    }
+  ],
+  "02-antiguedad-clasica/03-grecia-helenistica": [
+    {
+      "titulo": "Niké (Victoria) de Samotracia",
+      "autor": "",
+      "q": "Niké de Samotracia"
+    },
+    {
+      "titulo": "Afrodita de Milo (\"Venus de Milo\")",
+      "autor": "",
+      "q": "Afrodita de Milo"
+    },
+    {
+      "titulo": "Galo moribundo (Gálata moribundo)",
+      "autor": "",
+      "q": "Galo moribundo"
+    },
+    {
+      "titulo": "Grupo del Laocoonte",
+      "autor": "",
+      "q": "Grupo del Laocoonte"
+    },
+    {
+      "titulo": "Gran Altar de Pérgamo (friso de la Gigantomaquia)",
+      "autor": "",
+      "q": "Gran Altar de Pérgamo"
+    },
+    {
+      "titulo": "Púgil de las Termas (Boxeador en reposo)",
+      "autor": "",
+      "q": "Púgil de las Termas"
+    },
+    {
+      "titulo": "Anciana ebria (Vieja borracha)",
+      "autor": "",
+      "q": "Anciana ebria"
+    }
+  ],
+  "02-antiguedad-clasica/04-etruscos-y-roma-republicana": [
+    {
+      "titulo": "Sarcófago de los esposos",
+      "autor": "",
+      "q": "Sarcófago de los esposos"
+    },
+    {
+      "titulo": "Apolo de Veyes",
+      "autor": "",
+      "q": "Apolo de Veyes"
+    },
+    {
+      "titulo": "Tumbas pintadas de Tarquinia",
+      "autor": "",
+      "q": "Tumbas pintadas de Tarquinia"
+    },
+    {
+      "titulo": "Loba Capitolina",
+      "autor": "",
+      "q": "Loba Capitolina"
+    },
+    {
+      "titulo": "El Arringatore (El Orador)",
+      "autor": "",
+      "q": "El Arringatore"
+    },
+    {
+      "titulo": "Retrato verista republicano (busto de patricio)",
+      "autor": "",
+      "q": "Retrato verista republicano"
+    }
+  ],
+  "02-antiguedad-clasica/05-roma-imperial": [
+    {
+      "titulo": "Augusto de Prima Porta",
+      "autor": "",
+      "q": "Augusto de Prima Porta"
+    },
+    {
+      "titulo": "Ara Pacis Augustae (Altar de la Paz de Augusto)",
+      "autor": "",
+      "q": "Ara Pacis Augustae"
+    },
+    {
+      "titulo": "El Coliseo (Anfiteatro Flavio)",
+      "autor": "",
+      "q": "El Coliseo"
+    },
+    {
+      "titulo": "El Panteón",
+      "autor": "",
+      "q": "El Panteón"
+    },
+    {
+      "titulo": "Columna de Trajano",
+      "autor": "",
+      "q": "Columna de Trajano"
+    },
+    {
+      "titulo": "Arco de Tito",
+      "autor": "",
+      "q": "Arco de Tito"
+    },
+    {
+      "titulo": "Pintura mural pompeyana (los cuatro estilos)",
+      "autor": "",
+      "q": "Pintura mural pompeyana"
+    },
+    {
+      "titulo": "Cabeza colosal de Constantino y Arco de Constantino",
+      "autor": "",
+      "q": "Cabeza colosal de Constantino y Arco de Constantino"
+    }
+  ],
+  "03-asia-clasica/01-arte-de-la-india": [
+    {
+      "titulo": "Sello y figuras de la civilización del Indo",
+      "autor": "",
+      "q": "Sello y figuras de la civilización del Indo"
+    },
+    {
+      "titulo": "Capitel de los leones de Ashoka (Sarnath)",
+      "autor": "",
+      "q": "Capitel de los leones de Ashoka"
+    },
+    {
+      "titulo": "Gran Stupa de Sanchi y sus toranas",
+      "autor": "",
+      "q": "Gran Stupa de Sanchi y sus toranas"
+    },
+    {
+      "titulo": "Cuevas de Ajanta (pintura) y de Ellora (Kailasa)",
+      "autor": "",
+      "q": "Cuevas de Ajanta y de Ellora"
+    },
+    {
+      "titulo": "Buda de Gandhara y Buda de Mathura",
+      "autor": "",
+      "q": "Buda de Gandhara y Buda de Mathura"
+    },
+    {
+      "titulo": "Templos de Khajuraho y Sol de Konark",
+      "autor": "",
+      "q": "Templos de Khajuraho y Sol de Konark"
+    },
+    {
+      "titulo": "Shiva Nataraja (bronce Chola)",
+      "autor": "",
+      "q": "Shiva Nataraja"
+    }
+  ],
+  "03-asia-clasica/02-arte-de-china": [
+    {
+      "titulo": "Ding",
+      "autor": "y vasijas rituales Shang",
+      "q": "Ding y vasijas rituales Shang"
+    },
+    {
+      "titulo": "Ejército de terracota de Qin Shi Huang",
+      "autor": "",
+      "q": "Ejército de terracota de Qin Shi Huang"
+    },
+    {
+      "titulo": "Grutas de Longmen - Buda Vairocana",
+      "autor": "",
+      "q": "Grutas de Longmen - Buda Vairocana"
+    },
+    {
+      "titulo": "Viajeros entre montañas y arroyos",
+      "autor": "Fan Kuan",
+      "q": "Viajeros entre montañas y arroyos Fan Kuan"
+    },
+    {
+      "titulo": "Prefacio al Pabellón de las Orquídeas",
+      "autor": "Caligrafía: el legado de Wang Xizhi",
+      "q": "Prefacio al Pabellón de las Orquídeas Caligrafía: el legado de Wang Xizhi"
+    },
+    {
+      "titulo": "Jarrón Ming \"azul y blanco\" de Jingdezhen",
+      "autor": "",
+      "q": "Jarrón Ming azul y blanco de Jingdezhen"
+    }
+  ],
+  "03-asia-clasica/03-arte-de-japon": [
+    {
+      "titulo": "Vasija y figurilla del periodo Jomon",
+      "autor": "",
+      "q": "Vasija y figurilla del periodo Jomon"
+    },
+    {
+      "titulo": "Horyu-ji (pagoda y conjunto)",
+      "autor": "",
+      "q": "Horyu-ji"
+    },
+    {
+      "titulo": "La historia de Genji",
+      "autor": "Rollo ilustrado de",
+      "q": "La historia de Genji Rollo ilustrado de"
+    },
+    {
+      "titulo": "Pintura a la tinta zen: paisaje de Sesshu",
+      "autor": "",
+      "q": "Pintura a la tinta zen: paisaje de Sesshu"
+    },
+    {
+      "titulo": "Lirios",
+      "autor": "Biombos Rinpa: Korin, e Iris",
+      "q": "Lirios Biombos Rinpa: Korin, e Iris"
+    },
+    {
+      "titulo": "Jardín seco del Ryoan-ji",
+      "autor": "",
+      "q": "Jardín seco del Ryoan-ji"
+    },
+    {
+      "titulo": "La gran ola de Kanagawa",
+      "autor": "Hokusai",
+      "q": "La gran ola de Kanagawa Hokusai"
+    }
+  ],
+  "03-asia-clasica/04-sudeste-asiatico-angkor-borobudur": [
+    {
+      "titulo": "Borobudur (Java)",
+      "autor": "",
+      "q": "Borobudur"
+    },
+    {
+      "titulo": "Prambanan (Java)",
+      "autor": "",
+      "q": "Prambanan"
+    },
+    {
+      "titulo": "Angkor Wat (Camboya)",
+      "autor": "",
+      "q": "Angkor Wat"
+    },
+    {
+      "titulo": "Angkor Thom y el Bayon (Camboya)",
+      "autor": "",
+      "q": "Angkor Thom y el Bayon"
+    },
+    {
+      "titulo": "Ta Prohm y el \"templo en la selva\" (Camboya)",
+      "autor": "",
+      "q": "Ta Prohm y el templo en la selva"
+    },
+    {
+      "titulo": "Buda de Sukhothai y arte de Pagan",
+      "autor": "",
+      "q": "Buda de Sukhothai y arte de Pagan"
+    }
+  ],
+  "04-arte-islamico/01-arquitectura-islamica": [
+    {
+      "titulo": "Cúpula de la Roca (Jerusalén)",
+      "autor": "",
+      "q": "Cúpula de la Roca"
+    },
+    {
+      "titulo": "Gran Mezquita de Córdoba (Mezquita-Catedral)",
+      "autor": "",
+      "q": "Gran Mezquita de Córdoba"
+    },
+    {
+      "titulo": "La Alhambra (Granada)",
+      "autor": "",
+      "q": "La Alhambra"
+    },
+    {
+      "titulo": "Süleymaniye (Estambul), de Sinán",
+      "autor": "",
+      "q": "Süleymaniye , de Sinán"
+    },
+    {
+      "titulo": "Mezquita del Sultán Ahmed o \"Mezquita Azul\" (Estambul)",
+      "autor": "",
+      "q": "Mezquita del Sultán Ahmed o Mezquita Azul"
+    },
+    {
+      "titulo": "Taj Mahal (Agra)",
+      "autor": "",
+      "q": "Taj Mahal"
+    }
+  ],
+  "04-arte-islamico/02-artes-del-libro-y-decorativas-islamicas": [
+    {
+      "titulo": "Corán \"azul\" de Kairuán (Corán azul)",
+      "autor": "",
+      "q": "Corán azul de Kairuán"
+    },
+    {
+      "titulo": "Jarra (albarelo) y platos de lustre dorado abasíes",
+      "autor": "",
+      "q": "Jarra y platos de lustre dorado abasíes"
+    },
+    {
+      "titulo": "Bote de Al-Mughira (marfil andalusí)",
+      "autor": "",
+      "q": "Bote de Al-Mughira"
+    },
+    {
+      "titulo": "Lámpara de mezquita mameluca",
+      "autor": "",
+      "q": "Lámpara de mezquita mameluca"
+    },
+    {
+      "titulo": "Bustan",
+      "autor": "Miniaturas del de Saadi",
+      "q": "Bustan Miniaturas del de Saadi"
+    },
+    {
+      "titulo": "Alfombra Ardabil",
+      "autor": "",
+      "q": "Alfombra Ardabil"
+    }
+  ],
+  "05-edad-media/01-paleocristiano-y-bizantino": [
+    {
+      "titulo": "Pinturas de las catacumbas y el Buen Pastor (Roma)",
+      "autor": "",
+      "q": "Pinturas de las catacumbas y el Buen Pastor"
+    },
+    {
+      "titulo": "Sarcófago de Junio Basso (Roma)",
+      "autor": "",
+      "q": "Sarcófago de Junio Basso"
+    },
+    {
+      "titulo": "Mosaicos de San Vitale: Justiniano y Teodora (Rávena)",
+      "autor": "",
+      "q": "Mosaicos de San Vitale: Justiniano y Teodora"
+    },
+    {
+      "titulo": "Santa Sofía (Hagia Sophia, Constantinopla)",
+      "autor": "",
+      "q": "Santa Sofía"
+    },
+    {
+      "titulo": "Iconos del Monasterio de Santa Catalina (Monte Sinaí)",
+      "autor": "",
+      "q": "Iconos del Monasterio de Santa Catalina"
+    },
+    {
+      "titulo": "Trinidad",
+      "autor": "Iglesia bizantina media y tardía: programa de mosaicos y la de Rubliov",
+      "q": "Trinidad Iglesia bizantina media y tardía: programa de mosaicos y la de Rubliov"
+    }
+  ],
+  "05-edad-media/02-altomedieval-y-prerromanico": [
+    {
+      "titulo": "Tesoro de Sutton Hoo (enterramiento de barco anglosajón)",
+      "autor": "",
+      "q": "Tesoro de Sutton Hoo"
+    },
+    {
+      "titulo": "Libro de Kells (evangeliario insular)",
+      "autor": "",
+      "q": "Libro de Kells"
+    },
+    {
+      "titulo": "Capilla palatina de Aquisgrán (Aachen), de Odón de Metz",
+      "autor": "",
+      "q": "Capilla palatina de Aquisgrán , de Odón de Metz"
+    },
+    {
+      "titulo": "Puertas de bronce de San Bernardo (Hildesheim)",
+      "autor": "",
+      "q": "Puertas de bronce de San Bernardo"
+    },
+    {
+      "titulo": "Santa María del Naranco (Oviedo), arte asturiano",
+      "autor": "",
+      "q": "Santa María del Naranco , arte asturiano"
+    },
+    {
+      "titulo": "Beato de Liébana, \"Beato Morgan\", iluminado por Magius (arte mozárabe)",
+      "autor": "",
+      "q": "Beato de Liébana, Beato Morgan, iluminado por Magius"
+    }
+  ],
+  "05-edad-media/03-romanico": [
+    {
+      "titulo": "Catedral de Santiago de Compostela (iglesia de peregrinación)",
+      "autor": "",
+      "q": "Catedral de Santiago de Compostela"
+    },
+    {
+      "titulo": "Tímpano del Juicio Final, catedral de San Lázaro de Autun, por Gislebertus",
+      "autor": "",
+      "q": "Tímpano del Juicio Final, catedral de San Lázaro de Autun, por Gislebertus"
+    },
+    {
+      "titulo": "Tímpano de la Pentecostés (la Misión de los Apóstoles), Sainte-Madeleine de Vézelay",
+      "autor": "",
+      "q": "Tímpano de la Pentecostés , Sainte-Madeleine de Vézelay"
+    },
+    {
+      "titulo": "Tímpano de la Maiestas Domini, abadía de Saint-Pierre de Moissac",
+      "autor": "",
+      "q": "Tímpano de la Maiestas Domini, abadía de Saint-Pierre de Moissac"
+    },
+    {
+      "titulo": "Pantocrátor del ábside de San Clemente de Tahull (Taüll), pintura mural",
+      "autor": "",
+      "q": "Pantocrátor del ábside de San Clemente de Tahull , pintura mural"
+    },
+    {
+      "titulo": "Pila bautismal de bronce, San Bartolomé de Lieja, por Renier de Huy",
+      "autor": "",
+      "q": "Pila bautismal de bronce, San Bartolomé de Lieja, por Renier de Huy"
+    }
+  ],
+  "05-edad-media/04-gotico": [
+    {
+      "titulo": "Coro de la abadía de Saint-Denis",
+      "autor": "",
+      "q": "Coro de la abadía de Saint-Denis"
+    },
+    {
+      "titulo": "Catedral de Notre-Dame de Chartres",
+      "autor": "",
+      "q": "Catedral de Notre-Dame de Chartres"
+    },
+    {
+      "titulo": "Catedral de Notre-Dame de Reims",
+      "autor": "",
+      "q": "Catedral de Notre-Dame de Reims"
+    },
+    {
+      "titulo": "La Sainte-Chapelle de París",
+      "autor": "",
+      "q": "La Sainte-Chapelle de París"
+    },
+    {
+      "titulo": "Très Riches Heures du duc de Berry",
+      "autor": "Las",
+      "q": "Très Riches Heures du duc de Berry Las"
+    },
+    {
+      "titulo": "Pozo de Moisés",
+      "autor": "El de Claus Sluter",
+      "q": "Pozo de Moisés El de Claus Sluter"
+    }
+  ],
+  "06-renacimiento/01-proto-renacimiento-giotto": [
+    {
+      "titulo": "Maestà de Santa Trinità",
+      "autor": "de Cimabue",
+      "q": "Maestà de Santa Trinità de Cimabue"
+    },
+    {
+      "titulo": "Maestà de Ognissanti",
+      "autor": "de Giotto",
+      "q": "Maestà de Ognissanti de Giotto"
+    },
+    {
+      "titulo": "Ciclo de frescos de la Capilla Scrovegni (Capilla de la Arena), Padua",
+      "autor": "",
+      "q": "Ciclo de frescos de la Capilla Scrovegni , Padua"
+    },
+    {
+      "titulo": "Maestà",
+      "autor": "de la catedral de Siena, de Duccio",
+      "q": "Maestà de la catedral de Siena, de Duccio"
+    },
+    {
+      "titulo": "Alegoría y efectos del Buen y el Mal Gobierno",
+      "autor": "de Ambrogio Lorenzetti",
+      "q": "Alegoría y efectos del Buen y el Mal Gobierno de Ambrogio Lorenzetti"
+    },
+    {
+      "titulo": "Frescos de la basílica de San Francisco de Asís (ciclo de la vida de san Francisco)",
+      "autor": "",
+      "q": "Frescos de la basílica de San Francisco de Asís"
+    }
+  ],
+  "06-renacimiento/02-quattrocento-florentino": [
+    {
+      "titulo": "El sacrificio de Isaac",
+      "autor": "Paneles del concurso del baptisterio",
+      "q": "El sacrificio de Isaac Paneles del concurso del baptisterio"
+    },
+    {
+      "titulo": "Cúpula de Santa María del Fiore (Brunelleschi)",
+      "autor": "",
+      "q": "Cúpula de Santa María del Fiore"
+    },
+    {
+      "titulo": "David",
+      "autor": "de bronce",
+      "q": "David de bronce"
+    },
+    {
+      "titulo": "Estatua ecuestre del Gattamelata",
+      "autor": "",
+      "q": "Estatua ecuestre del Gattamelata"
+    },
+    {
+      "titulo": "La Trinidad",
+      "autor": "",
+      "q": "La Trinidad"
+    },
+    {
+      "titulo": "El pago del tributo",
+      "autor": "",
+      "q": "El pago del tributo"
+    }
+  ],
+  "06-renacimiento/03-pintura-del-quattrocento": [
+    {
+      "titulo": "Anunciación",
+      "autor": "del corredor norte",
+      "q": "Anunciación del corredor norte"
+    },
+    {
+      "titulo": "La Flagelación de Cristo",
+      "autor": "",
+      "q": "La Flagelación de Cristo"
+    },
+    {
+      "titulo": "La Primavera",
+      "autor": "",
+      "q": "La Primavera"
+    },
+    {
+      "titulo": "El nacimiento de Venus",
+      "autor": "",
+      "q": "El nacimiento de Venus"
+    },
+    {
+      "titulo": "Cristo muerto (Lamentación sobre Cristo muerto)",
+      "autor": "",
+      "q": "Cristo muerto"
+    },
+    {
+      "titulo": "Cámara de los Esposos (Camera degli Sposi)",
+      "autor": "",
+      "q": "Cámara de los Esposos"
+    }
+  ],
+  "06-renacimiento/04-arquitectura-del-renacimiento": [
+    {
+      "titulo": "Ospedale degli Innocenti",
+      "autor": "",
+      "q": "Ospedale degli Innocenti"
+    },
+    {
+      "titulo": "Capilla Pazzi",
+      "autor": "",
+      "q": "Capilla Pazzi"
+    },
+    {
+      "titulo": "Santa Maria Novella",
+      "autor": "Fachada de",
+      "q": "Santa Maria Novella Fachada de"
+    },
+    {
+      "titulo": "San Andrés de Mantua",
+      "autor": "",
+      "q": "San Andrés de Mantua"
+    },
+    {
+      "titulo": "Tempietto",
+      "autor": "de San Pietro in Montorio",
+      "q": "Tempietto de San Pietro in Montorio"
+    },
+    {
+      "titulo": "Villa Almerico-Capra",
+      "autor": "\"La Rotonda\"",
+      "q": "Villa Almerico-Capra La Rotonda"
+    }
+  ],
+  "06-renacimiento/05-alto-renacimiento-leonardo-y-rafael": [
+    {
+      "titulo": "La última cena (Il Cenacolo)",
+      "autor": "Leonardo da Vinci",
+      "q": "La última cena Leonardo da Vinci"
+    },
+    {
+      "titulo": "Mona Lisa (La Gioconda)",
+      "autor": "Leonardo da Vinci",
+      "q": "Mona Lisa Leonardo da Vinci"
+    },
+    {
+      "titulo": "La Escuela de Atenas",
+      "autor": "Rafael",
+      "q": "La Escuela de Atenas Rafael"
+    },
+    {
+      "titulo": "Madonna del prado (Madonna del Belvedere)",
+      "autor": "Rafael",
+      "q": "Madonna del prado Rafael"
+    },
+    {
+      "titulo": "Retrato de Baltasar de Castiglione",
+      "autor": "Rafael",
+      "q": "Retrato de Baltasar de Castiglione Rafael"
+    }
+  ],
+  "06-renacimiento/06-miguel-angel": [
+    {
+      "titulo": "Piedad",
+      "autor": "del Vaticano",
+      "q": "Piedad del Vaticano"
+    },
+    {
+      "titulo": "David",
+      "autor": "",
+      "q": "David"
+    },
+    {
+      "titulo": "La bóveda de la Capilla Sixtina",
+      "autor": "",
+      "q": "La bóveda de la Capilla Sixtina"
+    },
+    {
+      "titulo": "Juicio Final",
+      "autor": "",
+      "q": "Juicio Final"
+    },
+    {
+      "titulo": "La Sacristía Nueva (Capillas Medici)",
+      "autor": "",
+      "q": "La Sacristía Nueva"
+    },
+    {
+      "titulo": "La cúpula de San Pedro",
+      "autor": "",
+      "q": "La cúpula de San Pedro"
+    }
+  ],
+  "06-renacimiento/07-renacimiento-veneciano": [
+    {
+      "titulo": "Retablo de San Zaccaria (Sacra Conversación)",
+      "autor": "Giovanni Bellini",
+      "q": "Retablo de San Zaccaria Giovanni Bellini"
+    },
+    {
+      "titulo": "La tempestad",
+      "autor": "Giorgione",
+      "q": "La tempestad Giorgione"
+    },
+    {
+      "titulo": "Asunción de la Virgen (Assunta)",
+      "autor": "Tiziano",
+      "q": "Asunción de la Virgen Tiziano"
+    },
+    {
+      "titulo": "Venus de Urbino",
+      "autor": "Tiziano",
+      "q": "Venus de Urbino Tiziano"
+    },
+    {
+      "titulo": "Las bodas de Caná",
+      "autor": "Veronés",
+      "q": "Las bodas de Caná Veronés"
+    },
+    {
+      "titulo": "La última cena",
+      "autor": "Tintoretto",
+      "q": "La última cena Tintoretto"
+    }
+  ],
+  "06-renacimiento/08-renacimiento-del-norte": [
+    {
+      "titulo": "Políptico de Gante",
+      "autor": "Jan van Eyck",
+      "q": "Políptico de Gante Jan van Eyck"
+    },
+    {
+      "titulo": "El matrimonio Arnolfini",
+      "autor": "Jan van Eyck",
+      "q": "El matrimonio Arnolfini Jan van Eyck"
+    },
+    {
+      "titulo": "El Descendimiento de la Cruz",
+      "autor": "Rogier van der Weyden",
+      "q": "El Descendimiento de la Cruz Rogier van der Weyden"
+    },
+    {
+      "titulo": "El jardín de las delicias",
+      "autor": "Hieronymus Bosch",
+      "q": "El jardín de las delicias Hieronymus Bosch"
+    },
+    {
+      "titulo": "Melancolía I",
+      "autor": "Albrecht Durero",
+      "q": "Melancolía I Albrecht Durero"
+    },
+    {
+      "titulo": "Los embajadores",
+      "autor": "Hans Holbein el Joven",
+      "q": "Los embajadores Hans Holbein el Joven"
+    }
+  ],
+  "06-renacimiento/09-manierismo": [
+    {
+      "titulo": "El Descendimiento",
+      "autor": "Pontormo, c. 1525 1528",
+      "q": "El Descendimiento Pontormo, c. 1525 1528"
+    },
+    {
+      "titulo": "El Descendimiento de la cruz",
+      "autor": "Rosso Fiorentino, 1521",
+      "q": "El Descendimiento de la cruz Rosso Fiorentino, 1521"
+    },
+    {
+      "titulo": "La Virgen del cuello largo (Madonna dal collo lungo)",
+      "autor": "Parmigianino, c. 1534 1540",
+      "q": "La Virgen del cuello largo Parmigianino, c. 1534 1540"
+    },
+    {
+      "titulo": "Alegoría del triunfo de Venus",
+      "autor": "Bronzino, c. 1545",
+      "q": "Alegoría del triunfo de Venus Bronzino, c. 1545"
+    },
+    {
+      "titulo": "El rapto de las sabinas (El rapto de una sabina)",
+      "autor": "Giambologna, 1581 1583",
+      "q": "El rapto de las sabinas Giambologna, 1581 1583"
+    },
+    {
+      "titulo": "El entierro del conde de Orgaz",
+      "autor": "El Greco, 1586 1588",
+      "q": "El entierro del conde de Orgaz El Greco, 1586 1588"
+    }
+  ],
+  "07-barroco-y-siglo-xviii/01-barroco-italiano": [
+    {
+      "titulo": "Vocación de san Mateo",
+      "autor": "Caravaggio",
+      "q": "Vocación de san Mateo Caravaggio"
+    },
+    {
+      "titulo": "La cena de Emaús",
+      "autor": "Caravaggio",
+      "q": "La cena de Emaús Caravaggio"
+    },
+    {
+      "titulo": "Judit decapitando a Holofernes",
+      "autor": "Artemisia Gentileschi",
+      "q": "Judit decapitando a Holofernes Artemisia Gentileschi"
+    },
+    {
+      "titulo": "Galería Farnesio",
+      "autor": "Annibale Carracci",
+      "q": "Galería Farnesio Annibale Carracci"
+    },
+    {
+      "titulo": "Éxtasis de santa Teresa",
+      "autor": "Bernini",
+      "q": "Éxtasis de santa Teresa Bernini"
+    },
+    {
+      "titulo": "Apolo y Dafne",
+      "autor": "Bernini",
+      "q": "Apolo y Dafne Bernini"
+    }
+  ],
+  "07-barroco-y-siglo-xviii/02-arquitectura-barroca-y-urbanismo": [
+    {
+      "titulo": "Baldaquino de San Pedro (Bernini)",
+      "autor": "",
+      "q": "Baldaquino de San Pedro"
+    },
+    {
+      "titulo": "San Carlo alle Quattro Fontane, \"San Carlino\" (Borromini)",
+      "autor": "",
+      "q": "San Carlo alle Quattro Fontane, San Carlino"
+    },
+    {
+      "titulo": "Sant'Ivo alla Sapienza (Borromini)",
+      "autor": "",
+      "q": "Sant'Ivo alla Sapienza"
+    },
+    {
+      "titulo": "Sant'Andrea al Quirinale (Bernini)",
+      "autor": "",
+      "q": "Sant'Andrea al Quirinale"
+    },
+    {
+      "titulo": "La plaza de San Pedro y su columnata (Bernini)",
+      "autor": "",
+      "q": "La plaza de San Pedro y su columnata"
+    },
+    {
+      "titulo": "Wieskirche (Dominikus Zimmermann)",
+      "autor": "",
+      "q": "Wieskirche"
+    }
+  ],
+  "07-barroco-y-siglo-xviii/03-siglo-de-oro-espanol": [
+    {
+      "titulo": "El aguador de Sevilla",
+      "autor": "Velázquez",
+      "q": "El aguador de Sevilla Velázquez"
+    },
+    {
+      "titulo": "Bodegón con cacharros",
+      "autor": "Zurbarán",
+      "q": "Bodegón con cacharros Zurbarán"
+    },
+    {
+      "titulo": "Los borrachos",
+      "autor": "Velázquez",
+      "q": "Los borrachos Velázquez"
+    },
+    {
+      "titulo": "La fragua de Vulcano",
+      "autor": "Velázquez",
+      "q": "La fragua de Vulcano Velázquez"
+    },
+    {
+      "titulo": "La rendición de Breda",
+      "autor": "Velázquez",
+      "q": "La rendición de Breda Velázquez"
+    },
+    {
+      "titulo": "Las meninas",
+      "autor": "Velázquez",
+      "q": "Las meninas Velázquez"
+    }
+  ],
+  "07-barroco-y-siglo-xviii/04-barroco-flamenco-y-holandes": [
+    {
+      "titulo": "El descendimiento de la cruz",
+      "autor": "Peter Paul Rubens",
+      "q": "El descendimiento de la cruz Peter Paul Rubens"
+    },
+    {
+      "titulo": "El ciclo de María de Médici",
+      "autor": "Peter Paul Rubens",
+      "q": "El ciclo de María de Médici Peter Paul Rubens"
+    },
+    {
+      "titulo": "Carlos I a caballo",
+      "autor": "Anton van Dyck",
+      "q": "Carlos I a caballo Anton van Dyck"
+    },
+    {
+      "titulo": "La ronda de noche",
+      "autor": "Rembrandt van Rijn",
+      "q": "La ronda de noche Rembrandt van Rijn"
+    },
+    {
+      "titulo": "La lechera",
+      "autor": "Johannes Vermeer",
+      "q": "La lechera Johannes Vermeer"
+    },
+    {
+      "titulo": "Autorretrato",
+      "autor": "tardío Rembrandt van Rijn",
+      "q": "Autorretrato tardío Rembrandt van Rijn"
+    }
+  ],
+  "07-barroco-y-siglo-xviii/05-clasicismo-frances-y-rococo": [
+    {
+      "titulo": "Et in Arcadia ego (Los pastores de Arcadia)",
+      "autor": "Nicolas Poussin",
+      "q": "Et in Arcadia ego Nicolas Poussin"
+    },
+    {
+      "titulo": "Puerto de mar con el embarco de la reina de Saba",
+      "autor": "Claudio de Lorena",
+      "q": "Puerto de mar con el embarco de la reina de Saba Claudio de Lorena"
+    },
+    {
+      "titulo": "Versalles: la Galería de los Espejos - Jules Hardouin-Mansart y Charles Le Brun",
+      "autor": "",
+      "q": "Versalles: la Galería de los Espejos - Jules Hardouin-Mansart y Charles Le Brun"
+    },
+    {
+      "titulo": "Peregrinación a la isla de Citera",
+      "autor": "Antoine Watteau",
+      "q": "Peregrinación a la isla de Citera Antoine Watteau"
+    },
+    {
+      "titulo": "El columpio (Los felices azares del columpio)",
+      "autor": "Jean-Honoré Fragonard",
+      "q": "El columpio Jean-Honoré Fragonard"
+    },
+    {
+      "titulo": "Bodegón con cacharro de aceitunas (La raya)",
+      "autor": "o las escenas domésticas Jean-Baptiste-Siméon Chardin",
+      "q": "Bodegón con cacharro de aceitunas o las escenas domésticas Jean-Baptiste-Siméon Chardin"
+    },
+    {
+      "titulo": "El triunfo de Apolo / Apoteosis de España",
+      "autor": "Giambattista Tiépolo",
+      "q": "El triunfo de Apolo / Apoteosis de España Giambattista Tiépolo"
+    }
+  ],
+  "07-barroco-y-siglo-xviii/06-neoclasicismo": [
+    {
+      "titulo": "El juramento de los Horacios",
+      "autor": "Jacques-Louis David",
+      "q": "El juramento de los Horacios Jacques-Louis David"
+    },
+    {
+      "titulo": "La muerte de Marat",
+      "autor": "Jacques-Louis David",
+      "q": "La muerte de Marat Jacques-Louis David"
+    },
+    {
+      "titulo": "La gran odalisca",
+      "autor": "Jean-Auguste-Dominique Ingres",
+      "q": "La gran odalisca Jean-Auguste-Dominique Ingres"
+    },
+    {
+      "titulo": "Paulina Bonaparte como Venus victoriosa",
+      "autor": "Antonio Canova",
+      "q": "Paulina Bonaparte como Venus victoriosa Antonio Canova"
+    },
+    {
+      "titulo": "El Panteón de París",
+      "autor": "Jacques-Germain Soufflot",
+      "q": "El Panteón de París Jacques-Germain Soufflot"
+    },
+    {
+      "titulo": "La consagración de Napoleón (Le Sacre)",
+      "autor": "Jacques-Louis David",
+      "q": "La consagración de Napoleón Jacques-Louis David"
+    }
+  ],
+  "08-siglo-xix/01-romanticismo": [
+    {
+      "titulo": "El sueño de la razón produce monstruos",
+      "autor": "Francisco de Goya",
+      "q": "El sueño de la razón produce monstruos Francisco de Goya"
+    },
+    {
+      "titulo": "El 3 de mayo de 1808 (Los fusilamientos de la Moncloa)",
+      "autor": "Francisco de Goya",
+      "q": "El 3 de mayo de 1808 Francisco de Goya"
+    },
+    {
+      "titulo": "Saturno devorando a un hijo",
+      "autor": "Francisco de Goya",
+      "q": "Saturno devorando a un hijo Francisco de Goya"
+    },
+    {
+      "titulo": "La balsa de la Medusa",
+      "autor": "Théodore Géricault",
+      "q": "La balsa de la Medusa Théodore Géricault"
+    },
+    {
+      "titulo": "La libertad guiando al pueblo (28 de julio de 1830)",
+      "autor": "Eugène Delacroix",
+      "q": "La libertad guiando al pueblo Eugène Delacroix"
+    },
+    {
+      "titulo": "El caminante sobre el mar de nubes",
+      "autor": "Caspar David Friedrich",
+      "q": "El caminante sobre el mar de nubes Caspar David Friedrich"
+    },
+    {
+      "titulo": "Lluvia, vapor y velocidad – El gran ferrocarril del Oeste",
+      "autor": "J. M. W. Turner",
+      "q": "Lluvia, vapor y velocidad – El gran ferrocarril del Oeste J. M. W. Turner"
+    },
+    {
+      "titulo": "La carreta de heno (The Hay Wain)",
+      "autor": "John Constable",
+      "q": "La carreta de heno John Constable"
+    }
+  ],
+  "08-siglo-xix/02-realismo-y-fotografia-temprana": [
+    {
+      "titulo": "Un entierro en Ornans",
+      "autor": "Gustave Courbet",
+      "q": "Un entierro en Ornans Gustave Courbet"
+    },
+    {
+      "titulo": "El taller del pintor (alegoría real)",
+      "autor": "Gustave Courbet",
+      "q": "El taller del pintor Gustave Courbet"
+    },
+    {
+      "titulo": "Las espigadoras",
+      "autor": "Jean-François Millet",
+      "q": "Las espigadoras Jean-François Millet"
+    },
+    {
+      "titulo": "El ángelus",
+      "autor": "Jean-François Millet",
+      "q": "El ángelus Jean-François Millet"
+    },
+    {
+      "titulo": "El vagón de tercera (The Third-Class Carriage)",
+      "autor": "Honoré Daumier",
+      "q": "El vagón de tercera Honoré Daumier"
+    },
+    {
+      "titulo": "Bulevar del Temple",
+      "autor": "Louis Daguerre",
+      "q": "Bulevar del Temple Louis Daguerre"
+    }
+  ],
+  "08-siglo-xix/03-impresionismo": [
+    {
+      "titulo": "Almuerzo sobre la hierba (Le Déjeuner sur l'herbe)",
+      "autor": "Édouard Manet",
+      "q": "Almuerzo sobre la hierba Édouard Manet"
+    },
+    {
+      "titulo": "Olympia",
+      "autor": "Édouard Manet",
+      "q": "Olympia Édouard Manet"
+    },
+    {
+      "titulo": "Impresión, sol naciente (Impression, soleil levant)",
+      "autor": "Claude Monet",
+      "q": "Impresión, sol naciente Claude Monet"
+    },
+    {
+      "titulo": "Baile en el Moulin de la Galette (Bal du moulin de la Galette)",
+      "autor": "Pierre-Auguste Renoir",
+      "q": "Baile en el Moulin de la Galette Pierre-Auguste Renoir"
+    },
+    {
+      "titulo": "La clase de danza (La Classe de danse)",
+      "autor": "Edgar Degas",
+      "q": "La clase de danza Edgar Degas"
+    },
+    {
+      "titulo": "La cuna (Le Berceau)",
+      "autor": "Berthe Morisot",
+      "q": "La cuna Berthe Morisot"
+    },
+    {
+      "titulo": "La catedral de Ruan",
+      "autor": "Claude Monet",
+      "q": "La catedral de Ruan Claude Monet"
+    }
+  ],
+  "08-siglo-xix/04-japonismo": [
+    {
+      "titulo": "La gran ola de Kanagawa",
+      "autor": "Katsushika Hokusai",
+      "q": "La gran ola de Kanagawa Katsushika Hokusai"
+    },
+    {
+      "titulo": "La princesa del país de la porcelana",
+      "autor": "James McNeill Whistler",
+      "q": "La princesa del país de la porcelana James McNeill Whistler"
+    },
+    {
+      "titulo": "La Japonaise (Camille Monet con vestido japonés)",
+      "autor": "Claude Monet",
+      "q": "La Japonaise Claude Monet"
+    },
+    {
+      "titulo": "El ciruelo en flor (según Hiroshige)",
+      "autor": "Vincent van Gogh",
+      "q": "El ciruelo en flor Vincent van Gogh"
+    },
+    {
+      "titulo": "La estrella (La bailarina sobre el escenario)",
+      "autor": "Edgar Degas",
+      "q": "La estrella Edgar Degas"
+    },
+    {
+      "titulo": "Divan Japonais",
+      "autor": "Henri de Toulouse-Lautrec",
+      "q": "Divan Japonais Henri de Toulouse-Lautrec"
+    }
+  ],
+  "08-siglo-xix/05-postimpresionismo": [
+    {
+      "titulo": "Un domingo de verano en la isla de la Grande Jatte",
+      "autor": "Georges Seurat",
+      "q": "Un domingo de verano en la isla de la Grande Jatte Georges Seurat"
+    },
+    {
+      "titulo": "Los girasoles (Tournesols)",
+      "autor": "Vincent van Gogh",
+      "q": "Los girasoles Vincent van Gogh"
+    },
+    {
+      "titulo": "La noche estrellada (De sterrennacht)",
+      "autor": "Vincent van Gogh",
+      "q": "La noche estrellada Vincent van Gogh"
+    },
+    {
+      "titulo": "Montaña Sainte-Victoire",
+      "autor": "Paul Cézanne",
+      "q": "Montaña Sainte-Victoire Paul Cézanne"
+    },
+    {
+      "titulo": "¿De dónde venimos? ¿Qué somos? ¿Adónde vamos?",
+      "autor": "Paul Gauguin",
+      "q": "¿De dónde venimos? ¿Qué somos? ¿Adónde vamos? Paul Gauguin"
+    },
+    {
+      "titulo": "En el Moulin Rouge (Au Moulin Rouge)",
+      "autor": "Henri de Toulouse-Lautrec",
+      "q": "En el Moulin Rouge Henri de Toulouse-Lautrec"
+    }
+  ],
+  "08-siglo-xix/06-simbolismo-y-art-nouveau": [
+    {
+      "titulo": "La aparición (L'Apparition)",
+      "autor": "Gustave Moreau",
+      "q": "La aparición Gustave Moreau"
+    },
+    {
+      "titulo": "El ojo, como un globo extraño, se dirige hacia el infinito",
+      "autor": "Odilon Redon",
+      "q": "El ojo, como un globo extraño, se dirige hacia el infinito Odilon Redon"
+    },
+    {
+      "titulo": "El grito (Skrik)",
+      "autor": "Edvard Munch",
+      "q": "El grito Edvard Munch"
+    },
+    {
+      "titulo": "Gismonda",
+      "autor": "Alphonse Mucha",
+      "q": "Gismonda Alphonse Mucha"
+    },
+    {
+      "titulo": "El beso (Der Kuss)",
+      "autor": "Gustav Klimt",
+      "q": "El beso Gustav Klimt"
+    },
+    {
+      "titulo": "Templo Expiatorio de la Sagrada Familia",
+      "autor": "Antoni Gaudí",
+      "q": "Templo Expiatorio de la Sagrada Familia Antoni Gaudí"
+    }
+  ],
+  "08-siglo-xix/07-escultura-y-arquitectura-del-xix": [
+    {
+      "titulo": "El pensador",
+      "autor": "Auguste Rodin",
+      "q": "El pensador Auguste Rodin"
+    },
+    {
+      "titulo": "Los burgueses de Calais",
+      "autor": "Auguste Rodin",
+      "q": "Los burgueses de Calais Auguste Rodin"
+    },
+    {
+      "titulo": "El beso",
+      "autor": "Auguste Rodin",
+      "q": "El beso Auguste Rodin"
+    },
+    {
+      "titulo": "Crystal Palace",
+      "autor": "Joseph Paxton",
+      "q": "Crystal Palace Joseph Paxton"
+    },
+    {
+      "titulo": "Torre Eiffel",
+      "autor": "Gustave Eiffel",
+      "q": "Torre Eiffel Gustave Eiffel"
+    },
+    {
+      "titulo": "Ópera de París",
+      "autor": "Charles Garnier",
+      "q": "Ópera de París Charles Garnier"
+    }
+  ],
+  "09-arte-moderno/01-fauvismo-y-expresionismo": [
+    {
+      "titulo": "La alegría de vivir (Le bonheur de vivre)",
+      "autor": "Henri Matisse",
+      "q": "La alegría de vivir Henri Matisse"
+    },
+    {
+      "titulo": "La danza (La Danse)",
+      "autor": "Henri Matisse",
+      "q": "La danza Henri Matisse"
+    },
+    {
+      "titulo": "El grito (Skrik)",
+      "autor": "Edvard Munch",
+      "q": "El grito Edvard Munch"
+    },
+    {
+      "titulo": "Marcella",
+      "autor": "escenas de calle berlinesas Ernst Ludwig Kirchner",
+      "q": "Marcella escenas de calle berlinesas Ernst Ludwig Kirchner"
+    },
+    {
+      "titulo": "Los grandes caballos azules (Die großen blauen Pferde)",
+      "autor": "Franz Marc",
+      "q": "Los grandes caballos azules Franz Marc"
+    },
+    {
+      "titulo": "La muerte y la doncella (Tod und Mädchen)",
+      "autor": "Egon Schiele",
+      "q": "La muerte y la doncella Egon Schiele"
+    }
+  ],
+  "09-arte-moderno/02-cubismo": [
+    {
+      "titulo": "Les demoiselles d'Avignon",
+      "autor": "Pablo Picasso",
+      "q": "Les demoiselles d'Avignon Pablo Picasso"
+    },
+    {
+      "titulo": "Casas en L'Estaque",
+      "autor": "Georges Braque",
+      "q": "Casas en L'Estaque Georges Braque"
+    },
+    {
+      "titulo": "Retrato de Daniel-Henry Kahnweiler",
+      "autor": "Pablo Picasso",
+      "q": "Retrato de Daniel-Henry Kahnweiler Pablo Picasso"
+    },
+    {
+      "titulo": "Naturaleza muerta con silla de rejilla (Nature morte à la chaise cannée)",
+      "autor": "Pablo Picasso",
+      "q": "Naturaleza muerta con silla de rejilla Pablo Picasso"
+    },
+    {
+      "titulo": "Botella, vaso y violín",
+      "autor": "Georges Braque / Pablo Picasso",
+      "q": "Botella, vaso y violín Georges Braque / Pablo Picasso"
+    },
+    {
+      "titulo": "Naturaleza muerta con tablero de ajedrez (o \"Le Lavabo\")",
+      "autor": "Retrato de Picasso Juan Gris",
+      "q": "Naturaleza muerta con tablero de ajedrez Retrato de Picasso Juan Gris"
+    }
+  ],
+  "09-arte-moderno/03-futurismo-y-abstraccion": [
+    {
+      "titulo": "Formas únicas de continuidad en el espacio",
+      "autor": "Umberto Boccioni",
+      "q": "Formas únicas de continuidad en el espacio Umberto Boccioni"
+    },
+    {
+      "titulo": "Dinamismo de un perro con correa",
+      "autor": "Giacomo Balla",
+      "q": "Dinamismo de un perro con correa Giacomo Balla"
+    },
+    {
+      "titulo": "Composición VII",
+      "autor": "Vasili Kandinsky",
+      "q": "Composición VII Vasili Kandinsky"
+    },
+    {
+      "titulo": "Cuadrado negro",
+      "autor": "Kazimir Malévich",
+      "q": "Cuadrado negro Kazimir Malévich"
+    },
+    {
+      "titulo": "Composición con rojo, amarillo y azul",
+      "autor": "Piet Mondrian",
+      "q": "Composición con rojo, amarillo y azul Piet Mondrian"
+    },
+    {
+      "titulo": "Monumento a la Tercera Internacional (\"Torre de Tatlin\")",
+      "autor": "Vladímir Tatlin",
+      "q": "Monumento a la Tercera Internacional Vladímir Tatlin"
+    }
+  ],
+  "09-arte-moderno/04-dada-y-surrealismo": [
+    {
+      "titulo": "La fuente (Fountain)",
+      "autor": "Marcel Duchamp",
+      "q": "La fuente Marcel Duchamp"
+    },
+    {
+      "titulo": "L.H.O.O.Q.",
+      "autor": "Marcel Duchamp",
+      "q": "L.H.O.O.Q. Marcel Duchamp"
+    },
+    {
+      "titulo": "Cut with the Kitchen Knife Dada... (Corte con el cuchillo de cocina dadá a través de la última época cultural barriga-cervecera de Weimar en Alemania)",
+      "autor": "Hannah Höch",
+      "q": "Cut with the Kitchen Knife Dada... Hannah Höch"
+    },
+    {
+      "titulo": "La persistencia de la memoria",
+      "autor": "Salvador Dalí",
+      "q": "La persistencia de la memoria Salvador Dalí"
+    },
+    {
+      "titulo": "La traición de las imágenes (Ceci n'est pas une pipe)",
+      "autor": "René Magritte",
+      "q": "La traición de las imágenes René Magritte"
+    },
+    {
+      "titulo": "Las dos Fridas",
+      "autor": "Frida Kahlo",
+      "q": "Las dos Fridas Frida Kahlo"
+    }
+  ],
+  "09-arte-moderno/05-bauhaus-y-arquitectura-moderna": [
+    {
+      "titulo": "Edificio de la Bauhaus en Dessau - Walter Gropius",
+      "autor": "",
+      "q": "Edificio de la Bauhaus en Dessau - Walter Gropius"
+    },
+    {
+      "titulo": "Villa Saboya - Le Corbusier",
+      "autor": "",
+      "q": "Villa Saboya - Le Corbusier"
+    },
+    {
+      "titulo": "Pabellón de Alemania en Barcelona (\"Pabellón de Barcelona\") - Mies van der Rohe",
+      "autor": "",
+      "q": "Pabellón de Alemania en Barcelona - Mies van der Rohe"
+    },
+    {
+      "titulo": "La Casa de la Cascada (Fallingwater) - Frank Lloyd Wright",
+      "autor": "",
+      "q": "La Casa de la Cascada - Frank Lloyd Wright"
+    },
+    {
+      "titulo": "Silla \"Wassily\" (modelo B3) - Marcel Breuer",
+      "autor": "",
+      "q": "Silla Wassily - Marcel Breuer"
+    },
+    {
+      "titulo": "Seagram Building - Mies van der Rohe (con Philip Johnson)",
+      "autor": "",
+      "q": "Seagram Building - Mies van der Rohe"
+    }
+  ],
+  "09-arte-moderno/06-muralismo-mexicano": [
+    {
+      "titulo": "La creación",
+      "autor": "y los frescos de la Secretaría de Educación Pública Diego Rivera",
+      "q": "La creación y los frescos de la Secretaría de Educación Pública Diego Rivera"
+    },
+    {
+      "titulo": "Epopeya del pueblo mexicano",
+      "autor": "Diego Rivera",
+      "q": "Epopeya del pueblo mexicano Diego Rivera"
+    },
+    {
+      "titulo": "Catarsis",
+      "autor": "José Clemente Orozco",
+      "q": "Catarsis José Clemente Orozco"
+    },
+    {
+      "titulo": "El hombre controlador del universo",
+      "autor": "Diego Rivera",
+      "q": "El hombre controlador del universo Diego Rivera"
+    },
+    {
+      "titulo": "Las dos Fridas",
+      "autor": "Frida Kahlo",
+      "q": "Las dos Fridas Frida Kahlo"
+    },
+    {
+      "titulo": "La Nueva Democracia",
+      "autor": "David Alfaro Siqueiros",
+      "q": "La Nueva Democracia David Alfaro Siqueiros"
+    }
+  ],
+  "09-arte-moderno/07-escultura-moderna": [
+    {
+      "titulo": "El beso",
+      "autor": "Constantin Brancusi",
+      "q": "El beso Constantin Brancusi"
+    },
+    {
+      "titulo": "Pájaro en el espacio",
+      "autor": "Constantin Brancusi",
+      "q": "Pájaro en el espacio Constantin Brancusi"
+    },
+    {
+      "titulo": "Cabeza nº 2",
+      "autor": "Naum Gabo",
+      "q": "Cabeza nº 2 Naum Gabo"
+    },
+    {
+      "titulo": "Figura reclinada",
+      "autor": "Henry Moore",
+      "q": "Figura reclinada Henry Moore"
+    },
+    {
+      "titulo": "El hombre que camina",
+      "autor": "Alberto Giacometti",
+      "q": "El hombre que camina Alberto Giacometti"
+    },
+    {
+      "titulo": "Langosta, nasa y cola de pez",
+      "autor": "Alexander Calder",
+      "q": "Langosta, nasa y cola de pez Alexander Calder"
+    }
+  ],
+  "09-arte-moderno/08-fotografia-moderna": [
+    {
+      "titulo": "The Steerage",
+      "autor": "Alfred Stieglitz",
+      "q": "The Steerage Alfred Stieglitz"
+    },
+    {
+      "titulo": "Blind Woman",
+      "autor": "Paul Strand",
+      "q": "Blind Woman Paul Strand"
+    },
+    {
+      "titulo": "Pepper No. 30",
+      "autor": "Edward Weston",
+      "q": "Pepper No. 30 Edward Weston"
+    },
+    {
+      "titulo": "Power House Mechanic",
+      "autor": "Lewis Hine, y las fotografías del trabajo infantil",
+      "q": "Power House Mechanic Lewis Hine, y las fotografías del trabajo infantil"
+    },
+    {
+      "titulo": "Migrant Mother",
+      "autor": "Dorothea Lange",
+      "q": "Migrant Mother Dorothea Lange"
+    },
+    {
+      "titulo": "Derrière la gare Saint-Lazare",
+      "autor": "Henri Cartier-Bresson",
+      "q": "Derrière la gare Saint-Lazare Henri Cartier-Bresson"
+    }
+  ],
+  "09-arte-moderno/09-arte-y-guerras-mundiales": [
+    {
+      "titulo": "La guerra",
+      "autor": "Otto Dix, , 1929 1932",
+      "q": "La guerra Otto Dix, , 1929 1932"
+    },
+    {
+      "titulo": "Las columnas de la sociedad",
+      "autor": "George Grosz, , 1926",
+      "q": "Las columnas de la sociedad George Grosz, , 1926"
+    },
+    {
+      "titulo": "Guernica",
+      "autor": "Pablo Picasso, , 1937",
+      "q": "Guernica Pablo Picasso, , 1937"
+    },
+    {
+      "titulo": "Adolf el superhombre: traga oro y suelta hojalata",
+      "autor": "John Heartfield, , 1932",
+      "q": "Adolf el superhombre: traga oro y suelta hojalata John Heartfield, , 1932"
+    },
+    {
+      "titulo": "Los padres",
+      "autor": "Käthe Kollwitz, , 1914 1932",
+      "q": "Los padres Käthe Kollwitz, , 1914 1932"
+    },
+    {
+      "titulo": "Entartete Kunst",
+      "autor": "La exposición , Múnich, 1937",
+      "q": "Entartete Kunst La exposición , Múnich, 1937"
+    }
+  ],
+  "10-posguerra-y-contemporaneo/01-expresionismo-abstracto": [
+    {
+      "titulo": "Number 1, 1950 (Lavender Mist)",
+      "autor": "Jackson Pollock",
+      "q": "Number 1, 1950 Jackson Pollock"
+    },
+    {
+      "titulo": "Woman I",
+      "autor": "Willem de Kooning",
+      "q": "Woman I Willem de Kooning"
+    },
+    {
+      "titulo": "No. 61 (Rust and Blue)",
+      "autor": "Mark Rothko",
+      "q": "No. 61 Mark Rothko"
+    },
+    {
+      "titulo": "Vir Heroicus Sublimis",
+      "autor": "Barnett Newman",
+      "q": "Vir Heroicus Sublimis Barnett Newman"
+    },
+    {
+      "titulo": "Chief",
+      "autor": "Franz Kline",
+      "q": "Chief Franz Kline"
+    },
+    {
+      "titulo": "The Seasons",
+      "autor": "Lee Krasner",
+      "q": "The Seasons Lee Krasner"
+    }
+  ],
+  "10-posguerra-y-contemporaneo/02-pop-art": [
+    {
+      "titulo": "¿Qué hace que los hogares de hoy sean tan diferentes, tan atractivos?",
+      "autor": "Richard Hamilton",
+      "q": "¿Qué hace que los hogares de hoy sean tan diferentes, tan atractivos? Richard Hamilton"
+    },
+    {
+      "titulo": "Latas de sopa Campbell",
+      "autor": "Andy Warhol",
+      "q": "Latas de sopa Campbell Andy Warhol"
+    },
+    {
+      "titulo": "Díptico de Marilyn (Marilyn Diptych)",
+      "autor": "Andy Warhol",
+      "q": "Díptico de Marilyn Andy Warhol"
+    },
+    {
+      "titulo": "Whaam!",
+      "autor": "Roy Lichtenstein",
+      "q": "Whaam! Roy Lichtenstein"
+    },
+    {
+      "titulo": "Floor Burger (Hamburguesa de suelo)",
+      "autor": "Claes Oldenburg",
+      "q": "Floor Burger Claes Oldenburg"
+    },
+    {
+      "titulo": "F-111",
+      "autor": "James Rosenquist",
+      "q": "F-111 James Rosenquist"
+    }
+  ],
+  "10-posguerra-y-contemporaneo/03-minimalismo-y-abstraccion-pospictorica": [
+    {
+      "titulo": "Die Fahne hoch!",
+      "autor": "Frank Stella",
+      "q": "Die Fahne hoch! Frank Stella"
+    },
+    {
+      "titulo": "Untitled (Stack)",
+      "autor": "Donald Judd",
+      "q": "Untitled Donald Judd"
+    },
+    {
+      "titulo": "Equivalent VIII",
+      "autor": "Carl Andre",
+      "q": "Equivalent VIII Carl Andre"
+    },
+    {
+      "titulo": "\"Monument\" for V. Tatlin",
+      "autor": "Dan Flavin",
+      "q": "Monument for V. Tatlin Dan Flavin"
+    },
+    {
+      "titulo": "Untitled",
+      "autor": "Agnes Martin",
+      "q": "Untitled Agnes Martin"
+    },
+    {
+      "titulo": "Saraband",
+      "autor": "Morris Louis",
+      "q": "Saraband Morris Louis"
+    }
+  ],
+  "10-posguerra-y-contemporaneo/04-arte-conceptual-y-fluxus": [
+    {
+      "titulo": "Una y tres sillas (One and Three Chairs)",
+      "autor": "Joseph Kosuth",
+      "q": "Una y tres sillas Joseph Kosuth"
+    },
+    {
+      "titulo": "Sentences on Conceptual Art (Sentencias sobre arte conceptual)",
+      "autor": "Sol LeWitt",
+      "q": "Sentences on Conceptual Art Sol LeWitt"
+    },
+    {
+      "titulo": "Cut Piece",
+      "autor": "Yoko Ono",
+      "q": "Cut Piece Yoko Ono"
+    },
+    {
+      "titulo": "TV Buddha",
+      "autor": "Nam June Paik",
+      "q": "TV Buddha Nam June Paik"
+    },
+    {
+      "titulo": "Cómo explicar los cuadros a una liebre muerta (Wie man dem toten Hasen die Bilder erklärt)",
+      "autor": "Joseph Beuys",
+      "q": "Cómo explicar los cuadros a una liebre muerta Joseph Beuys"
+    },
+    {
+      "titulo": "Statements / \"Declaración de intenciones\"",
+      "autor": "Lawrence Weiner",
+      "q": "Statements / Declaración de intenciones Lawrence Weiner"
+    }
+  ],
+  "10-posguerra-y-contemporaneo/05-performance-y-body-art": [
+    {
+      "titulo": "Rhythm 0",
+      "autor": "Marina Abramović",
+      "q": "Rhythm 0 Marina Abramović"
+    },
+    {
+      "titulo": "Shoot",
+      "autor": "Chris Burden",
+      "q": "Shoot Chris Burden"
+    },
+    {
+      "titulo": "Siluetas",
+      "autor": "Ana Mendieta, serie",
+      "q": "Siluetas Ana Mendieta, serie"
+    },
+    {
+      "titulo": "Seedbed",
+      "autor": "Vito Acconci",
+      "q": "Seedbed Vito Acconci"
+    },
+    {
+      "titulo": "Interior Scroll",
+      "autor": "Carolee Schneemann",
+      "q": "Interior Scroll Carolee Schneemann"
+    },
+    {
+      "titulo": "The Artist Is Present",
+      "autor": "Marina Abramović",
+      "q": "The Artist Is Present Marina Abramović"
+    }
+  ],
+  "10-posguerra-y-contemporaneo/06-land-art-e-instalacion": [
+    {
+      "titulo": "Spiral Jetty",
+      "autor": "Robert Smithson",
+      "q": "Spiral Jetty Robert Smithson"
+    },
+    {
+      "titulo": "The Lightning Field",
+      "autor": "Walter De Maria",
+      "q": "The Lightning Field Walter De Maria"
+    },
+    {
+      "titulo": "Sun Tunnels",
+      "autor": "Nancy Holt",
+      "q": "Sun Tunnels Nancy Holt"
+    },
+    {
+      "titulo": "Wrapped Reichstag",
+      "autor": "Christo y Jeanne-Claude",
+      "q": "Wrapped Reichstag Christo y Jeanne-Claude"
+    },
+    {
+      "titulo": "Iglú",
+      "autor": "Mario Merz",
+      "q": "Iglú Mario Merz"
+    },
+    {
+      "titulo": "Venere degli stracci",
+      "autor": "Michelangelo Pistoletto",
+      "q": "Venere degli stracci Michelangelo Pistoletto"
+    }
+  ],
+  "10-posguerra-y-contemporaneo/07-fotografia-y-videoarte": [
+    {
+      "titulo": "Untitled Film Still #21",
+      "autor": "Cindy Sherman",
+      "q": "Untitled Film Still #21 Cindy Sherman"
+    },
+    {
+      "titulo": "A Sudden Gust of Wind (after Hokusai)",
+      "autor": "Jeff Wall",
+      "q": "A Sudden Gust of Wind Jeff Wall"
+    },
+    {
+      "titulo": "Water Towers",
+      "autor": "Bernd y Hilla Becher",
+      "q": "Water Towers Bernd y Hilla Becher"
+    },
+    {
+      "titulo": "99 Cent",
+      "autor": "Andreas Gursky",
+      "q": "99 Cent Andreas Gursky"
+    },
+    {
+      "titulo": "TV Buddha",
+      "autor": "Nam June Paik",
+      "q": "TV Buddha Nam June Paik"
+    },
+    {
+      "titulo": "The Crossing",
+      "autor": "Bill Viola",
+      "q": "The Crossing Bill Viola"
+    }
+  ],
+  "10-posguerra-y-contemporaneo/08-arte-feminismo-e-identidad": [
+    {
+      "titulo": "The Dinner Party",
+      "autor": "Judy Chicago",
+      "q": "The Dinner Party Judy Chicago"
+    },
+    {
+      "titulo": "Womanhouse",
+      "autor": "Programa de Arte Feminista",
+      "q": "Womanhouse Programa de Arte Feminista"
+    },
+    {
+      "titulo": "Do Women Have to Be Naked to Get Into the Met. Museum?",
+      "autor": "Guerrilla Girls",
+      "q": "Do Women Have to Be Naked to Get Into the Met. Museum? Guerrilla Girls"
+    },
+    {
+      "titulo": "Tar Beach",
+      "autor": "Faith Ringgold",
+      "q": "Tar Beach Faith Ringgold"
+    },
+    {
+      "titulo": "Gone: An Historical Romance of a Civil War…",
+      "autor": "Kara Walker",
+      "q": "Gone: An Historical Romance of a Civil War… Kara Walker"
+    },
+    {
+      "titulo": "Untitled (cráneo / cabeza)",
+      "autor": "Jean-Michel Basquiat",
+      "q": "Untitled Jean-Michel Basquiat"
+    }
+  ],
+  "10-posguerra-y-contemporaneo/09-arte-contemporaneo-global": [
+    {
+      "titulo": "Sunflower Seeds",
+      "autor": "Ai Weiwei",
+      "q": "Sunflower Seeds Ai Weiwei"
+    },
+    {
+      "titulo": "The Weather Project",
+      "autor": "Olafur Eliasson",
+      "q": "The Weather Project Olafur Eliasson"
+    },
+    {
+      "titulo": "Mama",
+      "autor": "El Anatsui",
+      "q": "Mama El Anatsui"
+    },
+    {
+      "titulo": "Infinity Mirror Room",
+      "autor": "Yayoi Kusama",
+      "q": "Infinity Mirror Room Yayoi Kusama"
+    },
+    {
+      "titulo": "The Physical Impossibility of Death in the Mind of Someone Living",
+      "autor": "Damien Hirst",
+      "q": "The Physical Impossibility of Death in the Mind of Someone Living Damien Hirst"
+    },
+    {
+      "titulo": "Drawings for Projection",
+      "autor": "Películas de dibujo William Kentridge",
+      "q": "Drawings for Projection Películas de dibujo William Kentridge"
+    }
+  ],
+  "10-posguerra-y-contemporaneo/10-nuevos-medios-y-arte-digital": [
+    {
+      "titulo": "My Boyfriend Came Back from the War",
+      "autor": "Olia Lialina",
+      "q": "My Boyfriend Came Back from the War Olia Lialina"
+    },
+    {
+      "titulo": "%Location",
+      "autor": "jodi.org / Jodi",
+      "q": "%Location jodi.org / Jodi"
+    },
+    {
+      "titulo": "Super Mario Clouds",
+      "autor": "Cory Arcangel",
+      "q": "Super Mario Clouds Cory Arcangel"
+    },
+    {
+      "titulo": "Edmond de Belamy",
+      "autor": "colectivo Obvious",
+      "q": "Edmond de Belamy colectivo Obvious"
+    },
+    {
+      "titulo": "Everydays: The First 5000 Days",
+      "autor": "Beeple",
+      "q": "Everydays: The First 5000 Days Beeple"
+    },
+    {
+      "titulo": "Unsupervised",
+      "autor": "Refik Anadol",
+      "q": "Unsupervised Refik Anadol"
+    }
+  ],
+  "11-tradiciones-globales/01-arte-africano-subsahariano": [
+    {
+      "titulo": "Cabeza Nok (cultura Nok, c. 500 a. C. - 200 d. C.)",
+      "autor": "",
+      "q": "Cabeza Nok"
+    },
+    {
+      "titulo": "Cabeza de Ifé (pueblo yoruba, c. siglos XII-XV)",
+      "autor": "",
+      "q": "Cabeza de Ifé"
+    },
+    {
+      "titulo": "Placas de latón del palacio de Benín (pueblo edo, c. siglos XVI-XVII)",
+      "autor": "",
+      "q": "Placas de latón del palacio de Benín"
+    },
+    {
+      "titulo": "Cabeza conmemorativa de un Oba con marfil (pueblo edo, Benín, c. siglos XVIII-XIX)",
+      "autor": "",
+      "q": "Cabeza conmemorativa de un Oba con marfil"
+    },
+    {
+      "titulo": "kpeliyee",
+      "autor": "Máscara",
+      "q": "kpeliyee Máscara"
+    },
+    {
+      "titulo": "nkisi nkondi",
+      "autor": "Figura de poder",
+      "q": "nkisi nkondi Figura de poder"
+    }
+  ],
+  "11-tradiciones-globales/02-arte-mesoamericano": [
+    {
+      "titulo": "Cabeza colosal olmeca (cultura olmeca, c. 1200-900 a. C.)",
+      "autor": "",
+      "q": "Cabeza colosal olmeca"
+    },
+    {
+      "titulo": "Pirámide del Sol y la Calzada de los Muertos, Teotihuacán (cultura teotihuacana, c. 100-250 d. C.)",
+      "autor": "",
+      "q": "Pirámide del Sol y la Calzada de los Muertos, Teotihuacán"
+    },
+    {
+      "titulo": "Tumba y sarcófago de Pakal, Templo de las Inscripciones, Palenque (cultura maya, c. 683 d. C.)",
+      "autor": "",
+      "q": "Tumba y sarcófago de Pakal, Templo de las Inscripciones, Palenque"
+    },
+    {
+      "titulo": "Murales de Bonampak (cultura maya, c. 790 d. C.)",
+      "autor": "",
+      "q": "Murales de Bonampak"
+    },
+    {
+      "titulo": "Coatlicue (cultura mexica/azteca, c. 1500)",
+      "autor": "",
+      "q": "Coatlicue"
+    },
+    {
+      "titulo": "Piedra del Sol, mal llamada \"Calendario azteca\" (cultura mexica, c. 1500-1520)",
+      "autor": "",
+      "q": "Piedra del Sol, mal llamada Calendario azteca"
+    }
+  ],
+  "11-tradiciones-globales/03-arte-andino": [
+    {
+      "titulo": "El Lanzón de Chavín de Huántar (cultura Chavín, c. 900 - 500 a. C.)",
+      "autor": "",
+      "q": "El Lanzón de Chavín de Huántar"
+    },
+    {
+      "titulo": "Manto bordado de Paracas (cultura Paracas, c. 300 - 100 a. C.)",
+      "autor": "",
+      "q": "Manto bordado de Paracas"
+    },
+    {
+      "titulo": "Líneas de Nazca (cultura Nazca, c. 100 a. C. - 600 d. C.)",
+      "autor": "",
+      "q": "Líneas de Nazca"
+    },
+    {
+      "titulo": "Botella retrato moche (cultura Moche, c. 100 - 700 d. C.)",
+      "autor": "",
+      "q": "Botella retrato moche"
+    },
+    {
+      "titulo": "La Puerta del Sol de Tiwanaku (cultura Tiwanaku, c. 500 - 900 d. C.)",
+      "autor": "",
+      "q": "La Puerta del Sol de Tiwanaku"
+    },
+    {
+      "titulo": "Machu Picchu y la cantería inca (cultura Inca, c. 1450 - 1540)",
+      "autor": "",
+      "q": "Machu Picchu y la cantería inca"
+    }
+  ],
+  "11-tradiciones-globales/04-arte-indigena-norteamericano": [
+    {
+      "titulo": "Monks Mound, Cahokia (cultura misisipiense, c. 900 - 1100 d. C.)",
+      "autor": "",
+      "q": "Monks Mound, Cahokia"
+    },
+    {
+      "titulo": "Great Serpent Mound (cultura adena o Fort Ancient, datación discutida, c. 300 a. C. o c. 1100 d. C.)",
+      "autor": "",
+      "q": "Great Serpent Mound"
+    },
+    {
+      "titulo": "Cántaro negro sobre negro de María y Julián Martínez (San Ildefonso, c. 1925-1940)",
+      "autor": "",
+      "q": "Cántaro negro sobre negro de María y Julián Martínez"
+    },
+    {
+      "titulo": "El espíritu de Haida Gwaii",
+      "autor": "Tótem y obra monumental haida , de Bill Reid",
+      "q": "El espíritu de Haida Gwaii Tótem y obra monumental haida , de Bill Reid"
+    },
+    {
+      "titulo": "iikááh",
+      "autor": "Pintura de arena navajo",
+      "q": "iikááh Pintura de arena navajo"
+    },
+    {
+      "titulo": "ledger art",
+      "autor": "Dibujo de de Howling Wolf",
+      "q": "ledger art Dibujo de de Howling Wolf"
+    }
+  ],
+  "11-tradiciones-globales/05-arte-de-oceania": [
+    {
+      "titulo": "Los moái de Rapa Nui (Isla de Pascua)",
+      "autor": "",
+      "q": "Los moái de Rapa Nui"
+    },
+    {
+      "titulo": "Tallas malanggan (Nueva Irlanda, Melanesia)",
+      "autor": "",
+      "q": "Tallas malanggan"
+    },
+    {
+      "titulo": "wharenui",
+      "autor": "Casa de reunión maorí Aotearoa/Nueva Zelanda",
+      "q": "wharenui Casa de reunión maorí Aotearoa/Nueva Zelanda"
+    },
+    {
+      "titulo": "Warlugulong",
+      "autor": "Pintura del Desierto Occidental: , de Clifford Possum Tjapaltjarri",
+      "q": "Warlugulong Pintura del Desierto Occidental: , de Clifford Possum Tjapaltjarri"
+    },
+    {
+      "titulo": "Pintura rupestre de \"rayos X\" - Arnhem Land (Australia)",
+      "autor": "",
+      "q": "Pintura rupestre de rayos X - Arnhem Land"
+    },
+    {
+      "titulo": "‘ahu‘ula",
+      "autor": "Capa de plumas hawaiana",
+      "q": "‘ahu‘ula Capa de plumas hawaiana"
+    }
+  ],
+  "11-tradiciones-globales/06-arte-colonial-latinoamericano": [
+    {
+      "titulo": "La Virgen del Cerro de Potosí (anónimo, escuela del Alto Perú, c. 1720)",
+      "autor": "",
+      "q": "La Virgen del Cerro de Potosí"
+    },
+    {
+      "titulo": "Ángel arcabucero (Escuela del Cuzco, finales del siglo XVII)",
+      "autor": "",
+      "q": "Ángel arcabucero"
+    },
+    {
+      "titulo": "La misa de san Gregorio, mosaico de plumas (taller de Diego de Alvarado Huanitzin y artistas de San José de los Naturales, 1539)",
+      "autor": "",
+      "q": "La misa de san Gregorio, mosaico de plumas"
+    },
+    {
+      "titulo": "Iglesia de la Compañía de Jesús, Quito (jesuitas y talleres quiteños, fachada y dorado c. 1605-1765)",
+      "autor": "",
+      "q": "Iglesia de la Compañía de Jesús, Quito"
+    },
+    {
+      "titulo": "De español e india, mestizo (Miguel Cabrera, 1763), de una serie de pinturas de castas",
+      "autor": "",
+      "q": "De español e india, mestizo , de una serie de pinturas de castas"
+    },
+    {
+      "titulo": "Los Profetas de Congonhas (Aleijadinho, c. 1800-1805)",
+      "autor": "",
+      "q": "Los Profetas de Congonhas"
+    }
+  ],
+  "11-tradiciones-globales/07-arte-latinoamericano-moderno": [
+    {
+      "titulo": "Abaporu",
+      "autor": "Tarsila do Amaral",
+      "q": "Abaporu Tarsila do Amaral"
+    },
+    {
+      "titulo": "América invertida",
+      "autor": "Joaquín Torres-García",
+      "q": "América invertida Joaquín Torres-García"
+    },
+    {
+      "titulo": "La jungla",
+      "autor": "Wifredo Lam",
+      "q": "La jungla Wifredo Lam"
+    },
+    {
+      "titulo": "Bicho",
+      "autor": "Lygia Clark",
+      "q": "Bicho Lygia Clark"
+    },
+    {
+      "titulo": "Fisicromía",
+      "autor": "Cromosaturación Carlos Cruz-Diez",
+      "q": "Fisicromía Cromosaturación Carlos Cruz-Diez"
+    },
+    {
+      "titulo": "Shibboleth",
+      "autor": "Doris Salcedo",
+      "q": "Shibboleth Doris Salcedo"
+    }
+  ],
+  "12-temas-transversales/01-mujeres-en-la-historia-del-arte": [
+    {
+      "titulo": "La partida de ajedrez",
+      "autor": "Sofonisba Anguissola",
+      "q": "La partida de ajedrez Sofonisba Anguissola"
+    },
+    {
+      "titulo": "Judit decapitando a Holofernes",
+      "autor": "Artemisia Gentileschi",
+      "q": "Judit decapitando a Holofernes Artemisia Gentileschi"
+    },
+    {
+      "titulo": "Autorretrato",
+      "autor": "Judith Leyster",
+      "q": "Autorretrato Judith Leyster"
+    },
+    {
+      "titulo": "Autorretrato con su hija Julie",
+      "autor": "Élisabeth Vigée Le Brun",
+      "q": "Autorretrato con su hija Julie Élisabeth Vigée Le Brun"
+    },
+    {
+      "titulo": "El mercado de caballos",
+      "autor": "Rosa Bonheur",
+      "q": "El mercado de caballos Rosa Bonheur"
+    },
+    {
+      "titulo": "Las dos Fridas",
+      "autor": "Frida Kahlo",
+      "q": "Las dos Fridas Frida Kahlo"
+    }
+  ],
+  "12-temas-transversales/02-mecenazgo-mercado-y-museos": [
+    {
+      "titulo": "La Trinidad",
+      "autor": "de Masaccio",
+      "q": "La Trinidad de Masaccio"
+    },
+    {
+      "titulo": "La ronda de noche",
+      "autor": "de Rembrandt",
+      "q": "La ronda de noche de Rembrandt"
+    },
+    {
+      "titulo": "Las meninas",
+      "autor": "de Diego Velázquez",
+      "q": "Las meninas de Diego Velázquez"
+    },
+    {
+      "titulo": "La Gioconda",
+      "autor": "de Leonardo da Vinci y la lógica del museo",
+      "q": "La Gioconda de Leonardo da Vinci y la lógica del museo"
+    },
+    {
+      "titulo": "Salvator Mundi",
+      "autor": "atribuido a Leonardo da Vinci",
+      "q": "Salvator Mundi atribuido a Leonardo da Vinci"
+    },
+    {
+      "titulo": "Comedian",
+      "autor": "de Maurizio Cattelan",
+      "q": "Comedian de Maurizio Cattelan"
+    }
+  ],
+  "12-temas-transversales/03-arte-poder-y-religion": [
+    {
+      "titulo": "Paleta de Narmer",
+      "autor": "",
+      "q": "Paleta de Narmer"
+    },
+    {
+      "titulo": "Augusto de Prima Porta",
+      "autor": "",
+      "q": "Augusto de Prima Porta"
+    },
+    {
+      "titulo": "Justiniano y su corte",
+      "autor": "Mosaicos de , San Vitale de Rávena",
+      "q": "Justiniano y su corte Mosaicos de , San Vitale de Rávena"
+    },
+    {
+      "titulo": "Éxtasis de Santa Teresa",
+      "autor": "de Gian Lorenzo Bernini",
+      "q": "Éxtasis de Santa Teresa de Gian Lorenzo Bernini"
+    },
+    {
+      "titulo": "El obrero y la koljosiana",
+      "autor": "de Vera Mújina",
+      "q": "El obrero y la koljosiana de Vera Mújina"
+    },
+    {
+      "titulo": "Adolf Hitler como portaestandarte",
+      "autor": "la maquinaria visual nazi",
+      "q": "Adolf Hitler como portaestandarte la maquinaria visual nazi"
+    }
+  ],
+  "12-temas-transversales/04-historia-del-retrato": [
+    {
+      "titulo": "Retrato de El Fayum",
+      "autor": "Egipto romano",
+      "q": "Retrato de El Fayum Egipto romano"
+    },
+    {
+      "titulo": "Retrato de Enrique VIII",
+      "autor": "Hans Holbein el Joven",
+      "q": "Retrato de Enrique VIII Hans Holbein el Joven"
+    },
+    {
+      "titulo": "Autorretrato con abrigo de pieles",
+      "autor": "Alberto Durero",
+      "q": "Autorretrato con abrigo de pieles Alberto Durero"
+    },
+    {
+      "titulo": "Las meninas",
+      "autor": "Diego Velázquez",
+      "q": "Las meninas Diego Velázquez"
+    },
+    {
+      "titulo": "Autorretrato",
+      "autor": "Vincent van Gogh",
+      "q": "Autorretrato Vincent van Gogh"
+    },
+    {
+      "titulo": "Untitled Film Still #21",
+      "autor": "Cindy Sherman",
+      "q": "Untitled Film Still #21 Cindy Sherman"
+    }
+  ],
+  "12-temas-transversales/05-paisaje-y-generos-pictoricos": [
+    {
+      "titulo": "San Jerónimo en el desierto",
+      "autor": "Joachim Patinir, , c. 1515 1519",
+      "q": "San Jerónimo en el desierto Joachim Patinir, , c. 1515 1519"
+    },
+    {
+      "titulo": "Puerto de mar con el embarco de la reina de Saba",
+      "autor": "Claudio de Lorena, , 1648",
+      "q": "Puerto de mar con el embarco de la reina de Saba Claudio de Lorena, , 1648"
+    },
+    {
+      "titulo": "Bodegón con copa dorada",
+      "autor": "Willem Claesz. Heda, , 1631",
+      "q": "Bodegón con copa dorada Willem Claesz. Heda, , 1631"
+    },
+    {
+      "titulo": "La lechera",
+      "autor": "Johannes Vermeer, , c. 1658 1660",
+      "q": "La lechera Johannes Vermeer, , c. 1658 1660"
+    },
+    {
+      "titulo": "El caminante sobre el mar de nubes",
+      "autor": "Caspar David Friedrich, , c. 1817",
+      "q": "El caminante sobre el mar de nubes Caspar David Friedrich, , c. 1817"
+    },
+    {
+      "titulo": "La montaña Sainte-Victoire",
+      "autor": "Paul Cézanne, , c. 1902 1906",
+      "q": "La montaña Sainte-Victoire Paul Cézanne, , c. 1902 1906"
+    }
+  ],
+  "12-temas-transversales/06-color-pigmentos-y-materiales": [
+    {
+      "titulo": "Bisonte del techo de Altamira (h. 36.000-14.000 a. C.)",
+      "autor": "",
+      "q": "Bisonte del techo de Altamira"
+    },
+    {
+      "titulo": "El matrimonio Arnolfini",
+      "autor": "Jan van Eyck",
+      "q": "El matrimonio Arnolfini Jan van Eyck"
+    },
+    {
+      "titulo": "Baco y Ariadna",
+      "autor": "Tiziano",
+      "q": "Baco y Ariadna Tiziano"
+    },
+    {
+      "titulo": "La gran ola de Kanagawa",
+      "autor": "Katsushika Hokusai",
+      "q": "La gran ola de Kanagawa Katsushika Hokusai"
+    },
+    {
+      "titulo": "Impresión, sol naciente",
+      "autor": "Claude Monet",
+      "q": "Impresión, sol naciente Claude Monet"
+    },
+    {
+      "titulo": "Tarde de domingo en la isla de la Grande Jatte",
+      "autor": "Georges Seurat",
+      "q": "Tarde de domingo en la isla de la Grande Jatte Georges Seurat"
+    }
+  ],
+  "12-temas-transversales/07-conservacion-y-autenticidad": [
+    {
+      "titulo": "La última cena",
+      "autor": "de Leonardo da Vinci",
+      "q": "La última cena de Leonardo da Vinci"
+    },
+    {
+      "titulo": "Capilla Sixtina",
+      "autor": "Los frescos de la , de Miguel Ángel",
+      "q": "Capilla Sixtina Los frescos de la , de Miguel Ángel"
+    },
+    {
+      "titulo": "Mujer con jarra de agua",
+      "autor": "y el problema Vermeer / Van Meegeren",
+      "q": "Mujer con jarra de agua y el problema Vermeer / Van Meegeren"
+    },
+    {
+      "titulo": "Laocoonte",
+      "autor": "El y el problema del brazo restaurado",
+      "q": "Laocoonte El y el problema del brazo restaurado"
+    },
+    {
+      "titulo": "Buda",
+      "autor": "El de Bāmiyān y la conservación de lo perdido",
+      "q": "Buda El de Bāmiyān y la conservación de lo perdido"
+    }
+  ],
+  "12-temas-transversales/08-patrimonio-restitucion-y-descolonizacion": [
+    {
+      "titulo": "Los mármoles del Partenón",
+      "autor": "",
+      "q": "Los mármoles del Partenón"
+    },
+    {
+      "titulo": "Los bronces de Benín",
+      "autor": "",
+      "q": "Los bronces de Benín"
+    },
+    {
+      "titulo": "Busto de Nefertiti",
+      "autor": "",
+      "q": "Busto de Nefertiti"
+    },
+    {
+      "titulo": "Los Budas de Bamiyán (memoria de una destrucción)",
+      "autor": "",
+      "q": "Los Budas de Bamiyán"
+    },
+    {
+      "titulo": "toi moko",
+      "autor": "Las cabezas tatuadas maoríes",
+      "q": "toi moko Las cabezas tatuadas maoríes"
+    }
+  ]
+}
