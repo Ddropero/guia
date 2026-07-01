@@ -151,7 +151,7 @@ Aunque cada impresionista tiene su voz, hay un repertorio común de procedimient
 - **Pincelada suelta (*touche*)**: toque de pintura visible, rápido y sin difuminar; la forma se construye con manchas yuxtapuestas que el ojo recompone a distancia.
 - **Sombras coloreadas**: práctica de pintar las sombras con color (azules, violetas) en lugar de negro o gris, para aumentar la vibración luminosa, basada en la observación y en la teoría del color.
 - **Vida moderna**: conjunto de temas contemporáneos —ciudad, ocio, cafés, teatros, ferrocarril, baños, paseos— que el Impresionismo eligió como asunto principal, desplazando al mito y la historia.
-- **Rückenfigur / encuadre fotográfico**: aquí, el recurso impresionista (sobre todo en Degas) de componer como una instantánea: figuras cortadas por el borde, vistas en picado, descentradas, influido por la fotografía y la estampa japonesa.
+- **Encuadre fotográfico / corte japonista**: el recurso impresionista (sobre todo en Degas) de componer como una instantánea: figuras cortadas por el borde, vistas en picado, descentradas, influido por la fotografía y la estampa japonesa. (No confundir con el *Rückenfigur* del Romanticismo —la figura de espaldas de Friedrich, ver Módulo 8, *Romanticismo*—, que es un recurso distinto.)
 - **Ukiyo-e**: estampa japonesa ("imágenes del mundo flotante") cuyos encuadres planos y descentrados influyeron en la composición impresionista; se estudia en detalle en la lección de Japonismo.
 
 ## Actividades y preguntas para debatir

@@ -185,8 +185,12 @@ export function getRecursos(): RecursoRef[] {
     }
   }
   if (existe(REFERENCIAS_DIR)) {
+    // Informes editoriales internos (QA/fact-check): quedan en el repo pero no
+    // se listan como material de referencia del estudiante.
+    const EXCLUIR = new Set(["informe-de-calidad", "verificacion-de-hechos"]);
     for (const f of fs.readdirSync(REFERENCIAS_DIR).filter((f) => f.endsWith(".md")).sort()) {
       const slug = f.replace(/\.md$/, "");
+      if (EXCLUIR.has(slug)) continue;
       const titulo = tituloDe(leer(path.join(REFERENCIAS_DIR, f))) ?? prettify(slug);
       recursos.push({ slug, titulo, grupo: "Referencias" });
     }

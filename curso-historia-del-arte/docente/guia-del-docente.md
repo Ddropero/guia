@@ -60,7 +60,7 @@ El Módulo 12 (temas transversales) puede impartirse como bloque final o, mejor,
 
 - **Análisis de obra en clase.** Proyecte una sola imagen y guíe la lectura por fases: observación libre, descripción formal, hipótesis de significado, contexto. Deje silencios; la mirada necesita tiempo.
 - **Debate.** Plantee tensiones reales: ¿qué hace «obra maestra» a una obra?, ¿debe restituirse el patrimonio?, ¿es arte la inteligencia artificial? El profesorado modera, no dictamina.
-- **Aprendizaje basado en proyectos (ABP).** Proyectos posibles: comisariar una exposición virtual, escribir la cartela de una obra, investigar a una artista olvidada, comparar dos culturas. El proyecto final del Módulo 16 puede ser una exposición comentada.
+- **Aprendizaje basado en proyectos (ABP).** Proyectos posibles: comisariar una exposición virtual, escribir la cartela de una obra, investigar a una artista olvidada, comparar dos culturas. El proyecto final del curso puede ser una exposición comentada.
 - **Visitas a museos físicos y virtuales.** Aproveche colecciones en línea (Google Arts & Culture, recorridos del Prado, el Louvre, el Met). Encargue una ficha de observación in situ.
 - **Comparaciones.** Es la estrategia más potente para una mirada global: enfrente un kuros griego con una escultura egipcia, una Virgen bizantina con una gótica, una máscara africana con un retrato cubista.
 - **Línea de tiempo viva.** Construya con el grupo un friso cronológico y geográfico que crezca durante el curso y haga visibles las simultaneidades entre culturas.

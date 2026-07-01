@@ -4,7 +4,7 @@
 
 ## 1. Por qué un marco pedagógico
 
-Una historia del arte que solo acumule nombres, fechas y estilos produce reconocimiento, pero no comprensión. Este curso parte de una convicción distinta: aprender arte es **aprender a mirar, a pensar y a argumentar** ante objetos que otras personas crearon en contextos muy diferentes al nuestro. El temario —doce módulos que van de la cueva paleolítica a la inteligencia artificial, y de Florencia a Benín, los Andes u Oceanía— está al servicio de ese fin. Lo que sigue explica cómo está diseñado el aprendizaje para que eso ocurra.
+Una historia del arte que solo acumule nombres, fechas y estilos produce reconocimiento, pero no comprensión. Este curso parte de una convicción distinta: aprender arte es **aprender a mirar, a pensar y a argumentar** ante objetos que otras personas crearon en contextos muy diferentes al nuestro. El temario —trece módulos (del 0 al 12) que van de la cueva paleolítica a la inteligencia artificial, y de Florencia a Benín, los Andes u Oceanía— está al servicio de ese fin. Lo que sigue explica cómo está diseñado el aprendizaje para que eso ocurra.
 
 ## 2. Fundamentos pedagógicos
 
