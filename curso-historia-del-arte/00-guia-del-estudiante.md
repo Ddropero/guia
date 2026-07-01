@@ -24,7 +24,7 @@ Al terminar serás capaz de:
 
 ## Cómo está organizado
 
-El curso reúne **13 módulos** y **80 lecciones**, más un módulo de referencias y recursos. La columna vertebral es cronológica y geográfica, pero el recorrido es flexible:
+El curso reúne **13 módulos** y **86 lecciones**, más un módulo de referencias y recursos. La columna vertebral es cronológica y geográfica, pero el recorrido es flexible:
 
 - **Módulo 0 · Fundamentos**: las herramientas para mirar y estudiar. Empieza siempre por aquí.
 - **Módulos 1–2**: Prehistoria, primeras civilizaciones y Antigüedad clásica (Grecia y Roma).

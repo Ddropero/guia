@@ -24,7 +24,7 @@ El objetivo no es que sepas más datos, sino que adquieras una **mirada**: la ca
 Este curso es un cuerpo de materiales completo y articulado:
 
 - **13 módulos** (del Módulo 0 de fundamentos al Módulo 12 de temas transversales).
-- **80 lecciones** detalladas, cada una con objetivos, desarrollo, obras comentadas y actividades.
+- **86 lecciones** detalladas, cada una con objetivos, desarrollo, obras comentadas y actividades.
 - **Un glosario** de términos técnicos e históricos del arte.
 - **Una línea de tiempo** que sincroniza periodos, regiones y obras clave.
 - **Índices** de artistas, de obras y un mapa de movimientos.
