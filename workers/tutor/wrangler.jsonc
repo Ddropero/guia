@@ -2,6 +2,7 @@
   "$schema": "../../node_modules/wrangler/config-schema.json",
   "name": "curso-arte-tutor",
   "main": "src/index.ts",
+  "account_id": "12f212a7c813ec3aef9e1d873e19f43e",
   "compatibility_date": "2026-05-28",
   "observability": { "enabled": true }
 }
