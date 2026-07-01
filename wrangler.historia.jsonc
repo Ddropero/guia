@@ -1,0 +1,18 @@
+{
+  // Despliegue del Curso de Historia del Arte en su dominio propio.
+  //   npm run deploy:historia   (desde la raíz del repo)
+  // Requiere CLOUDFLARE_API_TOKEN en el entorno y que hilvan.org sea una zona
+  // de esta cuenta de Cloudflare. Ver workers/historia/README.md.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "historia-hilvan",
+  "main": "workers/historia/src/index.ts",
+  "compatibility_date": "2026-05-28",
+  "account_id": "12f212a7c813ec3aef9e1d873e19f43e",
+  "assets": {
+    "directory": "./out",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "routes": [{ "pattern": "historia.hilvan.org", "custom_domain": true }],
+  "observability": { "enabled": true }
+}
