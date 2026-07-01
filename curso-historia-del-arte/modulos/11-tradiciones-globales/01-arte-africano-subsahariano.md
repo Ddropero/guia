@@ -1,6 +1,6 @@
 # Arte africano subsahariano
 
-**Módulo 11 · Tradiciones globales (más allá del canon) · Periodo: c. 500 a. C. – actualidad (con grandes hitos entre los siglos XII y XIX) · Regiones: África al sur del Sáhara, con especial atención a África Occidental (Nigeria, Malí, Ghana, Benín), Central (Congo, Gabón, Camerún) y partes de África austral y oriental.**
+**Módulo 11 · Artes de África, las Américas y Oceanía · Periodo: c. 500 a. C. – actualidad (con grandes hitos entre los siglos XII y XIX) · Regiones: África al sur del Sáhara, con especial atención a África Occidental (Nigeria, Malí, Ghana, Benín), Central (Congo, Gabón, Camerún) y partes de África austral y oriental.**
 
 ---
 
@@ -100,7 +100,7 @@ Aquí topamos con un primer obstáculo crítico: en la mayoría de las tradicion
 
 ## Conexiones e influencias
 
-**Qué la precede y con qué dialoga dentro del módulo 11.** El arte subsahariano es la primera parada de un módulo dedicado a las tradiciones "más allá del canon". Comparte con el **arte mesoamericano y andino**, el **indígena de Norteamérica** y el de **Oceanía** una situación común: fueron arrancados de su contexto por el colonialismo y reclasificados como "primitivos" o "etnográficos" antes de ser reconocidos como arte. Comparte también soluciones formales —la abstracción conceptual, la proporción jerárquica, el objeto ritual activo— que reaparecen, con otras gramáticas, en esas otras tradiciones.
+**Qué la precede y con qué dialoga dentro del módulo 11.** El arte subsahariano es la primera parada de un módulo dedicado a las artes de África, las Américas y Oceanía. Comparte con el **arte mesoamericano y andino**, el **indígena de Norteamérica** y el de **Oceanía** una situación común: fueron arrancados de su contexto por el colonialismo y reclasificados como "primitivos" o "etnográficos" antes de ser reconocidos como arte. Comparte también soluciones formales —la abstracción conceptual, la proporción jerárquica, el objeto ritual activo— que reaparecen, con otras gramáticas, en esas otras tradiciones.
 
 **Diálogos con otros módulos.** La proporción jerárquica y la frontalidad enlazan con **Egipto** (módulo 1) y con el **arte medieval** (módulo 5), donde el tamaño y la rigidez también expresan jerarquía y trascendencia, no torpeza. La excelencia de la fundición a la cera perdida de Ifé y Benín puede compararse con la **broncística griega o renacentista** (módulos 2 y 6): técnicas equivalentes, valoradas de forma desigual por el relato eurocéntrico. El islam (módulo 4) marca el Sahel y la costa swahili.
 

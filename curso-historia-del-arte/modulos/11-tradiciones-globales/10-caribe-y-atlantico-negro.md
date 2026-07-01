@@ -1,6 +1,6 @@
 # El Caribe y el Atlántico negro
 
-**Módulo 11 · Tradiciones globales (más allá del canon) · Periodo: c. 1920 – actualidad (con raíces en los siglos XVI–XIX de la trata atlántica) · Regiones: el Caribe insular (Cuba, Haití, Martinica, República Dominicana) y el nordeste de Brasil (Bahía), con capítulos decisivos en las diásporas de Nueva York, París y Londres.**
+**Módulo 11 · Artes de África, las Américas y Oceanía · Periodo: c. 1920 – actualidad (con raíces en los siglos XVI–XIX de la trata atlántica) · Regiones: el Caribe insular (Cuba, Haití, Martinica, República Dominicana) y el nordeste de Brasil (Bahía), con capítulos decisivos en las diásporas de Nueva York, París y Londres.**
 
 ---
 

@@ -130,7 +130,7 @@ Quizá la imagen más perfecta y filosófica de todo el arte indio. **Shiva**, e
 
 Cuando reconozcas un *mudra* en un Buda japonés o el plano de un templo en Angkor, recuerda que la "gramática" se inventó aquí.
 
-**Diálogos posteriores.** El arte indio antiguo y medieval continúa luego en tradiciones que verás en el **Módulo 11** (tradiciones globales): el arte **indoislámico** (sultanatos, Imperio mogol, el Taj Mahal) y la pintura en miniatura. Y su "descubrimiento" por Occidente en el siglo XX influyó en artistas y pensadores que buscaban alternativas al canon europeo.
+**Diálogos posteriores.** El arte indio antiguo y medieval continúa luego en el arte **indoislámico** que verás en el **Módulo 4**: los sultanatos, el Imperio mogol, el Taj Mahal y la pintura en miniatura ([los imperios de la pólvora](../04-arte-islamico/03-imperios-islamicos-otomano-safavi-mogol.md)). Y su "descubrimiento" por Occidente en el siglo XX influyó en artistas y pensadores que buscaban alternativas al canon europeo.
 
 ## Debates e interpretaciones
 

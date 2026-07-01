@@ -1,6 +1,6 @@
 # África cristiana e islámica: Aksum, Etiopía y el Sahel
 
-**Módulo 11 · Tradiciones globales (más allá del canon) · Periodo: c. siglo I – actualidad (con grandes hitos entre los siglos IV y XVI) · Regiones: el Cuerno de África (Etiopía y Eritrea), el Sahel de África Occidental (Malí: Djenné y Tombuctú) y la costa swahili del océano Índico (Kenia y Tanzania: Lamu, Mombasa, Kilwa).**
+**Módulo 11 · Artes de África, las Américas y Oceanía · Periodo: c. siglo I – actualidad (con grandes hitos entre los siglos IV y XVI) · Regiones: el Cuerno de África (Etiopía y Eritrea), el Sahel de África Occidental (Malí: Djenné y Tombuctú) y la costa swahili del océano Índico (Kenia y Tanzania: Lamu, Mombasa, Kilwa).**
 
 ---
 

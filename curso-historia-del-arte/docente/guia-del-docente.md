@@ -1,6 +1,6 @@
 # Guía del docente · Historia del arte
 
-Esta guía acompaña al curso de Historia del arte, un recorrido que va desde los fundamentos del análisis visual hasta el arte contemporáneo global, pasando por las grandes tradiciones de Asia, el mundo islámico, la Edad Media, el Renacimiento, el Barroco, el siglo XIX, las vanguardias y las tradiciones más allá del canon occidental. Está pensada para orientar a quien enseña: cómo organizar el tiempo, qué estrategias usar en el aula y cómo evaluar de forma justa y formativa.
+Esta guía acompaña al curso de Historia del arte, un recorrido que va desde los fundamentos del análisis visual hasta el arte contemporáneo global, pasando por las grandes tradiciones de Asia, el mundo islámico, la Edad Media, el Renacimiento, el Barroco, el siglo XIX, las vanguardias y las artes de África, las Américas y Oceanía. Está pensada para orientar a quien enseña: cómo organizar el tiempo, qué estrategias usar en el aula y cómo evaluar de forma justa y formativa.
 
 ## Cómo enseñar este curso
 
@@ -39,13 +39,13 @@ Una versión de semestre exige seleccionar. Propuesta equilibrada:
 | 9 | Módulo 8 · El siglo XIX |
 | 10–11 | Módulo 9 · Vanguardias (dos semanas) |
 | 12–13 | Módulo 10 · De la posguerra a hoy (dos semanas) |
-| 14 | Módulo 11 · Tradiciones globales |
+| 14 | Módulo 11 · Artes de África, las Américas y Oceanía |
 | 15 | Módulo 12 · Temas transversales (selección) |
 | 16 | Síntesis, presentaciones de proyectos y evaluación final |
 
 ### Año completo (~32 semanas)
 
-Con dos semestres puede dedicarse aproximadamente una semana a cada módulo «pequeño» y dos a tres semanas a los grandes (6, 9 y 10). El primer semestre cubriría los Módulos 0–6 (de los fundamentos al Renacimiento) y el segundo los Módulos 7–12 (del Barroco a los temas transversales), integrando el Módulo 11 (tradiciones globales) de forma entrelazada con los demás en lugar de relegarlo al final.
+Con dos semestres puede dedicarse aproximadamente una semana a cada módulo «pequeño» y dos a tres semanas a los grandes (6, 9 y 10). El primer semestre cubriría los Módulos 0–6 (de los fundamentos al Renacimiento) y el segundo los Módulos 7–12 (del Barroco a los temas transversales), integrando el Módulo 11 (artes de África, las Américas y Oceanía) de forma entrelazada con los demás en lugar de relegarlo al final.
 
 ### Sugerencias de duración por módulo
 
@@ -54,7 +54,7 @@ Con dos semestres puede dedicarse aproximadamente una semana a cada módulo «pe
 - **Módulos medios** (1, 2, 3, 5, 7, 8, 12): 2–4 sesiones.
 - **Módulos extensos** (6 Renacimiento, 9 Vanguardias, 10 Posguerra-hoy): 4–6 sesiones cada uno.
 
-El Módulo 12 (temas transversales) puede impartirse como bloque final o, mejor, **distribuirse** a lo largo del curso: el retrato al llegar a Roma o al Renacimiento, el color con el Renacimiento veneciano y el Impresionismo, la restitución y descolonización al tratar las tradiciones globales.
+El Módulo 12 (temas transversales) puede impartirse como bloque final o, mejor, **distribuirse** a lo largo del curso: el retrato al llegar a Roma o al Renacimiento, el color con el Renacimiento veneciano y el Impresionismo, la restitución y descolonización al tratar el Módulo 11.
 
 ## Estrategias didácticas
 

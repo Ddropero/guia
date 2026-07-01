@@ -1,4 +1,4 @@
-# Módulo 11 · Tradiciones globales (más allá del canon)
+# Módulo 11 · Artes de África, las Américas y Oceanía
 
 **Curso de Historia del Arte · Marco temporal: de c. 1500 a. C. hasta la actualidad · Regiones: África (subsahariana, cristiana e islámica, moderna y contemporánea), Mesoamérica, los Andes, Norteamérica indígena, Oceanía, América Latina (colonial, moderna y contemporánea) y el Caribe / Atlántico negro**
 

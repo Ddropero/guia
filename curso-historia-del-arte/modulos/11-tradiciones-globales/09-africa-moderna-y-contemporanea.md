@@ -1,6 +1,6 @@
 # África moderna y contemporánea: del estudio fotográfico a las bienales
 
-**Módulo 11 · Tradiciones globales (más allá del canon) · Periodo: c. 1900 – actualidad (con el gran arco entre las independencias, c. 1957–1975, y las bienales del presente) · Regiones: África continental —con Malí, Senegal, Nigeria, Ghana y Sudáfrica como focos principales— y sus diásporas en Europa y América.**
+**Módulo 11 · Artes de África, las Américas y Oceanía · Periodo: c. 1900 – actualidad (con el gran arco entre las independencias, c. 1957–1975, y las bienales del presente) · Regiones: África continental —con Malí, Senegal, Nigeria, Ghana y Sudáfrica como focos principales— y sus diásporas en Europa y América.**
 
 ---
 

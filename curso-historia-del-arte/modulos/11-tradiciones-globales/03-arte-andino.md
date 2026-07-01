@@ -1,6 +1,6 @@
 # Arte andino
 
-**Módulo 11 · Tradiciones globales (más allá del canon) · Periodo: c. 1200 a. C. – 1532 d. C. (con prolongaciones coloniales) · Regiones: los Andes centrales y la costa del Pacífico de Sudamérica, sobre todo los actuales Perú y Bolivia, con extensiones a Ecuador, el norte de Chile y el noroeste de Argentina.**
+**Módulo 11 · Artes de África, las Américas y Oceanía · Periodo: c. 1200 a. C. – 1532 d. C. (con prolongaciones coloniales) · Regiones: los Andes centrales y la costa del Pacífico de Sudamérica, sobre todo los actuales Perú y Bolivia, con extensiones a Ecuador, el norte de Chile y el noroeste de Argentina.**
 
 ---
 

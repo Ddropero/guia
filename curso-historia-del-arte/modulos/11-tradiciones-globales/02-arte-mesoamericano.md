@@ -1,6 +1,6 @@
 # Arte mesoamericano
 
-**Módulo 11 · Tradiciones globales (más allá del canon) · Periodo: c. 1500 a. C. – 1521 d. C. (con epílogo en la Conquista y su trauma) · Regiones: Mesoamérica, es decir, el centro y sur de México y el norte de Centroamérica (Guatemala, Belice, parte de Honduras y El Salvador), con foco en el altiplano central, el Golfo, Oaxaca y las tierras mayas.**
+**Módulo 11 · Artes de África, las Américas y Oceanía · Periodo: c. 1500 a. C. – 1521 d. C. (con epílogo en la Conquista y su trauma) · Regiones: Mesoamérica, es decir, el centro y sur de México y el norte de Centroamérica (Guatemala, Belice, parte de Honduras y El Salvador), con foco en el altiplano central, el Golfo, Oaxaca y las tierras mayas.**
 
 ---
 

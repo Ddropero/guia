@@ -429,7 +429,7 @@
 
 **Clave M10:** 1‑**b** · 2‑**d** · 3‑**a** · 4‑**c** · 5‑**b**
 
-## Módulo 11 · Tradiciones globales (más allá del canon)
+## Módulo 11 · Artes de África, las Américas y Oceanía
 
 1. **[Com]** Las máscaras y figuras de relicario del **arte africano subsahariano** deben entenderse ante todo:
    - a) Como objetos puramente decorativos y sin función.
@@ -449,7 +449,7 @@
    - c) La ausencia de pintura en favor de la sola arquitectura.
    - d) El rechazo total de cualquier referente europeo.
 
-4. **[Com]** Estudiar estas tradiciones "más allá del canon" exige, según el marco del curso:
+4. **[Com]** Estudiar estas tradiciones exige, según el marco del curso:
    - a) Medirlas con la vara del naturalismo renacentista europeo.
    - b) Tratarlas como un simple apéndice de la historia de Occidente.
    - c) Reconocer una pluralidad de criterios de valor y evitar exotizar o infantilizar.
@@ -534,7 +534,7 @@
 15. **[Eva]** "Después del arte conceptual, cualquier cosa puede ser arte." Valora críticamente esta idea con ejemplos del arte de posguerra y contemporáneo.
 16. **[Cre]** Elige una obra contemporánea (1989–hoy) que aborde identidad, género o globalización y construye un argumento sobre qué la hace significativa hoy.
 
-## C.8 · Tradiciones globales y temas transversales
+## C.8 · Artes de África, las Américas y Oceanía, y temas transversales
 
 17. **[Eva]** "El canon occidental dejó fuera a tradiciones enteras y a las mujeres." Examina esta afirmación y propón qué significaría una historia del arte verdaderamente global.
 18. **[Eva]** Toma postura razonada en el debate de la restitución del patrimonio (p. ej. mármoles del Partenón, bronces de Benín). Distingue argumentos jurídicos, históricos y éticos.

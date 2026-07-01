@@ -33,7 +33,7 @@ El curso reúne **13 módulos** y **86 lecciones**, más un módulo de referenci
 - **Módulos 6–7**: Renacimiento, Barroco y siglo XVIII.
 - **Módulo 8**: el siglo XIX.
 - **Módulos 9–10**: vanguardias del siglo XX y arte de posguerra hasta hoy.
-- **Módulo 11 · Tradiciones globales**: África, Mesoamérica, los Andes, Norteamérica indígena, Oceanía y América Latina, más allá del canon europeo.
+- **Módulo 11 · Artes de África, las Américas y Oceanía**: África (subsahariana, cristiana e islámica, moderna), Mesoamérica, los Andes, Norteamérica indígena, Oceanía, América Latina y el Caribe: tradiciones con voz y peso propios.
 - **Módulo 12 · Temas transversales**: mujeres en el arte, mecenazgo y mercado, poder y propaganda, retrato, paisaje, color, conservación y descolonización del museo.
 
 Cada lección es una unidad cerrada que puedes leer en una sesión; los módulos suman una visión de conjunto.
