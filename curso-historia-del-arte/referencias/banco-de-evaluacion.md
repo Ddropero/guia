@@ -22,34 +22,34 @@
 ## A.1 · Reconocimiento y vocabulario (opción múltiple)
 
 1. **[Com]** "Historia del arte" es, ante todo:
-   - a) Una lista cronológica de obras maestras que hay que memorizar.
-   - b) El estudio de los objetos visuales en relación con su tiempo, función y significado.
-   - c) La valoración del precio de mercado de las obras.
-   - d) La biografía de los grandes genios.
+   - a) El estudio de los objetos visuales en relación con su tiempo, función y significado.
+   - b) La lista cronológica de obras maestras que conviene memorizar.
+   - c) La biografía de los grandes genios y su vida privada.
+   - d) La valoración del precio de mercado de las obras.
 
 2. **[Rec]** El término *contrapposto* designa:
-   - a) Un pigmento azul muy costoso.
-   - b) Una postura en que el peso del cuerpo descansa sobre una pierna, creando un eje en equilibrio asimétrico.
-   - c) Un tipo de bóveda romana.
-   - d) Una técnica de grabado.
+   - a) Un tipo de bóveda de arista de origen romano.
+   - b) Una técnica de grabado sobre plancha de cobre.
+   - c) Una postura en que el peso del cuerpo descansa sobre una pierna, creando un eje en equilibrio asimétrico.
+   - d) Un pigmento azul obtenido del lapislázuli.
 
 3. **[Com]** Distinguir **iconografía** de **estilo** implica saber que:
-   - a) La iconografía estudia el *qué* se representa (temas, símbolos) y el estilo, el *cómo* (rasgos formales).
-   - b) Son sinónimos.
-   - c) La iconografía solo se aplica al arte religioso.
-   - d) El estilo solo existe en la pintura.
+   - a) La iconografía se ocupa de los rasgos formales y el estilo, de los temas y símbolos.
+   - b) La iconografía se aplica al arte religioso y el estilo, al arte profano.
+   - c) Son en la práctica dos nombres para lo mismo.
+   - d) La iconografía estudia el *qué* se representa (temas, símbolos) y el estilo, el *cómo* (rasgos formales).
 
 4. **[Rec]** Ordena mentalmente de más antiguo a más reciente: *Partenón, pinturas de Altamira, Guernica, catedral gótica*. La secuencia correcta es:
-   - a) Altamira → Partenón → catedral gótica → Guernica.
-   - b) Partenón → Altamira → Guernica → catedral gótica.
+   - a) Partenón → Altamira → catedral gótica → Guernica.
+   - b) Altamira → Partenón → catedral gótica → Guernica.
    - c) Altamira → catedral gótica → Partenón → Guernica.
    - d) Partenón → catedral gótica → Altamira → Guernica.
 
 5. **[Com]** Un fresco es:
-   - a) Una pintura sobre tabla con clara de huevo.
+   - a) Una pintura sobre tabla aglutinada con clara o yema de huevo.
    - b) Una pintura mural aplicada sobre revoque húmedo, de modo que el color queda integrado en el muro.
-   - c) Una escultura en bajorrelieve.
-   - d) Un mosaico de teselas de vidrio.
+   - c) Un mosaico compuesto con teselas de vidrio y pasta vítrea.
+   - d) Un relieve tallado y policromado sobre estuco seco.
 
 ## A.2 · Mirar y describir (respuesta breve)
 
@@ -70,426 +70,426 @@
 ## Módulo 0 · Fundamentos: cómo mirar y estudiar el arte
 
 1. **[Com]** La diferencia central entre *iconografía* e *iconología* (Panofsky) es que la iconología:
-   - a) Solo cataloga atributos de los santos.
-   - b) Identifica los temas representados.
+   - a) Cataloga los atributos que identifican a cada santo.
+   - b) Registra los temas y las escenas representados en la obra.
    - c) Interpreta el significado profundo de la obra como síntoma de una cultura y una época.
-   - d) Mide las proporciones de las figuras.
+   - d) Mide las proporciones y el canon de las figuras.
 
-2. **[Apl]** En el análisis formal, "línea, color, luz, espacio, composición y escala" son:
-   - a) Los periodos históricos del arte.
+2. **[Com]** En el análisis formal, "línea, color, luz, espacio, composición y escala" son:
+   - a) Los grandes periodos en que se divide la historia del arte.
    - b) Los elementos y principios con que se describe objetivamente una obra antes de interpretarla.
-   - c) Categorías de mecenazgo.
-   - d) Tipos de soporte material.
+   - c) Las categorías de mecenazgo que financian una obra.
+   - d) Los tipos de soporte material sobre los que se pinta.
 
 3. **[Rec]** La técnica del *temple* se caracteriza por usar como aglutinante del pigmento:
-   - a) Aceite de linaza.
-   - b) Yema de huevo (u otro medio proteico).
-   - c) Agua y cal sobre muro húmedo.
-   - d) Resina sintética.
+   - a) La cal fresca aplicada sobre el muro húmedo.
+   - b) El aceite de linaza que seca por oxidación.
+   - c) Una resina natural disuelta en esencia de trementina.
+   - d) La yema de huevo (u otro medio proteico).
 
-4. **[Eva]** Afirmar que "el canon es una construcción histórica e ideológica" significa que:
-   - a) Las obras canónicas carecen de valor.
-   - b) La selección de qué obras y autores se consideran centrales responde a decisiones culturales revisables, no a una ley natural.
-   - c) Todo el arte vale exactamente lo mismo.
-   - d) El canon lo fija un organismo internacional.
+4. **[Com]** Afirmar que "el canon es una construcción histórica e ideológica" significa que:
+   - a) La selección de qué obras y autores se consideran centrales responde a decisiones culturales revisables, no a una ley natural.
+   - b) Las obras canónicas carecen en realidad de todo valor artístico.
+   - c) Todas las obras de todas las épocas valen exactamente lo mismo.
+   - d) El canon lo fija hoy un organismo internacional de expertos.
 
 5. **[Com]** El método del análisis formal puro fue impulsado especialmente por:
-   - a) Erwin Panofsky.
-   - b) Heinrich Wölfflin (pares de categorías estilísticas).
-   - c) Giorgio Vasari.
-   - d) Linda Nochlin.
+   - a) Erwin Panofsky y su método iconológico.
+   - b) Giorgio Vasari y sus *Vidas* de artistas.
+   - c) Heinrich Wölfflin y sus pares de categorías estilísticas.
+   - d) Linda Nochlin y la crítica feminista del canon.
 
-**Clave M0:** 1‑**c** · 2‑**b** · 3‑**b** · 4‑**b** · 5‑**b**
+**Clave M0:** 1‑**c** · 2‑**b** · 3‑**d** · 4‑**a** · 5‑**c**
 
 ## Módulo 1 · Prehistoria y primeras civilizaciones
 
 1. **[Rec]** Las pinturas rupestres de Altamira y Lascaux pertenecen mayoritariamente al:
-   - a) Neolítico.
+   - a) Neolítico de las primeras aldeas agrícolas.
    - b) Paleolítico superior.
-   - c) Edad del Bronce.
-   - d) Periodo cicládico.
+   - c) Periodo cicládico del Egeo.
+   - d) Comienzo de la Edad del Bronce.
 
 2. **[Com]** El paso del Paleolítico al Neolítico en el arte se asocia con:
-   - a) La aparición de la perspectiva lineal.
-   - b) La sedentarización, la cerámica y los primeros monumentos megalíticos.
-   - c) La invención del fresco.
-   - d) El retrato individualizado.
+   - a) La aparición del retrato individualizado del difunto.
+   - b) La invención de la pintura al fresco sobre muro.
+   - c) El primer uso sistemático de la perspectiva lineal.
+   - d) La sedentarización, la cerámica y los primeros monumentos megalíticos.
 
 3. **[Anl]** La *Estela de los buitres* y los relieves asirios de caza comparten una función principal:
-   - a) Decorativa y privada.
-   - b) Propagandística: exaltar el poder del gobernante y conmemorar la victoria.
-   - c) Funeraria doméstica.
-   - d) Didáctica religiosa popular.
+   - a) Ornamental y de uso estrictamente privado.
+   - b) Funeraria, ligada al ajuar de una tumba doméstica.
+   - c) Propagandística: exaltar el poder del gobernante y conmemorar la victoria.
+   - d) Didáctica y de devoción religiosa popular.
 
 4. **[Rec]** La convención de representar la figura humana con cabeza de perfil, ojo y torso de frente y piernas de perfil es característica del arte:
-   - a) Minoico.
+   - a) Minoico de los frescos palaciegos.
    - b) Egipcio.
-   - c) Sumerio arcaico exclusivamente.
-   - d) Micénico.
+   - c) Micénico de las tumbas de fosa.
+   - d) Exclusivamente sumerio arcaico.
 
 5. **[Com]** El arte minoico (Cnosos) se distingue del micénico sobre todo por:
-   - a) Su carácter militarista y amurallado.
-   - b) Su tono más naturalista, dinámico y de temática marina y palaciega.
-   - c) El uso del oro repujado en máscaras.
-   - d) La ausencia total de pintura.
+   - a) Su tono más naturalista, dinámico y de temática marina y palaciega.
+   - b) Su carácter militarista, defensivo y amurallado.
+   - c) El uso del oro repujado en las máscaras funerarias.
+   - d) La ausencia casi total de pintura mural.
 
-**Clave M1:** 1‑**b** · 2‑**b** · 3‑**b** · 4‑**b** · 5‑**b**
+**Clave M1:** 1‑**b** · 2‑**d** · 3‑**c** · 4‑**b** · 5‑**a**
 
 ## Módulo 2 · Antigüedad clásica: Grecia y Roma
 
 1. **[Rec]** El *kouros* arcaico griego muestra todavía la influencia de:
-   - a) El naturalismo helenístico.
-   - b) La frontalidad y rigidez de modelos egipcios.
-   - c) El retrato romano republicano.
-   - d) La escultura barroca.
+   - a) El naturalismo dinámico de la escultura helenística.
+   - b) El verismo del retrato romano republicano.
+   - c) La frontalidad y rigidez de los modelos egipcios.
+   - d) El movimiento y el gesto teatral del barroco.
 
 2. **[Anl]** El "estilo severo" y el *Doríforo* de Policleto introducen frente al arcaísmo:
-   - a) El gesto teatral y el dramatismo extremo.
+   - a) La pérdida de interés por la anatomía del cuerpo.
    - b) El *contrapposto* y un canon de proporciones ideales del cuerpo.
-   - c) La descomposición cubista del volumen.
-   - d) La pérdida de interés por la anatomía.
+   - c) El gesto teatral y el dramatismo emocional extremo.
+   - d) La descomposición del volumen en facetas geométricas.
 
 3. **[Com]** El arte helenístico (p. ej. *Laocoonte*, *Victoria de Samotracia*) se caracteriza por:
-   - a) Serenidad, equilibrio y contención clásica.
-   - b) Dramatismo, movimiento, emoción y virtuosismo técnico.
-   - c) Frontalidad hierática.
-   - d) Abstracción geométrica.
+   - a) La serenidad, el equilibrio y la contención del clasicismo.
+   - b) La frontalidad hierática y el fondo dorado.
+   - c) La abstracción geométrica y la renuncia a la figura.
+   - d) El dramatismo, el movimiento, la emoción y el virtuosismo técnico.
 
 4. **[Anl]** Frente al idealismo griego, el **retrato romano republicano** destaca por:
    - a) El *verismo*: rasgos individualizados, arrugas y signos de edad.
-   - b) La idealización juvenil sistemática.
-   - c) La ausencia de retratos.
-   - d) El uso exclusivo del bronce.
+   - b) La idealización juvenil aplicada de forma sistemática.
+   - c) El uso del bronce como material casi exclusivo.
+   - d) La renuncia al retrato en favor del relieve narrativo.
 
 5. **[Com]** El gran logro arquitectónico romano que permitió cubrir grandes espacios (Panteón, termas, basílicas) fue:
-   - a) La columna jónica.
+   - a) La adopción de la esbelta columna jónica.
    - b) El uso sistemático del arco, la bóveda y el hormigón (*opus caementicium*).
-   - c) El frontón triangular.
-   - d) El sistema adintelado de madera.
+   - c) El perfeccionamiento del frontón triangular del templo.
+   - d) El sistema adintelado con vigas de madera.
 
-**Clave M2:** 1‑**b** · 2‑**b** · 3‑**b** · 4‑**a** · 5‑**b**
+**Clave M2:** 1‑**c** · 2‑**b** · 3‑**d** · 4‑**a** · 5‑**b**
 
 ## Módulo 3 · Grandes tradiciones de Asia
 
 1. **[Rec]** El *stupa* es, en el arte budista:
-   - a) Un palacio real.
-   - b) Un monumento relicario de forma hemisférica, objeto de circumbalación ritual.
-   - c) Un tipo de pincel caligráfico.
-   - d) Una máscara teatral.
+   - a) Un monumento relicario de forma hemisférica, objeto de circunvalación ritual.
+   - b) La residencia palaciega del soberano y su corte.
+   - c) Un pincel de bambú empleado en la caligrafía.
+   - d) Una máscara ritual usada en el teatro.
 
 2. **[Com]** La pintura de paisaje china (*shanshui*) busca ante todo:
-   - a) La reproducción topográfica exacta de un lugar.
-   - b) Captar la armonía y el aliento (*qi*) de la naturaleza, con vacío y montañas-agua.
-   - c) El retrato del emperador.
-   - d) La perspectiva lineal de punto único.
+   - a) La reproducción topográfica exacta y medible del lugar.
+   - b) La construcción del espacio con perspectiva lineal de punto único.
+   - c) Captar la armonía y el aliento (*qi*) de la naturaleza, con vacío y montañas-agua.
+   - d) El retrato ceremonial del emperador y su familia.
 
 3. **[Anl]** El *ukiyo-e* japonés ("imágenes del mundo flotante") se difundió gracias a:
-   - a) La pintura al óleo sobre lienzo.
+   - a) La pintura al óleo sobre lienzo importada de Europa.
    - b) La estampa xilográfica, reproducible y asequible.
-   - c) El fresco mural.
-   - d) La escultura en bronce.
+   - c) La pintura al fresco sobre los muros de los templos.
+   - d) La fundición de pequeñas esculturas de bronce.
 
 4. **[Rec]** Borobudur (Java) y Angkor Wat (Camboya) son grandes complejos monumentales asociados respectivamente a:
-   - a) Sintoísmo y taoísmo.
-   - b) Budismo (mandala en piedra) e hinduismo/budismo jemer.
-   - c) Islam y cristianismo.
-   - d) Jainismo y confucianismo.
+   - a) El sintoísmo japonés y el taoísmo chino.
+   - b) El islam y el cristianismo del sudeste asiático.
+   - c) El jainismo y el confucianismo.
+   - d) El budismo (mandala en piedra) y el hinduismo/budismo jemer.
 
-**Clave M3:** 1‑**b** · 2‑**b** · 3‑**b** · 4‑**b**
+**Clave M3:** 1‑**a** · 2‑**c** · 3‑**b** · 4‑**d**
 
 ## Módulo 4 · Arte islámico
 
 1. **[Com]** La fuerte presencia de **decoración geométrica, vegetal (ataurique) y caligráfica** en el arte islámico se relaciona con:
-   - a) La falta de habilidad técnica.
-   - b) La reticencia hacia la imagen figurativa en contextos sagrados, que potencia la abstracción y la palabra.
-   - c) La prohibición de usar color.
-   - d) La influencia directa del cubismo.
+   - a) La falta de dominio técnico de la figura humana.
+   - b) La prohibición general de emplear el color en lo sagrado.
+   - c) La reticencia hacia la imagen figurativa en contextos sagrados, que potencia la abstracción y la palabra.
+   - d) La influencia directa de la fragmentación cubista.
 
 2. **[Rec]** El *mihrab* en una mezquita es:
    - a) La torre desde la que se llama a la oración.
-   - b) El nicho que indica la dirección de La Meca (*qibla*).
-   - c) El patio de abluciones.
-   - d) La cúpula central.
+   - b) El patio porticado donde se realizan las abluciones.
+   - c) La cúpula que cubre el crucero central.
+   - d) El nicho que indica la dirección de La Meca (*qibla*).
 
 3. **[Anl]** La caligrafía alcanza en el arte islámico el rango de arte mayor porque:
-   - a) Es meramente decorativa.
+   - a) Cumple una función meramente decorativa y secundaria.
    - b) Transmite la palabra revelada y se convierte en vehículo estético y espiritual central.
-   - c) Sustituye a la arquitectura.
-   - d) Solo se usa en monedas.
+   - c) Sustituye por completo a la arquitectura religiosa.
+   - d) Se reserva al uso en las monedas de curso legal.
 
 4. **[Com]** El *muqarnas* es:
-   - a) Un tejido de seda.
-   - b) Un sistema de bóvedas de nido de abeja, decorativo y estructural.
-   - c) Un tipo de miniatura persa.
-   - d) Un pigmento.
+   - a) Un sistema de bóvedas de nido de abeja, decorativo y estructural.
+   - b) Un tejido de seda con motivos vegetales.
+   - c) Un tipo de miniatura de la escuela persa.
+   - d) Un pigmento mineral de tono azulado.
 
-**Clave M4:** 1‑**b** · 2‑**b** · 3‑**b** · 4‑**b**
+**Clave M4:** 1‑**c** · 2‑**d** · 3‑**b** · 4‑**a**
 
 ## Módulo 5 · Edad Media en Occidente
 
 1. **[Rec]** El uso del **fondo dorado** y la frontalidad hierática son rasgos típicos del arte:
-   - a) Helenístico.
+   - a) Helenístico tardío.
    - b) Bizantino y paleocristiano.
    - c) Impresionista.
    - d) Romano republicano.
 
 2. **[Com]** La arquitectura **románica** se reconoce por:
-   - a) Arco apuntado, bóveda de crucería y grandes vidrieras.
-   - b) Arco de medio punto, muros gruesos, bóveda de cañón y aspecto macizo.
-   - c) Cúpula sobre pechinas y planta central.
-   - d) Estructura de hierro y cristal.
+   - a) El arco apuntado, la bóveda de crucería y los grandes ventanales.
+   - b) La cúpula sobre pechinas y la planta de cruz griega centralizada.
+   - c) La estructura vista de hierro y grandes paños de cristal.
+   - d) El arco de medio punto, los muros gruesos, la bóveda de cañón y el aspecto macizo.
 
 3. **[Anl]** El paso del románico al **gótico** supone, estructuralmente:
-   - a) Un retorno al muro macizo y el vano pequeño.
-   - b) Arco apuntado, bóveda de crucería y arbotantes que liberan el muro y permiten grandes vidrieras.
-   - c) El abandono de la arquitectura religiosa.
-   - d) La invención del hormigón armado.
+   - a) Un retorno al muro macizo y al vano pequeño y escaso.
+   - b) El arco apuntado, la bóveda de crucería y los arbotantes, que liberan el muro y permiten grandes vidrieras.
+   - c) El abandono de la construcción de grandes templos.
+   - d) La sustitución de la piedra por el hormigón armado.
 
 4. **[Com]** El programa escultórico de un **tímpano** románico cumplía sobre todo una función:
-   - a) Puramente ornamental sin contenido.
-   - b) Didáctica y doctrinal: enseñar verdades de fe (Juicio Final, Maiestas) a fieles iletrados.
-   - c) De propaganda comercial.
-   - d) De retrato del donante exclusivamente.
+   - a) Ornamental, sin contenido narrativo ni doctrinal.
+   - b) De propaganda de la actividad comercial del burgo.
+   - c) Didáctica y doctrinal: enseñar verdades de fe (Juicio Final, Maiestas) a fieles iletrados.
+   - d) De retrato conmemorativo del donante que financió la obra.
 
 5. **[Anl]** La verticalidad y la luz coloreada de la catedral gótica buscan expresar:
-   - a) El poder militar del señor feudal.
-   - b) Una experiencia de ascensión y trascendencia (la "luz divina", estética abacial de Suger).
-   - c) La riqueza del comercio marítimo.
-   - d) El racionalismo ilustrado.
+   - a) Una experiencia de ascensión y trascendencia (la "luz divina", estética abacial de Suger).
+   - b) El poder militar y defensivo del señor feudal.
+   - c) La riqueza acumulada por el comercio marítimo.
+   - d) El racionalismo laico de la Ilustración.
 
-**Clave M5:** 1‑**b** · 2‑**b** · 3‑**b** · 4‑**b** · 5‑**b**
+**Clave M5:** 1‑**b** · 2‑**d** · 3‑**b** · 4‑**c** · 5‑**a**
 
 ## Módulo 6 · El Renacimiento
 
 1. **[Anl]** Giotto representa el **proto-Renacimiento** porque introduce frente al gótico:
-   - a) El fondo dorado plano.
-   - b) Volumen, peso, espacio y emoción humana en las figuras.
-   - c) La abstracción geométrica.
-   - d) La estampa xilográfica.
+   - a) El fondo dorado plano y la frontalidad hierática.
+   - b) El volumen, el peso, el espacio y la emoción humana en las figuras.
+   - c) La abstracción geométrica de las formas.
+   - d) La estampa xilográfica reproducible.
 
 2. **[Com]** La **perspectiva lineal** sistematizada por Brunelleschi y Alberti permite:
-   - a) Eliminar la figura humana.
-   - b) Construir un espacio tridimensional ilusorio sobre una superficie plana, con punto de fuga.
-   - c) Pintar sin dibujo previo.
-   - d) Prescindir del color.
+   - a) Construir un espacio tridimensional ilusorio sobre una superficie plana, con punto de fuga.
+   - b) Suprimir por completo la figura humana de la escena.
+   - c) Pintar directamente sin ningún dibujo preparatorio.
+   - d) Renunciar al color en favor del claroscuro.
 
 3. **[Anl]** El Renacimiento **veneciano** (Tiziano, Giorgione) se distingue del florentino por privilegiar:
-   - a) El *disegno* (la línea y el dibujo).
-   - b) El *colorito* (el color, la materia pictórica y la atmósfera).
-   - c) La escultura sobre la pintura.
-   - d) La arquitectura sobre todo lo demás.
+   - a) El *disegno*, es decir, la línea y el dibujo como fundamento.
+   - b) La escultura por encima de la pintura de caballete.
+   - c) La arquitectura como arte rector de las demás.
+   - d) El *colorito*: el color, la materia pictórica y la atmósfera.
 
 4. **[Com]** El **Manierismo** se caracteriza por:
-   - a) El equilibrio sereno y la naturalidad clásica.
-   - b) La figura serpentinata, las proporciones alargadas, el artificio y la tensión.
-   - c) El realismo fotográfico.
-   - d) La abstracción pura.
+   - a) El equilibrio sereno y la naturalidad del clasicismo pleno.
+   - b) El realismo minucioso, casi fotográfico, de la escena.
+   - c) La figura serpentinata, las proporciones alargadas, el artificio y la tensión.
+   - d) La abstracción pura, sin referente reconocible.
 
 5. **[Anl]** El **Renacimiento del Norte** (Van Eyck, Durero) frente al italiano destaca por:
-   - a) El desinterés por el detalle.
+   - a) El desinterés por el detalle y la textura.
    - b) El dominio del óleo, el detallismo minucioso y un simbolismo cargado en los objetos.
-   - c) El uso exclusivo del fresco.
-   - d) La ausencia de retrato.
+   - c) El uso casi exclusivo de la pintura al fresco.
+   - d) La renuncia al género del retrato.
 
-**Clave M6:** 1‑**b** · 2‑**b** · 3‑**b** · 4‑**b** · 5‑**b**
+**Clave M6:** 1‑**b** · 2‑**a** · 3‑**d** · 4‑**c** · 5‑**b**
 
 ## Módulo 7 · Barroco y siglo XVIII
 
 1. **[Com]** El **tenebrismo** de Caravaggio consiste en:
-   - a) Pintar solo escenas nocturnas mitológicas.
-   - b) Un fuerte contraste de luz y sombra (*claroscuro* dramático) que modela las figuras y dirige la mirada.
-   - c) Eliminar las sombras.
-   - d) Usar exclusivamente colores fríos.
+   - a) Representar solo escenas nocturnas de tema mitológico.
+   - b) Suprimir las sombras para lograr una luz uniforme.
+   - c) Un fuerte contraste de luz y sombra (*claroscuro* dramático) que modela las figuras y dirige la mirada.
+   - d) Emplear de manera exclusiva una gama de colores fríos.
 
 2. **[Anl]** El **Siglo de Oro español** (Velázquez, Zurbarán, Murillo) se caracteriza por:
-   - a) La frivolidad rococó.
-   - b) El naturalismo, la espiritualidad y el virtuosismo (p. ej. *Las meninas* y su juego de miradas y espacio).
-   - c) La abstracción geométrica.
-   - d) El neoclasicismo.
+   - a) La frivolidad galante del gusto rococó.
+   - b) La abstracción geométrica de las formas.
+   - c) La severidad cívica del neoclasicismo.
+   - d) El naturalismo, la espiritualidad y el virtuosismo (p. ej. *Las meninas* y su juego de miradas y espacio).
 
 3. **[Anl]** Frente al dramatismo barroco, el **Rococó** francés (Watteau, Fragonard) propone:
-   - a) Severidad moral y temas heroicos.
-   - b) Ligereza, gracia, color pastel, galantería y temas amables.
-   - c) Tenebrismo religioso.
-   - d) Monumentalidad propagandística.
+   - a) La severidad moral y los grandes temas heroicos.
+   - b) La ligereza, la gracia, el color pastel, la galantería y los temas amables.
+   - c) El tenebrismo aplicado a la temática religiosa.
+   - d) La monumentalidad al servicio de la propaganda del Estado.
 
-4. **[Eva]** El **Neoclasicismo** (David) surge en parte como:
-   - a) Continuación directa del Rococó.
-   - b) Reacción moralizante e ilustrada que recupera la severidad y los valores cívicos de la Antigüedad.
-   - c) Rechazo de toda referencia a Grecia y Roma.
-   - d) Una corriente puramente abstracta.
+4. **[Com]** El **Neoclasicismo** (David) surge en parte como:
+   - a) Una reacción moralizante e ilustrada que recupera la severidad y los valores cívicos de la Antigüedad.
+   - b) La continuación directa del gusto y los temas del Rococó.
+   - c) El rechazo de toda referencia a Grecia y a Roma.
+   - d) Una corriente de abstracción puramente geométrica.
 
 5. **[Com]** La pintura de género y el retrato burgués del **barroco holandés** (Vermeer, Rembrandt) reflejan:
-   - a) Una sociedad protestante, comerciante y sin gran mecenazgo eclesiástico.
-   - b) La corte absolutista francesa.
-   - c) El poder papal.
-   - d) El imperio otomano.
+   - a) La corte absolutista francesa y su etiqueta.
+   - b) El poder de la Roma papal y el mecenazgo eclesiástico.
+   - c) Una sociedad protestante, comerciante y sin gran mecenazgo eclesiástico.
+   - d) El esplendor cortesano del imperio otomano.
 
-**Clave M7:** 1‑**b** · 2‑**b** · 3‑**b** · 4‑**b** · 5‑**a**
+**Clave M7:** 1‑**c** · 2‑**d** · 3‑**b** · 4‑**a** · 5‑**c**
 
 ## Módulo 8 · El siglo XIX
 
 1. **[Com]** El **Romanticismo** (Friedrich, Goya, Géricault) privilegia:
-   - a) La razón, la línea y la norma académica.
+   - a) La razón, la línea y la norma académica neoclásica.
    - b) La emoción, lo sublime, lo individual y lo dramático frente al racionalismo neoclásico.
-   - c) La abstracción geométrica.
-   - d) La fotografía documental.
+   - c) La abstracción geométrica de la forma.
+   - d) La objetividad de la fotografía documental.
 
 2. **[Anl]** El **Impresionismo** rompe con la academia al:
-   - a) Pintar en el taller temas históricos con acabado pulido.
-   - b) Salir al aire libre (*plein air*), captar la luz cambiante con pincelada suelta y temas cotidianos.
-   - c) Volver al fondo dorado medieval.
-   - d) Renunciar al color.
+   - a) Salir al aire libre (*plein air*), captar la luz cambiante con pincelada suelta y temas cotidianos.
+   - b) Pintar en el taller grandes temas históricos con un acabado muy pulido.
+   - c) Recuperar el fondo dorado y la frontalidad medievales.
+   - d) Renunciar al color en favor del dibujo lineal.
 
 3. **[Anl]** El **japonismo** influyó en el arte europeo aportando:
-   - a) La perspectiva lineal renacentista.
-   - b) Composiciones asimétricas, planos de color, encuadres recortados y ausencia de sombra modelada.
-   - c) El tenebrismo barroco.
-   - d) El canon clásico de proporciones.
+   - a) La perspectiva lineal de origen renacentista.
+   - b) El tenebrismo y el claroscuro de raíz barroca.
+   - c) Composiciones asimétricas, planos de color, encuadres recortados y ausencia de sombra modelada.
+   - d) El canon clásico de proporciones del cuerpo.
 
-4. **[Eva]** El **Postimpresionismo** (Cézanne, Van Gogh, Gauguin) supone respecto al impresionismo:
-   - a) Un simple retroceso académico.
-   - b) Una vía hacia la estructura, la expresión y el simbolismo del color, abriendo camino a las vanguardias.
-   - c) El abandono de la pintura.
-   - d) El regreso al realismo fotográfico.
+4. **[Com]** El **Postimpresionismo** (Cézanne, Van Gogh, Gauguin) supone respecto al impresionismo:
+   - a) Un simple retroceso hacia la pintura académica.
+   - b) Una vía hacia la estructura, la expresión y el simbolismo del color, que abre camino a las vanguardias.
+   - c) El abandono definitivo de la práctica de la pintura.
+   - d) El regreso a un realismo de exactitud fotográfica.
 
 5. **[Com]** El **Art Nouveau** (Gaudí, Mucha, Horta) se reconoce por:
-   - a) La línea recta y la geometría industrial.
-   - b) La línea sinuosa y orgánica inspirada en la naturaleza, aplicada a arquitectura y artes decorativas.
-   - c) El tenebrismo.
-   - d) El collage cubista.
+   - a) La línea recta y la geometría de la producción industrial.
+   - b) El contraste tenebrista de luz y sombra.
+   - c) El collage y la fragmentación cubistas.
+   - d) La línea sinuosa y orgánica inspirada en la naturaleza, aplicada a arquitectura y artes decorativas.
 
-**Clave M8:** 1‑**b** · 2‑**b** · 3‑**b** · 4‑**b** · 5‑**b**
+**Clave M8:** 1‑**b** · 2‑**a** · 3‑**c** · 4‑**b** · 5‑**d**
 
 ## Módulo 9 · Las vanguardias (1900–1945)
 
 1. **[Com]** El **Cubismo** (Picasso, Braque) propone:
-   - a) Un naturalismo extremo.
-   - b) La fragmentación del objeto en facetas y su representación simultánea desde múltiples puntos de vista.
-   - c) El regreso a la perspectiva lineal.
-   - d) La pintura monocroma religiosa.
+   - a) La fragmentación del objeto en facetas y su representación simultánea desde múltiples puntos de vista.
+   - b) Un naturalismo extremo, de fidelidad óptica al modelo.
+   - c) El regreso a la perspectiva lineal renacentista.
+   - d) La pintura monocroma de tema religioso.
 
 2. **[Anl]** El **Fauvismo** y el **Expresionismo** comparten:
-   - a) El uso del color como vehículo emocional, liberado de la descripción mimética.
-   - b) La fidelidad al color local realista.
-   - c) El rechazo del color.
-   - d) La temática exclusivamente mitológica.
+   - a) La fidelidad al color local, tal como aparece en la realidad.
+   - b) El rechazo del color en favor del dibujo.
+   - c) El uso del color como vehículo emocional, liberado de la descripción mimética.
+   - d) Una temática restringida al repertorio mitológico.
 
-3. **[Eva]** Cuando Duchamp expone un urinario como *Fuente* (readymade), el gesto cuestiona:
-   - a) La calidad del esmalte.
+3. **[Com]** Cuando Duchamp expone un urinario como *Fuente* (readymade), el gesto cuestiona:
+   - a) La calidad del esmalte y de la loza empleados.
    - b) Qué es arte, el papel del artista y la institución que lo legitima.
-   - c) La perspectiva lineal.
-   - d) La técnica del fresco.
+   - c) La corrección de la perspectiva lineal.
+   - d) La solidez de la técnica del fresco.
 
 4. **[Com]** La **Bauhaus** defendió:
-   - a) La separación total entre arte y técnica.
-   - b) La unión de arte, diseño, artesanía y producción industrial bajo el lema "la forma sigue a la función".
-   - c) El retorno al ornamento rococó.
-   - d) El rechazo de la arquitectura.
+   - a) La separación tajante entre el arte y la técnica.
+   - b) El retorno al ornamento recargado de gusto rococó.
+   - c) El abandono de la arquitectura como disciplina.
+   - d) La unión de arte, diseño, artesanía y producción industrial bajo el lema "la forma sigue a la función".
 
 5. **[Anl]** El **muralismo mexicano** (Rivera, Orozco, Siqueiros) se caracteriza por:
-   - a) Pintura íntima de caballete para coleccionistas privados.
-   - b) Arte público, monumental y social, con mensaje político y revolucionario.
-   - c) Abstracción geométrica pura.
-   - d) Estampa ukiyo-e.
+   - a) La pintura íntima de caballete destinada al coleccionista privado.
+   - b) La abstracción geométrica pura, sin referente.
+   - c) El arte público, monumental y social, con mensaje político y revolucionario.
+   - d) La estampa xilográfica de tipo *ukiyo-e*.
 
-**Clave M9:** 1‑**b** · 2‑**a** · 3‑**b** · 4‑**b** · 5‑**b**
+**Clave M9:** 1‑**a** · 2‑**c** · 3‑**b** · 4‑**d** · 5‑**c**
 
 ## Módulo 10 · De la posguerra a hoy
 
 1. **[Com]** El **Expresionismo abstracto** (Pollock, Rothko) y la Escuela de Nueva York destacan por:
-   - a) La figuración detallista.
+   - a) La figuración detallista y narrativa.
    - b) La gran escala, la gestualidad o el campo de color, y el desplazamiento del centro artístico a EE. UU.
-   - c) El retorno al fresco religioso.
-   - d) El realismo socialista.
+   - c) El retorno a la pintura al fresco de tema religioso.
+   - d) La estética del realismo socialista.
 
 2. **[Anl]** El **Pop Art** (Warhol, Lichtenstein) toma sus imágenes de:
-   - a) La mitología clásica.
-   - b) La cultura de masas, la publicidad y el consumo, borrando la frontera arte alto/arte popular.
-   - c) El paisaje romántico.
-   - d) La iconografía bizantina.
+   - a) El repertorio de la mitología grecolatina.
+   - b) El paisaje sublime de tradición romántica.
+   - c) La iconografía de los iconos bizantinos.
+   - d) La cultura de masas, la publicidad y el consumo, borrando la frontera arte alto/arte popular.
 
-3. **[Eva]** El **arte conceptual** sostiene que:
-   - a) Lo importante es la destreza manual.
-   - b) La idea o concepto prevalece sobre el objeto material y su ejecución.
-   - c) Solo la pintura al óleo es arte.
-   - d) El arte debe ser anónimo siempre.
+3. **[Com]** El **arte conceptual** sostiene que:
+   - a) La idea o concepto prevalece sobre el objeto material y su ejecución.
+   - b) Lo decisivo es la destreza manual y el oficio del artista.
+   - c) Solo la pintura al óleo merece el nombre de arte.
+   - d) La obra debe ser siempre anónima y colectiva.
 
 4. **[Com]** El **Land Art** (Smithson, *Spiral Jetty*) se caracteriza por:
-   - a) Obras de pequeño formato para museo.
-   - b) Intervenciones a gran escala en el paisaje, a menudo efímeras y documentadas por fotografía.
-   - c) Retratos de corte.
-   - d) Vidrieras góticas.
+   - a) Las obras de pequeño formato pensadas para la sala del museo.
+   - b) Los retratos de aparato encargados por la corte.
+   - c) Las intervenciones a gran escala en el paisaje, a menudo efímeras y documentadas por fotografía.
+   - d) La vidriera de tradición gótica.
 
-5. **[Eva]** El arte ligado al **feminismo y la identidad** (años 70 en adelante) plantea sobre todo:
-   - a) Una cuestión meramente técnica.
+5. **[Com]** El arte ligado al **feminismo y la identidad** (años 70 en adelante) plantea sobre todo:
+   - a) Un problema de índole meramente técnica y material.
    - b) Quién ha sido representado y quién ha representado: cuerpo, género, raza y voz como problemas artísticos.
-   - c) El regreso al canon académico.
-   - d) La indiferencia ante lo social.
+   - c) La necesidad de regresar al canon académico.
+   - d) La indiferencia deliberada ante lo social y lo político.
 
-**Clave M10:** 1‑**b** · 2‑**b** · 3‑**b** · 4‑**b** · 5‑**b**
+**Clave M10:** 1‑**b** · 2‑**d** · 3‑**a** · 4‑**c** · 5‑**b**
 
 ## Módulo 11 · Tradiciones globales (más allá del canon)
 
 1. **[Com]** Las máscaras y figuras de relicario del **arte africano subsahariano** deben entenderse ante todo:
-   - a) Como objetos decorativos sin función.
+   - a) Como objetos puramente decorativos y sin función.
    - b) En su contexto ritual, social y de mediación con lo invisible, no solo como formas.
-   - c) Como copias del arte griego.
-   - d) Como arte exclusivamente funerario egipcio.
+   - c) Como copias tardías de modelos de la escultura griega.
+   - d) Como un arte exclusivamente funerario de raíz egipcia.
 
 2. **[Rec]** Tenochtitlan, los códices y la escultura monumental pertenecen al **arte**:
-   - a) Andino.
-   - b) Mesoamericano (mexica/azteca y antecedentes).
-   - c) De Oceanía.
-   - d) Norteamericano de las praderas.
+   - a) Andino de los Andes centrales.
+   - b) De las islas de Oceanía.
+   - c) Norteamericano de los pueblos de las praderas.
+   - d) Mesoamericano (mexica/azteca y sus antecedentes).
 
 3. **[Anl]** El **arte colonial latinoamericano** (p. ej. la escuela cuzqueña) se caracteriza por:
-   - a) La pureza de un único estilo europeo.
-   - b) El mestizaje: iconografía cristiana europea reinterpretada con materiales, manos y símbolos indígenas.
-   - c) La ausencia de pintura.
-   - d) El rechazo total de lo europeo.
+   - a) El mestizaje: iconografía cristiana europea reinterpretada con materiales, manos y símbolos indígenas.
+   - b) La pureza de un único estilo europeo trasplantado sin cambios.
+   - c) La ausencia de pintura en favor de la sola arquitectura.
+   - d) El rechazo total de cualquier referente europeo.
 
-4. **[Eva]** Estudiar estas tradiciones "más allá del canon" exige, según el marco del curso:
+4. **[Com]** Estudiar estas tradiciones "más allá del canon" exige, según el marco del curso:
    - a) Medirlas con la vara del naturalismo renacentista europeo.
-   - b) Reconocer una pluralidad de criterios de valor y evitar exotizar o infantilizar.
-   - c) Tratarlas como simple apéndice de Occidente.
-   - d) Ignorar su contexto.
+   - b) Tratarlas como un simple apéndice de la historia de Occidente.
+   - c) Reconocer una pluralidad de criterios de valor y evitar exotizar o infantilizar.
+   - d) Prescindir de su contexto cultural y religioso.
 
-**Clave M11:** 1‑**b** · 2‑**b** · 3‑**b** · 4‑**b**
+**Clave M11:** 1‑**b** · 2‑**d** · 3‑**a** · 4‑**c**
 
 ## Módulo 12 · Temas transversales
 
-1. **[Eva]** La pregunta de Linda Nochlin "¿Por qué no ha habido grandes mujeres artistas?" señala que:
-   - a) Las mujeres carecían de talento.
-   - b) Las barreras institucionales (acceso a la formación, gremios, academias, el desnudo) explican su ausencia del canon, no una falta de capacidad.
-   - c) Nunca existieron mujeres artistas.
-   - d) Es una cuestión irrelevante.
+1. **[Com]** La pregunta de Linda Nochlin "¿Por qué no ha habido grandes mujeres artistas?" señala que:
+   - a) Las mujeres carecían del talento necesario para el arte mayor.
+   - b) Nunca existieron, en rigor, mujeres dedicadas al arte.
+   - c) Las barreras institucionales (acceso a la formación, gremios, academias, el desnudo) explican su ausencia del canon, no una falta de capacidad.
+   - d) La cuestión atañe solo a la historia social, no a la del arte.
 
 2. **[Com]** El **mecenazgo** condiciona la obra porque:
-   - a) No tiene ningún efecto sobre el contenido.
+   - a) No ejerce influencia alguna sobre el contenido de la obra.
    - b) Quien encarga y paga influye en el tema, el tamaño, los materiales y la función de la obra.
-   - c) Solo afecta al precio de venta actual.
-   - d) Es un fenómeno del siglo XX exclusivamente.
+   - c) Afecta únicamente al precio que la obra alcanza hoy en el mercado.
+   - d) Es un fenómeno restringido al arte del siglo XX.
 
-3. **[Anl]** La **jerarquía de los géneros** académica situaba en lo más alto:
-   - a) El bodegón.
-   - b) La pintura de historia (temas históricos, mitológicos y religiosos con figuras), y abajo el paisaje y el bodegón.
-   - c) El retrato de animales.
-   - d) El paisaje urbano.
+3. **[Com]** La **jerarquía de los géneros** académica situaba en lo más alto:
+   - a) El bodegón y la naturaleza muerta.
+   - b) El retrato de animales y las escenas de caza.
+   - c) La vista de ciudad y el paisaje urbano.
+   - d) La pintura de historia (temas históricos, mitológicos y religiosos con figuras), y abajo el paisaje y el bodegón.
 
-4. **[Eva]** El debate sobre **restitución y descolonización del museo** plantea:
-   - a) Una cuestión puramente logística.
-   - b) Si obras adquiridas en contextos coloniales deben volver a sus comunidades de origen, y a quién pertenece el patrimonio.
-   - c) Que los museos deben cerrar.
-   - d) Que el patrimonio no tiene dueño ni historia.
+4. **[Com]** El debate sobre **restitución y descolonización del museo** plantea:
+   - a) Si obras adquiridas en contextos coloniales deben volver a sus comunidades de origen, y a quién pertenece el patrimonio.
+   - b) Una cuestión de logística de transporte y de seguros de las obras.
+   - c) La conveniencia de suprimir las colecciones de arte antiguo.
+   - d) Que el patrimonio carece de dueño y de historia documentable.
 
 5. **[Com]** En conservación y restauración, el principio de **reversibilidad / mínima intervención** busca:
-   - a) Repintar libremente las obras al gusto actual.
+   - a) Repintar con libertad las obras adaptándolas al gusto actual.
    - b) Intervenir lo imprescindible y de forma que pueda deshacerse, respetando la autenticidad del original.
-   - c) Sustituir los originales por copias.
-   - d) Impedir todo estudio de la obra.
+   - c) Sustituir los originales por copias más resistentes.
+   - d) Restringir cualquier estudio material de la obra.
 
-**Clave M12:** 1‑**b** · 2‑**b** · 3‑**b** · 4‑**b** · 5‑**b**
+**Clave M12:** 1‑**c** · 2‑**b** · 3‑**d** · 4‑**a** · 5‑**b**
 
 ---
 
