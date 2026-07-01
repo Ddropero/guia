@@ -27,7 +27,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { modulo, leccion } = await params;
   const l = getLeccion(modulo, leccion);
-  return { title: l ? `${l.titulo} · Historia del Arte` : "Historia del Arte" };
+  return { title: l ? l.titulo : "Lección" };
 }
 
 export default async function LeccionPage({

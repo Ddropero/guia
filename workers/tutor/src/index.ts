@@ -17,7 +17,10 @@
 
 export interface Env {
   ANTHROPIC_API_KEY?: string;
+  /** Orígenes permitidos, separados por comas. Admite "https://*.sufijo" para previews. */
   ALLOW_ORIGIN?: string;
+  /** Binding opcional de rate limiting de Cloudflare (ver wrangler.jsonc). */
+  TUTOR_RL?: { limit(opts: { key: string }): Promise<{ success: boolean }> };
 }
 
 type Modo = "chat" | "socratico" | "quiz";
@@ -40,11 +43,36 @@ const MAX_TOKENS: Record<Modo, number> = {
   socratico: 1000,
 };
 
-function corsHeaders(origin: string): Record<string, string> {
+const ORIGEN_POR_DEFECTO = "https://historia.hilvan.org";
+
+// Resuelve el origen a permitir: coincidencia exacta o comodín "https://*.sufijo".
+// null = origen no permitido (o petición sin cabecera Origin: same-origin/no navegador).
+function resolverOrigen(request: Request, env: Env): string | null {
+  const lista = (env.ALLOW_ORIGIN ?? ORIGEN_POR_DEFECTO)
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  if (lista.includes("*")) return "*";
+  const origin = request.headers.get("origin");
+  if (!origin) return null;
+  for (const patron of lista) {
+    if (patron === origin) return origin;
+    if (patron.includes("://*.")) {
+      const [esquema, sufijo] = patron.split("://*.");
+      if (origin.startsWith(`${esquema}://`) && origin.endsWith(`.${sufijo}`)) return origin;
+    }
+  }
+  return null;
+}
+
+function corsHeaders(origin: string | null): Record<string, string> {
+  if (!origin) return { vary: "origin" };
   return {
     "access-control-allow-origin": origin,
     "access-control-allow-methods": "POST,OPTIONS",
     "access-control-allow-headers": "content-type",
+    "access-control-max-age": "86400",
+    vary: "origin",
   };
 }
 
@@ -175,11 +203,16 @@ async function streamAnthropic(
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
-    const origin = env.ALLOW_ORIGIN || "*";
-    const cors = corsHeaders(origin);
+    const origenPermitido = resolverOrigen(request, env);
+    const cors = corsHeaders(origenPermitido);
 
     if (request.method === "OPTIONS") {
-      return new Response(null, { headers: cors });
+      return new Response(null, { status: origenPermitido ? 204 : 403, headers: cors });
+    }
+    // Rechaza POSTs de navegador desde orígenes no permitidos (control de gasto).
+    const origenReq = request.headers.get("origin");
+    if (origenReq && !origenPermitido) {
+      return new Response("Origen no permitido", { status: 403, headers: cors });
     }
 
     const url = new URL(request.url);
@@ -197,6 +230,18 @@ export default {
         status: 503,
         headers: { ...cors, "content-type": "text/plain; charset=utf-8" },
       });
+    }
+
+    // Rate limiting opcional por IP (binding TUTOR_RL) — control de gasto/abuso.
+    if (env.TUTOR_RL) {
+      const ip = request.headers.get("cf-connecting-ip") || "anon";
+      const { success } = await env.TUTOR_RL.limit({ key: ip });
+      if (!success) {
+        return new Response("Demasiadas solicitudes. Inténtalo en un momento.", {
+          status: 429,
+          headers: { ...cors, "content-type": "text/plain; charset=utf-8", "retry-after": "30" },
+        });
+      }
     }
 
     let payload: { modo?: string; leccion?: { titulo?: string; modulo?: string; contexto?: string }; messages?: unknown };
