@@ -3,7 +3,9 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getModulos, getModulo, getLeccion } from "@/lib/curso";
 import TutorPanel from "@/components/TutorPanel";
+import Galeria from "@/components/Galeria";
 import { LeccionCompletaToggle } from "@/components/Progreso";
+import { getObras } from "@/lib/obras";
 
 export const dynamicParams = false;
 
@@ -36,6 +38,7 @@ export default async function LeccionPage({
   const { modulo, leccion } = await params;
   const l = getLeccion(modulo, leccion);
   if (!l) notFound();
+  const obras = getObras(modulo, leccion);
 
   return (
     <main className="mx-auto max-w-7xl px-5 py-8 sm:px-8">
@@ -48,6 +51,16 @@ export default async function LeccionPage({
           {l.moduloTitulo}
         </Link>
       </nav>
+
+      {obras.length > 0 && (
+        <section className="mb-8">
+          <h2 className="mb-1 font-serif text-xl text-fg">Galería de obras</h2>
+          <p className="mb-3 text-sm text-muted">
+            Las obras que comenta esta lección. Toca cualquiera para verla en Google Arts &amp; Culture.
+          </p>
+          <Galeria obras={obras} />
+        </section>
+      )}
 
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="min-w-0">

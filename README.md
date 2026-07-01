@@ -110,3 +110,27 @@ progreso, navegación) y el panel del tutor muestra un aviso de configuración.
 > **Modelo por tarea (híbrido):** Claude **Haiku 4.5** para chat y cuestionarios
 > (rápido y barato), Claude **Sonnet 5** para el análisis socrático de obras.
 > Ningún valor de key se guarda en el repositorio — solo su nombre.
+
+### Galería de obras e imágenes
+
+Cada lección muestra una **galería** de las obras que comenta: ficha + botón
+**"Ver en Google Arts & Culture"** (funciona para todas, incluidas las
+contemporáneas con derechos) y **miniatura** cuando la obra es de dominio público.
+
+- `scripts/construir-obras.mjs` → `src/data/obras.json` (obras por lección; se
+  extrae de las lecciones, sin red).
+- `scripts/fetch-imagenes.mjs` → `src/data/obras-imagenes.json` (miniaturas de
+  **dominio público / licencia libre** desde Wikimedia Commons).
+
+Los enlaces a Arts & Culture funcionan sin más. Para poblar las **miniaturas**
+(necesita salida a internet — córrelo en tu máquina/CI):
+
+```bash
+node scripts/construir-obras.mjs     # solo si cambian las lecciones
+node scripts/fetch-imagenes.mjs      # resuelve miniaturas PD (idempotente)
+npm run deploy:historia              # rebuild + publica las imágenes
+```
+
+Solo se incrustan imágenes con **licencia libre**; el arte del s. XX–XXI se queda
+con su enlace a Arts & Culture. Ningún binario se guarda en el repo (se enlaza la
+miniatura de Wikimedia, con su crédito).
