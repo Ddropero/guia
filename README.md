@@ -99,10 +99,11 @@ El contenido se renderiza en build (la app sigue siendo estática). El tutor es 
 1. Despliega el Worker con su secret (ver [`workers/tutor/README.md`](workers/tutor/README.md)):
    ```bash
    cd workers/tutor && npm install
+   npx wrangler deploy                        # crea el dominio tutor.hilvan.org
    npx wrangler secret put ANTHROPIC_API_KEY
-   npm run deploy
    ```
-2. Define `NEXT_PUBLIC_TUTOR_URL` = URL del Worker y vuelve a `npm run build`.
+2. Define `NEXT_PUBLIC_TUTOR_URL=https://tutor.hilvan.org` (p. ej. en `.env.local`)
+   y vuelve a `npm run deploy:historia`.
 
 Si `NEXT_PUBLIC_TUTOR_URL` no está definida, el curso funciona igual (lectura,
 progreso, navegación) y el panel del tutor muestra un aviso de configuración.

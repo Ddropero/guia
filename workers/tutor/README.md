@@ -20,18 +20,21 @@ guardada como **secret** (nunca sale al cliente).
 
 ## Desplegar
 
+Se publica en su propio dominio **`tutor.hilvan.org`** (ver `wrangler.jsonc`),
+así que la URL del tutor es fija. Requiere que `hilvan.org` sea zona de la cuenta.
+
 ```bash
 cd workers/tutor
 npm install
-npx wrangler secret put ANTHROPIC_API_KEY    # tu key sk-ant-...
+npx wrangler deploy                           # crea/actualiza el dominio tutor.hilvan.org
+npx wrangler secret put ANTHROPIC_API_KEY     # tu key sk-ant-...
 # (opcional) restringe el origen permitido:
-npx wrangler secret put ALLOW_ORIGIN          # p. ej. https://tu-sitio.pages.dev
-npm run deploy
+npx wrangler secret put ALLOW_ORIGIN          # https://historia.hilvan.org
 ```
 
-Tras desplegar, toma la URL del Worker y configúrala en el frontend como
-`NEXT_PUBLIC_TUTOR_URL` antes de `npm run build` (ver README raíz). Si la
-variable no está definida, la app muestra el curso y desactiva el chat del
+Luego, en el frontend, define `NEXT_PUBLIC_TUTOR_URL=https://tutor.hilvan.org`
+(p. ej. en `.env.local`) y vuelve a compilar/desplegar (`npm run deploy:historia`).
+Si la variable no está definida, la app muestra el curso y desactiva el chat del
 tutor con un aviso.
 
 > El secret `ANTHROPIC_API_KEY` no se guarda en el repositorio — solo su nombre.
