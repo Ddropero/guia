@@ -11,6 +11,44 @@ import { marked } from "marked";
 
 marked.setOptions({ gfm: true, breaks: false });
 
+// Documentos de nivel superior → ruta del sitio.
+const RUTAS_TOP: Record<string, string> = {
+  "00-guia-del-estudiante.md": "/curso/recursos/guia-del-estudiante",
+  "00-marco-pedagogico.md": "/curso/recursos/marco-pedagogico",
+  "docente/guia-del-docente.md": "/curso/recursos/guia-del-docente",
+  "README.md": "/curso",
+};
+
+/**
+ * Convierte un enlace interno .md del contenido (relativo al archivo actual) en
+ * su ruta del sitio. Devuelve null si no se puede mapear.
+ * `baseRelDir` = carpeta del archivo actual, relativa a curso-historia-del-arte/.
+ */
+function resolverRuta(target: string, baseRelDir: string): string | null {
+  const clean = target.split("#")[0].replace(/^\.\//, "");
+  const esBaseRel = /^(modulos|referencias|docente)\//.test(clean) || clean in RUTAS_TOP;
+  const abs = esBaseRel ? clean : path.posix.normalize(path.posix.join(baseRelDir, clean));
+  if (RUTAS_TOP[abs]) return RUTAS_TOP[abs];
+  const m = abs.match(/^modulos\/([^/]+)\/(.+)\.md$/);
+  if (m) return m[2] === "00-modulo" ? `/curso/${m[1]}` : `/curso/${m[1]}/${m[2]}`;
+  const r = abs.match(/^referencias\/(.+)\.md$/);
+  if (r) return `/curso/recursos/${r[1]}`;
+  return null;
+}
+
+/** Renderiza Markdown a HTML reescribiendo los enlaces internos .md a rutas del sitio. */
+function render(md: string, baseRelDir: string): string {
+  const html = marked.parse(md) as string;
+  return html.replace(/href="([^"]+)"/g, (full, target: string) => {
+    if (/^(https?:|mailto:|#|\/)/i.test(target)) return full; // externo/ancla/absoluto
+    if (!/\.md(#|$)/i.test(target)) return full;
+    const ruta = resolverRuta(target, baseRelDir);
+    if (!ruta) return full;
+    const hash = target.includes("#") ? `#${target.split("#")[1]}` : "";
+    return `href="${ruta}${hash}"`;
+  });
+}
+
 const BASE = path.join(process.cwd(), "curso-historia-del-arte");
 const MODULOS_DIR = path.join(BASE, "modulos");
 const REFERENCIAS_DIR = path.join(BASE, "referencias");
@@ -124,7 +162,7 @@ export function getModulo(id: string): ModuloDetalle | null {
     id,
     titulo,
     lecciones,
-    introHtml: introMd ? (marked.parse(introMd) as string) : null,
+    introHtml: introMd ? render(introMd, `modulos/${id}`) : null,
   };
 }
 
@@ -146,7 +184,7 @@ export function getLeccion(moduloId: string, slug: string): Leccion | null {
     slug,
     titulo: tituloDe(md) ?? prettify(slug),
     subtitulo: subtituloDe(md),
-    html: marked.parse(md) as string,
+    html: render(md, `modulos/${moduloId}`),
     texto: md,
     prev: prevRef ? { moduloId, slug: prevRef.slug, titulo: prevRef.titulo } : null,
     next: nextRef ? { moduloId, slug: nextRef.slug, titulo: nextRef.titulo } : null,
@@ -202,5 +240,6 @@ export function getRecurso(slug: string): { titulo: string; html: string } | nul
   const p = rutaRecurso(slug);
   if (!p || !existe(p)) return null;
   const md = leer(p);
-  return { titulo: tituloDe(md) ?? prettify(slug), html: marked.parse(md) as string };
+  const relDir = path.relative(BASE, path.dirname(p)).split(path.sep).join("/");
+  return { titulo: tituloDe(md) ?? prettify(slug), html: render(md, relDir) };
 }
