@@ -1784,6 +1784,38 @@
       "q": "Entartete Kunst La exposición , Múnich, 1937"
     }
   ],
+  "09-arte-moderno/10-modernidades-asiaticas": [
+    {
+      "titulo": "Metempsicosis",
+      "autor": "Yokoyama Taikan",
+      "q": "Metempsicosis Yokoyama Taikan"
+    },
+    {
+      "titulo": "Bharat Mata",
+      "autor": "Abanindranath Tagore",
+      "q": "Bharat Mata Abanindranath Tagore"
+    },
+    {
+      "titulo": "Grupo de tres muchachas",
+      "autor": "Amrita Sher-Gil",
+      "q": "Grupo de tres muchachas Amrita Sher-Gil"
+    },
+    {
+      "titulo": "Yu Gong mueve las montañas",
+      "autor": "Xu Beihong",
+      "q": "Yu Gong mueve las montañas Xu Beihong"
+    },
+    {
+      "titulo": "Camarones",
+      "autor": "Qi Baishi",
+      "q": "Camarones Qi Baishi"
+    },
+    {
+      "titulo": "¡Ruge, China!",
+      "autor": "Li Hua",
+      "q": "¡Ruge, China! Li Hua"
+    }
+  ],
   "10-posguerra-y-contemporaneo/01-expresionismo-abstracto": [
     {
       "titulo": "Number 1, 1950 (Lavender Mist)",
@@ -2326,6 +2358,102 @@
       "titulo": "Shibboleth",
       "autor": "Doris Salcedo",
       "q": "Shibboleth Doris Salcedo"
+    }
+  ],
+  "11-tradiciones-globales/08-africa-cristiana-e-islamica": [
+    {
+      "titulo": "El campo de estelas de Aksum (Reino de Aksum, c. siglos III-IV)",
+      "autor": "",
+      "q": "El campo de estelas de Aksum"
+    },
+    {
+      "titulo": "Los Evangelios de Garima (Etiopía, c. siglos IV-VII)",
+      "autor": "",
+      "q": "Los Evangelios de Garima"
+    },
+    {
+      "titulo": "Bete Giyorgis, la iglesia de San Jorge de Lalibela (dinastía Zagwe, c. siglos XII-XIII)",
+      "autor": "",
+      "q": "Bete Giyorgis, la iglesia de San Jorge de Lalibela"
+    },
+    {
+      "titulo": "Icono de la Virgen con el Niño, de Frē Ṣeyon (Etiopía, c. tercer cuarto del siglo XV)",
+      "autor": "",
+      "q": "Icono de la Virgen con el Niño, de Frē Ṣeyon"
+    },
+    {
+      "titulo": "La Gran Mezquita de Djenné (Malí, fundación c. siglo XIII; edificio actual, 1906-1907)",
+      "autor": "",
+      "q": "La Gran Mezquita de Djenné"
+    },
+    {
+      "titulo": "Kilwa Kisiwani: la Gran Mezquita y el palacio de Husuni Kubwa (costa swahili, c. siglos XI-XV)",
+      "autor": "",
+      "q": "Kilwa Kisiwani: la Gran Mezquita y el palacio de Husuni Kubwa"
+    }
+  ],
+  "11-tradiciones-globales/09-africa-moderna-y-contemporanea": [
+    {
+      "titulo": "Retratos del estudio de Bamako, de Seydou Keïta (c. 1948-1962)",
+      "autor": "",
+      "q": "Retratos del estudio de Bamako, de Seydou Keïta"
+    },
+    {
+      "titulo": "Nuit de Noël (Happy Club)",
+      "autor": "de Malick Sidibé",
+      "q": "Nuit de Noël de Malick Sidibé"
+    },
+    {
+      "titulo": "Anyanwu",
+      "autor": "de Ben Enwonwu",
+      "q": "Anyanwu de Ben Enwonwu"
+    },
+    {
+      "titulo": "Dusasa II",
+      "autor": "de El Anatsui",
+      "q": "Dusasa II de El Anatsui"
+    },
+    {
+      "titulo": "The Refusal of Time",
+      "autor": "de William Kentridge",
+      "q": "The Refusal of Time de William Kentridge"
+    },
+    {
+      "titulo": "Somnyama Ngonyama",
+      "autor": "de Zanele Muholi",
+      "q": "Somnyama Ngonyama de Zanele Muholi"
+    }
+  ],
+  "11-tradiciones-globales/10-caribe-y-atlantico-negro": [
+    {
+      "titulo": "La jungla",
+      "autor": "de Wifredo Lam",
+      "q": "La jungla de Wifredo Lam"
+    },
+    {
+      "titulo": "Ogou Feray",
+      "autor": "de Hector Hyppolite",
+      "q": "Ogou Feray de Hector Hyppolite"
+    },
+    {
+      "titulo": "Drapo",
+      "autor": "de vudú",
+      "q": "Drapo de vudú"
+    },
+    {
+      "titulo": "Templo de Oxalá",
+      "autor": "de Rubem Valentim",
+      "q": "Templo de Oxalá de Rubem Valentim"
+    },
+    {
+      "titulo": "Los orixás en dos orillas: el ciclo fotográfico de Pierre Verger (1946-c. 1979)",
+      "autor": "",
+      "q": "Los orixás en dos orillas: el ciclo fotográfico de Pierre Verger"
+    },
+    {
+      "titulo": "A Subtlety, or the Marvelous Sugar Baby",
+      "autor": "de Kara Walker",
+      "q": "A Subtlety, or the Marvelous Sugar Baby de Kara Walker"
     }
   ],
   "12-temas-transversales/01-mujeres-en-la-historia-del-arte": [
