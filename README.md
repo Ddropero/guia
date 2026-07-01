@@ -108,8 +108,11 @@ El contenido se renderiza en build (la app sigue siendo estática). El tutor es 
 Si `NEXT_PUBLIC_TUTOR_URL` no está definida, el curso funciona igual (lectura,
 progreso, navegación) y el panel del tutor muestra un aviso de configuración.
 
-> **Modelo por tarea (híbrido):** Claude **Haiku 4.5** para chat y cuestionarios
-> (rápido y barato), Claude **Sonnet 5** para el análisis socrático de obras.
+> **Modelo:** Claude **Sonnet 5** en los tres modos. **Control de gastos** por:
+> caché de prompt (el contexto de la lección se cobra a ~10% tras la 1.ª vez),
+> topes de `max_tokens` por modo, recorte de historial/contexto y pensamiento
+> desactivado. Para tope duro, pon un **límite de gasto mensual** en la consola de
+> Anthropic y una **regla de rate limiting** de Cloudflare sobre `tutor.hilvan.org`.
 > Ningún valor de key se guarda en el repositorio — solo su nombre.
 
 ### Galería de obras e imágenes

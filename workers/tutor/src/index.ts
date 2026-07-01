@@ -22,16 +22,22 @@ export interface Env {
 
 type Modo = "chat" | "socratico" | "quiz";
 
+// Todos los modos usan Claude Sonnet 5. El control de gastos se hace con:
+//  - caché de prompt (el contexto de la lección, que se repite en cada turno,
+//    se cobra a ~10% tras la primera vez),
+//  - topes de max_tokens por modo,
+//  - recorte del historial y del contexto (menos tokens de entrada),
+//  - pensamiento desactivado (sin tokens de "thinking").
 const MODELO: Record<Modo, string> = {
-  chat: "claude-haiku-4-5",
-  quiz: "claude-haiku-4-5",
+  chat: "claude-sonnet-5",
+  quiz: "claude-sonnet-5",
   socratico: "claude-sonnet-5",
 };
 
 const MAX_TOKENS: Record<Modo, number> = {
-  chat: 1024,
-  quiz: 1536,
-  socratico: 1200,
+  chat: 700,
+  quiz: 900,
+  socratico: 1000,
 };
 
 function corsHeaders(origin: string): Record<string, string> {
@@ -49,6 +55,7 @@ Reglas:
 - Cíñete a la historia del arte y al contenido de la lección. Si te preguntan algo ajeno, redirige con amabilidad al tema.
 - Rigor absoluto: no inventes obras, fechas ni atribuciones. Si algo es discutido, dilo ("c.", "atribuido a").
 - Sé conciso pero sustancioso. Usa ejemplos y comparaciones que iluminen.
+- Responde en pocos párrafos; ve a lo esencial y no te extiendas de más.
 - Cuando cites una obra, menciona dónde verla (museo/ciudad) si la conoces con certeza.`;
 
 const MODO_SISTEMA: Record<Modo, string> = {
@@ -62,7 +69,7 @@ function construirSistema(modo: Modo, leccion: { titulo?: string; modulo?: strin
   if (leccion?.titulo) {
     let ctx = `\n--- CONTEXTO DE LA LECCIÓN ---\nLección: "${leccion.titulo}"`;
     if (leccion.modulo) ctx += `\nMódulo: ${leccion.modulo}`;
-    if (leccion.contexto) ctx += `\n\nContenido de la lección (úsalo como base de verdad):\n${leccion.contexto.slice(0, 9000)}`;
+    if (leccion.contexto) ctx += `\n\nContenido de la lección (úsalo como base de verdad):\n${leccion.contexto.slice(0, 6000)}`;
     partes.push(ctx);
   }
   return partes.join("\n\n");
@@ -76,12 +83,12 @@ interface Mensaje {
 function sanearMensajes(raw: unknown): Mensaje[] {
   if (!Array.isArray(raw)) return [];
   const msgs: Mensaje[] = [];
-  for (const m of raw.slice(-16)) {
+  for (const m of raw.slice(-10)) {
     if (!m || typeof m !== "object") continue;
     const role = (m as { role?: unknown }).role;
     const content = (m as { content?: unknown }).content;
     if ((role === "user" || role === "assistant") && typeof content === "string" && content.trim()) {
-      msgs.push({ role, content: content.slice(0, 6000) });
+      msgs.push({ role, content: content.slice(0, 4000) });
     }
   }
   // La conversación debe empezar por "user".
@@ -99,14 +106,16 @@ async function streamAnthropic(
   const body: Record<string, unknown> = {
     model: modelo,
     max_tokens: maxTokens,
-    system: sistema,
+    // Caché de prompt: el system (base + lección) se repite en cada turno y entre
+    // estudiantes de la misma lección → tras la 1.ª vez se cobra a ~10%.
+    system: [{ type: "text", text: sistema, cache_control: { type: "ephemeral" } }],
     messages,
     stream: true,
   };
   // Sonnet 5 corre pensamiento adaptativo por defecto: lo desactivamos para que
-  // el streaming del tutor sea inmediato (sin pausa de "thinking"). Haiku 4.5 no
-  // usa pensamiento extendido, así que se omite el campo.
-  if (modelo === "claude-sonnet-5") body.thinking = { type: "disabled" };
+  // el streaming del tutor sea inmediato (sin pausa de "thinking") y sin gastar
+  // tokens de razonamiento.
+  body.thinking = { type: "disabled" };
 
   const upstream = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",

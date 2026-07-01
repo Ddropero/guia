@@ -10,13 +10,23 @@ guardada como **secret** (nunca sale al cliente).
   - `messages`: historial `[{ role: "user"|"assistant", content }]`
 - Respuesta: **streaming** de texto (`text/plain`), token a token.
 
-## Modelo por tarea (híbrido, para controlar costo)
+## Modelo y control de gastos
 
-| Modo        | Modelo            | Uso                                            |
-| ----------- | ----------------- | ---------------------------------------------- |
-| `chat`      | Claude Haiku 4.5  | Dudas rápidas, ejemplos, comparaciones         |
-| `quiz`      | Claude Haiku 4.5  | Generar preguntas y evaluar respuestas         |
-| `socratico` | Claude Sonnet 5   | Guía paso a paso del análisis de una obra      |
+Los tres modos usan **Claude Sonnet 5** (`chat`, `quiz`, `socratico`). El costo se
+contiene con:
+
+- **Caché de prompt**: el `system` (base + contexto de la lección) se repite en
+  cada turno y entre estudiantes de la misma lección → tras la 1.ª vez se cobra a
+  ~10% del precio de entrada.
+- **Topes de `max_tokens`** por modo (700 / 900 / 1000) y respuestas breves por
+  instrucción del sistema.
+- **Recorte** de historial (últimos 10 mensajes) y del contexto de la lección.
+- **Pensamiento desactivado** (`thinking: disabled`): sin tokens de razonamiento.
+
+Para un **tope duro** de gasto, además del código: pon un **límite mensual** en la
+consola de Anthropic (Billing → Cost limits) y una **regla de Rate Limiting** de
+Cloudflare sobre `tutor.hilvan.org` (p. ej. N solicitudes/min por IP) para evitar
+abuso del endpoint público.
 
 ## Desplegar
 
