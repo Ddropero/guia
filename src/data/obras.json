@@ -585,6 +585,38 @@
       "q": "Buda de Sukhothai y arte de Pagan"
     }
   ],
+  "03-asia-clasica/05-arte-de-corea": [
+    {
+      "titulo": "Corona de oro de Silla (reino de Silla, c. ss. V-VI e. c.)",
+      "autor": "",
+      "q": "Corona de oro de Silla"
+    },
+    {
+      "titulo": "Buda de Seokguram (Silla Unificada, gruta consagrada c. 751 e. c.)",
+      "autor": "",
+      "q": "Buda de Seokguram"
+    },
+    {
+      "titulo": "Aguamanil celadón de Goryeo con incrustación (reino de Goryeo, c. ss. XII-XIII)",
+      "autor": "",
+      "q": "Aguamanil celadón de Goryeo con incrustación"
+    },
+    {
+      "titulo": "Tarro de la luna, porcelana blanca de Joseon (dinastía Joseon, c. s. XVIII)",
+      "autor": "",
+      "q": "Tarro de la luna, porcelana blanca de Joseon"
+    },
+    {
+      "titulo": "Vista verdadera del Geumgangsan",
+      "autor": "de Jeong Seon",
+      "q": "Vista verdadera del Geumgangsan de Jeong Seon"
+    },
+    {
+      "titulo": "Escuela del pueblo (Seodang)",
+      "autor": "del álbum de género de Kim Hong-do",
+      "q": "Escuela del pueblo del álbum de género de Kim Hong-do"
+    }
+  ],
   "04-arte-islamico/01-arquitectura-islamica": [
     {
       "titulo": "Cúpula de la Roca (Jerusalén)",
@@ -647,6 +679,38 @@
       "titulo": "Alfombra Ardabil",
       "autor": "",
       "q": "Alfombra Ardabil"
+    }
+  ],
+  "04-arte-islamico/03-imperios-islamicos-otomano-safavi-mogol": [
+    {
+      "titulo": "Mezquita de Selimiye, Edirne (Sinán, 1568-1574)",
+      "autor": "",
+      "q": "Mezquita de Selimiye, Edirne"
+    },
+    {
+      "titulo": "Azulejos de İznik de la mezquita de Rüstem Pasha, Estambul (Sinán, c. 1563)",
+      "autor": "",
+      "q": "Azulejos de İznik de la mezquita de Rüstem Pasha, Estambul"
+    },
+    {
+      "titulo": "Plaza Maydan-e Naqsh-e Jahan y mezquita del Sheij Lutfallah, Isfahán (Sha Abás I, c. 1603-1619)",
+      "autor": "",
+      "q": "Plaza Maydan-e Naqsh-e Jahan y mezquita del Sheij Lutfallah, Isfahán"
+    },
+    {
+      "titulo": "Alfombra de Ardabil (Irán safávida, fechada en 1539-1540)",
+      "autor": "",
+      "q": "Alfombra de Ardabil"
+    },
+    {
+      "titulo": "La corte de Gayumars",
+      "autor": "del Shahnameh de Sha Tahmasp",
+      "q": "La corte de Gayumars del Shahnameh de Sha Tahmasp"
+    },
+    {
+      "titulo": "Taj Mahal, Agra (Sha Jahán, 1632-1653)",
+      "autor": "",
+      "q": "Taj Mahal, Agra"
     }
   ],
   "05-edad-media/01-paleocristiano-y-bizantino": [
