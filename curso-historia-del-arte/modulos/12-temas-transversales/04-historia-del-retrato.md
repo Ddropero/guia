@@ -27,11 +27,11 @@ Al terminar esta lección serás capaz de:
 
 El retrato no nace de un impulso "natural" de copiar caras: nace de **necesidades sociales** muy concretas, y cambia cuando cambian esas necesidades. Conviene seguir esa lógica.
 
-**El retrato como memoria del muerto (Antigüedad).** Las primeras grandes tradiciones de retrato son **funerarias y conmemorativas**. En Roma, las familias patricias conservaban *imagines* —máscaras de cera de los antepasados— que se exhibían en los funerales: el retrato era un instrumento de **linaje y prestigio**. De ahí nace un retrato romano de un realismo a veces brutal, que no teme las arrugas, las calvas ni la papada, porque la *gravitas* (la seriedad, la autoridad de la edad) era un valor. En el Egipto romano, los **retratos de El Fayum** (siglos I–III d. C.) llevaban esa cara al ámbito de la momia: un rostro pintado del natural, asombrosamente vivo, para acompañar al difunto a la eternidad.
+**El retrato como memoria del muerto (Antigüedad).** Las primeras grandes tradiciones de retrato son **funerarias y conmemorativas**. En Roma, las familias patricias conservaban *imagines* —máscaras de cera de los antepasados— que se exhibían en los funerales: el retrato era un instrumento de **linaje y prestigio**. De ahí nace un retrato romano de un realismo a veces brutal, que no teme las arrugas, las calvas ni la papada, porque la *gravitas* (la seriedad, la autoridad de la edad) era un valor. En el Egipto romano, los **retratos de El Fayum** (siglos I–III d. C.) llevaban esa cara al ámbito de la momia: un rostro pintado del natural, asombrosamente vivo, para acompañar al difunto a la eternidad. Y esa lógica funeraria no es exclusiva del Mediterráneo: casi por las mismas fechas, en la costa norte del Perú, los ceramistas **moche** (c. 100–800 d. C.) modelaban los **huacos retrato**, botellas de cerámica con rostros masculinos tan individualizados —cicatrices, arrugas, gestos inconfundibles— que se ha podido reconocer a una misma persona retratada en distintas edades de su vida. Muchos se hallaron en tumbas: dos tradiciones sin contacto posible dieron, por separado, la misma respuesta al mismo problema ([arte andino](../11-tradiciones-globales/03-arte-andino.md), Módulo 11).
 
 **El eclipse medieval y el retorno del individuo.** Durante buena parte de la **Edad Media** occidental (Módulo 5), el retrato individual casi desaparece: lo que importa no es tu cara, sino tu **función** (rey, obispo, donante arrodillado) y la salvación de tu alma. El rostro se idealiza o se tipifica. El retrato moderno —el que busca a la **persona** concreta— renace con fuerza en el **Renacimiento** (Módulo 6), de la mano de un cambio profundo: el **humanismo**, que pone al individuo en el centro, y una nueva burguesía y nobleza con dinero, vanidad y ganas de perdurar. Aparece el retrato de perfil (a la manera de las medallas antiguas) y luego el retrato de tres cuartos, más íntimo y psicológico, que mira al espectador.
 
-**El retrato como instrumento de poder (siglos XVI–XVIII).** En la Edad Moderna, el retrato se convierte en **arma política**. Los reyes no podían estar en todas partes, así que su imagen los representaba: el **retrato de corte** viajaba, se enviaba a las negociaciones matrimoniales (te casabas, literalmente, con un retrato antes que con una persona), colgaba en embajadas y palacios. Holbein, Tiziano, Velázquez, Van Dyck o Rigaud no pintaban hombres: **fabricaban majestad**. La pose, el manto, la columna, la cortina, el perro, la espada: todo era un vocabulario de poder.
+**El retrato como instrumento de poder (siglos XVI–XVIII).** En la Edad Moderna, el retrato se convierte en **arma política**. Los reyes no podían estar en todas partes, así que su imagen los representaba: el **retrato de corte** viajaba, se enviaba a las negociaciones matrimoniales (te casabas, literalmente, con un retrato antes que con una persona), colgaba en embajadas y palacios. Holbein, Tiziano, Velázquez, Van Dyck o Rigaud no pintaban hombres: **fabricaban majestad**. La pose, el manto, la columna, la cortina, el perro, la espada: todo era un vocabulario de poder. Y ese vocabulario no fue un monopolio europeo: en las mismas décadas, la corte **mogol** de la India perfeccionaba su propio retrato de aparato en formato de **miniatura**. Bajo el emperador **Jahangir** (r. 1605–1627), los pintores del taller imperial fijaron su perfil con exactitud minuciosa y lo rodearon de alegorías: en *Jahangir prefiere a un jeque sufí antes que a los reyes* (Bichitr, c. 1615–1618, Freer Gallery of Art, Washington), el emperador, nimbado por un enorme halo solar, entrega un libro a un santo mientras el rey Jacobo I de Inglaterra, copiado de un retrato inglés, espera relegado en una esquina. La miniatura viajaba, se regalaba y negociaba prestigio exactamente igual que el lienzo de Tiziano ([los imperios de la pólvora](../04-arte-islamico/03-imperios-islamicos-otomano-safavi-mogol.md), Módulo 4).
 
 **El retrato burgués y la democratización (siglo XIX).** Con el ascenso de la burguesía, retratarse deja de ser privilegio de príncipes. La clase media quiere sus propios rostros en el salón, como prueba de respetabilidad. Y entonces, en 1839, irrumpe la **fotografía** (Módulo 8): de pronto, por unas monedas, cualquiera puede tener su imagen exacta. Es una revolución comparable a pocas en la historia del arte. El retrato pintado, liberado de la obligación de "parecerse", queda libre para hacer otra cosa: explorar la psicología, la pincelada, el color —o entrar en crisis.
 
@@ -48,7 +48,7 @@ Un retrato se "lee" prestando atención a un puñado de decisiones formales. Dom
 - **La mirada.** ¿Te mira a los ojos o desvía la vista? La mirada directa establece una relación —de igualdad, de desafío o de seducción— con quien observa; la mirada perdida sugiere introspección o idealización.
 - **Los atributos.** Objetos que "dicen" quién es el retratado: un libro (saber), una espada (rango militar), joyas y armiño (riqueza y nobleza), instrumentos del oficio (un pincel para el artista, un compás para el arquitecto), una flor o un perro (con sus significados de pureza o fidelidad).
 - **El fondo y el entorno.** Un fondo neutro y oscuro concentra la atención en la cara; una arquitectura monumental, una cortina o un paisaje añaden estatus o estado de ánimo. El **retrato de aparato** rodea al modelo de un escenario de poder.
-- **Idealización frente a verismo.** Toda la historia del retrato oscila entre **embellecer** (corregir defectos, rejuvenecer, ennoblecer) y **decir la verdad** (las arrugas, la fatiga, la fealdad). Cada época y cada encargo negocian ese equilibrio: el retrato romano tardío y el Rembrandt viejo se inclinan al verismo; el retrato de corte, casi siempre, a la idealización.
+- **Idealización frente a verismo.** Toda la historia del retrato oscila entre **embellecer** (corregir defectos, rejuvenecer, ennoblecer) y **decir la verdad** (las arrugas, la fatiga, la fealdad). Cada época y cada encargo negocian ese equilibrio: el retrato romano tardío y el Rembrandt viejo se inclinan al verismo; el retrato de corte, casi siempre, a la idealización. Las **cabezas de Ifé** (Nigeria, siglos XII–XV), fundidas en aleación de cobre a la cera perdida, resuelven el dilema a su manera: rasgos individualizados bajo una serenidad sin edad ni defectos, porque retratan a la vez a una persona y a la **dignidad sagrada del cargo** real; las cabezas conmemorativas de **Benín** prolongaron esa vía en los altares de los *obas* difuntos ([arte africano subsahariano](../11-tradiciones-globales/01-arte-africano-subsahariano.md), Módulo 11).
 - **La luz.** Modela el volumen del rostro y crea atmósfera. El **claroscuro** dramático (Caravaggio, Rembrandt) carga la cara de psicología; una luz uniforme la presenta con claridad documental.
 
 ## Materiales y técnicas
@@ -60,7 +60,7 @@ El "cómo está hecho" condiciona qué tipo de retrato es posible, cuánto cuest
 - **Temple y óleo sobre tabla y lienzo.** El **óleo**, perfeccionado en Flandes en el siglo XV, fue decisivo para el retrato: sus veladuras translúcidas permiten imitar la piel, el brillo de una joya o la textura de una tela con un realismo inédito. Es el medio del retrato de corte y burgués durante cinco siglos.
 - **La miniatura.** Retratos diminutos (a la acuarela sobre vitela o marfil) que se llevaban como joya o se enviaban por correo: el "selfie" portátil de los siglos XVI a XVIII.
 - **El pastel.** Frescura y delicadeza para el retrato del siglo XVIII (Rosalba Carriera, Maurice Quentin de La Tour).
-- **El grabado.** Multiplicaba el retrato (de reyes, sabios, escritores) y lo difundía como una imagen pública, antes de la fotografía.
+- **El grabado.** Multiplicaba el retrato (de reyes, sabios, escritores) y lo difundía como una imagen pública, antes de la fotografía. En el Japón de Edo, la estampa *ukiyo-e*, impresa y vendida por miles, hizo lo mismo a escala de masas: los retratos de actores de kabuki de **Tōshūsai Sharaku** (activo 1794–1795), con sus rostros a página entera y sus muecas llevadas al límite, convirtieron la cara del actor en imagen de celebridad, dos siglos antes de Warhol ([arte de Japón](../03-asia-clasica/03-arte-de-japon.md), Módulo 3).
 - **La fotografía** (desde 1839). Daguerrotipo, *carte de visite*, retrato de estudio: por primera vez, una imagen mecánica, barata y exacta. Transformó para siempre lo que se le pedía al retrato pintado.
 - **Medios contemporáneos.** El siglo XX y XXI suman el **fotomontaje**, la **serigrafía** (Warhol), la fotografía escenificada (Sherman), el vídeo y lo digital, ampliando el retrato más allá del lienzo.
 
@@ -74,7 +74,9 @@ El "cómo está hecho" condiciona qué tipo de retrato es posible, cuánto cuest
 - **Diego Velázquez** (1599–1660, España). Cumbre del retrato de corte; en *Las meninas* convierte el retrato en una reflexión sobre la mirada y la representación misma.
 - **Anton van Dyck** (1599–1641, Flandes/Inglaterra). Definió el retrato aristocrático elegante y desenvuelto que dominaría Europa durante dos siglos.
 - **Rembrandt van Rijn** (1606–1669, Países Bajos). El gran maestro del **autorretrato**: cerca de ochenta a lo largo de su vida, un diario implacable del paso del tiempo y la introspección.
+- **Bichitr** (activo c. 1615–1650, India mogol). Maestro de la miniatura de corte de Jahangir y Shah Jahan: retratos de perfil de precisión implacable y alegorías del poder imperial, exactamente contemporáneos de Velázquez.
 - **Élisabeth Vigée Le Brun** (1755–1842, Francia). Retratista de María Antonieta y de las cortes europeas (ver la lección *Mujeres en la historia del arte*, en este mismo módulo).
+- **Tōshūsai Sharaku** (activo 1794–1795, Japón). Retratista de actores de kabuki en el grabado *ukiyo-e*: en apenas diez meses produjo un conjunto de retratos de una intensidad caricaturesca y psicológica única, y desapareció sin dejar rastro.
 - **Jean-Auguste-Dominique Ingres** (1780–1867, Francia). Perfección del dibujo y de la línea en el retrato burgués y aristocrático del siglo XIX.
 - **Vincent van Gogh** (1853–1890, Países Bajos). Sus autorretratos convierten el rostro en un campo de color y pincelada expresiva, anticipando las vanguardias.
 - **Nadar** (Gaspard-Félix Tournachon, 1820–1910, Francia). Pionero del retrato **fotográfico** artístico; retrató a la élite cultural de su tiempo.
@@ -96,7 +98,15 @@ El "cómo está hecho" condiciona qué tipo de retrato es posible, cuánto cuest
 - **Contexto.** Egipto bajo dominio romano, una sociedad mestiza (griega, egipcia, romana) donde se cruzan dos ideas de la muerte. Son los retratos pintados más antiguos que se conservan en tan buen estado.
 - **Por qué importa.** Demuestran que el retrato naturalista —ese rostro que "te mira"— existe desde hace dos mil años, y que su raíz es la **memoria del difunto**: vencer a la muerte poniéndole una cara.
 
-### 2. Hans Holbein el Joven, *Retrato de Enrique VIII* (tipo de c. 1536–1537)
+### 2. *Huaco retrato* moche (botella con rostro de dignatario), Perú antiguo
+
+- **Ficha.** Cerámica moldeada y pintada con engobes (botella de asa estribo) · c. 200–600 d. C. · numerosos ejemplares en el Museo Larco (Lima), el Art Institute of Chicago y el Metropolitan Museum (Nueva York).
+- **Descripción.** Una botella cerámica cuyo cuerpo es una cabeza humana casi de tamaño natural: pómulos marcados, nariz poderosa, ojos atentos bajo un tocado anudado; a veces una cicatriz o un labio partido individualizan aún más el rostro, precisado con pintura crema y rojiza.
+- **Forma e iconografía.** Los ceramistas **moche** combinaban el molde con el retoque a mano para producir rostros **individualizados**, no tipos: se han identificado series de vasijas que muestran a la misma persona en distintas edades, del joven al hombre maduro. Los retratados son, casi con seguridad, señores y guerreros de rango de la costa norte del Perú.
+- **Contexto.** La cultura moche (c. 100–800 d. C.) floreció sin escritura, pero con una cerámica narrativa extraordinaria. Muchos huacos retrato proceden de **tumbas**, lo que sugiere, como en El Fayum, una función funeraria y conmemorativa ([arte andino](../11-tradiciones-globales/03-arte-andino.md), Módulo 11).
+- **Por qué importa.** Es la gran tradición de **retrato individual** de la América precolombina, surgida sin contacto alguno con el Mediterráneo: la prueba más contundente de que el retrato no es un invento europeo del Renacimiento, sino una respuesta que varias culturas dieron, por separado, a la misma necesidad de fijar un rostro.
+
+### 3. Hans Holbein el Joven, *Retrato de Enrique VIII* (tipo de c. 1536–1537)
 
 - **Ficha.** Óleo sobre tabla · c. 1536–1537 y copias del taller · versiones en la Galleria Nazionale d'Arte Antica (Roma), Thyssen-Bornemisza (Madrid) y otras; el gran mural original de Whitehall se perdió en un incendio.
 - **Descripción.** El rey, de frente o casi, ocupa la tabla con una presencia aplastante: hombros descomunales ensanchados por el jubón acuchillado, joyas, las piernas separadas y firmes, la mirada dura y la cabeza pequeña sobre un cuerpo de coloso.
@@ -104,7 +114,7 @@ El "cómo está hecho" condiciona qué tipo de retrato es posible, cuánto cuest
 - **Contexto.** Enrique VIII acababa de romper con Roma y fundar la Iglesia de Inglaterra; necesitaba una imagen de autoridad absoluta. Holbein, pintor de corte, le construyó un icono visual que se copió y difundió por todo el reino.
 - **Por qué importa.** Es el ejemplo perfecto del **retrato como propaganda**: una imagen tan eficaz que todavía hoy "vemos" a Enrique VIII tal como Holbein quiso que lo viéramos. (Enlaza con *Arte, poder, religión y propaganda*, en este módulo.)
 
-### 3. Alberto Durero, *Autorretrato con abrigo de pieles* (1500)
+### 4. Alberto Durero, *Autorretrato con abrigo de pieles* (1500)
 
 - **Ficha.** Óleo sobre tabla · 1500 · Alte Pinakothek, Múnich.
 - **Descripción.** El artista, de 28 años, se representa **rigurosamente de frente**, con larga melena rizada, la mano sobre el cuello de pieles, sobre un fondo oscuro con inscripciones; el rostro es solemne, hierático, intemporal.
@@ -112,7 +122,7 @@ El "cómo está hecho" condiciona qué tipo de retrato es posible, cuánto cuest
 - **Contexto.** En torno a 1500, el estatus del artista se eleva del artesano al **genio creador** (un cambio que estudiarás también en *Mecenazgo, mercado y museos*). Durero, orgulloso de su fama, firma con su célebre monograma.
 - **Por qué importa.** Es uno de los **autorretratos fundacionales** de Occidente: el momento en que el artista se coloca a sí mismo en el centro del cuadro y reclama dignidad intelectual y creadora.
 
-### 4. Diego Velázquez, *Las meninas* (1656)
+### 5. Diego Velázquez, *Las meninas* (1656)
 
 - **Ficha.** Óleo sobre lienzo · 1656 · Museo del Prado, Madrid.
 - **Descripción.** En una sala del Alcázar, la infanta Margarita rodeada de sus damas (*meninas*), una enana, un perro y otros personajes; a la izquierda, el propio Velázquez ante un gran lienzo; al fondo, en un espejo, se reflejan los reyes Felipe IV y Mariana; una figura en una puerta iluminada, al fondo, mira hacia dentro.
@@ -120,7 +130,7 @@ El "cómo está hecho" condiciona qué tipo de retrato es posible, cuánto cuest
 - **Contexto.** Velázquez, ya pintor y aposentador del rey, ansiaba el reconocimiento social del artista (la cruz de Santiago que luce fue añadida después). La obra afirma la dignidad de la pintura como arte liberal, no como oficio manual.
 - **Por qué importa.** Considerada una de las cumbres de la pintura universal, lleva el retrato de corte a un plano filosófico: ¿quién mira a quién? ¿Dónde está el verdadero protagonista? El espectador queda **atrapado dentro del cuadro**.
 
-### 5. Vincent van Gogh, *Autorretrato* (1889, Saint-Rémy)
+### 6. Vincent van Gogh, *Autorretrato* (1889, Saint-Rémy)
 
 - **Ficha.** Óleo sobre lienzo · septiembre de 1889 · Musée d'Orsay, París.
 - **Descripción.** El artista, de medio cuerpo, sobre un fondo de remolinos azul verdosos que parecen vibrar; el rostro tenso, la mirada penetrante, el pelo y la barba rojizos; toda la superficie está recorrida por una pincelada ondulante y nerviosa.
@@ -128,7 +138,7 @@ El "cómo está hecho" condiciona qué tipo de retrato es posible, cuánto cuest
 - **Contexto.** Van Gogh lo pintó internado en el asilo de Saint-Rémy, en un periodo de crisis. Sin dinero para modelos, se pintó a sí mismo decenas de veces, como Rembrandt: el autorretrato como laboratorio y como diario.
 - **Por qué importa.** Anuncia el **expresionismo** y las vanguardias (Módulo 9): el retrato deja de buscar el parecido externo para perseguir la verdad **interior**, abriendo el camino a la disolución del rostro en el siglo XX.
 
-### 6. Cindy Sherman, *Untitled Film Still #21* (1978)
+### 7. Cindy Sherman, *Untitled Film Still #21* (1978)
 
 - **Ficha.** Fotografía en gelatina de plata · 1978 · MoMA (Nueva York) y otras colecciones; pertenece a la serie *Untitled Film Stills* (1977–1980).
 - **Descripción.** En blanco y negro, una joven con traje y sombrerito mira inquieta hacia arriba, en una calle de rascacielos; parece el fotograma de una película de los años cincuenta que no existe. La mujer es la propia Sherman.
@@ -144,7 +154,7 @@ El "cómo está hecho" condiciona qué tipo de retrato es posible, cuánto cuest
 
 **Qué anticipa.** El autorretrato (Durero, Rembrandt, Van Gogh, Kahlo) anticipa la obsesión contemporánea por el **yo y su imagen**: del autorretrato al *selfie* hay una línea directa. Y la disolución del rostro en el siglo XX prepara un arte donde la identidad ya no se da por supuesta, sino que se construye, se interroga o se reinventa.
 
-**Diálogos con otras tradiciones y otros temas transversales.** El retrato individualista no es universal: muchas culturas privilegiaron la representación del **rango, el tipo o el ancestro** sobre el parecido físico —los bronces de Ife en África (Módulo 11), los retratos de antepasados en China, las máscaras rituales—, lo que obliga a relativizar la idea occidental de "retrato". Dentro de este módulo, dialoga con *Mujeres en la historia del arte* (el retrato y el autorretrato fueron géneros "permitidos" a las mujeres), con *Arte, poder, religión y propaganda* (el retrato de corte como imagen del poder), con *El paisaje y la jerarquía de los géneros* (el lugar intermedio del retrato en esa jerarquía) y con *Mecenazgo, mercado y museos* (quién pagaba por ser retratado).
+**Diálogos con otras tradiciones y otros temas transversales.** El retrato individualista no es universal: muchas culturas privilegiaron la representación del **rango, el tipo o el ancestro** sobre el parecido físico —las cabezas de Ifé y de Benín en África (Módulo 11), los retratos de antepasados en China, las máscaras rituales—, lo que obliga a relativizar la idea occidental de "retrato". Dentro de este módulo, dialoga con *Mujeres en la historia del arte* (el retrato y el autorretrato fueron géneros "permitidos" a las mujeres), con *Arte, poder, religión y propaganda* (el retrato de corte como imagen del poder), con *El paisaje y la jerarquía de los géneros* (el lugar intermedio del retrato en esa jerarquía) y con *Mecenazgo, mercado y museos* (quién pagaba por ser retratado).
 
 ## Debates e interpretaciones
 
@@ -178,6 +188,7 @@ El "cómo está hecho" condiciona qué tipo de retrato es posible, cuánto cuest
 4. **Autorretrato: confesión o máscara.** Compara un autorretrato de Rembrandt anciano con un *Untitled Film Still* de Cindy Sherman. ¿Cuál te parece más "verdadero" y por qué? ¿Existe un yo real detrás de cualquier autorretrato?
 5. **¿Quién falta?** Repasa los retratos famosos que conoces. ¿Qué tipos de personas casi nunca aparecen retratadas como individuos con nombre antes del siglo XIX? ¿Por qué? Relaciónalo con el dinero, el poder y el acceso al arte.
 6. **Del retrato al *selfie*.** ¿Es el *selfie* un heredero del autorretrato, o algo completamente distinto? ¿Qué busca quien se hace un *selfie*: parecido, estatus, identidad, las tres cosas? Debátelo conectando con la historia del género.
+7. **Dos inventos independientes.** Compara un retrato de El Fayum con un *huaco retrato* moche (busca ejemplos en la colección en línea del Museo Larco de Lima). Dos tradiciones sin contacto posible produjeron, casi al mismo tiempo, rostros individuales de un realismo sorprendente, y ambas en contextos funerarios. ¿Qué te dice esa coincidencia sobre la idea de que el retrato es un invento europeo del Renacimiento? ¿Qué funciones comparten ambos conjuntos y en qué difieren?
 
 ## Ejercicio de mirada
 

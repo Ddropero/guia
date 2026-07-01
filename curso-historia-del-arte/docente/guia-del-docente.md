@@ -43,9 +43,20 @@ Una versión de semestre exige seleccionar. Propuesta equilibrada:
 | 15 | Módulo 12 · Temas transversales (selección) |
 | 16 | Síntesis, presentaciones de proyectos y evaluación final |
 
+**Alternativa: calendario entretejido.** Si quiere evitar el esquema «primero Occidente, luego el resto», reparta las lecciones del Módulo 11 entre las semanas cronológicas (presente la [introducción del módulo](../modulos/11-tradiciones-globales/00-modulo.md) en la primera parada) y libere la semana 14 para el proyecto final o para ampliar los módulos extensos:
+
+| Semana | Añadir a la semana |
+|---|---|
+| 3 (Grecia y Roma) | [11.02 Arte mesoamericano](../modulos/11-tradiciones-globales/02-arte-mesoamericano.md) y [11.03 Arte andino](../modulos/11-tradiciones-globales/03-arte-andino.md): otras antigüedades monumentales, en parte simultáneas al Mediterráneo clásico y que se prolongan hasta la Conquista |
+| 5 (Edad Media) | [11.08 África cristiana e islámica](../modulos/11-tradiciones-globales/08-africa-cristiana-e-islamica.md): Lalibela y el Sahel, contemporáneos del románico y el gótico; Aksum, siglos antes, contemporáneo de Roma y Bizancio |
+| 8 (Barroco) | [11.06 Arte colonial latinoamericano](../modulos/11-tradiciones-globales/06-arte-colonial-latinoamericano.md): el Barroco como primer estilo planetario |
+| 9 (Siglo XIX) | [11.01 Arte africano subsahariano](../modulos/11-tradiciones-globales/01-arte-africano-subsahariano.md), [11.05 Arte de Oceanía](../modulos/11-tradiciones-globales/05-arte-de-oceania.md) y [11.04 Arte indígena de Norteamérica](../modulos/11-tradiciones-globales/04-arte-indigena-norteamericano.md): imprescindibles **antes** del cubismo, para que el alumnado conozca estas tradiciones por sí mismas y no a través de la mirada de las vanguardias |
+| 10–11 (Vanguardias) | Nada que añadir: [9.10 Modernidades asiáticas](../modulos/09-arte-moderno/10-modernidades-asiaticas.md) y el [muralismo mexicano](../modulos/09-arte-moderno/06-muralismo-mexicano.md) ya forman parte del módulo; no los recorte |
+| 12–13 (Posguerra) | [11.09 África moderna y contemporánea](../modulos/11-tradiciones-globales/09-africa-moderna-y-contemporanea.md), [11.10 El Caribe y el Atlántico negro](../modulos/11-tradiciones-globales/10-caribe-y-atlantico-negro.md) y [11.07 Arte latinoamericano moderno y contemporáneo](../modulos/11-tradiciones-globales/07-arte-latinoamericano-moderno.md) |
+
 ### Año completo (~32 semanas)
 
-Con dos semestres puede dedicarse aproximadamente una semana a cada módulo «pequeño» y dos a tres semanas a los grandes (6, 9 y 10). El primer semestre cubriría los Módulos 0–6 (de los fundamentos al Renacimiento) y el segundo los Módulos 7–12 (del Barroco a los temas transversales), integrando el Módulo 11 (artes de África, las Américas y Oceanía) de forma entrelazada con los demás en lugar de relegarlo al final.
+Con dos semestres puede dedicarse aproximadamente una semana a cada módulo «pequeño» y dos a tres semanas a los grandes (6, 9 y 10). El primer semestre cubriría los Módulos 0–6 (de los fundamentos al Renacimiento) y el segundo los Módulos 7–12 (del Barroco a los temas transversales), integrando el Módulo 11 (artes de África, las Américas y Oceanía) de forma entrelazada con los demás en lugar de relegarlo al final: use las mismas anclas del **calendario entretejido** de la versión semestral (mesoamericano y andino tras la Antigüedad; África cristiana e islámica con la Edad Media; arte colonial con el Barroco; África subsahariana, Oceanía y Norteamérica indígena con el siglo XIX, antes del cubismo; África moderna, Caribe y arte latinoamericano moderno con la posguerra), con el margen extra que da el año completo.
 
 ### Sugerencias de duración por módulo
 

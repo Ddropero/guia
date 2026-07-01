@@ -2550,6 +2550,11 @@
       "titulo": "Las dos Fridas",
       "autor": "Frida Kahlo",
       "q": "Las dos Fridas Frida Kahlo"
+    },
+    {
+      "titulo": "Jo no mai",
+      "autor": "Uemura Shōen",
+      "q": "Jo no mai Uemura Shōen"
     }
   ],
   "12-temas-transversales/02-mecenazgo-mercado-y-museos": [
@@ -2582,6 +2587,11 @@
       "titulo": "Comedian",
       "autor": "de Maurizio Cattelan",
       "q": "Comedian de Maurizio Cattelan"
+    },
+    {
+      "titulo": "La corte de Gayumars",
+      "autor": "del Shahnameh del sha Tahmasp",
+      "q": "La corte de Gayumars del Shahnameh del sha Tahmasp"
     }
   ],
   "12-temas-transversales/03-arte-poder-y-religion": [
@@ -2614,6 +2624,11 @@
       "titulo": "Adolf Hitler como portaestandarte",
       "autor": "la maquinaria visual nazi",
       "q": "Adolf Hitler como portaestandarte la maquinaria visual nazi"
+    },
+    {
+      "titulo": "Placas de latón del palacio real de Benín (siglos XVI-XVII)",
+      "autor": "",
+      "q": "Placas de latón del palacio real de Benín"
     }
   ],
   "12-temas-transversales/04-historia-del-retrato": [
@@ -2621,6 +2636,11 @@
       "titulo": "Retrato de El Fayum",
       "autor": "Egipto romano",
       "q": "Retrato de El Fayum Egipto romano"
+    },
+    {
+      "titulo": "Huaco retrato",
+      "autor": "moche , Perú antiguo",
+      "q": "Huaco retrato moche , Perú antiguo"
     },
     {
       "titulo": "Retrato de Enrique VIII",
@@ -2675,6 +2695,11 @@
       "q": "El caminante sobre el mar de nubes Caspar David Friedrich, , c. 1817"
     },
     {
+      "titulo": "La gran ola de Kanagawa",
+      "autor": "Katsushika Hokusai, , c. 1830 1831",
+      "q": "La gran ola de Kanagawa Katsushika Hokusai, , c. 1830 1831"
+    },
+    {
       "titulo": "La montaña Sainte-Victoire",
       "autor": "Paul Cézanne, , c. 1902 1906",
       "q": "La montaña Sainte-Victoire Paul Cézanne, , c. 1902 1906"
@@ -2710,6 +2735,11 @@
       "titulo": "Tarde de domingo en la isla de la Grande Jatte",
       "autor": "Georges Seurat",
       "q": "Tarde de domingo en la isla de la Grande Jatte Georges Seurat"
+    },
+    {
+      "titulo": "Murales de Bonampak (h. 790 d. C.)",
+      "autor": "",
+      "q": "Murales de Bonampak"
     }
   ],
   "12-temas-transversales/07-conservacion-y-autenticidad": [
@@ -2737,6 +2767,11 @@
       "titulo": "Buda",
       "autor": "El de Bāmiyān y la conservación de lo perdido",
       "q": "Buda El de Bāmiyān y la conservación de lo perdido"
+    },
+    {
+      "titulo": "Gran Mezquita de Djenné",
+      "autor": "La y el crépissage",
+      "q": "Gran Mezquita de Djenné La y el crépissage"
     }
   ],
   "12-temas-transversales/08-patrimonio-restitucion-y-descolonizacion": [
@@ -2764,6 +2799,11 @@
       "titulo": "toi moko",
       "autor": "Las cabezas tatuadas maoríes",
       "q": "toi moko Las cabezas tatuadas maoríes"
+    },
+    {
+      "titulo": "Duryodhana",
+      "autor": "El de Koh Ker",
+      "q": "Duryodhana El de Koh Ker"
     }
   ]
 }
