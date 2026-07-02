@@ -2,7 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getModulos, getModulo } from "@/lib/curso";
-import { ProgresoModulo } from "@/components/Progreso";
+import { tieneCuestionario } from "@/lib/quiz";
+import { ProgresoModulo, QuizBadge } from "@/components/Progreso";
 
 export const dynamicParams = false;
 
@@ -17,7 +18,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { modulo } = await params;
   const m = getModulo(modulo);
-  return { title: m ? `${m.titulo} · Historia del Arte` : "Historia del Arte" };
+  return { title: m ? m.titulo : "Módulo" };
 }
 
 export default async function ModuloPage({
@@ -28,6 +29,7 @@ export default async function ModuloPage({
   const { modulo } = await params;
   const m = getModulo(modulo);
   if (!m) notFound();
+  const hayQuiz = tieneCuestionario(m.id);
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-10 sm:px-8">
@@ -63,6 +65,26 @@ export default async function ModuloPage({
           </li>
         ))}
       </ol>
+
+      {hayQuiz && (
+        <Link
+          href={`/curso/${m.id}/cuestionario`}
+          className="mt-4 flex items-center justify-between gap-3 rounded-lg border border-line bg-panel px-4 py-4 transition hover:border-accent"
+        >
+          <span className="flex items-center gap-3">
+            <span aria-hidden className="text-lg">
+              ✎
+            </span>
+            <span>
+              <span className="block text-fg">Cuestionario del módulo</span>
+              <span className="block text-xs text-muted">
+                Ponte a prueba con corrección instantánea
+              </span>
+            </span>
+          </span>
+          <QuizBadge moduloId={m.id} />
+        </Link>
+      )}
     </main>
   );
 }

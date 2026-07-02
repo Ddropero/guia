@@ -1,6 +1,6 @@
 # Arte colonial latinoamericano
 
-**Módulo 11 · Tradiciones globales (más allá del canon) · Periodo: c. 1521 – 1820 (de la caída de Tenochtitlan a las independencias) · Regiones: la América hispana y portuguesa: el virreinato de Nueva España (México, Centroamérica), el del Perú (con sus desgloses en Nueva Granada y Río de la Plata), las Audiencias de Quito y Charcas, y el Brasil portugués; con focos en México, Puebla, Quito, Cuzco, Potosí, Minas Gerais y Bahía.**
+**Módulo 11 · Artes de África, las Américas y Oceanía · Periodo: c. 1521 – 1820 (de la caída de Tenochtitlan a las independencias) · Regiones: la América hispana y portuguesa: el virreinato de Nueva España (México, Centroamérica), el del Perú (con sus desgloses en Nueva Granada y Río de la Plata), las Audiencias de Quito y Charcas, y el Brasil portugués; con focos en México, Puebla, Quito, Cuzco, Potosí, Minas Gerais y Bahía.**
 
 ---
 

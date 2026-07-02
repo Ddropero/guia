@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, DM_Mono } from "next/font/google";
 import "./globals.css";
+import RegistrarSW from "@/components/RegistrarSW";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -26,9 +27,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Analítica opcional: el token público de Cloudflare Web Analytics se pasa por
+  // NEXT_PUBLIC_CF_BEACON en el build (no es un secreto). Sin él, no se carga nada.
+  const cfBeacon = process.env.NEXT_PUBLIC_CF_BEACON;
   return (
     <html lang="es" className={`${fraunces.variable} ${dmMono.variable}`}>
-      <body className="min-h-screen bg-bg text-fg antialiased">{children}</body>
+      <body className="min-h-screen bg-bg text-fg antialiased">
+        {children}
+        <RegistrarSW />
+        {cfBeacon && (
+          <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon={JSON.stringify({ token: cfBeacon })}
+          />
+        )}
+      </body>
     </html>
   );
 }

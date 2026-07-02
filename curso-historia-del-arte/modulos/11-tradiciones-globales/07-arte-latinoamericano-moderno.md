@@ -1,6 +1,6 @@
 # Arte latinoamericano moderno y contemporáneo
 
-**Módulo 11 · Tradiciones globales (más allá del canon) · Periodo: c. 1920 – actualidad · Regiones: América Latina, en especial Brasil, los países del Río de la Plata (Argentina, Uruguay), México, los Andes y el Caribe, Venezuela, Colombia y Chile, en diálogo constante con París y Nueva York.**
+**Módulo 11 · Artes de África, las Américas y Oceanía · Periodo: c. 1920 – actualidad · Regiones: América Latina, en especial Brasil, los países del Río de la Plata (Argentina, Uruguay), México, los Andes y el Caribe, Venezuela, Colombia y Chile, en diálogo constante con París y Nueva York.**
 
 ---
 

@@ -1,6 +1,6 @@
 # Arte indígena de Norteamérica
 
-**Módulo 11 · Tradiciones globales (más allá del canon) · Periodo: c. 1000 a. C. – actualidad · Regiones: el subcontinente norteamericano al norte de Mesoamérica —desde el Ártico y la costa del Pacífico del actual Canadá hasta el suroeste, las Grandes Llanuras y el valle del Misisipi en los actuales Estados Unidos.**
+**Módulo 11 · Artes de África, las Américas y Oceanía · Periodo: c. 1000 a. C. – actualidad · Regiones: el subcontinente norteamericano al norte de Mesoamérica —desde el Ártico y la costa del Pacífico del actual Canadá hasta el suroeste, las Grandes Llanuras y el valle del Misisipi en los actuales Estados Unidos.**
 
 ---
 

@@ -24,7 +24,7 @@ Al terminar serás capaz de:
 
 ## Cómo está organizado
 
-El curso reúne **13 módulos** y **80 lecciones**, más un módulo de referencias y recursos. La columna vertebral es cronológica y geográfica, pero el recorrido es flexible:
+El curso reúne **13 módulos** y **86 lecciones**, más un módulo de referencias y recursos. La columna vertebral es cronológica y geográfica, pero el recorrido es flexible:
 
 - **Módulo 0 · Fundamentos**: las herramientas para mirar y estudiar. Empieza siempre por aquí.
 - **Módulos 1–2**: Prehistoria, primeras civilizaciones y Antigüedad clásica (Grecia y Roma).
@@ -33,7 +33,7 @@ El curso reúne **13 módulos** y **80 lecciones**, más un módulo de referenci
 - **Módulos 6–7**: Renacimiento, Barroco y siglo XVIII.
 - **Módulo 8**: el siglo XIX.
 - **Módulos 9–10**: vanguardias del siglo XX y arte de posguerra hasta hoy.
-- **Módulo 11 · Tradiciones globales**: África, Mesoamérica, los Andes, Norteamérica indígena, Oceanía y América Latina, más allá del canon europeo.
+- **Módulo 11 · Artes de África, las Américas y Oceanía**: África (subsahariana, cristiana e islámica, moderna), Mesoamérica, los Andes, Norteamérica indígena, Oceanía, América Latina y el Caribe: tradiciones con voz y peso propios.
 - **Módulo 12 · Temas transversales**: mujeres en el arte, mecenazgo y mercado, poder y propaganda, retrato, paisaje, color, conservación y descolonización del museo.
 
 Cada lección es una unidad cerrada que puedes leer en una sesión; los módulos suman una visión de conjunto.
@@ -42,9 +42,18 @@ Cada lección es una unidad cerrada que puedes leer en una sesión; los módulos
 
 No hay una única forma correcta de recorrer el curso. Elige la que mejor se ajuste a tu tiempo y tu objetivo.
 
-**Ruta exprés / panorámica (un mes ligero).** Para tener una visión general rápida. Haz el Módulo 0 completo y luego la primera lección de cada módulo del 1 al 10. Obtendrás un mapa mental del arte mundial sin entrar en todos los detalles. Ideal antes de un viaje o como primera vuelta.
+**Ruta exprés / panorámica (un mes ligero).** Para tener una visión general rápida. Haz el Módulo 0 completo y luego la primera lección de cada módulo del 1 al 11. Obtendrás un mapa mental del arte mundial sin entrar en todos los detalles. Ideal antes de un viaje o como primera vuelta.
 
-**Ruta completa cronológica (recomendada).** Del Módulo 0 al 12, en orden. Es el recorrido más sólido: cada época prepara la siguiente, y entenderás las rupturas (el Renacimiento contra lo gótico, las vanguardias contra la academia) porque habrás vivido lo que rompían. Reserva varios meses sin prisa.
+**Ruta completa cronológica (recomendada).** Del Módulo 0 al 12, en orden. Es el recorrido más sólido: cada época prepara la siguiente, y entenderás las rupturas (el Renacimiento contra lo gótico, las vanguardias contra la academia) porque habrás vivido lo que rompían. Reserva varios meses sin prisa. Un consejo para que la ruta sea de verdad global: no dejes el Módulo 11 para el final como si fuera un apéndice. Al llegar a cada época, salta a las lecciones que dialogan con ella:
+
+- Tras la Antigüedad (Módulo 2): [Arte mesoamericano](modulos/11-tradiciones-globales/02-arte-mesoamericano.md) y [Arte andino](modulos/11-tradiciones-globales/03-arte-andino.md), otras antigüedades igual de monumentales al otro lado del Atlántico.
+- Con la Edad Media (Módulo 5): [África cristiana e islámica](modulos/11-tradiciones-globales/08-africa-cristiana-e-islamica.md), iglesias y mezquitas que crecen al mismo tiempo que el románico y el gótico.
+- Con el Barroco (Módulo 7): [Arte colonial latinoamericano](modulos/11-tradiciones-globales/06-arte-colonial-latinoamericano.md), el Barroco convertido en primer estilo planetario.
+- Con el siglo XIX (Módulo 8), y **antes** de llegar al cubismo: [Arte africano subsahariano](modulos/11-tradiciones-globales/01-arte-africano-subsahariano.md) y [Arte de Oceanía](modulos/11-tradiciones-globales/05-arte-de-oceania.md), para conocer esas tradiciones por sí mismas y no a través de los ojos de las vanguardias.
+- Con las vanguardias (Módulo 9): las [Modernidades asiáticas](modulos/09-arte-moderno/10-modernidades-asiaticas.md) ya están dentro del módulo, igual que el muralismo mexicano; no las saltes.
+- Con la posguerra (Módulo 10): [África moderna y contemporánea](modulos/11-tradiciones-globales/09-africa-moderna-y-contemporanea.md), [El Caribe y el Atlántico negro](modulos/11-tradiciones-globales/10-caribe-y-atlantico-negro.md) y [Arte latinoamericano moderno y contemporáneo](modulos/11-tradiciones-globales/07-arte-latinoamericano-moderno.md).
+
+Las lecciones del Módulo 11 que no aparecen aquí (como el [Arte indígena de Norteamérica](modulos/11-tradiciones-globales/04-arte-indigena-norteamericano.md)) puedes leerlas al cerrar el siglo XIX o donde prefieras: lo importante es que ninguna se quede fuera.
 
 **Ruta temática.** Para quien prefiere seguir hilos que atraviesan los siglos. Tras el Módulo 0, combina el Módulo 12 (temas transversales) con las lecciones que cada tema toca. Por ejemplo: lee "Historia del retrato" y luego salta a los retratos de Roma, el Renacimiento, el Siglo de Oro y el siglo XX. O sigue "Mujeres en la historia del arte" rastreando artistas en cada época. Es la ruta más libre y la favorita de quien ya tiene una base.
 

@@ -8,8 +8,28 @@
 import fs from "node:fs";
 import path from "node:path";
 import { marked } from "marked";
+import { fullDe, imagenDe, wikipediaBuscar, wikipediaDe } from "@/lib/obras";
+import { getGlosario } from "@/lib/glosario";
+import { enlazarGlosario, slugTermino } from "@/lib/glosario-enlaces";
 
 marked.setOptions({ gfm: true, breaks: false });
+
+// Glosario cargado una vez: términos para auto-enlazar y sus anclas.
+const RUTA_GLOSARIO = "/curso/recursos/glosario";
+const GLOSARIO_TERMINOS = getGlosario().map((t) => t.termino);
+const GLOSARIO_SLUGS = new Set(GLOSARIO_TERMINOS.map(slugTermino));
+
+// Añade id={slug} al primer <strong>Término</strong> de cada término, para que
+// los enlaces "…#slug" del glosario aterricen en la entrada correcta.
+function anclarGlosario(html: string): string {
+  const usados = new Set<string>();
+  return html.replace(/<strong>([^<]+)<\/strong>/g, (m, txt: string) => {
+    const slug = slugTermino(txt.trim());
+    if (!GLOSARIO_SLUGS.has(slug) || usados.has(slug)) return m;
+    usados.add(slug);
+    return `<strong id="${slug}">${txt}</strong>`;
+  });
+}
 
 // Documentos de nivel superior → ruta del sitio.
 const RUTAS_TOP: Record<string, string> = {
@@ -24,7 +44,7 @@ const RUTAS_TOP: Record<string, string> = {
  * su ruta del sitio. Devuelve null si no se puede mapear.
  * `baseRelDir` = carpeta del archivo actual, relativa a curso-historia-del-arte/.
  */
-function resolverRuta(target: string, baseRelDir: string): string | null {
+export function resolverRuta(target: string, baseRelDir: string): string | null {
   const clean = target.split("#")[0].replace(/^\.\//, "");
   const esBaseRel = /^(modulos|referencias|docente)\//.test(clean) || clean in RUTAS_TOP;
   const abs = esBaseRel ? clean : path.posix.normalize(path.posix.join(baseRelDir, clean));
@@ -34,6 +54,103 @@ function resolverRuta(target: string, baseRelDir: string): string | null {
   const r = abs.match(/^referencias\/(.+)\.md$/);
   if (r) return `/curso/recursos/${r[1]}`;
   return null;
+}
+
+// --- Miniaturas inline junto a cada obra comentada --------------------------
+// La sección "## Obras maestras comentadas" lista cada obra bajo un "### N. …".
+// Insertamos la miniatura (si hay una libre) junto a su comentario, para verla
+// mientras se lee. Debe replicar la extracción de título/query de
+// scripts/construir-obras.mjs para que las claves coincidan con obras-*.json.
+
+const limpiaQuery = (s: string): string =>
+  s
+    .replace(/\*/g, "")
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/["“”]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+export function parseHeadingObra(h: string): { titulo: string; autor: string; q: string } {
+  const it = h.match(/\*([^*]+)\*/); // título en cursiva, si lo hay
+  let titulo: string;
+  let autor = "";
+  if (it) {
+    titulo = it[1].trim();
+    autor = (h.slice(0, it.index) + " " + h.slice(it.index! + it[0].length))
+      .replace(/\*/g, "")
+      .replace(/\([^)]*\)/g, " ")
+      .replace(/[—–]/g, " ")
+      .replace(/^[\s,:/]+|[\s,:/]+$/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  } else {
+    titulo = h.replace(/[—–]/g, "-").trim();
+  }
+  return {
+    titulo: titulo.replace(/\s+/g, " ").trim(),
+    autor,
+    q: limpiaQuery(`${titulo} ${autor}`),
+  };
+}
+
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+/** `<figure>` en una sola línea (bloque HTML para marked) o null si no hay imagen libre. */
+function figuraObra(titulo: string, q: string, autor = ""): string | null {
+  const img = imagenDe(q);
+  if (!img?.thumb) return null;
+  const enlace = wikipediaDe(q)?.url ?? wikipediaBuscar(q);
+  const t = escapeHtml(titulo);
+  const lic = img.licencia ? `${escapeHtml(img.licencia)} · ` : "";
+  const credito = img.enlace
+    ? `<a href="${escapeHtml(img.enlace)}" target="_blank" rel="noopener noreferrer">Wikimedia</a>`
+    : "Wikimedia";
+  const attrs =
+    `data-obra data-titulo="${t}" data-autor="${escapeHtml(autor)}" ` +
+    `data-thumb="${escapeHtml(img.thumb)}" data-full="${escapeHtml(fullDe(img.thumb))}" ` +
+    `data-wiki="${escapeHtml(enlace)}" data-credito="${escapeHtml(img.credito ?? "")}" ` +
+    `data-licencia="${escapeHtml(img.licencia ?? "")}"`;
+  return (
+    `<figure class="obra-inline">` +
+    `<a href="${escapeHtml(enlace)}" ${attrs} target="_blank" rel="noopener noreferrer" ` +
+    `title="Ver «${t}» en grande" class="cursor-zoom-in">` +
+    `<img src="${escapeHtml(img.thumb)}" alt="${t}" loading="lazy" /></a>` +
+    `<figcaption>${t}<span class="credito">imagen: ${lic}${credito}</span></figcaption>` +
+    `</figure>`
+  );
+}
+
+function inyectarObras(md: string): string {
+  const lines = md.split("\n");
+  const start = lines.findIndex((l) => /^##\s+Obras maestras comentadas/i.test(l));
+  if (start < 0) return md;
+  const out: string[] = [];
+  let dentro = false;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (i === start) {
+      dentro = true;
+      out.push(line);
+      continue;
+    }
+    if (dentro && /^##\s/.test(line)) dentro = false;
+    out.push(line);
+    if (!dentro) continue;
+    const m = line.match(/^###\s+(.+?)\s*$/);
+    if (!m) continue;
+    const h = m[1].replace(/^\d+[.)]\s*/, "").trim();
+    if (/^otras\b/i.test(h)) continue; // subsección "Otras obras…", no es una obra
+    const { titulo, autor, q } = parseHeadingObra(h);
+    const fig = figuraObra(titulo, q, autor);
+    if (fig) out.push("", fig, "");
+  }
+  return out.join("\n");
 }
 
 /** Renderiza Markdown a HTML reescribiendo los enlaces internos .md a rutas del sitio. */
@@ -184,7 +301,11 @@ export function getLeccion(moduloId: string, slug: string): Leccion | null {
     slug,
     titulo: tituloDe(md) ?? prettify(slug),
     subtitulo: subtituloDe(md),
-    html: render(md, `modulos/${moduloId}`),
+    html: enlazarGlosario(
+      render(inyectarObras(md), `modulos/${moduloId}`),
+      GLOSARIO_TERMINOS,
+      RUTA_GLOSARIO,
+    ),
     texto: md,
     prev: prevRef ? { moduloId, slug: prevRef.slug, titulo: prevRef.titulo } : null,
     next: nextRef ? { moduloId, slug: nextRef.slug, titulo: nextRef.titulo } : null,
@@ -225,7 +346,7 @@ export function getRecursos(): RecursoRef[] {
   if (existe(REFERENCIAS_DIR)) {
     // Informes editoriales internos (QA/fact-check): quedan en el repo pero no
     // se listan como material de referencia del estudiante.
-    const EXCLUIR = new Set(["informe-de-calidad", "verificacion-de-hechos"]);
+    const EXCLUIR = new Set(["informe-de-calidad", "verificacion-de-hechos", "evaluacion-integral"]);
     for (const f of fs.readdirSync(REFERENCIAS_DIR).filter((f) => f.endsWith(".md")).sort()) {
       const slug = f.replace(/\.md$/, "");
       if (EXCLUIR.has(slug)) continue;
@@ -241,5 +362,8 @@ export function getRecurso(slug: string): { titulo: string; html: string } | nul
   if (!p || !existe(p)) return null;
   const md = leer(p);
   const relDir = path.relative(BASE, path.dirname(p)).split(path.sep).join("/");
-  return { titulo: tituloDe(md) ?? prettify(slug), html: render(md, relDir) };
+  let html = render(md, relDir);
+  // La página del glosario recibe anclas por término (destino de los auto-enlaces).
+  if (slug === "glosario") html = anclarGlosario(html);
+  return { titulo: tituloDe(md) ?? prettify(slug), html };
 }

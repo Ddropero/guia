@@ -18,6 +18,7 @@ El **hilo conductor** del módulo es una paradoja fértil: ¿cómo un arte que, 
 
 1. **[Arquitectura islámica](01-arquitectura-islamica.md)** — De la Cúpula de la Roca al Taj Mahal: la "gramática" de la mezquita y cómo el aniconismo da lugar a un arte de geometría, arabesco, caligrafía, luz y agua, recorriendo los grandes tipos espaciales (la hipóstila árabe, la cúpula otomana, el iwán iraní) y los debates sobre canon, intercambio cultural y patrimonio en disputa.
 2. **[Caligrafía, miniatura y artes decorativas islámicas](02-artes-del-libro-y-decorativas-islamicas.md)** — Las artes del libro y decorativas del islam —caligrafía, iluminación coránica, miniatura persa, otomana y mogol, cerámica de lustre, vidrio, metalistería, alfombras y textiles—, la idea del arabesco y el infinito, y por qué la palabra escrita, y no la imagen, ocupa la cúspide de su jerarquía artística.
+3. **[Los imperios de la pólvora: arte otomano, safávida y mogol](03-imperios-islamicos-otomano-safavi-mogol.md)** — La cima moderna del arte islámico: las cúpulas de Sinán, el *Shahnameh* de Tahmasp y la miniatura persa, y el Taj Mahal mogol; tres imperios que comparten una gramática y la llevan por tres caminos distintos, en diálogo con la Venecia de Bellini.
 
 ## Objetivos del módulo
 
@@ -34,4 +35,4 @@ Al terminar este módulo serás capaz de:
 
 > **¿Cómo logra el arte islámico, partiendo de la reticencia a representar la figura, construir uno de los lenguajes visuales más ricos de la historia —donde la palabra escrita, la geometría y el patrón infinito hacen el trabajo que en otras tradiciones hace la imagen?**
 
-Mantén esta pregunta en mente al recorrer las dos lecciones. Verás que el aniconismo no es una carencia, sino una **elección que reorganiza por completo lo visual**: en lugar de mostrar lo divino, lo evoca a través del orden, la repetición y la belleza de la escritura. Aprender a mirar el arte islámico es, también, aprender a leerlo —y a reconocer cuánta de la "decoración" que creíamos muda estaba, en realidad, diciendo algo.
+Mantén esta pregunta en mente al recorrer las tres lecciones. Verás que el aniconismo no es una carencia, sino una **elección que reorganiza por completo lo visual**: en lugar de mostrar lo divino, lo evoca a través del orden, la repetición y la belleza de la escritura. Aprender a mirar el arte islámico es, también, aprender a leerlo —y a reconocer cuánta de la "decoración" que creíamos muda estaba, en realidad, diciendo algo.

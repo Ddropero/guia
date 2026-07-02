@@ -1,7 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getModulos, getRecursos } from "@/lib/curso";
-import { ProgresoModulo, ProgresoGlobal } from "@/components/Progreso";
+import {
+  ProgresoModulo,
+  ProgresoGlobal,
+  ContinuarDondeLoDejaste,
+  GestionProgreso,
+} from "@/components/Progreso";
 
 export const metadata: Metadata = {
   title: "Historia del Arte · Curso interactivo con tutor de IA",
@@ -51,6 +56,37 @@ export default function CursoHome() {
                 ))}
               </div>
             )}
+          </div>
+
+          <div className="mb-10 flex flex-wrap items-center justify-between gap-4">
+            <div className="flex flex-wrap items-center gap-2">
+              <ContinuarDondeLoDejaste />
+              <Link
+                href="/curso/repaso"
+                className="inline-flex items-center gap-2 rounded-md border border-line px-4 py-2 text-sm text-muted transition hover:border-accent hover:text-fg"
+              >
+                🗂 Repaso espaciado
+              </Link>
+              <Link
+                href="/curso/logros"
+                className="inline-flex items-center gap-2 rounded-md border border-line px-4 py-2 text-sm text-muted transition hover:border-accent hover:text-fg"
+              >
+                ★ Logros
+              </Link>
+              <Link
+                href="/curso/obras"
+                className="inline-flex items-center gap-2 rounded-md border border-line px-4 py-2 text-sm text-muted transition hover:border-accent hover:text-fg"
+              >
+                🖼 Índice de obras
+              </Link>
+              <Link
+                href="/curso/cronologia"
+                className="inline-flex items-center gap-2 rounded-md border border-line px-4 py-2 text-sm text-muted transition hover:border-accent hover:text-fg"
+              >
+                📅 Línea de tiempo
+              </Link>
+            </div>
+            <GestionProgreso />
           </div>
 
           <section className="space-y-3">

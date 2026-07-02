@@ -1,10 +1,10 @@
-import { gac, imagenDe, type Obra } from "@/lib/obras";
+import { fullDe, imagenDe, wikipediaBuscar, wikipediaDe, type Obra } from "@/lib/obras";
 
 /**
  * Galería de las obras comentadas en una lección.
  * - Miniatura si la obra es de dominio público (Wikimedia); si no, un marcador.
- * - Ficha (título · autor) y botón "Ver en Google Arts & Culture" (para todas,
- *   incluidas las contemporáneas con derechos).
+ * - Ficha (título · autor) y enlace a Wikipedia: al artículo exacto si se
+ *   resolvió uno (obras-wikipedia.json), o si no a la búsqueda de Wikipedia.
  */
 export default function Galeria({ obras }: { obras: Obra[] }) {
   if (!obras.length) return null;
@@ -13,6 +13,8 @@ export default function Galeria({ obras }: { obras: Obra[] }) {
     <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
       {obras.map((o, i) => {
         const img = imagenDe(o.q);
+        const wiki = wikipediaDe(o.q);
+        const enlaceObra = wiki?.url ?? wikipediaBuscar(o.q);
         return (
           <li
             key={i}
@@ -20,11 +22,21 @@ export default function Galeria({ obras }: { obras: Obra[] }) {
           >
             {img ? (
               <a
-                href={img.enlace || gac(o.q)}
+                href={enlaceObra}
+                data-obra
+                data-titulo={o.titulo}
+                data-autor={o.autor}
+                data-thumb={img.thumb}
+                data-full={fullDe(img.thumb)}
+                data-wiki={enlaceObra}
+                data-credito={img.credito ?? ""}
+                data-licencia={img.licencia ?? ""}
+                data-fecha={o.fecha ?? ""}
+                data-ubicacion={o.ubicacion ?? ""}
                 target="_blank"
                 rel="noopener noreferrer"
-                title={img.credito ? `Imagen: ${img.credito}${img.licencia ? ` · ${img.licencia}` : ""}` : o.titulo}
-                className="block"
+                title={`Ver «${o.titulo}» en grande`}
+                className="block cursor-zoom-in"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -43,13 +55,14 @@ export default function Galeria({ obras }: { obras: Obra[] }) {
             <div className="flex flex-1 flex-col gap-1 p-3">
               <p className="font-serif text-sm leading-snug text-fg">{o.titulo}</p>
               {o.autor && <p className="text-xs text-muted">{o.autor}</p>}
+              {o.fecha && <p className="font-mono text-[10px] text-muted/80">{o.fecha}</p>}
               <a
-                href={gac(o.q)}
+                href={enlaceObra}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-auto pt-1 text-xs text-accent hover:underline"
               >
-                Ver en Google Arts &amp; Culture ↗
+                {wiki ? "Ver en Wikipedia ↗" : "Buscar en Wikipedia ↗"}
               </a>
               {img?.licencia && (
                 <span className="text-[10px] text-muted/70">imagen: {img.licencia} · Wikimedia</span>

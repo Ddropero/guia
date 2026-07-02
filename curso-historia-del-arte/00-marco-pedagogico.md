@@ -57,7 +57,7 @@ El **Módulo 0 · Fundamentos** no es un preámbulo prescindible: instala el ins
 
 ## 5. Inclusión y enfoque global / decolonial
 
-El temario rompe deliberadamente con el relato eurocéntrico tradicional que iba de Grecia al arte contemporáneo occidental dejando todo lo demás como "apéndice". Aquí, las **grandes tradiciones de Asia** (Módulo 3), el **arte islámico** (Módulo 4) y un módulo entero de **tradiciones globales más allá del canon** (Módulo 11: África subsahariana, Mesoamérica, los Andes, Norteamérica indígena, Oceanía, el arte colonial latinoamericano y el latinoamericano moderno) tienen peso propio, no decorativo.
+El temario rompe deliberadamente con el relato eurocéntrico tradicional que iba de Grecia al arte contemporáneo occidental dejando todo lo demás como "apéndice". Aquí, las **grandes tradiciones de Asia** (Módulo 3), el **arte islámico** (Módulo 4) y un módulo entero de **artes de África, las Américas y Oceanía** (Módulo 11: África subsahariana, cristiana e islámica y moderna, Mesoamérica, los Andes, Norteamérica indígena, Oceanía, el arte colonial latinoamericano, el latinoamericano moderno y el Caribe del Atlántico negro) tienen peso propio, no decorativo.
 
 Este enfoque se concreta en varios principios:
 
@@ -74,4 +74,4 @@ El curso está diseñado como una espiral ascendente. En los primeros módulos p
 
 En los módulos centrales (Renacimiento, Barroco, siglo XIX) la balanza se desplaza hacia la **interpretación y la comparación**: ya no basta con describir, hay que explicar por qué Caravaggio rompe con sus contemporáneos o cómo el japonismo reconfigura la mirada europea. Entra con fuerza el nivel *analizar*.
 
-En los módulos finales —vanguardias, posguerra a hoy, tradiciones globales y temas transversales— el centro de gravedad es la **valoración crítica**. Las obras y los debates (qué es arte tras Duchamp, feminismo e identidad, arte digital e IA, restitución del patrimonio) exigen *evaluar* y *crear*: tomar postura, argumentarla y reconocer la propia situación. Así, quien termina el curso no solo conoce la historia del arte: **sabe pensarla, discutirla y producir juicio propio fundamentado**.
+En los módulos finales —vanguardias, posguerra a hoy, artes de África, las Américas y Oceanía, y temas transversales— el centro de gravedad es la **valoración crítica**. Las obras y los debates (qué es arte tras Duchamp, feminismo e identidad, arte digital e IA, restitución del patrimonio) exigen *evaluar* y *crear*: tomar postura, argumentarla y reconocer la propia situación. Así, quien termina el curso no solo conoce la historia del arte: **sabe pensarla, discutirla y producir juicio propio fundamentado**.

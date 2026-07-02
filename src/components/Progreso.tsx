@@ -1,49 +1,37 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import {
+  alternarLeccion,
+  contarCompletadas,
+  estaCompletada,
+  exportar,
+  getQuiz,
+  getUltima,
+  importar,
+  registrarVisita,
+  suscribir,
+} from "@/lib/progreso";
 
-const CLAVE = "curso-arte:progreso";
-
-function leerSet(): Set<string> {
-  if (typeof window === "undefined") return new Set();
-  try {
-    const raw = window.localStorage.getItem(CLAVE);
-    return new Set(raw ? (JSON.parse(raw) as string[]) : []);
-  } catch {
-    return new Set();
-  }
-}
-
-function guardarSet(s: Set<string>) {
-  try {
-    window.localStorage.setItem(CLAVE, JSON.stringify([...s]));
-  } catch {
-    /* almacenamiento no disponible */
-  }
-}
-
-function emitirCambio() {
-  window.dispatchEvent(new Event("curso-arte:progreso"));
-}
-
-/** Botón para marcar/desmarcar una lección como completada. */
+/** Botón para marcar/desmarcar una lección como completada. Registra la visita. */
 export function LeccionCompletaToggle({ moduloId, slug }: { moduloId: string; slug: string }) {
   const id = `${moduloId}/${slug}`;
   const [hecha, setHecha] = useState(false);
   const [listo, setListo] = useState(false);
 
   useEffect(() => {
-    setHecha(leerSet().has(id));
-    setListo(true);
-  }, [id]);
+    const sincronizar = () => {
+      setHecha(estaCompletada(id));
+      setListo(true);
+    };
+    sincronizar();
+    registrarVisita(moduloId, slug);
+    return suscribir(sincronizar);
+  }, [id, moduloId, slug]);
 
   function alternar() {
-    const s = leerSet();
-    if (s.has(id)) s.delete(id);
-    else s.add(id);
-    guardarSet(s);
-    setHecha(s.has(id));
-    emitirCambio();
+    setHecha(alternarLeccion(id));
   }
 
   if (!listo) return null;
@@ -52,9 +40,7 @@ export function LeccionCompletaToggle({ moduloId, slug }: { moduloId: string; sl
     <button
       onClick={alternar}
       className={`inline-flex items-center gap-2 rounded-md border px-4 py-2 text-sm transition ${
-        hecha
-          ? "border-accent bg-accent/10 text-accent"
-          : "border-line text-muted hover:text-fg"
+        hecha ? "border-accent bg-accent/10 text-accent" : "border-line text-muted hover:text-fg"
       }`}
     >
       <span aria-hidden>{hecha ? "✓" : "○"}</span>
@@ -69,18 +55,13 @@ export function ProgresoModulo({ moduloId, slugs }: { moduloId: string; slugs: s
   const [listo, setListo] = useState(false);
 
   useEffect(() => {
+    const ids = slugs.map((sl) => `${moduloId}/${sl}`);
     const recalcular = () => {
-      const s = leerSet();
-      setHechas(slugs.filter((sl) => s.has(`${moduloId}/${sl}`)).length);
+      setHechas(contarCompletadas(ids));
       setListo(true);
     };
     recalcular();
-    window.addEventListener("curso-arte:progreso", recalcular);
-    window.addEventListener("storage", recalcular);
-    return () => {
-      window.removeEventListener("curso-arte:progreso", recalcular);
-      window.removeEventListener("storage", recalcular);
-    };
+    return suscribir(recalcular);
   }, [moduloId, slugs]);
 
   if (!listo) return null;
@@ -101,16 +82,11 @@ export function ProgresoGlobal({ total }: { total: number }) {
 
   useEffect(() => {
     const recalcular = () => {
-      setHechas(leerSet().size);
+      setHechas(contarCompletadas());
       setListo(true);
     };
     recalcular();
-    window.addEventListener("curso-arte:progreso", recalcular);
-    window.addEventListener("storage", recalcular);
-    return () => {
-      window.removeEventListener("curso-arte:progreso", recalcular);
-      window.removeEventListener("storage", recalcular);
-    };
+    return suscribir(recalcular);
   }, []);
 
   if (!listo || total === 0) return null;
@@ -127,6 +103,104 @@ export function ProgresoGlobal({ total }: { total: number }) {
       <div className="mt-2 h-2 overflow-hidden rounded-full bg-line">
         <div className="h-full rounded-full bg-accent transition-all" style={{ width: `${pct}%` }} />
       </div>
+    </div>
+  );
+}
+
+/** Enlace "Continuar donde lo dejaste" (para la portada). Solo si hay historial. */
+export function ContinuarDondeLoDejaste() {
+  const [ultima, setUltima] = useState<{ moduloId: string; slug: string } | null>(null);
+
+  useEffect(() => {
+    const recalcular = () => {
+      const u = getUltima();
+      setUltima(u ? { moduloId: u.moduloId, slug: u.slug } : null);
+    };
+    recalcular();
+    return suscribir(recalcular);
+  }, []);
+
+  if (!ultima) return null;
+
+  return (
+    <Link
+      href={`/curso/${ultima.moduloId}/${ultima.slug}`}
+      className="inline-flex items-center gap-2 rounded-md border border-accent bg-accent/10 px-4 py-2 text-sm text-accent transition hover:bg-accent/20"
+    >
+      ↩ Continuar donde lo dejaste
+    </Link>
+  );
+}
+
+/** Mejor puntuación del cuestionario de un módulo (badge). */
+export function QuizBadge({ moduloId }: { moduloId: string }) {
+  const [res, setRes] = useState<{ mejor: number; total: number } | null>(null);
+  const [listo, setListo] = useState(false);
+
+  useEffect(() => {
+    const recalcular = () => {
+      const q = getQuiz(moduloId);
+      setRes(q ? { mejor: q.mejor, total: q.total } : null);
+      setListo(true);
+    };
+    recalcular();
+    return suscribir(recalcular);
+  }, [moduloId]);
+
+  if (!listo || !res) return null;
+  const pct = Math.round((res.mejor / res.total) * 100);
+  const bien = pct >= 80;
+  return (
+    <span className={`text-xs ${bien ? "text-accent" : "text-muted"}`}>
+      Cuestionario: {res.mejor}/{res.total} {bien ? "✓" : ""}
+    </span>
+  );
+}
+
+/** Exportar/importar el progreso como archivo JSON (respaldo). */
+export function GestionProgreso() {
+  const [msg, setMsg] = useState<string | null>(null);
+  const fileRef = useRef<HTMLInputElement>(null);
+
+  function descargar() {
+    const blob = new Blob([exportar()], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "progreso-historia-del-arte.json";
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  function alElegir(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const lector = new FileReader();
+    lector.onload = () => {
+      const ok = importar(String(lector.result));
+      setMsg(ok ? "Progreso restaurado ✓" : "Archivo no válido");
+      setTimeout(() => setMsg(null), 4000);
+    };
+    lector.readAsText(file);
+    e.target.value = "";
+  }
+
+  return (
+    <div className="flex flex-wrap items-center gap-2 text-xs">
+      <button onClick={descargar} className="text-muted underline-offset-2 hover:text-fg hover:underline">
+        Exportar progreso
+      </button>
+      <span className="text-line" aria-hidden>
+        ·
+      </span>
+      <button
+        onClick={() => fileRef.current?.click()}
+        className="text-muted underline-offset-2 hover:text-fg hover:underline"
+      >
+        Importar
+      </button>
+      <input ref={fileRef} type="file" accept="application/json" onChange={alElegir} className="hidden" />
+      {msg && <span className="text-accent">{msg}</span>}
     </div>
   );
 }

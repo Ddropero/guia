@@ -1,0 +1,1568 @@
+{
+  "00-fundamentos": {
+    "modulo": "M0",
+    "titulo": "Módulo 0 · Fundamentos: cómo mirar y estudiar el arte",
+    "preguntas": [
+      {
+        "n": 1,
+        "nivel": "Com",
+        "enunciado": "La diferencia central entre iconografía e iconología (Panofsky) es que la iconología:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Cataloga los atributos que identifican a cada santo."
+          },
+          {
+            "letra": "b",
+            "texto": "Registra los temas y las escenas representados en la obra."
+          },
+          {
+            "letra": "c",
+            "texto": "Interpreta el significado profundo de la obra como síntoma de una cultura y una época."
+          },
+          {
+            "letra": "d",
+            "texto": "Mide las proporciones y el canon de las figuras."
+          }
+        ],
+        "correcta": "c"
+      },
+      {
+        "n": 2,
+        "nivel": "Com",
+        "enunciado": "En el análisis formal, \"línea, color, luz, espacio, composición y escala\" son:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Los grandes periodos en que se divide la historia del arte."
+          },
+          {
+            "letra": "b",
+            "texto": "Los elementos y principios con que se describe objetivamente una obra antes de interpretarla."
+          },
+          {
+            "letra": "c",
+            "texto": "Las categorías de mecenazgo que financian una obra."
+          },
+          {
+            "letra": "d",
+            "texto": "Los tipos de soporte material sobre los que se pinta."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 3,
+        "nivel": "Rec",
+        "enunciado": "La técnica del temple se caracteriza por usar como aglutinante del pigmento:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La cal fresca aplicada sobre el muro húmedo."
+          },
+          {
+            "letra": "b",
+            "texto": "El aceite de linaza que seca por oxidación."
+          },
+          {
+            "letra": "c",
+            "texto": "Una resina natural disuelta en esencia de trementina."
+          },
+          {
+            "letra": "d",
+            "texto": "La yema de huevo (u otro medio proteico)."
+          }
+        ],
+        "correcta": "d"
+      },
+      {
+        "n": 4,
+        "nivel": "Com",
+        "enunciado": "Afirmar que \"el canon es una construcción histórica e ideológica\" significa que:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La selección de qué obras y autores se consideran centrales responde a decisiones culturales revisables, no a una ley natural."
+          },
+          {
+            "letra": "b",
+            "texto": "Las obras canónicas carecen en realidad de todo valor artístico."
+          },
+          {
+            "letra": "c",
+            "texto": "Todas las obras de todas las épocas valen exactamente lo mismo."
+          },
+          {
+            "letra": "d",
+            "texto": "El canon lo fija hoy un organismo internacional de expertos."
+          }
+        ],
+        "correcta": "a"
+      },
+      {
+        "n": 5,
+        "nivel": "Com",
+        "enunciado": "El método del análisis formal puro fue impulsado especialmente por:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Erwin Panofsky y su método iconológico."
+          },
+          {
+            "letra": "b",
+            "texto": "Giorgio Vasari y sus Vidas de artistas."
+          },
+          {
+            "letra": "c",
+            "texto": "Heinrich Wölfflin y sus pares de categorías estilísticas."
+          },
+          {
+            "letra": "d",
+            "texto": "Linda Nochlin y la crítica feminista del canon."
+          }
+        ],
+        "correcta": "c"
+      }
+    ]
+  },
+  "01-prehistoria-y-civilizaciones": {
+    "modulo": "M1",
+    "titulo": "Módulo 1 · Prehistoria y primeras civilizaciones",
+    "preguntas": [
+      {
+        "n": 1,
+        "nivel": "Rec",
+        "enunciado": "Las pinturas rupestres de Altamira y Lascaux pertenecen mayoritariamente al:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Neolítico de las primeras aldeas agrícolas."
+          },
+          {
+            "letra": "b",
+            "texto": "Paleolítico superior."
+          },
+          {
+            "letra": "c",
+            "texto": "Periodo cicládico del Egeo."
+          },
+          {
+            "letra": "d",
+            "texto": "Comienzo de la Edad del Bronce."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 2,
+        "nivel": "Com",
+        "enunciado": "El paso del Paleolítico al Neolítico en el arte se asocia con:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La aparición del retrato individualizado del difunto."
+          },
+          {
+            "letra": "b",
+            "texto": "La invención de la pintura al fresco sobre muro."
+          },
+          {
+            "letra": "c",
+            "texto": "El primer uso sistemático de la perspectiva lineal."
+          },
+          {
+            "letra": "d",
+            "texto": "La sedentarización, la cerámica y los primeros monumentos megalíticos."
+          }
+        ],
+        "correcta": "d"
+      },
+      {
+        "n": 3,
+        "nivel": "Anl",
+        "enunciado": "La Estela de los buitres y los relieves asirios de caza comparten una función principal:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Ornamental y de uso estrictamente privado."
+          },
+          {
+            "letra": "b",
+            "texto": "Funeraria, ligada al ajuar de una tumba doméstica."
+          },
+          {
+            "letra": "c",
+            "texto": "Propagandística: exaltar el poder del gobernante y conmemorar la victoria."
+          },
+          {
+            "letra": "d",
+            "texto": "Didáctica y de devoción religiosa popular."
+          }
+        ],
+        "correcta": "c"
+      },
+      {
+        "n": 4,
+        "nivel": "Rec",
+        "enunciado": "La convención de representar la figura humana con cabeza de perfil, ojo y torso de frente y piernas de perfil es característica del arte:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Minoico de los frescos palaciegos."
+          },
+          {
+            "letra": "b",
+            "texto": "Egipcio."
+          },
+          {
+            "letra": "c",
+            "texto": "Micénico de las tumbas de fosa."
+          },
+          {
+            "letra": "d",
+            "texto": "Exclusivamente sumerio arcaico."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 5,
+        "nivel": "Com",
+        "enunciado": "El arte minoico (Cnosos) se distingue del micénico sobre todo por:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Su tono más naturalista, dinámico y de temática marina y palaciega."
+          },
+          {
+            "letra": "b",
+            "texto": "Su carácter militarista, defensivo y amurallado."
+          },
+          {
+            "letra": "c",
+            "texto": "El uso del oro repujado en las máscaras funerarias."
+          },
+          {
+            "letra": "d",
+            "texto": "La ausencia casi total de pintura mural."
+          }
+        ],
+        "correcta": "a"
+      }
+    ]
+  },
+  "02-antiguedad-clasica": {
+    "modulo": "M2",
+    "titulo": "Módulo 2 · Antigüedad clásica: Grecia y Roma",
+    "preguntas": [
+      {
+        "n": 1,
+        "nivel": "Rec",
+        "enunciado": "El kouros arcaico griego muestra todavía la influencia de:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "El naturalismo dinámico de la escultura helenística."
+          },
+          {
+            "letra": "b",
+            "texto": "El verismo del retrato romano republicano."
+          },
+          {
+            "letra": "c",
+            "texto": "La frontalidad y rigidez de los modelos egipcios."
+          },
+          {
+            "letra": "d",
+            "texto": "El movimiento y el gesto teatral del barroco."
+          }
+        ],
+        "correcta": "c"
+      },
+      {
+        "n": 2,
+        "nivel": "Anl",
+        "enunciado": "El \"estilo severo\" y el Doríforo de Policleto introducen frente al arcaísmo:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La pérdida de interés por la anatomía del cuerpo."
+          },
+          {
+            "letra": "b",
+            "texto": "El contrapposto y un canon de proporciones ideales del cuerpo."
+          },
+          {
+            "letra": "c",
+            "texto": "El gesto teatral y el dramatismo emocional extremo."
+          },
+          {
+            "letra": "d",
+            "texto": "La descomposición del volumen en facetas geométricas."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 3,
+        "nivel": "Com",
+        "enunciado": "El arte helenístico (p. ej. Laocoonte, Victoria de Samotracia) se caracteriza por:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La serenidad, el equilibrio y la contención del clasicismo."
+          },
+          {
+            "letra": "b",
+            "texto": "La frontalidad hierática y el fondo dorado."
+          },
+          {
+            "letra": "c",
+            "texto": "La abstracción geométrica y la renuncia a la figura."
+          },
+          {
+            "letra": "d",
+            "texto": "El dramatismo, el movimiento, la emoción y el virtuosismo técnico."
+          }
+        ],
+        "correcta": "d"
+      },
+      {
+        "n": 4,
+        "nivel": "Anl",
+        "enunciado": "Frente al idealismo griego, el retrato romano republicano destaca por:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "El verismo: rasgos individualizados, arrugas y signos de edad."
+          },
+          {
+            "letra": "b",
+            "texto": "La idealización juvenil aplicada de forma sistemática."
+          },
+          {
+            "letra": "c",
+            "texto": "El uso del bronce como material casi exclusivo."
+          },
+          {
+            "letra": "d",
+            "texto": "La renuncia al retrato en favor del relieve narrativo."
+          }
+        ],
+        "correcta": "a"
+      },
+      {
+        "n": 5,
+        "nivel": "Com",
+        "enunciado": "El gran logro arquitectónico romano que permitió cubrir grandes espacios (Panteón, termas, basílicas) fue:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La adopción de la esbelta columna jónica."
+          },
+          {
+            "letra": "b",
+            "texto": "El uso sistemático del arco, la bóveda y el hormigón (opus caementicium)."
+          },
+          {
+            "letra": "c",
+            "texto": "El perfeccionamiento del frontón triangular del templo."
+          },
+          {
+            "letra": "d",
+            "texto": "El sistema adintelado con vigas de madera."
+          }
+        ],
+        "correcta": "b"
+      }
+    ]
+  },
+  "03-asia-clasica": {
+    "modulo": "M3",
+    "titulo": "Módulo 3 · Grandes tradiciones de Asia",
+    "preguntas": [
+      {
+        "n": 1,
+        "nivel": "Rec",
+        "enunciado": "El stupa es, en el arte budista:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Un monumento relicario de forma hemisférica, objeto de circunvalación ritual."
+          },
+          {
+            "letra": "b",
+            "texto": "La residencia palaciega del soberano y su corte."
+          },
+          {
+            "letra": "c",
+            "texto": "Un pincel de bambú empleado en la caligrafía."
+          },
+          {
+            "letra": "d",
+            "texto": "Una máscara ritual usada en el teatro."
+          }
+        ],
+        "correcta": "a"
+      },
+      {
+        "n": 2,
+        "nivel": "Com",
+        "enunciado": "La pintura de paisaje china (shanshui) busca ante todo:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La reproducción topográfica exacta y medible del lugar."
+          },
+          {
+            "letra": "b",
+            "texto": "La construcción del espacio con perspectiva lineal de punto único."
+          },
+          {
+            "letra": "c",
+            "texto": "Captar la armonía y el aliento (qi) de la naturaleza, con vacío y montañas-agua."
+          },
+          {
+            "letra": "d",
+            "texto": "El retrato ceremonial del emperador y su familia."
+          }
+        ],
+        "correcta": "c"
+      },
+      {
+        "n": 3,
+        "nivel": "Anl",
+        "enunciado": "El ukiyo-e japonés (\"imágenes del mundo flotante\") se difundió gracias a:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La pintura al óleo sobre lienzo importada de Europa."
+          },
+          {
+            "letra": "b",
+            "texto": "La estampa xilográfica, reproducible y asequible."
+          },
+          {
+            "letra": "c",
+            "texto": "La pintura al fresco sobre los muros de los templos."
+          },
+          {
+            "letra": "d",
+            "texto": "La fundición de pequeñas esculturas de bronce."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 4,
+        "nivel": "Rec",
+        "enunciado": "Borobudur (Java) y Angkor Wat (Camboya) son grandes complejos monumentales asociados respectivamente a:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "El sintoísmo japonés y el taoísmo chino."
+          },
+          {
+            "letra": "b",
+            "texto": "El islam y el cristianismo del sudeste asiático."
+          },
+          {
+            "letra": "c",
+            "texto": "El jainismo y el confucianismo."
+          },
+          {
+            "letra": "d",
+            "texto": "El budismo (mandala en piedra) y el hinduismo/budismo jemer."
+          }
+        ],
+        "correcta": "d"
+      }
+    ]
+  },
+  "04-arte-islamico": {
+    "modulo": "M4",
+    "titulo": "Módulo 4 · Arte islámico",
+    "preguntas": [
+      {
+        "n": 1,
+        "nivel": "Com",
+        "enunciado": "La fuerte presencia de decoración geométrica, vegetal (ataurique) y caligráfica en el arte islámico se relaciona con:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La falta de dominio técnico de la figura humana."
+          },
+          {
+            "letra": "b",
+            "texto": "La prohibición general de emplear el color en lo sagrado."
+          },
+          {
+            "letra": "c",
+            "texto": "La reticencia hacia la imagen figurativa en contextos sagrados, que potencia la abstracción y la palabra."
+          },
+          {
+            "letra": "d",
+            "texto": "La influencia directa de la fragmentación cubista."
+          }
+        ],
+        "correcta": "c"
+      },
+      {
+        "n": 2,
+        "nivel": "Rec",
+        "enunciado": "El mihrab en una mezquita es:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La torre desde la que se llama a la oración."
+          },
+          {
+            "letra": "b",
+            "texto": "El patio porticado donde se realizan las abluciones."
+          },
+          {
+            "letra": "c",
+            "texto": "La cúpula que cubre el crucero central."
+          },
+          {
+            "letra": "d",
+            "texto": "El nicho que indica la dirección de La Meca (qibla)."
+          }
+        ],
+        "correcta": "d"
+      },
+      {
+        "n": 3,
+        "nivel": "Anl",
+        "enunciado": "La caligrafía alcanza en el arte islámico el rango de arte mayor porque:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Cumple una función meramente decorativa y secundaria."
+          },
+          {
+            "letra": "b",
+            "texto": "Transmite la palabra revelada y se convierte en vehículo estético y espiritual central."
+          },
+          {
+            "letra": "c",
+            "texto": "Sustituye por completo a la arquitectura religiosa."
+          },
+          {
+            "letra": "d",
+            "texto": "Se reserva al uso en las monedas de curso legal."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 4,
+        "nivel": "Com",
+        "enunciado": "El muqarnas es:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Un sistema de bóvedas de nido de abeja, decorativo y estructural."
+          },
+          {
+            "letra": "b",
+            "texto": "Un tejido de seda con motivos vegetales."
+          },
+          {
+            "letra": "c",
+            "texto": "Un tipo de miniatura de la escuela persa."
+          },
+          {
+            "letra": "d",
+            "texto": "Un pigmento mineral de tono azulado."
+          }
+        ],
+        "correcta": "a"
+      }
+    ]
+  },
+  "05-edad-media": {
+    "modulo": "M5",
+    "titulo": "Módulo 5 · Edad Media en Occidente",
+    "preguntas": [
+      {
+        "n": 1,
+        "nivel": "Rec",
+        "enunciado": "El uso del fondo dorado y la frontalidad hierática son rasgos típicos del arte:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Helenístico tardío."
+          },
+          {
+            "letra": "b",
+            "texto": "Bizantino y paleocristiano."
+          },
+          {
+            "letra": "c",
+            "texto": "Impresionista."
+          },
+          {
+            "letra": "d",
+            "texto": "Romano republicano."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 2,
+        "nivel": "Com",
+        "enunciado": "La arquitectura románica se reconoce por:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "El arco apuntado, la bóveda de crucería y los grandes ventanales."
+          },
+          {
+            "letra": "b",
+            "texto": "La cúpula sobre pechinas y la planta de cruz griega centralizada."
+          },
+          {
+            "letra": "c",
+            "texto": "La estructura vista de hierro y grandes paños de cristal."
+          },
+          {
+            "letra": "d",
+            "texto": "El arco de medio punto, los muros gruesos, la bóveda de cañón y el aspecto macizo."
+          }
+        ],
+        "correcta": "d"
+      },
+      {
+        "n": 3,
+        "nivel": "Anl",
+        "enunciado": "El paso del románico al gótico supone, estructuralmente:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Un retorno al muro macizo y al vano pequeño y escaso."
+          },
+          {
+            "letra": "b",
+            "texto": "El arco apuntado, la bóveda de crucería y los arbotantes, que liberan el muro y permiten grandes vidrieras."
+          },
+          {
+            "letra": "c",
+            "texto": "El abandono de la construcción de grandes templos."
+          },
+          {
+            "letra": "d",
+            "texto": "La sustitución de la piedra por el hormigón armado."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 4,
+        "nivel": "Com",
+        "enunciado": "El programa escultórico de un tímpano románico cumplía sobre todo una función:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Ornamental, sin contenido narrativo ni doctrinal."
+          },
+          {
+            "letra": "b",
+            "texto": "De propaganda de la actividad comercial del burgo."
+          },
+          {
+            "letra": "c",
+            "texto": "Didáctica y doctrinal: enseñar verdades de fe (Juicio Final, Maiestas) a fieles iletrados."
+          },
+          {
+            "letra": "d",
+            "texto": "De retrato conmemorativo del donante que financió la obra."
+          }
+        ],
+        "correcta": "c"
+      },
+      {
+        "n": 5,
+        "nivel": "Anl",
+        "enunciado": "La verticalidad y la luz coloreada de la catedral gótica buscan expresar:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Una experiencia de ascensión y trascendencia (la \"luz divina\", estética abacial de Suger)."
+          },
+          {
+            "letra": "b",
+            "texto": "El poder militar y defensivo del señor feudal."
+          },
+          {
+            "letra": "c",
+            "texto": "La riqueza acumulada por el comercio marítimo."
+          },
+          {
+            "letra": "d",
+            "texto": "El racionalismo laico de la Ilustración."
+          }
+        ],
+        "correcta": "a"
+      }
+    ]
+  },
+  "06-renacimiento": {
+    "modulo": "M6",
+    "titulo": "Módulo 6 · El Renacimiento",
+    "preguntas": [
+      {
+        "n": 1,
+        "nivel": "Anl",
+        "enunciado": "Giotto representa el proto-Renacimiento porque introduce frente al gótico:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "El fondo dorado plano y la frontalidad hierática."
+          },
+          {
+            "letra": "b",
+            "texto": "El volumen, el peso, el espacio y la emoción humana en las figuras."
+          },
+          {
+            "letra": "c",
+            "texto": "La abstracción geométrica de las formas."
+          },
+          {
+            "letra": "d",
+            "texto": "La estampa xilográfica reproducible."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 2,
+        "nivel": "Com",
+        "enunciado": "La perspectiva lineal sistematizada por Brunelleschi y Alberti permite:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Construir un espacio tridimensional ilusorio sobre una superficie plana, con punto de fuga."
+          },
+          {
+            "letra": "b",
+            "texto": "Suprimir por completo la figura humana de la escena."
+          },
+          {
+            "letra": "c",
+            "texto": "Pintar directamente sin ningún dibujo preparatorio."
+          },
+          {
+            "letra": "d",
+            "texto": "Renunciar al color en favor del claroscuro."
+          }
+        ],
+        "correcta": "a"
+      },
+      {
+        "n": 3,
+        "nivel": "Anl",
+        "enunciado": "El Renacimiento veneciano (Tiziano, Giorgione) se distingue del florentino por privilegiar:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "El disegno, es decir, la línea y el dibujo como fundamento."
+          },
+          {
+            "letra": "b",
+            "texto": "La escultura por encima de la pintura de caballete."
+          },
+          {
+            "letra": "c",
+            "texto": "La arquitectura como arte rector de las demás."
+          },
+          {
+            "letra": "d",
+            "texto": "El colorito: el color, la materia pictórica y la atmósfera."
+          }
+        ],
+        "correcta": "d"
+      },
+      {
+        "n": 4,
+        "nivel": "Com",
+        "enunciado": "El Manierismo se caracteriza por:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "El equilibrio sereno y la naturalidad del clasicismo pleno."
+          },
+          {
+            "letra": "b",
+            "texto": "El realismo minucioso, casi fotográfico, de la escena."
+          },
+          {
+            "letra": "c",
+            "texto": "La figura serpentinata, las proporciones alargadas, el artificio y la tensión."
+          },
+          {
+            "letra": "d",
+            "texto": "La abstracción pura, sin referente reconocible."
+          }
+        ],
+        "correcta": "c"
+      },
+      {
+        "n": 5,
+        "nivel": "Anl",
+        "enunciado": "El Renacimiento del Norte (Van Eyck, Durero) frente al italiano destaca por:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "El desinterés por el detalle y la textura."
+          },
+          {
+            "letra": "b",
+            "texto": "El dominio del óleo, el detallismo minucioso y un simbolismo cargado en los objetos."
+          },
+          {
+            "letra": "c",
+            "texto": "El uso casi exclusivo de la pintura al fresco."
+          },
+          {
+            "letra": "d",
+            "texto": "La renuncia al género del retrato."
+          }
+        ],
+        "correcta": "b"
+      }
+    ]
+  },
+  "07-barroco-y-siglo-xviii": {
+    "modulo": "M7",
+    "titulo": "Módulo 7 · Barroco y siglo XVIII",
+    "preguntas": [
+      {
+        "n": 1,
+        "nivel": "Com",
+        "enunciado": "El tenebrismo de Caravaggio consiste en:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Representar solo escenas nocturnas de tema mitológico."
+          },
+          {
+            "letra": "b",
+            "texto": "Suprimir las sombras para lograr una luz uniforme."
+          },
+          {
+            "letra": "c",
+            "texto": "Un fuerte contraste de luz y sombra (claroscuro dramático) que modela las figuras y dirige la mirada."
+          },
+          {
+            "letra": "d",
+            "texto": "Emplear de manera exclusiva una gama de colores fríos."
+          }
+        ],
+        "correcta": "c"
+      },
+      {
+        "n": 2,
+        "nivel": "Anl",
+        "enunciado": "El Siglo de Oro español (Velázquez, Zurbarán, Murillo) se caracteriza por:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La frivolidad galante del gusto rococó."
+          },
+          {
+            "letra": "b",
+            "texto": "La abstracción geométrica de las formas."
+          },
+          {
+            "letra": "c",
+            "texto": "La severidad cívica del neoclasicismo."
+          },
+          {
+            "letra": "d",
+            "texto": "El naturalismo, la espiritualidad y el virtuosismo (p. ej. Las meninas y su juego de miradas y espacio)."
+          }
+        ],
+        "correcta": "d"
+      },
+      {
+        "n": 3,
+        "nivel": "Anl",
+        "enunciado": "Frente al dramatismo barroco, el Rococó francés (Watteau, Fragonard) propone:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La severidad moral y los grandes temas heroicos."
+          },
+          {
+            "letra": "b",
+            "texto": "La ligereza, la gracia, el color pastel, la galantería y los temas amables."
+          },
+          {
+            "letra": "c",
+            "texto": "El tenebrismo aplicado a la temática religiosa."
+          },
+          {
+            "letra": "d",
+            "texto": "La monumentalidad al servicio de la propaganda del Estado."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 4,
+        "nivel": "Com",
+        "enunciado": "El Neoclasicismo (David) surge en parte como:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Una reacción moralizante e ilustrada que recupera la severidad y los valores cívicos de la Antigüedad."
+          },
+          {
+            "letra": "b",
+            "texto": "La continuación directa del gusto y los temas del Rococó."
+          },
+          {
+            "letra": "c",
+            "texto": "El rechazo de toda referencia a Grecia y a Roma."
+          },
+          {
+            "letra": "d",
+            "texto": "Una corriente de abstracción puramente geométrica."
+          }
+        ],
+        "correcta": "a"
+      },
+      {
+        "n": 5,
+        "nivel": "Com",
+        "enunciado": "La pintura de género y el retrato burgués del barroco holandés (Vermeer, Rembrandt) reflejan:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La corte absolutista francesa y su etiqueta."
+          },
+          {
+            "letra": "b",
+            "texto": "El poder de la Roma papal y el mecenazgo eclesiástico."
+          },
+          {
+            "letra": "c",
+            "texto": "Una sociedad protestante, comerciante y sin gran mecenazgo eclesiástico."
+          },
+          {
+            "letra": "d",
+            "texto": "El esplendor cortesano del imperio otomano."
+          }
+        ],
+        "correcta": "c"
+      }
+    ]
+  },
+  "08-siglo-xix": {
+    "modulo": "M8",
+    "titulo": "Módulo 8 · El siglo XIX",
+    "preguntas": [
+      {
+        "n": 1,
+        "nivel": "Com",
+        "enunciado": "El Romanticismo (Friedrich, Goya, Géricault) privilegia:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La razón, la línea y la norma académica neoclásica."
+          },
+          {
+            "letra": "b",
+            "texto": "La emoción, lo sublime, lo individual y lo dramático frente al racionalismo neoclásico."
+          },
+          {
+            "letra": "c",
+            "texto": "La abstracción geométrica de la forma."
+          },
+          {
+            "letra": "d",
+            "texto": "La objetividad de la fotografía documental."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 2,
+        "nivel": "Anl",
+        "enunciado": "El Impresionismo rompe con la academia al:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Salir al aire libre (plein air), captar la luz cambiante con pincelada suelta y temas cotidianos."
+          },
+          {
+            "letra": "b",
+            "texto": "Pintar en el taller grandes temas históricos con un acabado muy pulido."
+          },
+          {
+            "letra": "c",
+            "texto": "Recuperar el fondo dorado y la frontalidad medievales."
+          },
+          {
+            "letra": "d",
+            "texto": "Renunciar al color en favor del dibujo lineal."
+          }
+        ],
+        "correcta": "a"
+      },
+      {
+        "n": 3,
+        "nivel": "Anl",
+        "enunciado": "El japonismo influyó en el arte europeo aportando:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La perspectiva lineal de origen renacentista."
+          },
+          {
+            "letra": "b",
+            "texto": "El tenebrismo y el claroscuro de raíz barroca."
+          },
+          {
+            "letra": "c",
+            "texto": "Composiciones asimétricas, planos de color, encuadres recortados y ausencia de sombra modelada."
+          },
+          {
+            "letra": "d",
+            "texto": "El canon clásico de proporciones del cuerpo."
+          }
+        ],
+        "correcta": "c"
+      },
+      {
+        "n": 4,
+        "nivel": "Com",
+        "enunciado": "El Postimpresionismo (Cézanne, Van Gogh, Gauguin) supone respecto al impresionismo:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Un simple retroceso hacia la pintura académica."
+          },
+          {
+            "letra": "b",
+            "texto": "Una vía hacia la estructura, la expresión y el simbolismo del color, que abre camino a las vanguardias."
+          },
+          {
+            "letra": "c",
+            "texto": "El abandono definitivo de la práctica de la pintura."
+          },
+          {
+            "letra": "d",
+            "texto": "El regreso a un realismo de exactitud fotográfica."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 5,
+        "nivel": "Com",
+        "enunciado": "El Art Nouveau (Gaudí, Mucha, Horta) se reconoce por:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La línea recta y la geometría de la producción industrial."
+          },
+          {
+            "letra": "b",
+            "texto": "El contraste tenebrista de luz y sombra."
+          },
+          {
+            "letra": "c",
+            "texto": "El collage y la fragmentación cubistas."
+          },
+          {
+            "letra": "d",
+            "texto": "La línea sinuosa y orgánica inspirada en la naturaleza, aplicada a arquitectura y artes decorativas."
+          }
+        ],
+        "correcta": "d"
+      }
+    ]
+  },
+  "09-arte-moderno": {
+    "modulo": "M9",
+    "titulo": "Módulo 9 · Las vanguardias (1900–1945)",
+    "preguntas": [
+      {
+        "n": 1,
+        "nivel": "Com",
+        "enunciado": "El Cubismo (Picasso, Braque) propone:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La fragmentación del objeto en facetas y su representación simultánea desde múltiples puntos de vista."
+          },
+          {
+            "letra": "b",
+            "texto": "Un naturalismo extremo, de fidelidad óptica al modelo."
+          },
+          {
+            "letra": "c",
+            "texto": "El regreso a la perspectiva lineal renacentista."
+          },
+          {
+            "letra": "d",
+            "texto": "La pintura monocroma de tema religioso."
+          }
+        ],
+        "correcta": "a"
+      },
+      {
+        "n": 2,
+        "nivel": "Anl",
+        "enunciado": "El Fauvismo y el Expresionismo comparten:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La fidelidad al color local, tal como aparece en la realidad."
+          },
+          {
+            "letra": "b",
+            "texto": "El rechazo del color en favor del dibujo."
+          },
+          {
+            "letra": "c",
+            "texto": "El uso del color como vehículo emocional, liberado de la descripción mimética."
+          },
+          {
+            "letra": "d",
+            "texto": "Una temática restringida al repertorio mitológico."
+          }
+        ],
+        "correcta": "c"
+      },
+      {
+        "n": 3,
+        "nivel": "Com",
+        "enunciado": "Cuando Duchamp expone un urinario como Fuente (readymade), el gesto cuestiona:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La calidad del esmalte y de la loza empleados."
+          },
+          {
+            "letra": "b",
+            "texto": "Qué es arte, el papel del artista y la institución que lo legitima."
+          },
+          {
+            "letra": "c",
+            "texto": "La corrección de la perspectiva lineal."
+          },
+          {
+            "letra": "d",
+            "texto": "La solidez de la técnica del fresco."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 4,
+        "nivel": "Com",
+        "enunciado": "La Bauhaus defendió:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La separación tajante entre el arte y la técnica."
+          },
+          {
+            "letra": "b",
+            "texto": "El retorno al ornamento recargado de gusto rococó."
+          },
+          {
+            "letra": "c",
+            "texto": "El abandono de la arquitectura como disciplina."
+          },
+          {
+            "letra": "d",
+            "texto": "La unión de arte, diseño, artesanía y producción industrial bajo el lema \"la forma sigue a la función\"."
+          }
+        ],
+        "correcta": "d"
+      },
+      {
+        "n": 5,
+        "nivel": "Anl",
+        "enunciado": "El muralismo mexicano (Rivera, Orozco, Siqueiros) se caracteriza por:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La pintura íntima de caballete destinada al coleccionista privado."
+          },
+          {
+            "letra": "b",
+            "texto": "La abstracción geométrica pura, sin referente."
+          },
+          {
+            "letra": "c",
+            "texto": "El arte público, monumental y social, con mensaje político y revolucionario."
+          },
+          {
+            "letra": "d",
+            "texto": "La estampa xilográfica de tipo ukiyo-e."
+          }
+        ],
+        "correcta": "c"
+      }
+    ]
+  },
+  "10-posguerra-y-contemporaneo": {
+    "modulo": "M10",
+    "titulo": "Módulo 10 · De la posguerra a hoy",
+    "preguntas": [
+      {
+        "n": 1,
+        "nivel": "Com",
+        "enunciado": "El Expresionismo abstracto (Pollock, Rothko) y la Escuela de Nueva York destacan por:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La figuración detallista y narrativa."
+          },
+          {
+            "letra": "b",
+            "texto": "La gran escala, la gestualidad o el campo de color, y el desplazamiento del centro artístico a EE. UU."
+          },
+          {
+            "letra": "c",
+            "texto": "El retorno a la pintura al fresco de tema religioso."
+          },
+          {
+            "letra": "d",
+            "texto": "La estética del realismo socialista."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 2,
+        "nivel": "Anl",
+        "enunciado": "El Pop Art (Warhol, Lichtenstein) toma sus imágenes de:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "El repertorio de la mitología grecolatina."
+          },
+          {
+            "letra": "b",
+            "texto": "El paisaje sublime de tradición romántica."
+          },
+          {
+            "letra": "c",
+            "texto": "La iconografía de los iconos bizantinos."
+          },
+          {
+            "letra": "d",
+            "texto": "La cultura de masas, la publicidad y el consumo, borrando la frontera arte alto/arte popular."
+          }
+        ],
+        "correcta": "d"
+      },
+      {
+        "n": 3,
+        "nivel": "Com",
+        "enunciado": "El arte conceptual sostiene que:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "La idea o concepto prevalece sobre el objeto material y su ejecución."
+          },
+          {
+            "letra": "b",
+            "texto": "Lo decisivo es la destreza manual y el oficio del artista."
+          },
+          {
+            "letra": "c",
+            "texto": "Solo la pintura al óleo merece el nombre de arte."
+          },
+          {
+            "letra": "d",
+            "texto": "La obra debe ser siempre anónima y colectiva."
+          }
+        ],
+        "correcta": "a"
+      },
+      {
+        "n": 4,
+        "nivel": "Com",
+        "enunciado": "El Land Art (Smithson, Spiral Jetty) se caracteriza por:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Las obras de pequeño formato pensadas para la sala del museo."
+          },
+          {
+            "letra": "b",
+            "texto": "Los retratos de aparato encargados por la corte."
+          },
+          {
+            "letra": "c",
+            "texto": "Las intervenciones a gran escala en el paisaje, a menudo efímeras y documentadas por fotografía."
+          },
+          {
+            "letra": "d",
+            "texto": "La vidriera de tradición gótica."
+          }
+        ],
+        "correcta": "c"
+      },
+      {
+        "n": 5,
+        "nivel": "Com",
+        "enunciado": "El arte ligado al feminismo y la identidad (años 70 en adelante) plantea sobre todo:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Un problema de índole meramente técnica y material."
+          },
+          {
+            "letra": "b",
+            "texto": "Quién ha sido representado y quién ha representado: cuerpo, género, raza y voz como problemas artísticos."
+          },
+          {
+            "letra": "c",
+            "texto": "La necesidad de regresar al canon académico."
+          },
+          {
+            "letra": "d",
+            "texto": "La indiferencia deliberada ante lo social y lo político."
+          }
+        ],
+        "correcta": "b"
+      }
+    ]
+  },
+  "11-tradiciones-globales": {
+    "modulo": "M11",
+    "titulo": "Módulo 11 · Artes de África, las Américas y Oceanía",
+    "preguntas": [
+      {
+        "n": 1,
+        "nivel": "Com",
+        "enunciado": "Las máscaras y figuras de relicario del arte africano subsahariano deben entenderse ante todo:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Como objetos puramente decorativos y sin función."
+          },
+          {
+            "letra": "b",
+            "texto": "En su contexto ritual, social y de mediación con lo invisible, no solo como formas."
+          },
+          {
+            "letra": "c",
+            "texto": "Como copias tardías de modelos de la escultura griega."
+          },
+          {
+            "letra": "d",
+            "texto": "Como un arte exclusivamente funerario de raíz egipcia."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 2,
+        "nivel": "Rec",
+        "enunciado": "Tenochtitlan, los códices y la escultura monumental pertenecen al arte:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Andino de los Andes centrales."
+          },
+          {
+            "letra": "b",
+            "texto": "De las islas de Oceanía."
+          },
+          {
+            "letra": "c",
+            "texto": "Norteamericano de los pueblos de las praderas."
+          },
+          {
+            "letra": "d",
+            "texto": "Mesoamericano (mexica/azteca y sus antecedentes)."
+          }
+        ],
+        "correcta": "d"
+      },
+      {
+        "n": 3,
+        "nivel": "Anl",
+        "enunciado": "El arte colonial latinoamericano (p. ej. la escuela cuzqueña) se caracteriza por:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "El mestizaje: iconografía cristiana europea reinterpretada con materiales, manos y símbolos indígenas."
+          },
+          {
+            "letra": "b",
+            "texto": "La pureza de un único estilo europeo trasplantado sin cambios."
+          },
+          {
+            "letra": "c",
+            "texto": "La ausencia de pintura en favor de la sola arquitectura."
+          },
+          {
+            "letra": "d",
+            "texto": "El rechazo total de cualquier referente europeo."
+          }
+        ],
+        "correcta": "a"
+      },
+      {
+        "n": 4,
+        "nivel": "Com",
+        "enunciado": "Estudiar estas tradiciones exige, según el marco del curso:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Medirlas con la vara del naturalismo renacentista europeo."
+          },
+          {
+            "letra": "b",
+            "texto": "Tratarlas como un simple apéndice de la historia de Occidente."
+          },
+          {
+            "letra": "c",
+            "texto": "Reconocer una pluralidad de criterios de valor y evitar exotizar o infantilizar."
+          },
+          {
+            "letra": "d",
+            "texto": "Prescindir de su contexto cultural y religioso."
+          }
+        ],
+        "correcta": "c"
+      }
+    ]
+  },
+  "12-temas-transversales": {
+    "modulo": "M12",
+    "titulo": "Módulo 12 · Temas transversales",
+    "preguntas": [
+      {
+        "n": 1,
+        "nivel": "Com",
+        "enunciado": "La pregunta de Linda Nochlin \"¿Por qué no ha habido grandes mujeres artistas?\" señala que:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Las mujeres carecían del talento necesario para el arte mayor."
+          },
+          {
+            "letra": "b",
+            "texto": "Nunca existieron, en rigor, mujeres dedicadas al arte."
+          },
+          {
+            "letra": "c",
+            "texto": "Las barreras institucionales (acceso a la formación, gremios, academias, el desnudo) explican su ausencia del canon, no una falta de capacidad."
+          },
+          {
+            "letra": "d",
+            "texto": "La cuestión atañe solo a la historia social, no a la del arte."
+          }
+        ],
+        "correcta": "c"
+      },
+      {
+        "n": 2,
+        "nivel": "Com",
+        "enunciado": "El mecenazgo condiciona la obra porque:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "No ejerce influencia alguna sobre el contenido de la obra."
+          },
+          {
+            "letra": "b",
+            "texto": "Quien encarga y paga influye en el tema, el tamaño, los materiales y la función de la obra."
+          },
+          {
+            "letra": "c",
+            "texto": "Afecta únicamente al precio que la obra alcanza hoy en el mercado."
+          },
+          {
+            "letra": "d",
+            "texto": "Es un fenómeno restringido al arte del siglo XX."
+          }
+        ],
+        "correcta": "b"
+      },
+      {
+        "n": 3,
+        "nivel": "Com",
+        "enunciado": "La jerarquía de los géneros académica situaba en lo más alto:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "El bodegón y la naturaleza muerta."
+          },
+          {
+            "letra": "b",
+            "texto": "El retrato de animales y las escenas de caza."
+          },
+          {
+            "letra": "c",
+            "texto": "La vista de ciudad y el paisaje urbano."
+          },
+          {
+            "letra": "d",
+            "texto": "La pintura de historia (temas históricos, mitológicos y religiosos con figuras), y abajo el paisaje y el bodegón."
+          }
+        ],
+        "correcta": "d"
+      },
+      {
+        "n": 4,
+        "nivel": "Com",
+        "enunciado": "El debate sobre restitución y descolonización del museo plantea:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Si obras adquiridas en contextos coloniales deben volver a sus comunidades de origen, y a quién pertenece el patrimonio."
+          },
+          {
+            "letra": "b",
+            "texto": "Una cuestión de logística de transporte y de seguros de las obras."
+          },
+          {
+            "letra": "c",
+            "texto": "La conveniencia de suprimir las colecciones de arte antiguo."
+          },
+          {
+            "letra": "d",
+            "texto": "Que el patrimonio carece de dueño y de historia documentable."
+          }
+        ],
+        "correcta": "a"
+      },
+      {
+        "n": 5,
+        "nivel": "Com",
+        "enunciado": "En conservación y restauración, el principio de reversibilidad / mínima intervención busca:",
+        "opciones": [
+          {
+            "letra": "a",
+            "texto": "Repintar con libertad las obras adaptándolas al gusto actual."
+          },
+          {
+            "letra": "b",
+            "texto": "Intervenir lo imprescindible y de forma que pueda deshacerse, respetando la autenticidad del original."
+          },
+          {
+            "letra": "c",
+            "texto": "Sustituir los originales por copias más resistentes."
+          },
+          {
+            "letra": "d",
+            "texto": "Restringir cualquier estudio material de la obra."
+          }
+        ],
+        "correcta": "b"
+      }
+    ]
+  }
+}

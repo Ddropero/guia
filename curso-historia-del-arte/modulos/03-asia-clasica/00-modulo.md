@@ -1,12 +1,12 @@
 # Módulo 3 · Grandes tradiciones de Asia
 
-**Curso de Historia del Arte · Periodo: c. 2600 a. e. c. – siglo XIX · Regiones: subcontinente indio, China, Japón y Sudeste asiático (Camboya jemer y Java)**
+**Curso de Historia del Arte · Periodo: c. 2600 a. e. c. – siglo XIX · Regiones: subcontinente indio, China, Corea, Japón y Sudeste asiático (Camboya jemer y Java)**
 
 ---
 
 ## Introducción al módulo
 
-Mientras el módulo anterior cerraba con Grecia y Roma, al otro lado del continente florecían tradiciones tan antiguas, sofisticadas y duraderas como las del Mediterráneo, pero gobernadas por preguntas, materiales y dioses muy distintos. Este módulo cruza Asia para recorrer cuatro de sus grandes culturas visuales: la India y sus religiones, China y su pincel, Japón y su estética del vacío, y el Sudeste asiático y sus montañas de piedra. No es un apéndice exótico del relato europeo: es una historia del arte completa por derecho propio, con sus propios canones, sus propios "clásicos" y sus propios siglos de oro.
+Mientras el módulo anterior cerraba con Grecia y Roma, al otro lado del continente florecían tradiciones tan antiguas, sofisticadas y duraderas como las del Mediterráneo, pero gobernadas por preguntas, materiales y dioses muy distintos. Este módulo cruza Asia para recorrer cinco de sus grandes culturas visuales: la India y sus religiones, China y su pincel, Japón y su estética del vacío, el Sudeste asiático y sus montañas de piedra, y Corea, el puente que resultó ser un mundo. No es un apéndice exótico del relato europeo: es una historia del arte completa por derecho propio, con sus propios canones, sus propios "clásicos" y sus propios siglos de oro.
 
 El **marco temporal** es enorme —de los sellos de la civilización del Indo, hacia el 2600 a. e. c., a los grabados japoneses del siglo XIX que cambiarían el rumbo del arte occidental—, más de cuatro milenios de creación continua. El **marco geográfico** dibuja un Asia conectada por rutas de seda y de monzones: del subcontinente indio parten ideas religiosas y formas que China reinterpreta, que Japón rehace a su manera y que los reinos del Sudeste asiático transforman en colosos. Es un mapa de préstamos y reinvenciones, no de copias.
 
@@ -20,6 +20,7 @@ El **hilo conductor** es precisamente esa dialéctica entre continuidad y transf
 2. **[Arte de China](02-arte-de-china.md)** — Tres mil años bajo el signo del pincel, del ejército de terracota de Qin y los bronces Shang a la pintura de paisaje Song, la caligrafía y la porcelana, con el ideal del literato como brújula.
 3. **[Arte de Japón](03-arte-de-japon.md)** — De la cerámica Jomon y el Horyu-ji a los biombos Rinpa, la tinta zen, los jardines secos y los grabados ukiyo-e: cómo Japón rehace lo chino y luego detona el arte moderno europeo vía japonismo.
 4. **[Sudeste asiático: Angkor y Borobudur](04-sudeste-asiatico-angkor-borobudur.md)** — Entre los siglos VII y XV, los reinos jemer y javanés convierten el legado religioso indio en colosos sin igual: la stupa-mandala de Borobudur y los templos-montaña de Angkor como imagen del cosmos.
+5. **[Arte de Corea: el puente que era un mundo](05-arte-de-corea.md)** — Coronas de oro de Silla, el Seokguram, el celadón verde de Goryeo y el tarro de la luna, hasta los paisajes verdaderos de Jeong Seon: no una "correa de transmisión" entre China y Japón, sino una tradición de invenciones propias.
 
 ## Objetivos del módulo
 
@@ -36,4 +37,4 @@ Al terminar este módulo serás capaz de:
 
 > **¿Cómo construyó Asia tradiciones artísticas tan duraderas y a la vez tan capaces de transformarse, y qué tenemos que reaprender para mirarlas en sus propios términos en lugar de los de Occidente?**
 
-Lleva esta pregunta contigo a lo largo de las cuatro lecciones. Verás que la respuesta combina dos fuerzas que en Asia nunca se oponen del todo: una memoria de siglos que se cuida y se repite, y una imaginación que toma lo recibido —de la propia tierra o de los vecinos— y lo devuelve hecho cosmos, jardín o paisaje. Aprender a leer ese doble gesto es el verdadero objetivo del módulo.
+Lleva esta pregunta contigo a lo largo de las cinco lecciones. Verás que la respuesta combina dos fuerzas que en Asia nunca se oponen del todo: una memoria de siglos que se cuida y se repite, y una imaginación que toma lo recibido —de la propia tierra o de los vecinos— y lo devuelve hecho cosmos, jardín o paisaje. Aprender a leer ese doble gesto es el verdadero objetivo del módulo.
