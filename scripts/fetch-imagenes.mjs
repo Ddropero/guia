@@ -8,9 +8,17 @@
 //   node scripts/fetch-imagenes.mjs           # resuelve las pendientes
 //   node scripts/fetch-imagenes.mjs --retry   # reintenta también las "sin imagen"
 //
-// Solo guarda imágenes con licencia libre (dominio público / CC). Las obras con
-// derechos (arte del s. XX–XXI) se quedan sin miniatura: en el sitio muestran el
-// enlace a Google Arts & Culture igualmente.
+// Solo guarda imágenes con licencia libre (dominio público / CC sin NC/ND). Las
+// obras con derechos (arte del s. XX–XXI) se quedan sin miniatura: en el sitio
+// muestran el enlace a Wikipedia igualmente.
+//
+// COBERTURA: una sola búsqueda con la query completa falla en muchas obras
+// famosas porque el título es descriptivo ("El Partenón y su escultura") o une
+// dos obras ("Buda de Gandhara y Buda de Mathura"). Por eso se prueban VARIAS
+// variantes, de la más específica a la más simple (título completo → primer
+// segmento antes de "y"/":"/"(" → nombre propio del final), y se toma la
+// primera imagen libre. Se prueba la más específica primero para no perder
+// precisión.
 import fs from "node:fs";
 import path from "node:path";
 
@@ -24,7 +32,6 @@ const API = "https://commons.wikimedia.org/w/api.php";
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const stripHtml = (s) => (s || "").replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
 
-// ¿La licencia es libre (dominio público o Creative Commons)?
 // ¿La licencia es libre (dominio público o CC sin cláusulas NC/ND)?
 // Acepta: dominio público, CC0, CC BY, CC BY-SA. Rechaza: NC (NonCommercial),
 // ND (NoDerivatives), fair use y no-libres.
@@ -41,10 +48,53 @@ function esLibre(meta) {
 
 const IMG_MIME = /^image\/(jpeg|png|tiff|gif|webp)$/;
 
-async function buscar(q) {
+// Palabras vacías: no aportan a distinguir una obra.
+const PARADAS = new Set([
+  "de", "del", "la", "las", "el", "los", "y", "e", "o", "u", "en", "un", "una",
+  "al", "su", "sus", "con", "por", "para", "sobre", "the", "of", "and",
+]);
+
+// Genera variantes de búsqueda, de específica a simple, sin duplicados.
+function variantes(titulo, autor, q) {
+  const out = [];
+  const push = (s) => {
+    if (!s) return;
+    s = s.replace(/\s+/g, " ").trim();
+    if (s.length >= 3 && !out.includes(s)) out.push(s);
+  };
+
+  push(q); // query original (título + autor, como la usa obras.json)
+  push(titulo); // título completo sin autor (arregla los "autores" que son basura descriptiva)
+
+  // Primer segmento: corta en " y ", " / ", ":", "—/–", "(" → separa obras dobles y colas descriptivas.
+  const seg = titulo.split(/\s+y\s+|\s*\/\s*|\s*:\s*|\s*[—–]\s*|\s*\(/)[0];
+  push(seg);
+
+  // El autor solo si parece nombre propio (tiene mayúscula), no una frase descriptiva.
+  const autorLimpio = (autor || "").replace(/^[\s,:/]+|[\s,:/]+$/g, "");
+  if (autorLimpio && /[A-ZÁÉÍÓÚÑ]/.test(autorLimpio) && !/[:]/.test(autor || "")) {
+    push(`${seg} ${autorLimpio}`);
+  }
+
+  // Cola de nombres propios: palabras Capitalizadas al final del título
+  // ("…, cueva de Lascaux" → "Lascaux"; "Recinto D, Göbekli Tepe" → "Göbekli Tepe").
+  const palabras = titulo.replace(/[(),"“”]/g, " ").split(/\s+/).filter(Boolean);
+  const cola = [];
+  for (let i = palabras.length - 1; i >= 0; i--) {
+    const w = palabras[i];
+    if (/^\p{Lu}[\p{L}\d.-]{2,}$/u.test(w) && !PARADAS.has(w.toLowerCase())) {
+      cola.unshift(w);
+    } else break;
+  }
+  if (cola.length && cola.length < palabras.length) push(cola.join(" "));
+
+  return out;
+}
+
+async function buscarUna(query) {
   const url =
     `${API}?action=query&format=json&redirects=1&generator=search` +
-    `&gsrsearch=${encodeURIComponent(q)}&gsrnamespace=6&gsrlimit=6` +
+    `&gsrsearch=${encodeURIComponent(query)}&gsrnamespace=6&gsrlimit=8` +
     `&prop=imageinfo&iiprop=url|extmetadata|mime&iiurlwidth=640`;
   const res = await fetch(url, { headers: { "user-agent": UA } });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -68,11 +118,27 @@ async function buscar(q) {
   return null;
 }
 
+// Prueba las variantes en orden; devuelve la primera imagen libre.
+async function resolver(titulo, autor, q) {
+  const vs = variantes(titulo, autor, q);
+  for (let i = 0; i < vs.length; i++) {
+    const r = await buscarUna(vs[i]);
+    if (r) return { ...r, query: vs[i] };
+    if (i < vs.length - 1) await sleep(120); // cortesía entre variantes
+  }
+  return null;
+}
+
 const obras = JSON.parse(fs.readFileSync(OBRAS, "utf8"));
 const cache = fs.existsSync(SALIDA) ? JSON.parse(fs.readFileSync(SALIDA, "utf8")) : {};
 
-// queries únicas
-const queries = [...new Set(Object.values(obras).flat().map((o) => o.q))];
+// q → {titulo, autor} (primera aparición) para dar contexto a la búsqueda.
+const META = new Map();
+for (const lista of Object.values(obras)) {
+  for (const o of lista) if (!META.has(o.q)) META.set(o.q, { titulo: o.titulo, autor: o.autor || "" });
+}
+
+const queries = [...META.keys()];
 const pendientes = queries.filter((q) => {
   const c = cache[q];
   if (!c) return true;
@@ -85,8 +151,9 @@ let hits = 0;
 let done = 0;
 
 for (const q of pendientes) {
+  const { titulo, autor } = META.get(q);
   try {
-    const r = await buscar(q);
+    const r = await resolver(titulo, autor, q);
     if (r) {
       cache[q] = r;
       hits++;
@@ -100,7 +167,7 @@ for (const q of pendientes) {
   done++;
   if (done % 20 === 0) {
     fs.writeFileSync(SALIDA, JSON.stringify(cache, null, 2) + "\n");
-    console.log(`  … ${done}/${pendientes.length} (con imagen: ${hits})`);
+    console.log(`  … ${done}/${pendientes.length} (con imagen esta pasada: ${hits})`);
   }
   await sleep(150); // cortesía con la API de Wikimedia
 }
