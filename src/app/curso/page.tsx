@@ -59,7 +59,15 @@ export default function CursoHome() {
           </div>
 
           <div className="mb-10 flex flex-wrap items-center justify-between gap-4">
-            <ContinuarDondeLoDejaste />
+            <div className="flex flex-wrap items-center gap-2">
+              <ContinuarDondeLoDejaste />
+              <Link
+                href="/curso/repaso"
+                className="inline-flex items-center gap-2 rounded-md border border-line px-4 py-2 text-sm text-muted transition hover:border-accent hover:text-fg"
+              >
+                🗂 Repaso espaciado
+              </Link>
+            </div>
             <GestionProgreso />
           </div>
 
