@@ -1,0 +1,53 @@
+name: Deploy
+
+# Despliegue desde GitHub (pensado para hacerlo desde el móvil):
+#  - Manual: pestaña Actions → "Deploy" → "Run workflow" (elige la rama).
+#  - Automático: al hacer push/merge a main.
+#
+# Requisito único: un secreto de repositorio CLOUDFLARE_API_TOKEN
+# (Settings → Secrets and variables → Actions → New repository secret).
+# El token se crea en Cloudflare con la plantilla "Edit Cloudflare Workers".
+# La API key de Anthropic del tutor ya vive como secret del Worker en
+# Cloudflare (wrangler secret put), no hace falta aquí.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+# Un despliegue a la vez.
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      # URL pública del Worker del tutor (no es secreto): la usa el sitio en build.
+      NEXT_PUBLIC_TUTOR_URL: https://tutor.hilvan.org
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Comprobar el token
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::error::Falta el secreto CLOUDFLARE_API_TOKEN. Añádelo en Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+
+      - name: Desplegar el sitio (historia.hilvan.org)
+        run: npm run deploy:historia
+
+      - name: Desplegar el Worker del tutor (tutor.hilvan.org)
+        run: npx wrangler deploy
+        working-directory: workers/tutor
