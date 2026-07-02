@@ -56,5 +56,11 @@ jobs:
             echo "obras-wikidata.json aún no existe; se omite."
           fi
 
+      - name: Revalidar imágenes (guardián de relevancia, sin red)
+        run: |
+          node scripts/fetch-imagenes.mjs --purge-only
+          git diff --exit-code src/data/obras-imagenes.json \
+            || (echo "::error::obras-imagenes.json tiene imágenes que ya no corresponden. Corre 'node scripts/fetch-imagenes.mjs' y commitea." && exit 1)
+
       - name: Build estático
         run: SITE_URL=https://historia.hilvan.org npm run build
