@@ -56,7 +56,7 @@ export default async function LeccionPage({
         <section className="mb-8">
           <h2 className="mb-1 font-serif text-xl text-fg">Galería de obras</h2>
           <p className="mb-3 text-sm text-muted">
-            Las obras que comenta esta lección. Toca cualquiera para verla en Google Arts &amp; Culture.
+            Las obras que comenta esta lección. Toca cualquiera para leer más en Wikipedia.
           </p>
           <Galeria obras={obras} />
         </section>
