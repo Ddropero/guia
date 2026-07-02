@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test": "vitest run",
     "datos": "node scripts/construir-obras.mjs && node scripts/construir-quiz.mjs",
     "quiz": "node scripts/construir-quiz.mjs",
     "preview:cf": "next build && wrangler dev",
@@ -28,6 +29,7 @@
     "eslint-config-next": "16.2.6",
     "tailwindcss": "^4",
     "typescript": "^5",
+    "vitest": "^4.1.9",
     "wrangler": "^4.95.0"
   }
 }

@@ -1,0 +1,50 @@
+name: CI
+
+# Red de seguridad: lint, tipos, tests, validación de contenido, sin-drift de
+# los datos generados y build estático. No despliega (el despliegue es manual:
+# `npm run deploy:historia` y `wrangler deploy` en workers/tutor).
+
+on:
+  push:
+    branches: [main, "claude/**"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Tipos (sitio)
+        run: npx tsc --noEmit
+
+      - name: Tipos (Worker del tutor)
+        run: npx tsc -p workers/tutor/tsconfig.json
+
+      - name: Tests
+        run: npm test
+
+      - name: Validar contenido (enlaces .md, títulos)
+        run: node scripts/validar-contenido.mjs
+
+      - name: Datos al día (obras + quiz sin drift)
+        run: |
+          node scripts/construir-obras.mjs
+          node scripts/construir-quiz.mjs
+          git diff --exit-code src/data/obras.json src/data/quiz.json \
+            || (echo "::error::obras.json/quiz.json están desincronizados de su fuente. Corre 'npm run datos' y commitea." && exit 1)
+
+      - name: Build estático
+        run: SITE_URL=https://historia.hilvan.org npm run build

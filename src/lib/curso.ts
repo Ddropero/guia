@@ -25,7 +25,7 @@ const RUTAS_TOP: Record<string, string> = {
  * su ruta del sitio. Devuelve null si no se puede mapear.
  * `baseRelDir` = carpeta del archivo actual, relativa a curso-historia-del-arte/.
  */
-function resolverRuta(target: string, baseRelDir: string): string | null {
+export function resolverRuta(target: string, baseRelDir: string): string | null {
   const clean = target.split("#")[0].replace(/^\.\//, "");
   const esBaseRel = /^(modulos|referencias|docente)\//.test(clean) || clean in RUTAS_TOP;
   const abs = esBaseRel ? clean : path.posix.normalize(path.posix.join(baseRelDir, clean));
@@ -51,7 +51,7 @@ const limpiaQuery = (s: string): string =>
     .replace(/\s+/g, " ")
     .trim();
 
-function parseHeadingObra(h: string): { titulo: string; autor: string; q: string } {
+export function parseHeadingObra(h: string): { titulo: string; autor: string; q: string } {
   const it = h.match(/\*([^*]+)\*/); // título en cursiva, si lo hay
   let titulo: string;
   let autor = "";

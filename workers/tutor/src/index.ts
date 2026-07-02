@@ -59,7 +59,7 @@ const ORIGEN_POR_DEFECTO = "https://historia.hilvan.org";
 
 // Resuelve el origen a permitir: coincidencia exacta o comodín "https://*.sufijo".
 // null = origen no permitido (o petición sin cabecera Origin: same-origin/no navegador).
-function resolverOrigen(request: Request, env: Env): string | null {
+export function resolverOrigen(request: Request, env: Env): string | null {
   const lista = (env.ALLOW_ORIGIN ?? ORIGEN_POR_DEFECTO)
     .split(",")
     .map((s) => s.trim())
@@ -151,7 +151,7 @@ interface MensajeApi {
 // Solo se acepta como imagen una URL https de Wikimedia (las miniatura del
 // curso). Evita que el cliente haga que el Worker descargue imágenes
 // arbitrarias e infle los tokens de entrada.
-function imagenPermitida(u: unknown): string | null {
+export function imagenPermitida(u: unknown): string | null {
   if (typeof u !== "string" || !u) return null;
   try {
     const url = new URL(u);
@@ -183,7 +183,7 @@ function adjuntarImagen(messages: Mensaje[], imagen: string | null): MensajeApi[
   );
 }
 
-function sanearMensajes(raw: unknown): Mensaje[] {
+export function sanearMensajes(raw: unknown): Mensaje[] {
   if (!Array.isArray(raw)) return [];
   const msgs: Mensaje[] = [];
   for (const m of raw.slice(-10)) {
