@@ -10,7 +10,7 @@
 
 El curso se construye sobre cuatro principios que lo recorren de principio a fin:
 
-- **Cronológico.** Avanzamos en el tiempo, de la Prehistoria a la contemporaneidad, para que cada movimiento se entienda como respuesta —y reacción— a lo que vino antes. Pero la cronología es un hilo, no una jaula: los temas transversales y las tradiciones globales rompen la línea recta cuando hace falta.
+- **Cronológico.** Avanzamos en el tiempo, de la Prehistoria a la contemporaneidad, para que cada movimiento se entienda como respuesta —y reacción— a lo que vino antes. Pero la cronología es un hilo, no una jaula: los temas transversales y las artes de África, las Américas y Oceanía rompen la línea recta cuando hace falta.
 - **Global.** El relato clásico de la historia del arte fue, durante mucho tiempo, una historia europea contada desde Europa. Aquí Asia, África, las Américas precolombinas, el mundo islámico y Oceanía no son apéndices «no occidentales», sino tradiciones con su propia lógica, profundidad y excelencia.
 - **Temático.** Además de los periodos, dedicamos un módulo completo a las grandes preguntas que cruzan toda la historia del arte: el retrato, el paisaje, el color y los materiales, las mujeres artistas, el mecenazgo y el mercado, el poder y la religión, la conservación, el patrimonio y la restitución.
 - **Crítico y pedagógico.** Cada lección invita a preguntar *quién decide qué es arte*, *qué obras entran en el canon y cuáles quedan fuera*, y *con qué intereses*. Y todo está diseñado para aprender: objetivos claros, vocabulario, lecturas guiadas y evaluación.
@@ -24,7 +24,7 @@ El objetivo no es que sepas más datos, sino que adquieras una **mirada**: la ca
 Este curso es un cuerpo de materiales completo y articulado:
 
 - **13 módulos** (del Módulo 0 de fundamentos al Módulo 12 de temas transversales).
-- **80 lecciones** detalladas, cada una con objetivos, desarrollo, obras comentadas y actividades.
+- **86 lecciones** detalladas, cada una con objetivos, desarrollo, obras comentadas y actividades.
 - **Un glosario** de términos técnicos e históricos del arte.
 - **Una línea de tiempo** que sincroniza periodos, regiones y obras clave.
 - **Índices** de artistas, de obras y un mapa de movimientos.
@@ -139,7 +139,7 @@ Después, empieza por el **Módulo 0 · Fundamentos**: te dará las herramientas
   - [Arte, feminismo e identidad](modulos/10-posguerra-y-contemporaneo/08-arte-feminismo-e-identidad.md)
   - [Arte contemporáneo global (1989–hoy)](modulos/10-posguerra-y-contemporaneo/09-arte-contemporaneo-global.md)
   - [Nuevos medios, arte digital e inteligencia artificial](modulos/10-posguerra-y-contemporaneo/10-nuevos-medios-y-arte-digital.md)
-- **Módulo 11 · Tradiciones globales (más allá del canon)** ([intro](modulos/11-tradiciones-globales/00-modulo.md))
+- **Módulo 11 · Artes de África, las Américas y Oceanía** ([intro](modulos/11-tradiciones-globales/00-modulo.md))
   - [Arte africano subsahariano](modulos/11-tradiciones-globales/01-arte-africano-subsahariano.md)
   - [Arte mesoamericano](modulos/11-tradiciones-globales/02-arte-mesoamericano.md)
   - [Arte andino](modulos/11-tradiciones-globales/03-arte-andino.md)

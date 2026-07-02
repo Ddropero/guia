@@ -585,6 +585,38 @@
       "q": "Buda de Sukhothai y arte de Pagan"
     }
   ],
+  "03-asia-clasica/05-arte-de-corea": [
+    {
+      "titulo": "Corona de oro de Silla (reino de Silla, c. ss. V-VI e. c.)",
+      "autor": "",
+      "q": "Corona de oro de Silla"
+    },
+    {
+      "titulo": "Buda de Seokguram (Silla Unificada, gruta consagrada c. 751 e. c.)",
+      "autor": "",
+      "q": "Buda de Seokguram"
+    },
+    {
+      "titulo": "Aguamanil celadón de Goryeo con incrustación (reino de Goryeo, c. ss. XII-XIII)",
+      "autor": "",
+      "q": "Aguamanil celadón de Goryeo con incrustación"
+    },
+    {
+      "titulo": "Tarro de la luna, porcelana blanca de Joseon (dinastía Joseon, c. s. XVIII)",
+      "autor": "",
+      "q": "Tarro de la luna, porcelana blanca de Joseon"
+    },
+    {
+      "titulo": "Vista verdadera del Geumgangsan",
+      "autor": "de Jeong Seon",
+      "q": "Vista verdadera del Geumgangsan de Jeong Seon"
+    },
+    {
+      "titulo": "Escuela del pueblo (Seodang)",
+      "autor": "del álbum de género de Kim Hong-do",
+      "q": "Escuela del pueblo del álbum de género de Kim Hong-do"
+    }
+  ],
   "04-arte-islamico/01-arquitectura-islamica": [
     {
       "titulo": "Cúpula de la Roca (Jerusalén)",
@@ -647,6 +679,38 @@
       "titulo": "Alfombra Ardabil",
       "autor": "",
       "q": "Alfombra Ardabil"
+    }
+  ],
+  "04-arte-islamico/03-imperios-islamicos-otomano-safavi-mogol": [
+    {
+      "titulo": "Mezquita de Selimiye, Edirne (Sinán, 1568-1574)",
+      "autor": "",
+      "q": "Mezquita de Selimiye, Edirne"
+    },
+    {
+      "titulo": "Azulejos de İznik de la mezquita de Rüstem Pasha, Estambul (Sinán, c. 1563)",
+      "autor": "",
+      "q": "Azulejos de İznik de la mezquita de Rüstem Pasha, Estambul"
+    },
+    {
+      "titulo": "Plaza Maydan-e Naqsh-e Jahan y mezquita del Sheij Lutfallah, Isfahán (Sha Abás I, c. 1603-1619)",
+      "autor": "",
+      "q": "Plaza Maydan-e Naqsh-e Jahan y mezquita del Sheij Lutfallah, Isfahán"
+    },
+    {
+      "titulo": "Alfombra de Ardabil (Irán safávida, fechada en 1539-1540)",
+      "autor": "",
+      "q": "Alfombra de Ardabil"
+    },
+    {
+      "titulo": "La corte de Gayumars",
+      "autor": "del Shahnameh de Sha Tahmasp",
+      "q": "La corte de Gayumars del Shahnameh de Sha Tahmasp"
+    },
+    {
+      "titulo": "Taj Mahal, Agra (Sha Jahán, 1632-1653)",
+      "autor": "",
+      "q": "Taj Mahal, Agra"
     }
   ],
   "05-edad-media/01-paleocristiano-y-bizantino": [
@@ -1784,6 +1848,38 @@
       "q": "Entartete Kunst La exposición , Múnich, 1937"
     }
   ],
+  "09-arte-moderno/10-modernidades-asiaticas": [
+    {
+      "titulo": "Metempsicosis",
+      "autor": "Yokoyama Taikan",
+      "q": "Metempsicosis Yokoyama Taikan"
+    },
+    {
+      "titulo": "Bharat Mata",
+      "autor": "Abanindranath Tagore",
+      "q": "Bharat Mata Abanindranath Tagore"
+    },
+    {
+      "titulo": "Grupo de tres muchachas",
+      "autor": "Amrita Sher-Gil",
+      "q": "Grupo de tres muchachas Amrita Sher-Gil"
+    },
+    {
+      "titulo": "Yu Gong mueve las montañas",
+      "autor": "Xu Beihong",
+      "q": "Yu Gong mueve las montañas Xu Beihong"
+    },
+    {
+      "titulo": "Camarones",
+      "autor": "Qi Baishi",
+      "q": "Camarones Qi Baishi"
+    },
+    {
+      "titulo": "¡Ruge, China!",
+      "autor": "Li Hua",
+      "q": "¡Ruge, China! Li Hua"
+    }
+  ],
   "10-posguerra-y-contemporaneo/01-expresionismo-abstracto": [
     {
       "titulo": "Number 1, 1950 (Lavender Mist)",
@@ -2328,6 +2424,102 @@
       "q": "Shibboleth Doris Salcedo"
     }
   ],
+  "11-tradiciones-globales/08-africa-cristiana-e-islamica": [
+    {
+      "titulo": "El campo de estelas de Aksum (Reino de Aksum, c. siglos III-IV)",
+      "autor": "",
+      "q": "El campo de estelas de Aksum"
+    },
+    {
+      "titulo": "Los Evangelios de Garima (Etiopía, c. siglos IV-VII)",
+      "autor": "",
+      "q": "Los Evangelios de Garima"
+    },
+    {
+      "titulo": "Bete Giyorgis, la iglesia de San Jorge de Lalibela (dinastía Zagwe, c. siglos XII-XIII)",
+      "autor": "",
+      "q": "Bete Giyorgis, la iglesia de San Jorge de Lalibela"
+    },
+    {
+      "titulo": "Icono de la Virgen con el Niño, de Frē Ṣeyon (Etiopía, c. tercer cuarto del siglo XV)",
+      "autor": "",
+      "q": "Icono de la Virgen con el Niño, de Frē Ṣeyon"
+    },
+    {
+      "titulo": "La Gran Mezquita de Djenné (Malí, fundación c. siglo XIII; edificio actual, 1906-1907)",
+      "autor": "",
+      "q": "La Gran Mezquita de Djenné"
+    },
+    {
+      "titulo": "Kilwa Kisiwani: la Gran Mezquita y el palacio de Husuni Kubwa (costa swahili, c. siglos XI-XV)",
+      "autor": "",
+      "q": "Kilwa Kisiwani: la Gran Mezquita y el palacio de Husuni Kubwa"
+    }
+  ],
+  "11-tradiciones-globales/09-africa-moderna-y-contemporanea": [
+    {
+      "titulo": "Retratos del estudio de Bamako, de Seydou Keïta (c. 1948-1962)",
+      "autor": "",
+      "q": "Retratos del estudio de Bamako, de Seydou Keïta"
+    },
+    {
+      "titulo": "Nuit de Noël (Happy Club)",
+      "autor": "de Malick Sidibé",
+      "q": "Nuit de Noël de Malick Sidibé"
+    },
+    {
+      "titulo": "Anyanwu",
+      "autor": "de Ben Enwonwu",
+      "q": "Anyanwu de Ben Enwonwu"
+    },
+    {
+      "titulo": "Dusasa II",
+      "autor": "de El Anatsui",
+      "q": "Dusasa II de El Anatsui"
+    },
+    {
+      "titulo": "The Refusal of Time",
+      "autor": "de William Kentridge",
+      "q": "The Refusal of Time de William Kentridge"
+    },
+    {
+      "titulo": "Somnyama Ngonyama",
+      "autor": "de Zanele Muholi",
+      "q": "Somnyama Ngonyama de Zanele Muholi"
+    }
+  ],
+  "11-tradiciones-globales/10-caribe-y-atlantico-negro": [
+    {
+      "titulo": "La jungla",
+      "autor": "de Wifredo Lam",
+      "q": "La jungla de Wifredo Lam"
+    },
+    {
+      "titulo": "Ogou Feray",
+      "autor": "de Hector Hyppolite",
+      "q": "Ogou Feray de Hector Hyppolite"
+    },
+    {
+      "titulo": "Drapo",
+      "autor": "de vudú",
+      "q": "Drapo de vudú"
+    },
+    {
+      "titulo": "Templo de Oxalá",
+      "autor": "de Rubem Valentim",
+      "q": "Templo de Oxalá de Rubem Valentim"
+    },
+    {
+      "titulo": "Los orixás en dos orillas: el ciclo fotográfico de Pierre Verger (1946-c. 1979)",
+      "autor": "",
+      "q": "Los orixás en dos orillas: el ciclo fotográfico de Pierre Verger"
+    },
+    {
+      "titulo": "A Subtlety, or the Marvelous Sugar Baby",
+      "autor": "de Kara Walker",
+      "q": "A Subtlety, or the Marvelous Sugar Baby de Kara Walker"
+    }
+  ],
   "12-temas-transversales/01-mujeres-en-la-historia-del-arte": [
     {
       "titulo": "La partida de ajedrez",
@@ -2358,6 +2550,11 @@
       "titulo": "Las dos Fridas",
       "autor": "Frida Kahlo",
       "q": "Las dos Fridas Frida Kahlo"
+    },
+    {
+      "titulo": "Jo no mai",
+      "autor": "Uemura Shōen",
+      "q": "Jo no mai Uemura Shōen"
     }
   ],
   "12-temas-transversales/02-mecenazgo-mercado-y-museos": [
@@ -2390,6 +2587,11 @@
       "titulo": "Comedian",
       "autor": "de Maurizio Cattelan",
       "q": "Comedian de Maurizio Cattelan"
+    },
+    {
+      "titulo": "La corte de Gayumars",
+      "autor": "del Shahnameh del sha Tahmasp",
+      "q": "La corte de Gayumars del Shahnameh del sha Tahmasp"
     }
   ],
   "12-temas-transversales/03-arte-poder-y-religion": [
@@ -2422,6 +2624,11 @@
       "titulo": "Adolf Hitler como portaestandarte",
       "autor": "la maquinaria visual nazi",
       "q": "Adolf Hitler como portaestandarte la maquinaria visual nazi"
+    },
+    {
+      "titulo": "Placas de latón del palacio real de Benín (siglos XVI-XVII)",
+      "autor": "",
+      "q": "Placas de latón del palacio real de Benín"
     }
   ],
   "12-temas-transversales/04-historia-del-retrato": [
@@ -2429,6 +2636,11 @@
       "titulo": "Retrato de El Fayum",
       "autor": "Egipto romano",
       "q": "Retrato de El Fayum Egipto romano"
+    },
+    {
+      "titulo": "Huaco retrato",
+      "autor": "moche , Perú antiguo",
+      "q": "Huaco retrato moche , Perú antiguo"
     },
     {
       "titulo": "Retrato de Enrique VIII",
@@ -2483,6 +2695,11 @@
       "q": "El caminante sobre el mar de nubes Caspar David Friedrich, , c. 1817"
     },
     {
+      "titulo": "La gran ola de Kanagawa",
+      "autor": "Katsushika Hokusai, , c. 1830 1831",
+      "q": "La gran ola de Kanagawa Katsushika Hokusai, , c. 1830 1831"
+    },
+    {
       "titulo": "La montaña Sainte-Victoire",
       "autor": "Paul Cézanne, , c. 1902 1906",
       "q": "La montaña Sainte-Victoire Paul Cézanne, , c. 1902 1906"
@@ -2518,6 +2735,11 @@
       "titulo": "Tarde de domingo en la isla de la Grande Jatte",
       "autor": "Georges Seurat",
       "q": "Tarde de domingo en la isla de la Grande Jatte Georges Seurat"
+    },
+    {
+      "titulo": "Murales de Bonampak (h. 790 d. C.)",
+      "autor": "",
+      "q": "Murales de Bonampak"
     }
   ],
   "12-temas-transversales/07-conservacion-y-autenticidad": [
@@ -2545,6 +2767,11 @@
       "titulo": "Buda",
       "autor": "El de Bāmiyān y la conservación de lo perdido",
       "q": "Buda El de Bāmiyān y la conservación de lo perdido"
+    },
+    {
+      "titulo": "Gran Mezquita de Djenné",
+      "autor": "La y el crépissage",
+      "q": "Gran Mezquita de Djenné La y el crépissage"
     }
   ],
   "12-temas-transversales/08-patrimonio-restitucion-y-descolonizacion": [
@@ -2572,6 +2799,11 @@
       "titulo": "toi moko",
       "autor": "Las cabezas tatuadas maoríes",
       "q": "toi moko Las cabezas tatuadas maoríes"
+    },
+    {
+      "titulo": "Duryodhana",
+      "autor": "El de Koh Ker",
+      "q": "Duryodhana El de Koh Ker"
     }
   ]
 }

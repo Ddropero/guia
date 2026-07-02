@@ -1,6 +1,6 @@
-# Módulo 11 · Tradiciones globales (más allá del canon)
+# Módulo 11 · Artes de África, las Américas y Oceanía
 
-**Curso de Historia del Arte · Marco temporal: de c. 1500 a. C. hasta la actualidad · Regiones: África subsahariana, Mesoamérica, los Andes, Norteamérica indígena, Oceanía y América Latina (colonial, moderna y contemporánea)**
+**Curso de Historia del Arte · Marco temporal: de c. 1500 a. C. hasta la actualidad · Regiones: África (subsahariana, cristiana e islámica, moderna y contemporánea), Mesoamérica, los Andes, Norteamérica indígena, Oceanía, América Latina (colonial, moderna y contemporánea) y el Caribe / Atlántico negro**
 
 ---
 
@@ -8,7 +8,7 @@
 
 Durante siglos, la "historia del arte" que se enseñaba en Occidente fue, en realidad, la historia de un solo trozo del planeta: Europa y su prolongación atlántica. Todo lo demás se amontonaba en un cajón de sastre —"arte primitivo", "arte étnico", "artesanía"— o sencillamente no se contaba. Este módulo existe para corregir esa miopía. Aquí salimos del **canon** eurocéntrico y nos asomamos a tradiciones que son tan antiguas, tan complejas y tan profundas como cualquiera de las que ya hemos estudiado, y que durante mucho tiempo se desarrollaron sin saber siquiera que Europa existía.
 
-El **marco** es deliberadamente vasto. En el tiempo, abarca más de tres milenios: desde las terracotas Nok y las cabezas olmecas hasta el videoarte y las instalaciones de la memoria que se producen hoy. En el espacio, da la vuelta al mundo: las grandes culturas del **África subsahariana**, las civilizaciones de **Mesoamérica** y los **Andes**, las tradiciones vivas de la **Norteamérica indígena**, el inmenso archipiélago cultural de **Oceanía** y, finalmente, el caso particular de **América Latina**, donde el choque colonial primero y la modernidad después produjeron tradiciones nuevas y propias.
+El **marco** es deliberadamente vasto. En el tiempo, abarca más de tres milenios: desde las terracotas Nok y las cabezas olmecas hasta el videoarte y las instalaciones de la memoria que se producen hoy. En el espacio, da la vuelta al mundo: las grandes culturas del **África subsahariana** —y también el **África cristiana e islámica** y la **África moderna y contemporánea**—, las civilizaciones de **Mesoamérica** y los **Andes**, las tradiciones vivas de la **Norteamérica indígena**, el inmenso archipiélago cultural de **Oceanía**, el caso particular de **América Latina** —donde el choque colonial primero y la modernidad después produjeron tradiciones nuevas y propias— y, cerrando el círculo, el **Caribe y el Atlántico negro**, donde la diáspora africana convirtió la síntesis forzada en creación soberana.
 
 ¿Por qué importa? Por dos razones. La primera es de justicia y de verdad histórica: estas obras no son curiosidades exóticas, sino respuestas plenas a las grandes preguntas del arte —cómo representar lo sagrado, cómo ejercer el poder, cómo recordar a los muertos, cómo ordenar el cosmos—. La segunda es metodológica: estudiarlas nos obliga a desmontar los prejuicios con los que la propia disciplina se construyó. El **hilo conductor** del módulo es, precisamente, ese doble movimiento: por un lado, **mirar de frente** tradiciones extraordinarias en sus propios términos —su función ritual, su cosmovisión, sus materiales y sus técnicas—; por otro, **mirar críticamente** la historia de su recepción: el saqueo colonial, la etiqueta envenenada de lo "primitivo", su apropiación por el modernismo europeo, los museos repletos de objetos arrancados de su contexto y los debates urgentes de hoy sobre la restitución, la soberanía cultural y la descolonización del relato.
 
@@ -23,6 +23,9 @@ Una advertencia que recorre todo el módulo: muchas de estas tradiciones **no so
 5. **[Arte de Oceanía](05-arte-de-oceania.md)** — Los moái de Rapa Nui, las tallas malanggan, la casa de reunión maorí y el arte aborigen australiano, entendidos desde el *mana*, el Tiempo del Sueño y los debates sobre el canon y la restitución.
 6. **[Arte colonial latinoamericano](06-arte-colonial-latinoamericano.md)** — El arte nacido del choque colonial (s. XVI-XIX): la evangelización visual, el barroco hispanoamericano y andino, el arte plumario, la pintura de castas y la agencia indígena y afrodescendiente.
 7. **[Arte latinoamericano moderno y contemporáneo](07-arte-latinoamericano-moderno.md)** — Más de un siglo de creación, de las vanguardias de entreguerras a la abstracción concreta y cinética y al arte de la memoria: no una periferia rezagada, sino una tradición que a menudo se adelantó al centro.
+8. **[África cristiana e islámica: Aksum, Etiopía y el Sahel](08-africa-cristiana-e-islamica.md)** — Las iglesias excavadas en la roca de Lalibela, los íconos y rollos mágicos etíopes y las mezquitas de adobe del Sahel (Djenné, Tombuctú): el cristianismo y el islam africanos como tradiciones propias, no como importaciones.
+9. **[África moderna y contemporánea](09-africa-moderna-y-contemporanea.md)** — Del estudio fotográfico colonial a las bienales globales: Seydou Keïta, la escuela de Poto-Poto, El Anatsui y los comisarios africanos que hoy dirigen Venecia, contra el relato de un continente "sin modernidad".
+10. **[El Caribe y el Atlántico negro](10-caribe-y-atlantico-negro.md)** — El arte de la diáspora africana en las Américas: del vodú haitiano y las artes de la plantación a Wifredo Lam, Basquiat y Kara Walker; la síntesis forzada convertida en creación soberana.
 
 ## Objetivos del módulo
 

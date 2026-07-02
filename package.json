@@ -9,7 +9,7 @@
     "lint": "eslint",
     "preview:cf": "next build && wrangler dev",
     "deploy:cf": "next build && wrangler deploy",
-    "deploy:historia": "next build && wrangler deploy -c wrangler.historia.jsonc"
+    "deploy:historia": "SITE_URL=https://historia.hilvan.org next build && wrangler deploy -c wrangler.historia.jsonc"
   },
   "dependencies": {
     "marked": "^14.1.4",

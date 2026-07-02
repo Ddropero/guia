@@ -1,6 +1,6 @@
 # Arte de Oceanía
 
-**Módulo 11 · Tradiciones globales (más allá del canon) · Periodo: c. 1500 a. C. – actualidad (con grandes hitos entre los siglos X y XX) · Regiones: Oceanía, es decir, Melanesia (Nueva Guinea, archipiélago Bismarck, islas Salomón, Vanuatu, Nueva Caledonia, Fiyi), Polinesia (Aotearoa/Nueva Zelanda, Hawái, Tahití, Samoa, Tonga, Islas Marquesas y Rapa Nui/Isla de Pascua), Micronesia (Carolinas, Marshall, Marianas, Palaos) y Australia aborigen.**
+**Módulo 11 · Artes de África, las Américas y Oceanía · Periodo: c. 1500 a. C. – actualidad (con grandes hitos entre los siglos X y XX) · Regiones: Oceanía, es decir, Melanesia (Nueva Guinea, archipiélago Bismarck, islas Salomón, Vanuatu, Nueva Caledonia, Fiyi), Polinesia (Aotearoa/Nueva Zelanda, Hawái, Tahití, Samoa, Tonga, Islas Marquesas y Rapa Nui/Isla de Pascua), Micronesia (Carolinas, Marshall, Marianas, Palaos) y Australia aborigen.**
 
 ---
 

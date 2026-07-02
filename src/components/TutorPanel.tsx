@@ -190,6 +190,7 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Escribe tu mensaje…"
+          aria-label="Escribe tu pregunta al tutor de IA"
           disabled={cargando}
           className="min-w-0 flex-1 rounded-md border border-line bg-bg px-3 py-2 text-sm text-fg outline-none placeholder:text-muted focus:border-accent"
         />

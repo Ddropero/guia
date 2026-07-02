@@ -10,7 +10,7 @@ En menos de medio siglo, el arte occidental se reinventó por completo. Si la le
 
 El marco es a la vez **eufórico y trágico**. Son los años de la electricidad, el automóvil, el cine, la velocidad y la gran ciudad, pero también los de las **dos guerras mundiales**, la Revolución mexicana, la rusa y el ascenso de los totalitarismos. Geográficamente, el módulo arranca en el París que es capital indiscutible del arte, se extiende por una Europa hirviente de manifiestos y, hacia 1940, asiste a un giro histórico: el exilio y la persecución del "arte degenerado" empujan el centro de gravedad del arte moderno de **París a Nueva York**, donde germinará el Módulo 10.
 
-¿Por qué importa este módulo? Porque aquí se inventa el **arte moderno** tal como hoy lo entendemos, y con él gran parte del vocabulario visual del siglo XX y del nuestro: la abstracción, el collage, el readymade, el diseño industrial, la fotografía como arte, el muro como tribuna social. El **hilo conductor** que recorre las nueve lecciones es un mismo desplazamiento, ensayado una y otra vez desde ángulos distintos: el del arte que deja de **representar el mundo** para empezar a **construir un mundo propio** —ya sea a través de la emoción, de la forma, de la idea, de la función o del compromiso político.
+¿Por qué importa este módulo? Porque aquí se inventa el **arte moderno** tal como hoy lo entendemos, y con él gran parte del vocabulario visual del siglo XX y del nuestro: la abstracción, el collage, el readymade, el diseño industrial, la fotografía como arte, el muro como tribuna social. El **hilo conductor** que recorre las diez lecciones es un mismo desplazamiento, ensayado una y otra vez desde ángulos distintos: el del arte que deja de **representar el mundo** para empezar a **construir un mundo propio** —ya sea a través de la emoción, de la forma, de la idea, de la función o del compromiso político—; una lección final desplaza esa pregunta fuera de Occidente, a las modernidades de Asia.
 
 ## Lecciones del módulo
 
@@ -23,6 +23,7 @@ El marco es a la vez **eufórico y trágico**. Son los años de la electricidad,
 7. **[Escultura moderna](07-escultura-moderna.md)** — De Brancusi a Calder, la escultura abandona la representación para investigar la forma esencial, el espacio negativo, los nuevos materiales y el movimiento real.
 8. **[La fotografía como arte moderno](08-fotografia-moderna.md)** — Del pictorialismo a la fotografía directa, la cámara conquista el estatus de arte: lenguaje de vanguardia con Man Ray e instrumento de conciencia social con Hine y la FSA.
 9. **[Arte y las guerras mundiales](09-arte-y-guerras-mundiales.md)** — Del trauma de la Gran Guerra y la Nueva Objetividad al *Guernica*, el arte como propaganda totalitaria, el "arte degenerado" y el exilio que traslada el arte de París a Nueva York.
+10. **[Modernidades asiáticas: Meiji, Bengala y el nuevo guohua](10-modernidades-asiaticas.md)** — Mientras París inventaba las vanguardias, Tokio, Calcuta y Shanghái respondían a su manera a la pregunta de la modernidad: nihonga y yōga, la escuela de Bengala y el guohua renovado, contra el mito de un "apagón" del arte asiático.
 
 ## Objetivos del módulo
 

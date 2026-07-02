@@ -25,6 +25,9 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const stripHtml = (s) => (s || "").replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
 
 // ¿La licencia es libre (dominio público o Creative Commons)?
+// ¿La licencia es libre (dominio público o CC sin cláusulas NC/ND)?
+// Acepta: dominio público, CC0, CC BY, CC BY-SA. Rechaza: NC (NonCommercial),
+// ND (NoDerivatives), fair use y no-libres.
 function esLibre(meta) {
   const pd = meta?.PublicDomain?.value;
   if (pd) return true;
@@ -32,7 +35,8 @@ function esLibre(meta) {
   const short = (meta?.LicenseShortName?.value || "").toLowerCase();
   const txt = `${lic} ${short}`;
   if (/fair use|non-free|no-?libre|copyright|todos los derechos|all rights/.test(txt)) return false;
-  return /public domain|dominio p|\bpd\b|cc0|cc[ -]?by/.test(txt);
+  if (/[-\s](nc|nd)\b|non[-\s]?commercial|no[-\s]?comercial|no[-\s]?deriv/.test(txt)) return false;
+  return /public domain|dominio p|\bpd\b|cc0|cc[ -]?by\b/.test(txt);
 }
 
 const IMG_MIME = /^image\/(jpeg|png|tiff|gif|webp)$/;

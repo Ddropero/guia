@@ -17,7 +17,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { modulo } = await params;
   const m = getModulo(modulo);
-  return { title: m ? `${m.titulo} · Historia del Arte` : "Historia del Arte" };
+  return { title: m ? m.titulo : "Módulo" };
 }
 
 export default async function ModuloPage({

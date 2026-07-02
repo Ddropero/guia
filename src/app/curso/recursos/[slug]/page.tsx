@@ -16,7 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const r = getRecurso(slug);
-  return { title: r ? `${r.titulo} · Historia del Arte` : "Historia del Arte" };
+  return { title: r ? r.titulo : "Recurso" };
 }
 
 export default async function RecursoPage({
