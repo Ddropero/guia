@@ -1,6 +1,10 @@
 {
   "El hombre de León León de Hohlenstein-Stadel": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/El_hombre_creador_y_rebelde_%E2%80%94_Jos%C3%A9_Clemente_Orozco.jpg/960px-El_hombre_creador_y_rebelde_%E2%80%94_Jos%C3%A9_Clemente_Orozco.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:El_hombre_creador_y_rebelde_%E2%80%94_Jos%C3%A9_Clemente_Orozco.jpg",
+    "credito": "MusaMuseoDeLasArtes",
+    "licencia": "CC BY-SA 4.0",
+    "query": "El hombre de León"
   },
   "Máscara funeraria de Tutankamón": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/M%C3%A1scara_funeraria_de_Tutankam%C3%B3n.jpg/960px-M%C3%A1scara_funeraria_de_Tutankam%C3%B3n.jpg",
@@ -21,7 +25,11 @@
     "licencia": "CC0"
   },
   "Una vasija de cerámica zuni o un manto Paracas": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Paracas_2023.jpg/960px-Paracas_2023.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Paracas_2023.jpg",
+    "credito": "Mojnsen",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Paracas"
   },
   "Doríforo de Policleto": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/02_10_2024_Photo_Paolo_Villa-Napoli-mann-Museo_Archeologico-FO232526tris-Arte_Greca_copia_romana-Policleto_Doriforo_Polykleitos_Doryphoros_from_Pompeii-marmo_marble_carrara.jpg/960px-thumbnail.jpg",
@@ -30,7 +38,11 @@
     "licencia": "CC BY 4.0"
   },
   "Catedral gótica : el caso de Chartres": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/View_west_along_Duomo_roof%2C_Milan.jpg/960px-View_west_along_Duomo_roof%2C_Milan.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:View_west_along_Duomo_roof,_Milan.jpg",
+    "credito": "Daniel Case",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Catedral gótica"
   },
   "Las meninas de Diego Velázquez": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/960px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg",
@@ -75,7 +87,11 @@
     "licencia": "Public domain"
   },
   "Capilla Sixtina Programa iconográfico: la": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Capilla_Sixtina_Palmaroli_%28cropped%29.jpg/960px-Capilla_Sixtina_Palmaroli_%28cropped%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Capilla_Sixtina_Palmaroli_(cropped).jpg",
+    "credito": "Jean Laurent / After Vicente Palmaroli",
+    "licencia": "Public domain",
+    "query": "Capilla Sixtina"
   },
   "El matrimonio Arnolfini Jan van Eyck": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Van_Eyck_-_Arnolfini_Portrait.jpg/960px-Van_Eyck_-_Arnolfini_Portrait.jpg",
@@ -120,7 +136,11 @@
     "licencia": "Public domain"
   },
   "Historia del arte de la Antigüedad de J. J. Winckelmann": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Winckelmann_Geschichte_der_Kunst_des_Altertums_EA.jpg/960px-Winckelmann_Geschichte_der_Kunst_des_Altertums_EA.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Winckelmann_Geschichte_der_Kunst_des_Altertums_EA.jpg",
+    "credito": "Unknown authorUnknown author",
+    "licencia": "Public domain",
+    "query": "Historia del arte de la Antigüedad"
   },
   "Conceptos fundamentales de la historia del arte de Heinrich Wölfflin": {
     "none": true
@@ -132,7 +152,11 @@
     "none": true
   },
   "¿Por qué no ha habido grandes mujeres artistas?, de Linda Nochlin": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/17/Linda_Nochlin_2012_%282min07s%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Linda_Nochlin_2012_(2min07s).jpg",
+    "credito": "Brooklyn Museum/Elizabeth A. Sackler Foundation",
+    "licencia": "CC BY 3.0",
+    "query": "Linda Nochlin"
   },
   "Venus de Willendorf": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Venus_von_Willendorf_01.jpg/960px-Venus_von_Willendorf_01.jpg",
@@ -141,16 +165,32 @@
     "licencia": "CC BY 2.5"
   },
   "Sala de los toros, cueva de Lascaux": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Lascaux_painting.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Lascaux_painting.jpg",
+    "credito": "EU",
+    "licencia": "Public domain",
+    "query": "Lascaux"
   },
   "Techo de los bisontes , Altamira": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/7_Dibujo_del_techo_de_Pol%C3%ADcromos_publicado_por_Marcelino_Sanz_de_Sautuola.jpg/960px-7_Dibujo_del_techo_de_Pol%C3%ADcromos_publicado_por_Marcelino_Sanz_de_Sautuola.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:7_Dibujo_del_techo_de_Pol%C3%ADcromos_publicado_por_Marcelino_Sanz_de_Sautuola.jpg",
+    "credito": "Marcelino Sanz de Sautuola. Fotografía por el Museo de Altamira",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Polícromos Altamira"
   },
   "Panel de los leones / Panel de los caballos, cueva de Chauvet": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/StainedGlassLeonesDF.JPG/960px-StainedGlassLeonesDF.JPG",
+    "enlace": "https://commons.wikimedia.org/wiki/File:StainedGlassLeonesDF.JPG",
+    "credito": "Thelmadatter",
+    "licencia": "Public domain",
+    "query": "Panel de los leones"
   },
   "Recinto D , Göbekli Tepe": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Recinto_Lighting_Upgrades_%2820240830-184603-CC%29.jpg/960px-Recinto_Lighting_Upgrades_%2820240830-184603-CC%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Recinto_Lighting_Upgrades_(20240830-184603-CC).jpg",
+    "credito": "NOIRLab/NSF/AURA",
+    "licencia": "CC BY 4.0",
+    "query": "Recinto D"
   },
   "Stonehenge": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Stonehenge_Heel_Stone.jpg/960px-Stonehenge_Heel_Stone.jpg",
@@ -159,10 +199,18 @@
     "licencia": "CC BY-SA 4.0"
   },
   "Cabeza de Warka": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/04/Uruk_ENG.png",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Uruk_ENG.png",
+    "credito": "Michael Mustafin",
+    "licencia": "CC0",
+    "query": "Uruk"
   },
   "Estatuillas orantes de Tell Asmar": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Woman_head_Tell_Asmas_Louvre_AO12434.jpg/960px-Woman_head_Tell_Asmas_Louvre_AO12434.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Woman_head_Tell_Asmas_Louvre_AO12434.jpg",
+    "credito": "Marie-Lan Nguyen",
+    "licencia": "Public domain",
+    "query": "Tell Asmar"
   },
   "Estandarte de Ur": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Standard_of_Ur_-_War.jpg/960px-Standard_of_Ur_-_War.jpg",
@@ -183,7 +231,11 @@
     "licencia": "Public domain"
   },
   "Relieves de la caza del león de Asurbanipal": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Ashurbanipal%2C_detail_of_a_lion-hunt_scene_from_Nineveh%2C_7th_century_BC%2C_the_British_Museum.jpg/960px-Ashurbanipal%2C_detail_of_a_lion-hunt_scene_from_Nineveh%2C_7th_century_BC%2C_the_British_Museum.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Ashurbanipal,_detail_of_a_lion-hunt_scene_from_Nineveh,_7th_century_BC,_the_British_Museum.jpg",
+    "credito": "Osama Shukir Muhammed Amin FRCP(Glasg)",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Asurbanipal"
   },
   "Paleta de Narmer": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Narmer_palette_%28obverse%29.jpg/960px-Narmer_palette_%28obverse%29.jpg",
@@ -204,7 +256,11 @@
     "licencia": "CC BY-SA 3.0 fr"
   },
   "Tríada de Micerino y la reina": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Boston_tr%C3%ADada_Menkaura_01.jpg/960px-Boston_tr%C3%ADada_Menkaura_01.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Boston_tr%C3%ADada_Menkaura_01.jpg",
+    "credito": "Miguel Hermoso Cuesta",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Tríada de Micerino"
   },
   "Busto de Nefertiti": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Nofretete_Neues_Museum.jpg/960px-Nofretete_Neues_Museum.jpg",
@@ -216,10 +272,18 @@
     "none": true
   },
   "Vasija de estilo de Kamares": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Cyclades_Sifnos_Kamares_07092014_-_panoramio.jpg/960px-Cyclades_Sifnos_Kamares_07092014_-_panoramio.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Cyclades_Sifnos_Kamares_07092014_-_panoramio.jpg",
+    "credito": "rene boulay",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Kamares"
   },
   "Fresco de los saltos del toro": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Bull_leaping_minoan_fresco_archmus_Heraklion.jpg/960px-Bull_leaping_minoan_fresco_archmus_Heraklion.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Bull_leaping_minoan_fresco_archmus_Heraklion.jpg",
+    "credito": "Jebulon",
+    "licencia": "CC0",
+    "query": "Taurocatapsia"
   },
   "Diosa de las serpientes": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Snake_goddess_archmus_Heraklion.jpg/960px-Snake_goddess_archmus_Heraklion.jpg",
@@ -234,10 +298,18 @@
     "licencia": "CC BY-SA 3.0"
   },
   "Máscara funeraria llamada de Agamenón": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/PXL_20221211_Agamen%C3%B3n%2C_de_Amadeo_Gabino%2C_1987_02.jpg/960px-PXL_20221211_Agamen%C3%B3n%2C_de_Amadeo_Gabino%2C_1987_02.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:PXL_20221211_Agamen%C3%B3n,_de_Amadeo_Gabino,_1987_02.jpg",
+    "credito": "Ismael Olea",
+    "licencia": "CC BY 4.0",
+    "query": "Agamenón"
   },
   "Ánfora monumental del Dipilón": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Dipylon%2C_Kerameikos%2C_Athens%2C_225754.jpg/960px-Dipylon%2C_Kerameikos%2C_Athens%2C_225754.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Dipylon,_Kerameikos,_Athens,_225754.jpg",
+    "credito": "Zde",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Dipilón"
   },
   "kouros Kouros de Nueva York": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Marble_statue_of_a_kouros_%28youth%29_MET_DT263.jpg/960px-Marble_statue_of_a_kouros_%28youth%29_MET_DT263.jpg",
@@ -252,7 +324,11 @@
     "licencia": "CC BY-SA 4.0"
   },
   "Ánfora de Exequias: Aquiles y Áyax jugando a los dados": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Boulogne-sur-Mer_%28Pas-de-Calais%29_-_Le_ch%C3%A2teau-mus%C3%A9e_-_Amphore_%2827703791505%29.jpg/960px-Boulogne-sur-Mer_%28Pas-de-Calais%29_-_Le_ch%C3%A2teau-mus%C3%A9e_-_Amphore_%2827703791505%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Boulogne-sur-Mer_(Pas-de-Calais)_-_Le_ch%C3%A2teau-mus%C3%A9e_-_Amphore_(27703791505).jpg",
+    "credito": "Patrick from Compiègne, France",
+    "licencia": "CC BY-SA 2.0",
+    "query": "Ánfora de Exequias"
   },
   "Ánfora bilingüe del Pintor de Andócides": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Athena_Herakles_Staatliche_Antikensammlungen_2301_B_full.jpg/960px-Athena_Herakles_Staatliche_Antikensammlungen_2301_B_full.jpg",
@@ -261,7 +337,11 @@
     "licencia": "Public domain"
   },
   "Templo de Apolo en Corinto y el orden dórico temprano": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Korinth_BW_2017-10-10_10-55-28.jpg/960px-Korinth_BW_2017-10-10_10-55-28.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Korinth_BW_2017-10-10_10-55-28.jpg",
+    "credito": "Berthold Werner",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Templo de Apolo en Corinto"
   },
   "Auriga de Delfos": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Aurige._Mus%C3%A9e_Delphes._Gr%C3%A8ce.png/960px-Aurige._Mus%C3%A9e_Delphes._Gr%C3%A8ce.png",
@@ -282,7 +362,11 @@
     "licencia": "CC BY-SA 4.0"
   },
   "El Partenón y su escultura": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Estatua_de_Atenea_-_C%C3%ADrculo_de_Bellas_Artes_%28Madrid%29.jpg/960px-Estatua_de_Atenea_-_C%C3%ADrculo_de_Bellas_Artes_%28Madrid%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Estatua_de_Atenea_-_C%C3%ADrculo_de_Bellas_Artes_(Madrid).jpg",
+    "credito": "jacinta lluch valero from madrid * barcelona...., (España-Spain)",
+    "licencia": "CC BY-SA 2.0",
+    "query": "El Partenón y su escultura (Acrópolis de Atenas)"
   },
   "Hermes con Dioniso niño, de Praxíteles": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Hermes_con_el_ni%C3%B1o_Dioniso.jpg/960px-Hermes_con_el_ni%C3%B1o_Dioniso.jpg",
@@ -315,7 +399,11 @@
     "licencia": "CC0"
   },
   "Gran Altar de Pérgamo": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b6/The_Battle_of_the_Gods_and_Giants_-_Cesare_Rossetti.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:The_Battle_of_the_Gods_and_Giants_-_Cesare_Rossetti.jpg",
+    "credito": "Cesare Rossetti",
+    "licencia": "Public domain",
+    "query": "Gigantomaquia"
   },
   "Púgil de las Termas": {
     "none": true
@@ -339,7 +427,11 @@
     "licencia": "CC BY-SA 4.0"
   },
   "Tumbas pintadas de Tarquinia": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tarquinia_town_square_AvL.JPG/960px-Tarquinia_town_square_AvL.JPG",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Tarquinia_town_square_AvL.JPG",
+    "credito": "AlexanderVanLoon",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Tarquinia"
   },
   "Loba Capitolina": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Lupa_Capitolina%2C_Rome.jpg/960px-Lupa_Capitolina%2C_Rome.jpg",
@@ -396,25 +488,53 @@
     "none": true
   },
   "Cabeza colosal de Constantino y Arco de Constantino": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/55/Constantino_Zaballa_Euskal.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Constantino_Zaballa_Euskal.jpg",
+    "credito": "Euskal Bizikleta",
+    "licencia": "CC BY-SA 2.0",
+    "query": "Constantino"
   },
   "Sello y figuras de la civilización del Indo": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Cello_study.jpg/960px-Cello_study.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Cello_study.jpg",
+    "credito": "MichaelMaggs",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Sello"
   },
   "Capitel de los leones de Ashoka": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sarnath_capital.jpg/960px-Sarnath_capital.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Sarnath_capital.jpg",
+    "credito": "Chrisi1964",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Ashoka Sarnath"
   },
   "Gran Stupa de Sanchi y sus toranas": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Sanchi_Stupa_No_3.jpg/960px-Sanchi_Stupa_No_3.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Sanchi_Stupa_No_3.jpg",
+    "credito": "Suyash Dwivedi",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Gran Stupa de Sanchi"
   },
   "Cuevas de Ajanta y de Ellora": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Cave_26%2C_Ajanta.jpg/960px-Cave_26%2C_Ajanta.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Cave_26,_Ajanta.jpg",
+    "credito": "Dey.sandip",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Cuevas de Ajanta"
   },
   "Buda de Gandhara y Buda de Mathura": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Head_of_Buddha-N_3458-IMG_8465-gradient.jpg/960px-Head_of_Buddha-N_3458-IMG_8465-gradient.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Head_of_Buddha-N_3458-IMG_8465-gradient.jpg",
+    "credito": "Rama",
+    "licencia": "CC BY-SA 3.0 fr",
+    "query": "Buda de Gandhara"
   },
   "Templos de Khajuraho y Sol de Konark": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Khajuraho_Dulhadeo_2010.jpg/960px-Khajuraho_Dulhadeo_2010.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Khajuraho_Dulhadeo_2010.jpg",
+    "credito": "Marcin Białek",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Templos de Khajuraho"
   },
   "Shiva Nataraja": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Shiva_as_the_Lord_of_Dance_LACMA_edit.jpg/960px-Shiva_as_the_Lord_of_Dance_LACMA_edit.jpg",
@@ -423,7 +543,11 @@
     "licencia": "Public domain"
   },
   "Ding y vasijas rituales Shang": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bronze_ding_Genggefu%2C_Hunan_Museum_20230301_100427.jpg/960px-Bronze_ding_Genggefu%2C_Hunan_Museum_20230301_100427.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Bronze_ding_Genggefu,_Hunan_Museum_20230301_100427.jpg",
+    "credito": "Huangdan2060",
+    "licencia": "CC BY 4.0",
+    "query": "Ding"
   },
   "Ejército de terracota de Qin Shi Huang": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/El_ej%C3%A9rcito_de_terracota_del_emperador_Qin_Shi_Huang_-_Xian_%28China%29.JPG/960px-El_ej%C3%A9rcito_de_terracota_del_emperador_Qin_Shi_Huang_-_Xian_%28China%29.JPG",
@@ -432,19 +556,39 @@
     "licencia": "CC BY-SA 4.0"
   },
   "Grutas de Longmen - Buda Vairocana": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Mahavairocana.jpg/960px-Mahavairocana.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Mahavairocana.jpg",
+    "credito": "Unknown authorUnknown author",
+    "licencia": "Public domain",
+    "query": "Buda Vairocana"
   },
   "Viajeros entre montañas y arroyos Fan Kuan": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/33/Travelers_Among_Mountains_and_Streams_seals_and_inscriptions.png",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Travelers_Among_Mountains_and_Streams_seals_and_inscriptions.png",
+    "credito": "User:Droxiang",
+    "licencia": "Public domain",
+    "query": "Viajeros entre montañas"
   },
   "Prefacio al Pabellón de las Orquídeas Caligrafía: el legado de Wang Xizhi": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Rua_Sul_Do_Patane_Pra%C3%A7a_Das_Orquideas_bus_stop_28-08-2025.jpg/960px-Rua_Sul_Do_Patane_Pra%C3%A7a_Das_Orquideas_bus_stop_28-08-2025.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Rua_Sul_Do_Patane_Pra%C3%A7a_Das_Orquideas_bus_stop_28-08-2025.jpg",
+    "credito": "LN9267",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Orquídeas"
   },
   "Jarrón Ming azul y blanco de Jingdezhen": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/48/CN_Jingdezhen_0806_%282%29_%2817187725276%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:CN_Jingdezhen_0806_(2)_(17187725276).jpg",
+    "credito": "Diego Tirira from Quito, Ecuador",
+    "licencia": "CC BY-SA 2.0",
+    "query": "Jingdezhen"
   },
   "Vasija y figurilla del periodo Jomon": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/14/Vasija_moqoit.png",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Vasija_moqoit.png",
+    "credito": "Ylay Zamora",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Vasija"
   },
   "Horyu-ji": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Horyu-ji10s3200.jpg/960px-Horyu-ji10s3200.jpg",
@@ -453,16 +597,32 @@
     "licencia": "CC BY 2.5"
   },
   "La historia de Genji Rollo ilustrado de": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/The_Tale_of_Genji_-_1951_film.jpg/960px-The_Tale_of_Genji_-_1951_film.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:The_Tale_of_Genji_-_1951_film.jpg",
+    "credito": "Unknown authorUnknown author",
+    "licencia": "Public domain",
+    "query": "La historia de Genji"
   },
   "Pintura a la tinta zen: paisaje de Sesshu": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Coyiguay._2014._Sumi-e%2C_tintas_sobre_seda_en_soporte_r%C3%ADgido_de_33_x_24_cm.._Ganadora_de_Opera_Prima%2C_50%C2%B0_Artistas_Contempor%C3%A1neos_Argentinos_%28Casa_del_Bicentenario_2016%29.jpg/960px-thumbnail.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Coyiguay._2014._Sumi-e,_tintas_sobre_seda_en_soporte_r%C3%ADgido_de_33_x_24_cm.._Ganadora_de_Opera_Prima,_50%C2%B0_Artistas_Contempor%C3%A1neos_Argentinos_(Casa_del_Bicentenario_2016).jpg",
+    "credito": "Alejandra M. Alesso",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Pintura a la tinta zen"
   },
   "Lirios Biombos Rinpa: Korin, e Iris": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Lirios%2C_Juncos%2C_Puerto_Rico_locator_map.png/960px-Lirios%2C_Juncos%2C_Puerto_Rico_locator_map.png",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Lirios,_Juncos,_Puerto_Rico_locator_map.png",
+    "credito": "The Eloquent Peasant",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Lirios"
   },
   "Jardín seco del Ryoan-ji": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Model_of_Ry%C5%8Dan-ji_Temple_at_The_Diorama_Kyoto_Japan_01.jpg/960px-Model_of_Ry%C5%8Dan-ji_Temple_at_The_Diorama_Kyoto_Japan_01.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Model_of_Ry%C5%8Dan-ji_Temple_at_The_Diorama_Kyoto_Japan_01.jpg",
+    "credito": "Brakeet",
+    "licencia": "CC0",
+    "query": "Ryoan-ji"
   },
   "La gran ola de Kanagawa Hokusai": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/960px-Tsunami_by_hokusai_19th_century.jpg",
@@ -495,10 +655,18 @@
     "licencia": "CC BY-SA 4.0"
   },
   "Ta Prohm y el templo en la selva": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Ta_Prohm_Buddha_image_in_a_tree%2C_Cambodia%2C_January_2009.jpg/960px-Ta_Prohm_Buddha_image_in_a_tree%2C_Cambodia%2C_January_2009.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Ta_Prohm_Buddha_image_in_a_tree,_Cambodia,_January_2009.jpg",
+    "credito": "Pierre André Leclercq",
+    "licencia": "CC BY 4.0",
+    "query": "Ta Prohm"
   },
   "Buda de Sukhothai y arte de Pagan": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Golden_buddha.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Golden_buddha.jpg",
+    "credito": "Kushal Das",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Buda de Sukhothai"
   },
   "Corona de oro de Silla": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Escudo_de_Villa_Corona.png",
@@ -510,16 +678,32 @@
     "none": true
   },
   "Aguamanil celadón de Goryeo con incrustación": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Alfonso_XII%2C_Alphonso_XIII_and_Victoria_Eug%C3%A9nie%2C_PA04599.jpg/960px-Alfonso_XII%2C_Alphonso_XIII_and_Victoria_Eug%C3%A9nie%2C_PA04599.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Alfonso_XII,_Alphonso_XIII_and_Victoria_Eug%C3%A9nie,_PA04599.jpg",
+    "credito": "Alfonso XIII, king of Spain (1886-1941) (depicted) (graphic artist)",
+    "licencia": "Public domain",
+    "query": "XII-XIII"
   },
   "Tarro de la luna, porcelana blanca de Joseon": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Tomada_da_cidade_de_S%C3%A3o_Salvador_s%C3%A9culo_XVIII_%28panor%C3%A2mico%29.jpg/960px-Tomada_da_cidade_de_S%C3%A3o_Salvador_s%C3%A9culo_XVIII_%28panor%C3%A2mico%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Tomada_da_cidade_de_S%C3%A3o_Salvador_s%C3%A9culo_XVIII_(panor%C3%A2mico).jpg",
+    "credito": "Unknown authorUnknown author",
+    "licencia": "Public domain",
+    "query": "XVIII"
   },
   "Vista verdadera del Geumgangsan de Jeong Seon": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/db/Uchi-Kongo_Station.JPG",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Uchi-Kongo_Station.JPG",
+    "credito": "Unknown authorUnknown author",
+    "licencia": "Public domain",
+    "query": "Geumgangsan"
   },
   "Escuela del pueblo del álbum de género de Kim Hong-do": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/1897_Bournedale_School_House%2C_Bournedale_MA.jpg/960px-1897_Bournedale_School_House%2C_Bournedale_MA.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:1897_Bournedale_School_House,_Bournedale_MA.jpg",
+    "credito": "John Phelan",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Escuela del pueblo"
   },
   "Cúpula de la Roca": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Jerusalem-2013-Temple_Mount-Dome_of_the_Rock_%26_Chain_02.jpg/960px-Jerusalem-2013-Temple_Mount-Dome_of_the_Rock_%26_Chain_02.jpg",
@@ -561,7 +745,11 @@
     "none": true
   },
   "Jarra y platos de lustre dorado abasíes": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Alimentos_y_jarra_en_ofrenda.jpg/960px-Alimentos_y_jarra_en_ofrenda.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Alimentos_y_jarra_en_ofrenda.jpg",
+    "credito": "JMndz",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Jarra"
   },
   "Bote de Al-Mughira": {
     "none": true
@@ -570,7 +758,11 @@
     "none": true
   },
   "Bustan Miniaturas del de Saadi": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Bustan_in_Ein_Kerem.jpg/960px-Bustan_in_Ein_Kerem.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Bustan_in_Ein_Kerem.jpg",
+    "credito": "בר",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Bustan"
   },
   "Alfombra Ardabil": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/The_Ardabil_Carpet_-_Google_Art_Project.jpg/960px-The_Ardabil_Carpet_-_Google_Art_Project.jpg",
@@ -597,7 +789,11 @@
     "licencia": "Public domain"
   },
   "La corte de Gayumars del Shahnameh de Sha Tahmasp": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/The_Court_of_Gayumars_%28Cropped%29.jpg/960px-The_Court_of_Gayumars_%28Cropped%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:The_Court_of_Gayumars_(Cropped).jpg",
+    "credito": "Attributed to Sultan Muhammad",
+    "licencia": "Public domain",
+    "query": "Gayumars"
   },
   "Taj Mahal, Agra": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Taj_Mahal%2C_Agra%2C_India_edit2.jpg/960px-Taj_Mahal%2C_Agra%2C_India_edit2.jpg",
@@ -606,7 +802,11 @@
     "licencia": "CC BY-SA 4.0"
   },
   "Pinturas de las catacumbas y el Buen Pastor": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Entierro_de_Santa_Cecilia.jpg/960px-Entierro_de_Santa_Cecilia.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Entierro_de_Santa_Cecilia.jpg",
+    "credito": "Luis de Madrazo",
+    "licencia": "Public domain",
+    "query": "Pinturas de las catacumbas"
   },
   "Sarcófago de Junio Basso": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Tesoro_di_san_pietro%2C_sarcofago_di_giunio_basso.JPG/960px-Tesoro_di_san_pietro%2C_sarcofago_di_giunio_basso.JPG",
@@ -615,7 +815,11 @@
     "licencia": "CC BY-SA 3.0"
   },
   "Mosaicos de San Vitale: Justiniano y Teodora": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Meister_von_San_Vitale_in_Ravenna.jpg/960px-Meister_von_San_Vitale_in_Ravenna.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Meister_von_San_Vitale_in_Ravenna.jpg",
+    "credito": "Meister von San Vitale in Ravenna",
+    "licencia": "Public domain",
+    "query": "Mosaicos de San Vitale"
   },
   "Santa Sofía": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Hagia_Sophia_Mars_2013.jpg/960px-Hagia_Sophia_Mars_2013.jpg",
@@ -630,7 +834,11 @@
     "licencia": "Public domain"
   },
   "Trinidad Iglesia bizantina media y tardía: programa de mosaicos y la de Rubliov": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/02.Trinidad_%2859%29.JPG/960px-02.Trinidad_%2859%29.JPG",
+    "enlace": "https://commons.wikimedia.org/wiki/File:02.Trinidad_(59).JPG",
+    "credito": "Elemaki",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Trinidad"
   },
   "Tesoro de Sutton Hoo": {
     "none": true
@@ -642,10 +850,18 @@
     "licencia": "Public domain"
   },
   "Capilla palatina de Aquisgrán , de Odón de Metz": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Akisgrango_Kapera_Palatinoa.jpg/960px-Akisgrango_Kapera_Palatinoa.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Akisgrango_Kapera_Palatinoa.jpg",
+    "credito": "Adam Cli",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Capilla palatina de Aquisgrán"
   },
   "Puertas de bronce de San Bernardo": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/St._Bernward_Kirche_Hildesheim.jpg/960px-St._Bernward_Kirche_Hildesheim.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:St._Bernward_Kirche_Hildesheim.jpg",
+    "credito": "StefanTsingtauer",
+    "licencia": "CC BY-SA 4.0",
+    "query": "San Bernardo Hildesheim"
   },
   "Santa María del Naranco , arte asturiano": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Iglesia_de_Santa_Mar%C3%ADa_del_Naranco_%281433076477%29.jpg/960px-Iglesia_de_Santa_Mar%C3%ADa_del_Naranco_%281433076477%29.jpg",
@@ -663,13 +879,25 @@
     "licencia": "CC BY-SA 4.0"
   },
   "Tímpano del Juicio Final, catedral de San Lázaro de Autun, por Gislebertus": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Autun%2C_Gislebertus%2C_Eva.JPG/960px-Autun%2C_Gislebertus%2C_Eva.JPG",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Autun,_Gislebertus,_Eva.JPG",
+    "credito": "Cancre",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Gislebertus"
   },
   "Tímpano de la Pentecostés , Sainte-Madeleine de Vézelay": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Portal_central_del_p%C3%B3rtico_de_la_Catedral_de_Santa_Mar%C3%ADa_de_Vitoria-Gasteiz.jpg/960px-Portal_central_del_p%C3%B3rtico_de_la_Catedral_de_Santa_Mar%C3%ADa_de_Vitoria-Gasteiz.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Portal_central_del_p%C3%B3rtico_de_la_Catedral_de_Santa_Mar%C3%ADa_de_Vitoria-Gasteiz.jpg",
+    "credito": "Mentxuwiki",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Tímpano de la Pentecostés"
   },
   "Tímpano de la Maiestas Domini, abadía de Saint-Pierre de Moissac": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Cloisters_of_Moissac_Abbey.jpg/960px-Cloisters_of_Moissac_Abbey.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Cloisters_of_Moissac_Abbey.jpg",
+    "credito": "Benh LIEU SONG",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Moissac"
   },
   "Pantocrátor del ábside de San Clemente de Tahull , pintura mural": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Pantocr%C3%A1tor_de_San_Clemente%2C_Tahull_%286642741329%29.jpg/960px-Pantocr%C3%A1tor_de_San_Clemente%2C_Tahull_%286642741329%29.jpg",
@@ -678,10 +906,18 @@
     "licencia": "CC BY-SA 2.0"
   },
   "Pila bautismal de bronce, San Bartolomé de Lieja, por Renier de Huy": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/0_Huy_-_Grand%27Place_%281%29.JPG/960px-0_Huy_-_Grand%27Place_%281%29.JPG",
+    "enlace": "https://commons.wikimedia.org/wiki/File:0_Huy_-_Grand%27Place_(1).JPG",
+    "credito": "Jean-Pol GRANDMONT",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Huy"
   },
   "Coro de la abadía de Saint-Denis": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Lustre-mairie-saint-denis.JPG/960px-Lustre-mairie-saint-denis.JPG",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Lustre-mairie-saint-denis.JPG",
+    "credito": "Uploaded by Thierry Caro",
+    "licencia": "Public domain",
+    "query": "Saint-Denis"
   },
   "Catedral de Notre-Dame de Chartres": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Vitrail_Chartres_210209_07.jpg/960px-Vitrail_Chartres_210209_07.jpg",
@@ -726,7 +962,11 @@
     "licencia": "Public domain"
   },
   "Ciclo de frescos de la Capilla Scrovegni , Padua": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Roman_Arena_in_Padua_%281%29.jpg/960px-Roman_Arena_in_Padua_%281%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Roman_Arena_in_Padua_(1).jpg",
+    "credito": "Tournasol7",
+    "licencia": "CC BY 4.0",
+    "query": "Arena Padua"
   },
   "Maestà de la catedral de Siena, de Duccio": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Maest_0_duccio_1308-11_siena_duomo.jpg/960px-Maest_0_duccio_1308-11_siena_duomo.jpg",
@@ -735,13 +975,25 @@
     "licencia": "Public domain"
   },
   "Alegoría y efectos del Buen y el Mal Gobierno de Ambrogio Lorenzetti": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Alegor%C3%ADa_de_la_construcci%C3%B3n_y_del_trabajo_%28Saturnino_Herr%C3%A1n%29.jpg/960px-Alegor%C3%ADa_de_la_construcci%C3%B3n_y_del_trabajo_%28Saturnino_Herr%C3%A1n%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Alegor%C3%ADa_de_la_construcci%C3%B3n_y_del_trabajo_(Saturnino_Herr%C3%A1n).jpg",
+    "credito": "Luisalvaz",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Alegoría"
   },
   "Frescos de la basílica de San Francisco de Asís": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/San_Francisco_Panorama_from_Twin_Peaks_2013.jpg/960px-San_Francisco_Panorama_from_Twin_Peaks_2013.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:San_Francisco_Panorama_from_Twin_Peaks_2013.jpg",
+    "credito": "Tuxyso",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Francisco"
   },
   "El sacrificio de Isaac Paneles del concurso del baptisterio": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/El_sacrificio_de_Isaac_%28Domenichino%29.jpg/960px-El_sacrificio_de_Isaac_%28Domenichino%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:El_sacrificio_de_Isaac_(Domenichino).jpg",
+    "credito": "Domenichino",
+    "licencia": "Public domain",
+    "query": "El sacrificio de Isaac"
   },
   "Cúpula de Santa María del Fiore": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/C%C3%BApula_de_Santa_Maria_del_Fiore_des_de_baix.JPG/960px-C%C3%BApula_de_Santa_Maria_del_Fiore_des_de_baix.JPG",
@@ -756,7 +1008,11 @@
     "licencia": "CC BY-SA 2.0"
   },
   "Estatua ecuestre del Gattamelata": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Plaster_cast_of_head_of_Donatello%27s_Gattamelata%2C_maybe_15th_ct%2C_Padua%2C_University%2C_profile.jpg/960px-Plaster_cast_of_head_of_Donatello%27s_Gattamelata%2C_maybe_15th_ct%2C_Padua%2C_University%2C_profile.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Plaster_cast_of_head_of_Donatello%27s_Gattamelata,_maybe_15th_ct,_Padua,_University,_profile.jpg",
+    "credito": "MenkinAlRire",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Gattamelata"
   },
   "La Trinidad": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/02.Trinidad_%2859%29.JPG/960px-02.Trinidad_%2859%29.JPG",
@@ -771,7 +1027,11 @@
     "licencia": "Public domain"
   },
   "Anunciación del corredor norte": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Alfredo_Guttero_-_Anunciaci%C3%B3n_-_Google_Art_Project.jpg/960px-Alfredo_Guttero_-_Anunciaci%C3%B3n_-_Google_Art_Project.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Alfredo_Guttero_-_Anunciaci%C3%B3n_-_Google_Art_Project.jpg",
+    "credito": "Alfredo Guttero",
+    "licencia": "Public domain",
+    "query": "Anunciación"
   },
   "La Flagelación de Cristo": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Flagellation_of_Christ-Caravaggio_%281607%29.jpg/960px-The_Flagellation_of_Christ-Caravaggio_%281607%29.jpg",
@@ -927,7 +1187,11 @@
     "licencia": "Public domain"
   },
   "Las bodas de Caná Veronés": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Las_bodas_de_Can%C3%A1_%28Frans_Francken_II%29_c.1600-1610.jpg/960px-Las_bodas_de_Can%C3%A1_%28Frans_Francken_II%29_c.1600-1610.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Las_bodas_de_Can%C3%A1_(Frans_Francken_II)_c.1600-1610.jpg",
+    "credito": "Attributed to Frans Francken the Younger",
+    "licencia": "Public domain",
+    "query": "Las bodas de Caná"
   },
   "La última cena Tintoretto": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Tintoretto%2C_ultima_cena%2C_1594%2C_07.jpg/960px-Tintoretto%2C_ultima_cena%2C_1594%2C_07.jpg",
@@ -972,10 +1236,18 @@
     "licencia": "Public domain"
   },
   "El Descendimiento de la cruz Rosso Fiorentino, 1521": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/El_Descendimiento%2C_by_Rogier_van_der_Weyden%2C_from_Prado_in_Google_Earth.jpg/960px-El_Descendimiento%2C_by_Rogier_van_der_Weyden%2C_from_Prado_in_Google_Earth.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:El_Descendimiento,_by_Rogier_van_der_Weyden,_from_Prado_in_Google_Earth.jpg",
+    "credito": "Rogier van der Weyden",
+    "licencia": "Public domain",
+    "query": "El Descendimiento de la cruz"
   },
   "La Virgen del cuello largo Parmigianino, c. 1534 1540": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Parmigianino_-_Madonna_and_Child_with_Angels%2C_known_as_the_Madonna_with_the_Long_Neck.jpg/960px-Parmigianino_-_Madonna_and_Child_with_Angels%2C_known_as_the_Madonna_with_the_Long_Neck.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Parmigianino_-_Madonna_and_Child_with_Angels,_known_as_the_Madonna_with_the_Long_Neck.jpg",
+    "credito": "Parmigianino",
+    "licencia": "Public domain",
+    "query": "La Virgen del cuello largo (Madonna dal collo lungo)"
   },
   "Alegoría del triunfo de Venus Bronzino, c. 1545": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Angelo_Bronzino_-_Venus%2C_Cupid%2C_Folly_and_Time_-_National_Gallery%2C_London.jpg/960px-Angelo_Bronzino_-_Venus%2C_Cupid%2C_Folly_and_Time_-_National_Gallery%2C_London.jpg",
@@ -1014,7 +1286,11 @@
     "licencia": "Public domain"
   },
   "Galería Farnesio Annibale Carracci": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Retrato_de_Isabel_Farnesio%2C_Louis-Michel_van_Loo.jpg/960px-Retrato_de_Isabel_Farnesio%2C_Louis-Michel_van_Loo.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Retrato_de_Isabel_Farnesio,_Louis-Michel_van_Loo.jpg",
+    "credito": "Louis-Michel van Loo",
+    "licencia": "Public domain",
+    "query": "Galería Farnesio"
   },
   "Éxtasis de santa Teresa Bernini": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Ecstasy_of_Saint_Teresa_September_2015-2a.jpg/960px-Ecstasy_of_Saint_Teresa_September_2015-2a.jpg",
@@ -1107,7 +1383,11 @@
     "licencia": "Public domain"
   },
   "El ciclo de María de Médici Peter Paul Rubens": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Garrastazu_m%C3%A9dici.jpg/960px-Garrastazu_m%C3%A9dici.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Garrastazu_m%C3%A9dici.jpg",
+    "credito": "Governo do Brasil",
+    "licencia": "Public domain",
+    "query": "Médici"
   },
   "Carlos I a caballo Anton van Dyck": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Anthony_van_Dyck_-_Equestrian_portrait_of_Charles_I_of_England_%28Copy%29.jpg/960px-Anthony_van_Dyck_-_Equestrian_portrait_of_Charles_I_of_England_%28Copy%29.jpg",
@@ -1128,7 +1408,11 @@
     "licencia": "Public domain"
   },
   "Autorretrato tardío Rembrandt van Rijn": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Marques_Oliveira_February_2015-1a.jpg/960px-Marques_Oliveira_February_2015-1a.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Marques_Oliveira_February_2015-1a.jpg",
+    "credito": "João Marques de Oliveira",
+    "licencia": "Public domain",
+    "query": "Autorretrato"
   },
   "Et in Arcadia ego Nicolas Poussin": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Nicolas_Poussin_-_Et_in_Arcadia_ego_%28deuxi%C3%A8me_version%29.jpg/960px-Nicolas_Poussin_-_Et_in_Arcadia_ego_%28deuxi%C3%A8me_version%29.jpg",
@@ -1137,10 +1421,18 @@
     "licencia": "Public domain"
   },
   "Puerto de mar con el embarco de la reina de Saba Claudio de Lorena": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Saba_01_%28cropped%29.jpg/960px-Saba_01_%28cropped%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Saba_01_(cropped).jpg",
+    "credito": "Pedro J Pacheco",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Saba"
   },
   "Versalles: la Galería de los Espejos - Jules Hardouin-Mansart y Charles Le Brun": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Barrio_de_Versalles_%28o_Versailles%29_Buenos_Aires_05.JPG/960px-Barrio_de_Versalles_%28o_Versailles%29_Buenos_Aires_05.JPG",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Barrio_de_Versalles_(o_Versailles)_Buenos_Aires_05.JPG",
+    "credito": "Roberto Fiadone",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Versalles"
   },
   "Peregrinación a la isla de Citera Antoine Watteau": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/L%27Embarquement_pour_Cyth%C3%A8re%2C_by_Antoine_Watteau%2C_from_C2RMF_retouched.jpg/960px-L%27Embarquement_pour_Cyth%C3%A8re%2C_by_Antoine_Watteau%2C_from_C2RMF_retouched.jpg",
@@ -1158,7 +1450,11 @@
     "none": true
   },
   "El triunfo de Apolo / Apoteosis de España Giambattista Tiépolo": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mosaico_de_Apolo_y_Marsias%2C_Museo_de_C%C3%A1diz.jpg/960px-Mosaico_de_Apolo_y_Marsias%2C_Museo_de_C%C3%A1diz.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Mosaico_de_Apolo_y_Marsias,_Museo_de_C%C3%A1diz.jpg",
+    "credito": "Jl FilpoC",
+    "licencia": "CC BY-SA 4.0",
+    "query": "El triunfo de Apolo"
   },
   "El juramento de los Horacios Jacques-Louis David": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Jacques-Louis_David%2C_Le_Serment_des_HoracesFXD.jpg/960px-Jacques-Louis_David%2C_Le_Serment_des_HoracesFXD.jpg",
@@ -1182,7 +1478,11 @@
     "none": true
   },
   "El Panteón de París Jacques-Germain Soufflot": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/El_Pante%C3%B3n_de_Par%C3%ADs%2C_Francia_2011.jpg/960px-El_Pante%C3%B3n_de_Par%C3%ADs%2C_Francia_2011.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:El_Pante%C3%B3n_de_Par%C3%ADs,_Francia_2011.jpg",
+    "credito": "Juanedc from Zaragoza, España",
+    "licencia": "CC BY 2.0",
+    "query": "El Panteón de París"
   },
   "La consagración de Napoleón Jacques-Louis David": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Jacques-Louis_David_-_The_Coronation_of_Napoleon_%281805-1807%29.jpg/960px-Jacques-Louis_David_-_The_Coronation_of_Napoleon_%281805-1807%29.jpg",
@@ -1311,7 +1611,11 @@
     "licencia": "CC BY 3.0"
   },
   "La catedral de Ruan Claude Monet": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Rouen_Cathedral_as_seen_from_Gros_Horloge_140215_4.jpg/960px-Rouen_Cathedral_as_seen_from_Gros_Horloge_140215_4.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Rouen_Cathedral_as_seen_from_Gros_Horloge_140215_4.jpg",
+    "credito": "DXR",
+    "licencia": "CC BY-SA 3.0",
+    "query": "La catedral de Ruan"
   },
   "La princesa del país de la porcelana James McNeill Whistler": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/James_McNeill_Whistler_-_La_Princesse_du_pays_de_la_porcelaine_-_brighter.jpg/960px-James_McNeill_Whistler_-_La_Princesse_du_pays_de_la_porcelaine_-_brighter.jpg",
@@ -1326,10 +1630,18 @@
     "licencia": "Public domain"
   },
   "El ciruelo en flor Vincent van Gogh": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Abeja_tras_la_flor_del_ciruelo_%2816183662954%29.jpg/960px-Abeja_tras_la_flor_del_ciruelo_%2816183662954%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Abeja_tras_la_flor_del_ciruelo_(16183662954).jpg",
+    "credito": "Harpagornis",
+    "licencia": "CC BY-SA 2.0",
+    "query": "El ciruelo en flor"
   },
   "La estrella Edgar Degas": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/La_Estrella-Geografia.JPG/960px-La_Estrella-Geografia.JPG",
+    "enlace": "https://commons.wikimedia.org/wiki/File:La_Estrella-Geografia.JPG",
+    "credito": "SajoR",
+    "licencia": "CC BY-SA 2.5",
+    "query": "La estrella"
   },
   "Divan Japonais Henri de Toulouse-Lautrec": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/%28Albi%29_Le_Divan_japonais_1893_lithographie_-_Toulouse-Lautrec_MTH.A3.jpg/960px-%28Albi%29_Le_Divan_japonais_1893_lithographie_-_Toulouse-Lautrec_MTH.A3.jpg",
@@ -1455,10 +1767,18 @@
     "licencia": "Public domain"
   },
   "Marcella escenas de calle berlinesas Ernst Ludwig Kirchner": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/03/Marcella%2C_Mississippi.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Marcella,_Mississippi.jpg",
+    "credito": "Marion Post Wolcott",
+    "licencia": "Public domain",
+    "query": "Marcella"
   },
   "Los grandes caballos azules Franz Marc": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/M%C3%BCnster%2C_LVM%2C_Skulptur_-Zwei_Pferde-_--_2016_--_5969-75.jpg/960px-M%C3%BCnster%2C_LVM%2C_Skulptur_-Zwei_Pferde-_--_2016_--_5969-75.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:M%C3%BCnster,_LVM,_Skulptur_-Zwei_Pferde-_--_2016_--_5969-75.jpg",
+    "credito": "Dietmar Rabich",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Pferde"
   },
   "La muerte y la doncella Egon Schiele": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Egon_Schiele_-_Tod_und_M%C3%A4dchen_-_3171_-_%C3%96sterreichische_Galerie_Belvedere.jpg/960px-Egon_Schiele_-_Tod_und_M%C3%A4dchen_-_3171_-_%C3%96sterreichische_Galerie_Belvedere.jpg",
@@ -1485,10 +1805,18 @@
     "none": true
   },
   "Botella, vaso y violín Georges Braque / Pablo Picasso": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Vaso_ib%C3%A9rico_de_Hacienda_Botella._Museo_Arqueol%C3%B3gico_y_de_Historia_de_Elche.jpg/960px-Vaso_ib%C3%A9rico_de_Hacienda_Botella._Museo_Arqueol%C3%B3gico_y_de_Historia_de_Elche.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Vaso_ib%C3%A9rico_de_Hacienda_Botella._Museo_Arqueol%C3%B3gico_y_de_Historia_de_Elche.jpg",
+    "credito": "Dorieo",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Botella, vaso"
   },
   "Naturaleza muerta con tablero de ajedrez Retrato de Picasso Juan Gris": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Infinity_mirror%2C_hand-washing_sink_and_wardrobes_in_the_spa_of_Amantaka_luxury_Resort_%26_Hotel_in_Luang_Prabang_Laos.jpg/960px-Infinity_mirror%2C_hand-washing_sink_and_wardrobes_in_the_spa_of_Amantaka_luxury_Resort_%26_Hotel_in_Luang_Prabang_Laos.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Infinity_mirror,_hand-washing_sink_and_wardrobes_in_the_spa_of_Amantaka_luxury_Resort_%26_Hotel_in_Luang_Prabang_Laos.jpg",
+    "credito": "Basile Morin",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Lavabo"
   },
   "Formas únicas de continuidad en el espacio Umberto Boccioni": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Unique_Forms_of_Continuity_in_Space_MET_DT6411.jpg/960px-Unique_Forms_of_Continuity_in_Space_MET_DT6411.jpg",
@@ -1536,7 +1864,11 @@
     "licencia": "CC BY 3.0"
   },
   "Cut with the Kitchen Knife Dada... Hannah Höch": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Eva_Braun_portrait_-_1_of_3_%28242-EB-26-01%29.jpg/960px-Eva_Braun_portrait_-_1_of_3_%28242-EB-26-01%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Eva_Braun_portrait_-_1_of_3_(242-EB-26-01).jpg",
+    "credito": "Studio of Heinrich Hoffmann",
+    "licencia": "Public domain",
+    "query": "Alemania"
   },
   "La persistencia de la memoria Salvador Dalí": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dargenta_%26_Salvador_Dali_The_persistance_of_Memory.png/960px-Dargenta_%26_Salvador_Dali_The_persistance_of_Memory.png",
@@ -1557,10 +1889,18 @@
     "licencia": "CC BY-SA 4.0"
   },
   "Edificio de la Bauhaus en Dessau - Walter Gropius": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b5/WalterGropius-1919.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:WalterGropius-1919.jpg",
+    "credito": "Louis Held",
+    "licencia": "Public domain",
+    "query": "Walter Gropius"
   },
   "Villa Saboya - Le Corbusier": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Le_Corbusier_Centre%2C_Sector_19.jpg/960px-Le_Corbusier_Centre%2C_Sector_19.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Le_Corbusier_Centre,_Sector_19.jpg",
+    "credito": "Rhythm kataria",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Corbusier"
   },
   "Pabellón de Alemania en Barcelona - Mies van der Rohe": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Pabell%C3%B3n_Mies_van_der_Rohe.jpg/960px-Pabell%C3%B3n_Mies_van_der_Rohe.jpg",
@@ -1587,7 +1927,11 @@
     "licencia": "CC BY-SA 4.0"
   },
   "La creación y los frescos de la Secretaría de Educación Pública Diego Rivera": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Diego_Rivera_pinta_el_mural_%22La_Creaci%C3%B3n%22_en_el_Anfiteatro_Bol%C3%ADvar.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Diego_Rivera_pinta_el_mural_%22La_Creaci%C3%B3n%22_en_el_Anfiteatro_Bol%C3%ADvar.jpg",
+    "credito": "José María Lupercio",
+    "licencia": "Public domain",
+    "query": "La creación"
   },
   "Epopeya del pueblo mexicano Diego Rivera": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Diego_Rivera_-_Presidential_palace_-_4334803669.jpg/960px-Diego_Rivera_-_Presidential_palace_-_4334803669.jpg",
@@ -1614,7 +1958,11 @@
     "licencia": "CC BY-SA 3.0"
   },
   "El beso Constantin Brancusi": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/El_Beso_%28Pinacoteca_de_Brera%2C_Mil%C3%A1n%2C_1859%29.jpg/960px-El_Beso_%28Pinacoteca_de_Brera%2C_Mil%C3%A1n%2C_1859%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:El_Beso_(Pinacoteca_de_Brera,_Mil%C3%A1n,_1859).jpg",
+    "credito": "Francesco Hayez",
+    "licencia": "Public domain",
+    "query": "El beso"
   },
   "Pájaro en el espacio Constantin Brancusi": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Bird_in_Space.jpg/960px-Bird_in_Space.jpg",
@@ -1623,7 +1971,11 @@
     "licencia": "Public domain"
   },
   "Cabeza nº 2 Naum Gabo": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/16/Cabeza_de_Vaca1.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Cabeza_de_Vaca1.jpg",
+    "credito": "No machine-readable author provided. Ealmagro assumed (based on copyright claims).",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Cabeza nº 2"
   },
   "Figura reclinada Henry Moore": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Figura_reclinada_5.jpg/960px-Figura_reclinada_5.jpg",
@@ -1638,7 +1990,11 @@
     "licencia": "Public domain"
   },
   "Langosta, nasa y cola de pez Alexander Calder": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Pesca_de_la_langosta_con_nasa_2011_000.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Pesca_de_la_langosta_con_nasa_2011_000.jpg",
+    "credito": "Veronidae",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Langosta, nasa"
   },
   "The Steerage Alfred Stieglitz": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Alfred_Stieglitz_-_The_Steerage_-_Google_Art_Project%2C_from_Getty.jpg/960px-Alfred_Stieglitz_-_The_Steerage_-_Google_Art_Project%2C_from_Getty.jpg",
@@ -1659,7 +2015,11 @@
     "licencia": "Public domain"
   },
   "Power House Mechanic Lewis Hine, y las fotografías del trabajo infantil": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Lewis_Hine_Power_house_mechanic_working_on_steam_pump.jpg/960px-Lewis_Hine_Power_house_mechanic_working_on_steam_pump.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Lewis_Hine_Power_house_mechanic_working_on_steam_pump.jpg",
+    "credito": "Lewis Hine",
+    "licencia": "Public domain",
+    "query": "Power House Mechanic"
   },
   "Migrant Mother Dorothea Lange": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Lange-MigrantMother02.jpg/960px-Lange-MigrantMother02.jpg",
@@ -1668,13 +2028,25 @@
     "licencia": "Public domain"
   },
   "Derrière la gare Saint-Lazare Henri Cartier-Bresson": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/The_Pont_and_Place_de_la_Concorde%2C_from_the_Chamber_of_Deputies%2C_Paris%2C_France._PH10508.jpg/960px-The_Pont_and_Place_de_la_Concorde%2C_from_the_Chamber_of_Deputies%2C_Paris%2C_France._PH10508.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:The_Pont_and_Place_de_la_Concorde,_from_the_Chamber_of_Deputies,_Paris,_France._PH10508.jpg",
+    "credito": "Anonyme, photographe",
+    "licencia": "CC0",
+    "query": "Derrière la gare Saint-Lazare"
   },
   "La guerra Otto Dix, , 1929 1932": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Disegno_per_copertina_di_libretto%2C_disegno_di_Peter_Hoffer_per_La_guerra_%28s.d.%29_-_Archivio_Storico_Ricordi_ICON012422.jpg/960px-Disegno_per_copertina_di_libretto%2C_disegno_di_Peter_Hoffer_per_La_guerra_%28s.d.%29_-_Archivio_Storico_Ricordi_ICON012422.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Disegno_per_copertina_di_libretto,_disegno_di_Peter_Hoffer_per_La_guerra_(s.d.)_-_Archivio_Storico_Ricordi_ICON012422.jpg",
+    "credito": "Peter Hoffer",
+    "licencia": "CC BY-SA 4.0",
+    "query": "La guerra"
   },
   "Las columnas de la sociedad George Grosz, , 1926": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/9f/C._1967_Edificio_de_la_Sociedad_de_Beneficiencia_P%C3%BAblica_de_Lima%2C_Arq_Luis_Mir%C3%B3_Quesada.png",
+    "enlace": "https://commons.wikimedia.org/wiki/File:C._1967_Edificio_de_la_Sociedad_de_Beneficiencia_P%C3%BAblica_de_Lima,_Arq_Luis_Mir%C3%B3_Quesada.png",
+    "credito": "Frederick Cooper Llosa",
+    "licencia": "Public domain",
+    "query": "Las columnas de la sociedad"
   },
   "Guernica Pablo Picasso, , 1937": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Picasso%27s_Guernica_-_impressive_up_close_%285515934400%29.jpg/960px-Picasso%27s_Guernica_-_impressive_up_close_%285515934400%29.jpg",
@@ -1686,10 +2058,18 @@
     "none": true
   },
   "Los padres Käthe Kollwitz, , 1914 1932": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Salud_Carbajal_and_constituents_hiking_at_Los_Padres_National_Forest_-_2020.jpg/960px-Salud_Carbajal_and_constituents_hiking_at_Los_Padres_National_Forest_-_2020.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Salud_Carbajal_and_constituents_hiking_at_Los_Padres_National_Forest_-_2020.jpg",
+    "credito": "Salud Carbajal",
+    "licencia": "Public domain",
+    "query": "Los padres"
   },
   "Entartete Kunst La exposición , Múnich, 1937": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Entartete_Kunst_poster%2C_Berlin%2C_1938.jpg/960px-Entartete_Kunst_poster%2C_Berlin%2C_1938.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Entartete_Kunst_poster,_Berlin,_1938.jpg",
+    "credito": "Unknown authorUnknown author",
+    "licencia": "CC BY-SA 3.0 de",
+    "query": "Entartete Kunst"
   },
   "Metempsicosis Yokoyama Taikan": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Yokoyama-Metempsycosis.jpg/960px-Yokoyama-Metempsycosis.jpg",
@@ -1710,7 +2090,11 @@
     "none": true
   },
   "Camarones Qi Baishi": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Caleta_Camarones%2C_Comuna_de_Camarones%2C_Region_de_Arica_y_Parinacota%2C_Chile_02.JPG/960px-Caleta_Camarones%2C_Comuna_de_Camarones%2C_Region_de_Arica_y_Parinacota%2C_Chile_02.JPG",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Caleta_Camarones,_Comuna_de_Camarones,_Region_de_Arica_y_Parinacota,_Chile_02.JPG",
+    "credito": "Yastay",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Camarones"
   },
   "¡Ruge, China! Li Hua": {
     "none": true
@@ -1767,7 +2151,11 @@
     "licencia": "CC0"
   },
   "Floor Burger Claes Oldenburg": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/The_Giant_hamburger%2C_fries_and_soda_-_Quick.jpg/960px-The_Giant_hamburger%2C_fries_and_soda_-_Quick.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:The_Giant_hamburger,_fries_and_soda_-_Quick.jpg",
+    "credito": "L. W. Yang",
+    "licencia": "CC BY 2.0",
+    "query": "Floor Burger"
   },
   "F-111 James Rosenquist": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/F-111-Fuel-Dump%2C-Avalon%2C-VIC-23.03.2007.jpg/960px-F-111-Fuel-Dump%2C-Avalon%2C-VIC-23.03.2007.jpg",
@@ -1836,7 +2224,11 @@
     "none": true
   },
   "Statements / Declaración de intenciones Lawrence Weiner": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pancarta_Orgullo_Loco_Madrid_2023.jpg/960px-Pancarta_Orgullo_Loco_Madrid_2023.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Pancarta_Orgullo_Loco_Madrid_2023.jpg",
+    "credito": "Iama Fairground",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Statements / \"Declaración de intenciones\""
   },
   "Rhythm 0 Marina Abramović": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Marina_Abramovi%C4%87_-_The_Artist_Is_Present_-_Viennale_2012.jpg/960px-Marina_Abramovi%C4%87_-_The_Artist_Is_Present_-_Viennale_2012.jpg",
@@ -1851,7 +2243,11 @@
     "licencia": "CC BY 2.0"
   },
   "Siluetas Ana Mendieta, serie": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/015a_Angolan_giraffe_silhouette_at_sunrise_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/960px-015a_Angolan_giraffe_silhouette_at_sunrise_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:015a_Angolan_giraffe_silhouette_at_sunrise_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
+    "credito": "Giles Laurent",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Siluetas"
   },
   "Seedbed Vito Acconci": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Seedbed_of_the_rice%2CKatori-city%2CJapan.JPG/960px-Seedbed_of_the_rice%2CKatori-city%2CJapan.JPG",
@@ -1896,7 +2292,11 @@
     "licencia": "CC0"
   },
   "Iglú Mario Merz": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Aurora_australis_dancing_over_an_LED_illuminated_igloo.jpg/960px-Aurora_australis_dancing_over_an_LED_illuminated_igloo.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Aurora_australis_dancing_over_an_LED_illuminated_igloo.jpg",
+    "credito": "Ross Burgener",
+    "licencia": "Public domain",
+    "query": "Iglú"
   },
   "Venere degli stracci Michelangelo Pistoletto": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Piazza_Municipio_with_Venere_degli_Stracci_-_Naples.jpg/960px-Piazza_Municipio_with_Venere_degli_Stracci_-_Naples.jpg",
@@ -1905,13 +2305,25 @@
     "licencia": "CC BY-SA 4.0"
   },
   "Untitled Film Still #21 Cindy Sherman": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Untitled_%28Cesare_-Conrad_Veidt-_Carrying_Jane_-Lil_Dagover-_across_Rooftops%29_LACMA_M.82.287.1e.jpg/960px-Untitled_%28Cesare_-Conrad_Veidt-_Carrying_Jane_-Lil_Dagover-_across_Rooftops%29_LACMA_M.82.287.1e.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Untitled_(Cesare_-Conrad_Veidt-_Carrying_Jane_-Lil_Dagover-_across_Rooftops)_LACMA_M.82.287.1e.jpg",
+    "credito": "Female_Dancer_LACMA_M.73.5.466_(3_of_4).jpg: Fæ derivative work: JMCC1",
+    "licencia": "Public domain",
+    "query": "Untitled Film Still #21"
   },
   "A Sudden Gust of Wind Jeff Wall": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Blowin%27_in_the_wind._%286319660240%29.jpg/960px-Blowin%27_in_the_wind._%286319660240%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Blowin%27_in_the_wind._(6319660240).jpg",
+    "credito": "Simon Harrod from Uk",
+    "licencia": "CC BY 2.0",
+    "query": "A Sudden Gust of Wind (after Hokusai)"
   },
   "Water Towers Bernd y Hilla Becher": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brynek_stud_water_tower_2019.jpg/960px-Brynek_stud_water_tower_2019.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Brynek_stud_water_tower_2019.jpg",
+    "credito": "Adrian Tync",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Water Towers"
   },
   "99 Cent Andreas Gursky": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/.99_Cent_Store_-_Homage_To_Andreas_Gursky_%2851383348026%29.jpg/960px-.99_Cent_Store_-_Homage_To_Andreas_Gursky_%2851383348026%29.jpg",
@@ -1920,7 +2332,11 @@
     "licencia": "CC BY 2.0"
   },
   "The Crossing Bill Viola": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Washington_Crossing_the_Delaware_by_Emanuel_Leutze%2C_MMA-NYC%2C_1851.jpg/960px-Washington_Crossing_the_Delaware_by_Emanuel_Leutze%2C_MMA-NYC%2C_1851.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Washington_Crossing_the_Delaware_by_Emanuel_Leutze,_MMA-NYC,_1851.jpg",
+    "credito": "Emanuel Leutze",
+    "licencia": "Public domain",
+    "query": "The Crossing"
   },
   "The Dinner Party Judy Chicago": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Judy_Chicago_The_Dinner_Party.jpg",
@@ -1929,7 +2345,11 @@
     "licencia": "CC BY-SA 4.0"
   },
   "Womanhouse Programa de Arte Feminista": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Womanhouse_exhibition_catalog_cover.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Womanhouse_exhibition_catalog_cover.jpg",
+    "credito": "Sheila Levrant de Bretteville",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Womanhouse"
   },
   "Do Women Have to Be Naked to Get Into the Met. Museum? Guerrilla Girls": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Guerrilla_Girls_-_V%26A_Museum%2C_London.jpg/960px-Guerrilla_Girls_-_V%26A_Museum%2C_London.jpg",
@@ -1938,10 +2358,18 @@
     "licencia": "CC BY-SA 2.0"
   },
   "Tar Beach Faith Ringgold": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Deepwater_horizon_beach_tar_cleanup.png/960px-Deepwater_horizon_beach_tar_cleanup.png",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Deepwater_horizon_beach_tar_cleanup.png",
+    "credito": "National Institute for Occupational Safety and Health",
+    "licencia": "Public domain",
+    "query": "Tar Beach"
   },
   "Gone: An Historical Romance of a Civil War… Kara Walker": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Vivien_Leigh_Gone_Wind_Restored.jpg/960px-Vivien_Leigh_Gone_Wind_Restored.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Vivien_Leigh_Gone_Wind_Restored.jpg",
+    "credito": "Vivien_Leigh_Gone_Wind2.jpg: Trailer screenshot derivative work: Wilfredor (talk)",
+    "licencia": "Public domain",
+    "query": "Gone"
   },
   "Untitled Jean-Michel Basquiat": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Untitled_Jean-Michel_Basquiat_.webp",
@@ -1962,7 +2390,11 @@
     "licencia": "CC BY-SA 3.0"
   },
   "Mama El Anatsui": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/075_White_rhinoceros_mother_and_her_newborn_baby_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/960px-075_White_rhinoceros_mother_and_her_newborn_baby_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:075_White_rhinoceros_mother_and_her_newborn_baby_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
+    "credito": "Giles Laurent",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Mama"
   },
   "Infinity Mirror Room Yayoi Kusama": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Yayoi_Kusama_Obliteration_Room.jpg/960px-Yayoi_Kusama_Obliteration_Room.jpg",
@@ -1977,7 +2409,11 @@
     "licencia": "CC BY-SA 3.0"
   },
   "Drawings for Projection Películas de dibujo William Kentridge": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Primary_projection_drawing.tif/lossy-page1-960px-Primary_projection_drawing.tif.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Primary_projection_drawing.tif",
+    "credito": "Stse",
+    "licencia": "CC0",
+    "query": "Drawings for Projection"
   },
   "My Boyfriend Came Back from the War Olia Lialina": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Olia_Lialina_-_20_years_of_My_Boyfriend_Came_Back_From_The_War_%2825184857536%29.jpg/960px-Olia_Lialina_-_20_years_of_My_Boyfriend_Came_Back_From_The_War_%2825184857536%29.jpg",
@@ -1992,13 +2428,25 @@
     "licencia": "CC BY 4.0"
   },
   "Super Mario Clouds Cory Arcangel": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Lightning_cloud_to_cloud_%28aka%29.jpg/960px-Lightning_cloud_to_cloud_%28aka%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Lightning_cloud_to_cloud_(aka).jpg",
+    "credito": "André Karwath aka Aka",
+    "licencia": "CC BY-SA 2.5",
+    "query": "Super Mario Clouds"
   },
   "Edmond de Belamy colectivo Obvious": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Edmond_de_Belamy.png/960px-Edmond_de_Belamy.png",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Edmond_de_Belamy.png",
+    "credito": "Artificial intelligence software",
+    "licencia": "Public domain",
+    "query": "Edmond de Belamy"
   },
   "Everydays: The First 5000 Days Beeple": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Everyday_Sunday_2009_%283197984491%29.jpg/960px-Everyday_Sunday_2009_%283197984491%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Everyday_Sunday_2009_(3197984491).jpg",
+    "credito": "Breezy Baldwin",
+    "licencia": "CC BY 2.0",
+    "query": "Everydays"
   },
   "Unsupervised Refik Anadol": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Unsupervised_by_Refik_Anadol.jpg/960px-Unsupervised_by_Refik_Anadol.jpg",
@@ -2019,13 +2467,24 @@
     "licencia": "CC BY-SA 3.0"
   },
   "Placas de latón del palacio de Benín": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/54/Antipapa_Joao_XVI_%28XVII%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Antipapa_Joao_XVI_(XVII).jpg",
+    "licencia": "Public domain",
+    "query": "XVI-XVII"
   },
   "Cabeza conmemorativa de un Oba con marfil": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Budapesti_XVIII._%C3%A9s_XIX._Ker%C3%BCleti_B%C3%ADr%C3%B3s%C3%A1g3.jpg/960px-Budapesti_XVIII._%C3%A9s_XIX._Ker%C3%BCleti_B%C3%ADr%C3%B3s%C3%A1g3.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Budapesti_XVIII._%C3%A9s_XIX._Ker%C3%BCleti_B%C3%ADr%C3%B3s%C3%A1g3.jpg",
+    "credito": "12akd",
+    "licencia": "CC0",
+    "query": "XVIII-XIX"
   },
   "kpeliyee Máscara": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Brooklyn_Museum_22.507_Mask_Kpeliyee_%282%29.jpg/960px-Brooklyn_Museum_22.507_Mask_Kpeliyee_%282%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_22.507_Mask_Kpeliyee_(2).jpg",
+    "credito": "Unknown authorUnknown author",
+    "licencia": "CC BY 3.0",
+    "query": "kpeliyee"
   },
   "nkisi nkondi Figura de poder": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/WLA_metmuseum_Kongo_Power_Figure_2.jpg/960px-WLA_metmuseum_Kongo_Power_Figure_2.jpg",
@@ -2046,7 +2505,11 @@
     "licencia": "CC BY-SA 4.0"
   },
   "Tumba y sarcófago de Pakal, Templo de las Inscripciones, Palenque": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Tumba%2C_Gr%C3%B6dingev%C3%A4gen.JPG/960px-Tumba%2C_Gr%C3%B6dingev%C3%A4gen.JPG",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Tumba,_Gr%C3%B6dingev%C3%A4gen.JPG",
+    "credito": "Harri Blomberg",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Tumba"
   },
   "Murales de Bonampak": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Bonampak%2C_Chiapas._08.JPG/960px-Bonampak%2C_Chiapas._08.JPG",
@@ -2094,7 +2557,11 @@
     "licencia": "CC BY 2.0"
   },
   "Machu Picchu y la cantería inca": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/80_-_Machu_Picchu_-_Juin_2009_-_edit.jpg/960px-80_-_Machu_Picchu_-_Juin_2009_-_edit.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:80_-_Machu_Picchu_-_Juin_2009_-_edit.jpg",
+    "credito": "Martin St-Amant (S23678)",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Machu Picchu"
   },
   "Monks Mound, Cahokia": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Monks_Mound_in_July.JPG/960px-Monks_Mound_in_July.JPG",
@@ -2112,13 +2579,25 @@
     "none": true
   },
   "El espíritu de Haida Gwaii Tótem y obra monumental haida , de Bill Reid": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Haida_Gwaii_%28Queen_Charlotte_Islands%29_-_Graham_Island_-_scenes_around_the_Haida_Heritage_centre_-_the_museum_buildings_-_%2821533671266%29.jpg/960px-Haida_Gwaii_%28Queen_Charlotte_Islands%29_-_Graham_Island_-_scenes_around_the_Haida_Heritage_centre_-_the_museum_buildings_-_%2821533671266%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Haida_Gwaii_(Queen_Charlotte_Islands)_-_Graham_Island_-_scenes_around_the_Haida_Heritage_centre_-_the_museum_buildings_-_(21533671266).jpg",
+    "credito": "Murray Foubister",
+    "licencia": "CC BY-SA 2.0",
+    "query": "Haida Gwaii"
   },
   "iikááh Pintura de arena navajo": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/America%2C_Native_North_American%2C_Southwest%2C_Navajo%2C_late_19th-early_20th_Cen_-_Replica_of_a_Drypainting_%28Iikaah%29_after_a_drypainting_by_Tsi-tcaci_-_1990.72_-_Cleveland_Museum_of_Art.tif/lossy-page1-960px-thumbnail.tif.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:America,_Native_North_American,_Southwest,_Navajo,_late_19th-early_20th_Cen_-_Replica_of_a_Drypainting_(Iikaah)_after_a_drypainting_by_Tsi-tcaci_-_1990.72_-_Cleveland_Museum_of_Art.tif",
+    "credito": "https://clevelandart.org/art/1990.72",
+    "licencia": "CC0",
+    "query": "iikááh"
   },
   "ledger art Dibujo de de Howling Wolf": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Annie_Little_Warrior%2C_Women_and_Horses.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Annie_Little_Warrior,_Women_and_Horses.jpg",
+    "credito": "Annie Little Warrior (1895-1966)",
+    "licencia": "Public domain",
+    "query": "ledger art"
   },
   "Los moái de Rapa Nui": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Plaza_Rapa_Nui_-_Comuna_de_Maip%C3%BA.jpg/960px-Plaza_Rapa_Nui_-_Comuna_de_Maip%C3%BA.jpg",
@@ -2130,16 +2609,28 @@
     "none": true
   },
   "wharenui Casa de reunión maorí Aotearoa/Nueva Zelanda": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Wawadit%27la%28Mungo_Martin_House%29_a_Kwakwaka%27wakw_big_house.jpg/960px-Wawadit%27la%28Mungo_Martin_House%29_a_Kwakwaka%27wakw_big_house.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Wawadit%27la(Mungo_Martin_House)_a_Kwakwaka%27wakw_big_house.jpg",
+    "credito": "HighInBC Attribute to Ryan Bushby",
+    "licencia": "CC BY-SA 2.5",
+    "query": "wharenui"
   },
   "Warlugulong Pintura del Desierto Occidental: , de Clifford Possum Tjapaltjarri": {
     "none": true
   },
   "Pintura rupestre de rayos X - Arnhem Land": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Clouds_over_Arnhem_Land%2C_Australia_%2850494190801%29.png/960px-Clouds_over_Arnhem_Land%2C_Australia_%2850494190801%29.png",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Clouds_over_Arnhem_Land,_Australia_(50494190801).png",
+    "credito": "Sentinel Hub",
+    "licencia": "CC BY 2.0",
+    "query": "Arnhem Land Australia"
   },
   "‘ahu‘ula Capa de plumas hawaiana": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/%27Ahu%27ula%2C_Hawaiian_feather_cloak%2C_Bishop_Museum%2C_00323.JPG/960px-%27Ahu%27ula%2C_Hawaiian_feather_cloak%2C_Bishop_Museum%2C_00323.JPG",
+    "enlace": "https://commons.wikimedia.org/wiki/File:%27Ahu%27ula,_Hawaiian_feather_cloak,_Bishop_Museum,_00323.JPG",
+    "credito": "Hiart",
+    "licencia": "CC0",
+    "query": "‘ahu‘ula"
   },
   "La Virgen del Cerro de Potosí": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/20170808_Bolivia_1411_Potos%C3%AD_sRGB_%2826204035019%29.jpg/960px-20170808_Bolivia_1411_Potos%C3%AD_sRGB_%2826204035019%29.jpg",
@@ -2163,7 +2654,11 @@
     "licencia": "CC BY-SA 4.0"
   },
   "De español e india, mestizo , de una serie de pinturas de castas": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/BMVB_-_an%C3%B2nim_-_%221_De_Espa%C3%B1ol_y_India_sale_Mestizo%22_-_1075.jpg/960px-BMVB_-_an%C3%B2nim_-_%221_De_Espa%C3%B1ol_y_India_sale_Mestizo%22_-_1075.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:BMVB_-_an%C3%B2nim_-_%221_De_Espa%C3%B1ol_y_India_sale_Mestizo%22_-_1075.jpg",
+    "credito": "AnonymousUnknown author",
+    "licencia": "Public domain",
+    "query": "De español e india, mestizo"
   },
   "Los Profetas de Congonhas": {
     "none": true
@@ -2193,7 +2688,11 @@
     "licencia": "CC BY-SA 4.0"
   },
   "Fisicromía Cromosaturación Carlos Cruz-Diez": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Fisiocromia_1.jpg/960px-Fisiocromia_1.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Fisiocromia_1.jpg",
+    "credito": "MdeVicente",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Fisicromía"
   },
   "Shibboleth Doris Salcedo": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Shibboleth_Tate_Modern.jpg/960px-Shibboleth_Tate_Modern.jpg",
@@ -2202,10 +2701,18 @@
     "licencia": "CC BY-SA 2.5"
   },
   "El campo de estelas de Aksum": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Pope_Stephen_III_%282%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Pope_Stephen_III_(2).jpg",
+    "credito": "Artaud de Montor (1772–1849)",
+    "licencia": "Public domain",
+    "query": "III-IV"
   },
   "Los Evangelios de Garima": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/BL_9.2-inch_Mk_IV_%26_BL_8-inch_Mk_VII_Guns%2C_Fort_Siloso_%28171304%29.jpg/960px-BL_9.2-inch_Mk_IV_%26_BL_8-inch_Mk_VII_Guns%2C_Fort_Siloso_%28171304%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:BL_9.2-inch_Mk_IV_%26_BL_8-inch_Mk_VII_Guns,_Fort_Siloso_(171304).jpg",
+    "credito": "Moheen Reeyad",
+    "licencia": "CC BY-SA 4.0",
+    "query": "IV-VII"
   },
   "Bete Giyorgis, la iglesia de San Jorge de Lalibela": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bete_Giyorgis_03.jpg/960px-Bete_Giyorgis_03.jpg",
@@ -2223,22 +2730,38 @@
     "licencia": "CC BY-SA 3.0"
   },
   "Kilwa Kisiwani: la Gran Mezquita y el palacio de Husuni Kubwa": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kilwa_Kisiwa_View.jpg/960px-Kilwa_Kisiwa_View.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Kilwa_Kisiwa_View.jpg",
+    "credito": "Khalidsalewa",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Kilwa Kisiwani"
   },
   "Retratos del estudio de Bamako, de Seydou Keïta": {
     "none": true
   },
   "Nuit de Noël de Malick Sidibé": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Nuit_de_No%C3%ABl%2C_film_poster.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Nuit_de_No%C3%ABl,_film_poster.jpg",
+    "credito": "anonymous artist",
+    "licencia": "Public domain",
+    "query": "Nuit de Noël"
   },
   "Anyanwu de Ben Enwonwu": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Chris_Anyawu.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Chris_Anyawu.jpg",
+    "credito": "bing",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Anyanwu"
   },
   "Dusasa II de El Anatsui": {
     "none": true
   },
   "The Refusal of Time de William Kentridge": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/The_Soviet_Union_1969_CPA_3781_stamp_%28The_Refusal_of_Confession%29.png/960px-The_Soviet_Union_1969_CPA_3781_stamp_%28The_Refusal_of_Confession%29.png",
+    "enlace": "https://commons.wikimedia.org/wiki/File:The_Soviet_Union_1969_CPA_3781_stamp_(The_Refusal_of_Confession).png",
+    "credito": "USSR Post",
+    "licencia": "Public domain",
+    "query": "The Refusal of Time"
   },
   "Somnyama Ngonyama de Zanele Muholi": {
     "none": true
@@ -2250,22 +2773,42 @@
     "licencia": "CC BY-SA 4.0"
   },
   "Ogou Feray de Hector Hyppolite": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Statue_of_Ogun_shrine_at_the_Sacred_Grove_Of_Oshun.jpg/960px-Statue_of_Ogun_shrine_at_the_Sacred_Grove_Of_Oshun.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Statue_of_Ogun_shrine_at_the_Sacred_Grove_Of_Oshun.jpg",
+    "credito": "Yeniajayiii",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Ogou Feray"
   },
   "Drapo de vudú": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Winchester_cathedral_flags.jpg/960px-Winchester_cathedral_flags.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Winchester_cathedral_flags.jpg",
+    "credito": "Tom Habibi",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Drapo"
   },
   "Templo de Oxalá de Rubem Valentim": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Lavagem_do_Adro_da_Igreja_da_S%C3%A9_%2811946202466%29.jpg/960px-Lavagem_do_Adro_da_Igreja_da_S%C3%A9_%2811946202466%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Lavagem_do_Adro_da_Igreja_da_S%C3%A9_(11946202466).jpg",
+    "credito": "Prefeitura de Olinda from Brasil",
+    "licencia": "CC BY 2.0",
+    "query": "Templo de Oxalá"
   },
   "Los orixás en dos orillas: el ciclo fotográfico de Pierre Verger": {
     "none": true
   },
   "A Subtlety, or the Marvelous Sugar Baby de Kara Walker": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Stealth_in_Subtlety_-_Poised%2C_no_background.png/960px-Stealth_in_Subtlety_-_Poised%2C_no_background.png",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Stealth_in_Subtlety_-_Poised,_no_background.png",
+    "credito": "Link2004 for drawing; Meow for designing",
+    "licencia": "CC BY-SA 4.0",
+    "query": "A Subtlety, or the Marvelous Sugar Baby"
   },
   "La partida de ajedrez Sofonisba Anguissola": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Chess_game_Staunton_No._6_perfil_view_8.jpg/960px-Chess_game_Staunton_No._6_perfil_view_8.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Chess_game_Staunton_No._6_perfil_view_8.jpg",
+    "credito": "Wilfredor",
+    "licencia": "CC0",
+    "query": "La partida de ajedrez"
   },
   "Autorretrato Judith Leyster": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Judith_Leyster_-_Self-Portrait_-_Google_Art_Project.jpg/960px-Judith_Leyster_-_Self-Portrait_-_Google_Art_Project.jpg",
@@ -2280,7 +2823,11 @@
     "licencia": "Public domain"
   },
   "El mercado de caballos Rosa Bonheur": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Un_mercado_de_caballos%2C_de_Gin%C3%A9s_Andr%C3%A9s_de_Aguirre_%28Museo_del_Prado%29.jpg/960px-Un_mercado_de_caballos%2C_de_Gin%C3%A9s_Andr%C3%A9s_de_Aguirre_%28Museo_del_Prado%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Un_mercado_de_caballos,_de_Gin%C3%A9s_Andr%C3%A9s_de_Aguirre_(Museo_del_Prado).jpg",
+    "credito": "Ginés Andrés de Aguirre",
+    "licencia": "Public domain",
+    "query": "El mercado de caballos"
   },
   "Jo no mai Uemura Shōen": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Jo-no-mai_by_Uemura_Shoen.jpg/960px-Jo-no-mai_by_Uemura_Shoen.jpg",
@@ -2301,10 +2848,18 @@
     "licencia": "Public domain"
   },
   "La Gioconda de Leonardo da Vinci y la lógica del museo": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/960px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg",
+    "credito": "Leonardo da Vinci",
+    "licencia": "Public domain",
+    "query": "La Gioconda"
   },
   "Salvator Mundi atribuido a Leonardo da Vinci": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Leonardo_da_Vinci%2C_Salvator_Mundi%2C_c.1500%2C_oil_on_walnut%2C_45.4_%C3%97_65.6_cm.jpg/960px-Leonardo_da_Vinci%2C_Salvator_Mundi%2C_c.1500%2C_oil_on_walnut%2C_45.4_%C3%97_65.6_cm.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci,_Salvator_Mundi,_c.1500,_oil_on_walnut,_45.4_%C3%97_65.6_cm.jpg",
+    "credito": "Leonardo da Vinci",
+    "licencia": "Public domain",
+    "query": "Salvator Mundi"
   },
   "Comedian de Maurizio Cattelan": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Greg_Schwem_the_corporate_comedian.jpg",
@@ -2313,10 +2868,18 @@
     "licencia": "CC0"
   },
   "La corte de Gayumars del Shahnameh del sha Tahmasp": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/The_Court_of_Gayumars_%28Cropped%29.jpg/960px-The_Court_of_Gayumars_%28Cropped%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:The_Court_of_Gayumars_(Cropped).jpg",
+    "credito": "Attributed to Sultan Muhammad",
+    "licencia": "Public domain",
+    "query": "Gayumars"
   },
   "Justiniano y su corte Mosaicos de , San Vitale de Rávena": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/10.9.10JustinianoByLuigiNovi.jpg/960px-10.9.10JustinianoByLuigiNovi.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:10.9.10JustinianoByLuigiNovi.jpg",
+    "credito": "Nightscream",
+    "licencia": "CC BY 3.0",
+    "query": "Justiniano"
   },
   "Éxtasis de Santa Teresa de Gian Lorenzo Bernini": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/%C3%89xtasis_de_Santa_Teresa%2C_Gian_Lorenzo_Bernini%2C_Roma%2C_Italia%2C_2019_16.jpg/960px-%C3%89xtasis_de_Santa_Teresa%2C_Gian_Lorenzo_Bernini%2C_Roma%2C_Italia%2C_2019_16.jpg",
@@ -2334,13 +2897,24 @@
     "none": true
   },
   "Placas de latón del palacio real de Benín": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/54/Antipapa_Joao_XVI_%28XVII%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Antipapa_Joao_XVI_(XVII).jpg",
+    "licencia": "Public domain",
+    "query": "XVI-XVII"
   },
   "Retrato de El Fayum Egipto romano": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/77/Ancient_Egypt_early_Roman_period_Mummy_portraits_from_Faiyum_Egypt.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Ancient_Egypt_early_Roman_period_Mummy_portraits_from_Faiyum_Egypt.jpg",
+    "credito": "Unknown authorUnknown author",
+    "licencia": "Public domain",
+    "query": "Retrato de El Fayum"
   },
   "Huaco retrato moche , Perú antiguo": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Huacos_retratos_4P5C5860.jpg/960px-Huacos_retratos_4P5C5860.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Huacos_retratos_4P5C5860.jpg",
+    "credito": "Murray Foubister",
+    "licencia": "CC BY-SA 2.0",
+    "query": "Huaco retrato"
   },
   "Retrato de Enrique VIII Hans Holbein el Joven": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg/960px-Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg",
@@ -2364,13 +2938,25 @@
     "licencia": "Public domain"
   },
   "San Jerónimo en el desierto Joachim Patinir, , c. 1515 1519": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Luis_de_Morales_-_San_Jer%C3%B3nimo_en_el_desierto_%28National_Gallery_of_Ireland%29.jpg/960px-Luis_de_Morales_-_San_Jer%C3%B3nimo_en_el_desierto_%28National_Gallery_of_Ireland%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Luis_de_Morales_-_San_Jer%C3%B3nimo_en_el_desierto_(National_Gallery_of_Ireland).jpg",
+    "credito": "Luis de Morales",
+    "licencia": "Public domain",
+    "query": "San Jerónimo en el desierto"
   },
   "Puerto de mar con el embarco de la reina de Saba Claudio de Lorena, , 1648": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Saba_01_%28cropped%29.jpg/960px-Saba_01_%28cropped%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Saba_01_(cropped).jpg",
+    "credito": "Pedro J Pacheco",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Saba"
   },
   "Bodegón con copa dorada Willem Claesz. Heda, , 1631": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Clara_Peeters_-_Mesa_%28Prado%29_01.jpg/960px-Clara_Peeters_-_Mesa_%28Prado%29_01.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Clara_Peeters_-_Mesa_(Prado)_01.jpg",
+    "credito": "Clara Peeters",
+    "licencia": "Public domain",
+    "query": "Bodegón con copa dorada"
   },
   "La lechera Johannes Vermeer, , c. 1658 1660": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg/960px-Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.jpg",
@@ -2385,10 +2971,18 @@
     "licencia": "Public domain"
   },
   "La gran ola de Kanagawa Katsushika Hokusai, , c. 1830 1831": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Great_Wave_off_Kanagawa2.jpg/960px-Great_Wave_off_Kanagawa2.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Great_Wave_off_Kanagawa2.jpg",
+    "credito": "After Katsushika Hokusai",
+    "licencia": "Public domain",
+    "query": "La gran ola de Kanagawa"
   },
   "La montaña Sainte-Victoire Paul Cézanne, , c. 1902 1906": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/La_Montagne_Sainte-Victoire_vue_de_la_carri%C3%A8re_Bib%C3%A9mus%2C_par_Paul_C%C3%A9zanne.jpg/960px-La_Montagne_Sainte-Victoire_vue_de_la_carri%C3%A8re_Bib%C3%A9mus%2C_par_Paul_C%C3%A9zanne.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:La_Montagne_Sainte-Victoire_vue_de_la_carri%C3%A8re_Bib%C3%A9mus,_par_Paul_C%C3%A9zanne.jpg",
+    "credito": "Paul Cézanne",
+    "licencia": "Public domain",
+    "query": "La montaña Sainte-Victoire"
   },
   "Bisonte del techo de Altamira": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Bisonte_en_el_Techo_de_Policromos%2C_Neocueva_de_Altamira.jpg/960px-Bisonte_en_el_Techo_de_Policromos%2C_Neocueva_de_Altamira.jpg",
@@ -2415,19 +3009,39 @@
     "licencia": "Public domain"
   },
   "Capilla Sixtina Los frescos de la , de Miguel Ángel": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Capilla_Sixtina_Palmaroli_%28cropped%29.jpg/960px-Capilla_Sixtina_Palmaroli_%28cropped%29.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Capilla_Sixtina_Palmaroli_(cropped).jpg",
+    "credito": "Jean Laurent / After Vicente Palmaroli",
+    "licencia": "Public domain",
+    "query": "Capilla Sixtina"
   },
   "Mujer con jarra de agua y el problema Vermeer / Van Meegeren": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Jan_Vermeer_van_Delft_019.jpg/960px-Jan_Vermeer_van_Delft_019.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Jan_Vermeer_van_Delft_019.jpg",
+    "credito": "Johannes Vermeer",
+    "licencia": "Public domain",
+    "query": "Mujer con jarra de agua"
   },
   "Laocoonte El y el problema del brazo restaurado": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/El_Greco_%28Domenikos_Theotokopoulos%29_-_Laoco%C3%B6n_-_Google_Art_Project.jpg/960px-El_Greco_%28Domenikos_Theotokopoulos%29_-_Laoco%C3%B6n_-_Google_Art_Project.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:El_Greco_(Domenikos_Theotokopoulos)_-_Laoco%C3%B6n_-_Google_Art_Project.jpg",
+    "credito": "El Greco",
+    "licencia": "Public domain",
+    "query": "Laocoonte"
   },
   "Buda El de Bāmiyān y la conservación de lo perdido": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/20190502_View_from_Buda_Castle_1059_2025_DxO.jpg/960px-20190502_View_from_Buda_Castle_1059_2025_DxO.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:20190502_View_from_Buda_Castle_1059_2025_DxO.jpg",
+    "credito": "Jakub Hałun",
+    "licencia": "CC BY-SA 4.0",
+    "query": "Buda"
   },
   "Gran Mezquita de Djenné La y el crépissage": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/MaliDjenn%C3%A9Mosqu%C3%A9e.JPG/960px-MaliDjenn%C3%A9Mosqu%C3%A9e.JPG",
+    "enlace": "https://commons.wikimedia.org/wiki/File:MaliDjenn%C3%A9Mosqu%C3%A9e.JPG",
+    "credito": "BluesyPete",
+    "licencia": "CC BY-SA 3.0",
+    "query": "Gran Mezquita de Djenné"
   },
   "Los mármoles del Partenón": {
     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Los_m%C3%A1rmoles_del_Parten%C3%B3n_%28Ram%C3%B3n_Gaya%29.jpg/960px-Los_m%C3%A1rmoles_del_Parten%C3%B3n_%28Ram%C3%B3n_Gaya%29.jpg",
@@ -2448,9 +3062,17 @@
     "licencia": "CC BY-SA 4.0"
   },
   "toi moko Las cabezas tatuadas maoríes": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Restitution_Toi_moko_from_Rautenstrauch-Joest-Museum_to_Museum_of_New_Zealand_Te_Papa_Tongarewa-6888.jpg/960px-Restitution_Toi_moko_from_Rautenstrauch-Joest-Museum_to_Museum_of_New_Zealand_Te_Papa_Tongarewa-6888.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Restitution_Toi_moko_from_Rautenstrauch-Joest-Museum_to_Museum_of_New_Zealand_Te_Papa_Tongarewa-6888.jpg",
+    "credito": "Raimond Spekking",
+    "licencia": "CC BY-SA 4.0",
+    "query": "toi moko"
   },
   "Duryodhana El de Koh Ker": {
-    "none": true
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Draupadi_Vastraharan%2C_Raja_Ravi_Varma.jpg/960px-Draupadi_Vastraharan%2C_Raja_Ravi_Varma.jpg",
+    "enlace": "https://commons.wikimedia.org/wiki/File:Draupadi_Vastraharan,_Raja_Ravi_Varma.jpg",
+    "credito": "Raja Ravi Varma (1848 - 1906)",
+    "licencia": "Public domain",
+    "query": "Duryodhana"
   }
 }
