@@ -176,6 +176,44 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 8px;
 }
 
+/* Miniatura de una obra, flotando junto a su comentario en "Obras maestras". */
+.leccion-prose .obra-inline {
+  float: right;
+  width: min(19rem, 42%);
+  margin: 0.4rem 0 1rem 1.5rem;
+  padding: 0;
+}
+.leccion-prose .obra-inline img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background: var(--color-panel2);
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  margin: 0;
+}
+.leccion-prose .obra-inline figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: var(--color-muted);
+}
+.leccion-prose .obra-inline figcaption .credito {
+  display: block;
+  margin-top: 0.15rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  opacity: 0.75;
+}
+@media (max-width: 640px) {
+  .leccion-prose .obra-inline {
+    float: none;
+    width: 100%;
+    margin: 1.2rem 0;
+  }
+}
+
 /* ── Accesibilidad: indicador de foco visible al navegar con teclado ── */
 :focus-visible {
   outline: 2px solid var(--color-accent);
