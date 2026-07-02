@@ -8,7 +8,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { marked } from "marked";
-import { imagenDe, wikipediaBuscar, wikipediaDe } from "@/lib/obras";
+import { fullDe, imagenDe, wikipediaBuscar, wikipediaDe } from "@/lib/obras";
 
 marked.setOptions({ gfm: true, breaks: false });
 
@@ -51,7 +51,7 @@ const limpiaQuery = (s: string): string =>
     .replace(/\s+/g, " ")
     .trim();
 
-function parseHeadingObra(h: string): { titulo: string; q: string } {
+function parseHeadingObra(h: string): { titulo: string; autor: string; q: string } {
   const it = h.match(/\*([^*]+)\*/); // título en cursiva, si lo hay
   let titulo: string;
   let autor = "";
@@ -67,7 +67,11 @@ function parseHeadingObra(h: string): { titulo: string; q: string } {
   } else {
     titulo = h.replace(/[—–]/g, "-").trim();
   }
-  return { titulo: titulo.replace(/\s+/g, " ").trim(), q: limpiaQuery(`${titulo} ${autor}`) };
+  return {
+    titulo: titulo.replace(/\s+/g, " ").trim(),
+    autor,
+    q: limpiaQuery(`${titulo} ${autor}`),
+  };
 }
 
 function escapeHtml(s: string): string {
@@ -79,7 +83,7 @@ function escapeHtml(s: string): string {
 }
 
 /** `<figure>` en una sola línea (bloque HTML para marked) o null si no hay imagen libre. */
-function figuraObra(titulo: string, q: string): string | null {
+function figuraObra(titulo: string, q: string, autor = ""): string | null {
   const img = imagenDe(q);
   if (!img?.thumb) return null;
   const enlace = wikipediaDe(q)?.url ?? wikipediaBuscar(q);
@@ -88,9 +92,15 @@ function figuraObra(titulo: string, q: string): string | null {
   const credito = img.enlace
     ? `<a href="${escapeHtml(img.enlace)}" target="_blank" rel="noopener noreferrer">Wikimedia</a>`
     : "Wikimedia";
+  const attrs =
+    `data-obra data-titulo="${t}" data-autor="${escapeHtml(autor)}" ` +
+    `data-thumb="${escapeHtml(img.thumb)}" data-full="${escapeHtml(fullDe(img.thumb))}" ` +
+    `data-wiki="${escapeHtml(enlace)}" data-credito="${escapeHtml(img.credito ?? "")}" ` +
+    `data-licencia="${escapeHtml(img.licencia ?? "")}"`;
   return (
     `<figure class="obra-inline">` +
-    `<a href="${escapeHtml(enlace)}" target="_blank" rel="noopener noreferrer">` +
+    `<a href="${escapeHtml(enlace)}" ${attrs} target="_blank" rel="noopener noreferrer" ` +
+    `title="Ver «${t}» en grande" class="cursor-zoom-in">` +
     `<img src="${escapeHtml(img.thumb)}" alt="${t}" loading="lazy" /></a>` +
     `<figcaption>${t}<span class="credito">imagen: ${lic}${credito}</span></figcaption>` +
     `</figure>`
@@ -117,8 +127,8 @@ function inyectarObras(md: string): string {
     if (!m) continue;
     const h = m[1].replace(/^\d+[.)]\s*/, "").trim();
     if (/^otras\b/i.test(h)) continue; // subsección "Otras obras…", no es una obra
-    const { titulo, q } = parseHeadingObra(h);
-    const fig = figuraObra(titulo, q);
+    const { titulo, autor, q } = parseHeadingObra(h);
+    const fig = figuraObra(titulo, q, autor);
     if (fig) out.push("", fig, "");
   }
   return out.join("\n");

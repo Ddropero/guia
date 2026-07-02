@@ -51,11 +51,21 @@ export function getObras(moduloId: string, slug: string): Obra[] {
   return OBRAS[`${moduloId}/${slug}`] ?? [];
 }
 
-/** Miniatura de dominio público, si se resolvió una. */
-export function imagenDe(q: string): ImagenObra | null {
+/** Miniatura de dominio público, si se resolvió una (con `thumb` garantizado). */
+export function imagenDe(q: string): (ImagenObra & { thumb: string }) | null {
   const img = IMAGENES[q];
   if (!img || img.none || !img.thumb) return null;
-  return img;
+  return img as ImagenObra & { thumb: string };
+}
+
+/**
+ * Versión a mayor resolución de una miniatura de Wikimedia, para el visor.
+ * Las URLs de thumb terminan en ".../NNNpx-Nombre.jpg"; se sube a 1600px.
+ * Wikimedia devuelve el mayor tamaño disponible si el original es menor.
+ * Si la URL no encaja con el patrón, se devuelve tal cual.
+ */
+export function fullDe(thumb: string): string {
+  return thumb.replace(/\/\d+px-/, "/1600px-");
 }
 
 /** Artículo de Wikipedia verificado para esta obra, si se resolvió uno. */

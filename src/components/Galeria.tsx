@@ -1,4 +1,4 @@
-import { imagenDe, wikipediaBuscar, wikipediaDe, type Obra } from "@/lib/obras";
+import { fullDe, imagenDe, wikipediaBuscar, wikipediaDe, type Obra } from "@/lib/obras";
 
 /**
  * Galería de las obras comentadas en una lección.
@@ -22,11 +22,19 @@ export default function Galeria({ obras }: { obras: Obra[] }) {
           >
             {img ? (
               <a
-                href={img.enlace || enlaceObra}
+                href={enlaceObra}
+                data-obra
+                data-titulo={o.titulo}
+                data-autor={o.autor}
+                data-thumb={img.thumb}
+                data-full={fullDe(img.thumb)}
+                data-wiki={enlaceObra}
+                data-credito={img.credito ?? ""}
+                data-licencia={img.licencia ?? ""}
                 target="_blank"
                 rel="noopener noreferrer"
-                title={img.credito ? `Imagen: ${img.credito}${img.licencia ? ` · ${img.licencia}` : ""}` : o.titulo}
-                className="block"
+                title={`Ver «${o.titulo}» en grande`}
+                className="block cursor-zoom-in"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

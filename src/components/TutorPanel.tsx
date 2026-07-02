@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Modo = "chat" | "socratico" | "quiz";
 
@@ -45,6 +45,7 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
   const [cargando, setCargando] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const finRef = useRef<HTMLDivElement>(null);
+  const asideRef = useRef<HTMLElement>(null);
 
   const modoActual = MODOS.find((m) => m.id === modo)!;
 
@@ -52,9 +53,32 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
     requestAnimationFrame(() => finRef.current?.scrollIntoView({ behavior: "smooth", block: "end" }));
   }
 
-  async function enviar(texto: string) {
+  // Ref siempre apuntando a la última `enviar` (evita closure obsoleta en el listener).
+  const enviarRef = useRef(enviar);
+  enviarRef.current = enviar;
+
+  // "Analizar esta obra": el visor (Lightbox) dispara este evento con la obra;
+  // el tutor pasa a modo socrático y arranca guiando la mirada de ESA obra.
+  useEffect(() => {
+    const alAnalizar = (e: Event) => {
+      const { titulo: t, autor } = (e as CustomEvent).detail ?? {};
+      if (!t) return;
+      const obra = autor ? `«${t}» (${autor})` : `«${t}»`;
+      setModo("socratico");
+      asideRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      enviarRef.current(
+        `Quiero analizar ${obra} de esta lección. Guíame paso a paso, con preguntas, para aprender a mirarla por mí mismo.`,
+        "socratico",
+      );
+    };
+    window.addEventListener("tutor:analizar", alAnalizar);
+    return () => window.removeEventListener("tutor:analizar", alAnalizar);
+  }, []);
+
+  async function enviar(texto: string, modoForzado?: Modo) {
     const limpio = texto.trim();
     if (!limpio || cargando || !TUTOR_URL) return;
+    const modoActivo = modoForzado ?? modo;
     setError(null);
     setInput("");
 
@@ -68,7 +92,7 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
-          modo,
+          modo: modoActivo,
           leccion: { titulo, modulo, contexto },
           messages: historial,
         }),
@@ -120,7 +144,7 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
   }
 
   return (
-    <aside className="flex max-h-[80vh] flex-col rounded-lg border border-line bg-panel">
+    <aside ref={asideRef} className="flex max-h-[80vh] flex-col rounded-lg border border-line bg-panel">
       <div className="border-b border-line p-4">
         <div className="flex items-center justify-between gap-2">
           <h2 className="font-serif text-lg text-fg">Tutor de IA</h2>

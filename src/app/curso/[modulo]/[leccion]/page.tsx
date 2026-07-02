@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { getModulos, getModulo, getLeccion } from "@/lib/curso";
 import TutorPanel from "@/components/TutorPanel";
 import Galeria from "@/components/Galeria";
+import Lightbox from "@/components/Lightbox";
 import { LeccionCompletaToggle } from "@/components/Progreso";
 import { getObras } from "@/lib/obras";
 
@@ -107,6 +108,8 @@ export default async function LeccionPage({
           />
         </div>
       </div>
+
+      <Lightbox />
     </main>
   );
 }
