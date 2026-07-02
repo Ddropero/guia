@@ -10,6 +10,8 @@ interface ObraVisor {
   wiki: string;
   credito: string;
   licencia: string;
+  fecha: string;
+  ubicacion: string;
 }
 
 function leerObra(el: HTMLElement): ObraVisor {
@@ -22,6 +24,8 @@ function leerObra(el: HTMLElement): ObraVisor {
     wiki: d.wiki ?? "",
     credito: d.credito ?? "",
     licencia: d.licencia ?? "",
+    fecha: d.fecha ?? "",
+    ubicacion: d.ubicacion ?? "",
   };
 }
 
@@ -185,6 +189,11 @@ export default function Lightbox() {
         <div className="min-w-0">
           <p className="font-serif text-lg leading-snug">{obra.titulo}</p>
           {obra.autor && <p className="text-sm text-white/70">{obra.autor}</p>}
+          {(obra.fecha || obra.ubicacion) && (
+            <p className="mt-1 text-xs text-white/60">
+              {[obra.fecha, obra.ubicacion].filter(Boolean).join(" · ")}
+            </p>
+          )}
           <p className="mt-1 text-xs text-white/50">
             {obra.credito ? `Imagen: ${obra.credito}` : "Imagen"}
             {obra.licencia ? ` · ${obra.licencia}` : ""} · Wikimedia

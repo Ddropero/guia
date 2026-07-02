@@ -31,6 +31,8 @@ export default function Galeria({ obras }: { obras: Obra[] }) {
                 data-wiki={enlaceObra}
                 data-credito={img.credito ?? ""}
                 data-licencia={img.licencia ?? ""}
+                data-fecha={o.fecha ?? ""}
+                data-ubicacion={o.ubicacion ?? ""}
                 target="_blank"
                 rel="noopener noreferrer"
                 title={`Ver «${o.titulo}» en grande`}
@@ -53,6 +55,7 @@ export default function Galeria({ obras }: { obras: Obra[] }) {
             <div className="flex flex-1 flex-col gap-1 p-3">
               <p className="font-serif text-sm leading-snug text-fg">{o.titulo}</p>
               {o.autor && <p className="text-xs text-muted">{o.autor}</p>}
+              {o.fecha && <p className="font-mono text-[10px] text-muted/80">{o.fecha}</p>}
               <a
                 href={enlaceObra}
                 target="_blank"

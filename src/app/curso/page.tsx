@@ -73,6 +73,12 @@ export default function CursoHome() {
               >
                 ★ Logros
               </Link>
+              <Link
+                href="/curso/obras"
+                className="inline-flex items-center gap-2 rounded-md border border-line px-4 py-2 text-sm text-muted transition hover:border-accent hover:text-fg"
+              >
+                🖼 Índice de obras
+              </Link>
             </div>
             <GestionProgreso />
           </div>

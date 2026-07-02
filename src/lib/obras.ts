@@ -16,6 +16,9 @@ export interface Obra {
   titulo: string;
   autor: string;
   q: string;
+  fecha?: string;
+  tecnica?: string;
+  ubicacion?: string;
 }
 
 export interface ImagenObra {
