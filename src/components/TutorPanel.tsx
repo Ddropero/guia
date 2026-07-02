@@ -44,6 +44,8 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
   const [input, setInput] = useState("");
   const [cargando, setCargando] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // Obra que el tutor está "viendo" en esta conversación (URL de miniatura + título).
+  const [obraVista, setObraVista] = useState<{ imagen: string; titulo: string } | null>(null);
   const finRef = useRef<HTMLDivElement>(null);
   const asideRef = useRef<HTMLElement>(null);
 
@@ -61,24 +63,29 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
   // el tutor pasa a modo socrático y arranca guiando la mirada de ESA obra.
   useEffect(() => {
     const alAnalizar = (e: Event) => {
-      const { titulo: t, autor } = (e as CustomEvent).detail ?? {};
+      const { titulo: t, autor, imagen } = (e as CustomEvent).detail ?? {};
       if (!t) return;
       const obra = autor ? `«${t}» (${autor})` : `«${t}»`;
+      const img = typeof imagen === "string" ? imagen : null;
       setModo("socratico");
+      if (img) setObraVista({ imagen: img, titulo: t });
       asideRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-      enviarRef.current(
-        `Quiero analizar ${obra} de esta lección. Guíame paso a paso, con preguntas, para aprender a mirarla por mí mismo.`,
-        "socratico",
-      );
+      const arranque = img
+        ? `Estoy mirando ${obra}, que tienes a la vista en esta conversación. Guíame paso a paso, con preguntas, para aprender a mirarla: empieza pidiéndome que describa lo que veo.`
+        : `Quiero analizar ${obra} de esta lección. Guíame paso a paso, con preguntas, para aprender a mirarla por mí mismo.`;
+      enviarRef.current(arranque, "socratico", img);
     };
     window.addEventListener("tutor:analizar", alAnalizar);
     return () => window.removeEventListener("tutor:analizar", alAnalizar);
   }, []);
 
-  async function enviar(texto: string, modoForzado?: Modo) {
+  async function enviar(texto: string, modoForzado?: Modo, imagenForzada?: string | null) {
     const limpio = texto.trim();
     if (!limpio || cargando || !TUTOR_URL) return;
     const modoActivo = modoForzado ?? modo;
+    // La imagen se mantiene durante toda la conversación; se envía en cada turno
+    // (el Worker la cachea) para que el tutor la siga viendo.
+    const imagenObra = imagenForzada ?? obraVista?.imagen ?? null;
     setError(null);
     setInput("");
 
@@ -95,6 +102,7 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
           modo: modoActivo,
           leccion: { titulo, modulo, contexto },
           messages: historial,
+          ...(imagenObra ? { imagenObra } : {}),
         }),
       });
 
@@ -153,6 +161,7 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
               onClick={() => {
                 setMensajes([]);
                 setError(null);
+                setObraVista(null);
               }}
               className="text-xs text-muted hover:text-fg"
             >
@@ -175,7 +184,22 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
             </button>
           ))}
         </div>
-        <p className="mt-2 text-xs text-muted">{modoActual.pista}</p>
+        {obraVista ? (
+          <div className="mt-2 flex items-center gap-2 rounded-md border border-line bg-panel2 px-2 py-1.5 text-xs text-muted">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={obraVista.imagen} alt="" className="h-8 w-8 rounded object-cover" />
+            <span className="min-w-0 flex-1 truncate text-fg">Viendo: {obraVista.titulo}</span>
+            <button
+              onClick={() => setObraVista(null)}
+              aria-label="Dejar de analizar esta obra"
+              className="text-muted hover:text-fg"
+            >
+              ✕
+            </button>
+          </div>
+        ) : (
+          <p className="mt-2 text-xs text-muted">{modoActual.pista}</p>
+        )}
       </div>
 
       <div className="flex-1 space-y-3 overflow-y-auto p-4">

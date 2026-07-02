@@ -138,6 +138,51 @@ interface Mensaje {
   content: string;
 }
 
+// Contenido enriquecido para la API de Anthropic (permite adjuntar la imagen
+// de una obra al primer turno para el análisis con visión).
+type BloqueContenido =
+  | { type: "text"; text: string; cache_control?: { type: "ephemeral" } }
+  | { type: "image"; source: { type: "url"; url: string } };
+interface MensajeApi {
+  role: "user" | "assistant";
+  content: string | BloqueContenido[];
+}
+
+// Solo se acepta como imagen una URL https de Wikimedia (las miniatura del
+// curso). Evita que el cliente haga que el Worker descargue imágenes
+// arbitrarias e infle los tokens de entrada.
+function imagenPermitida(u: unknown): string | null {
+  if (typeof u !== "string" || !u) return null;
+  try {
+    const url = new URL(u);
+    if (url.protocol === "https:" && url.hostname === "upload.wikimedia.org") return url.toString();
+  } catch {
+    /* URL inválida */
+  }
+  return null;
+}
+
+/**
+ * Adjunta la imagen de la obra al PRIMER mensaje del estudiante (posición fija,
+ * reconstruida igual cada turno), con cache_control para que los re-envíos se
+ * cobren a ~10%. Si no hay imagen válida, devuelve los mensajes sin tocar
+ * (degrada a análisis solo-texto).
+ */
+function adjuntarImagen(messages: Mensaje[], imagen: string | null): MensajeApi[] {
+  if (!imagen || !messages.length || messages[0].role !== "user") return messages;
+  return messages.map((m, i) =>
+    i === 0
+      ? {
+          role: "user" as const,
+          content: [
+            { type: "image" as const, source: { type: "url" as const, url: imagen } },
+            { type: "text" as const, text: m.content, cache_control: { type: "ephemeral" as const } },
+          ],
+        }
+      : m,
+  );
+}
+
 function sanearMensajes(raw: unknown): Mensaje[] {
   if (!Array.isArray(raw)) return [];
   const msgs: Mensaje[] = [];
@@ -160,7 +205,7 @@ async function streamAnthropic(
   modelo: string,
   maxTokens: number,
   sistema: BloqueSistema[],
-  messages: Mensaje[],
+  messages: MensajeApi[],
 ): Promise<ReadableStream<Uint8Array>> {
   const body: Record<string, unknown> = {
     model: modelo,
@@ -307,7 +352,12 @@ export default {
       if (!success) return limit429.clone();
     }
 
-    let payload: { modo?: string; leccion?: { titulo?: string; modulo?: string; contexto?: string }; messages?: unknown };
+    let payload: {
+      modo?: string;
+      leccion?: { titulo?: string; modulo?: string; contexto?: string };
+      messages?: unknown;
+      imagenObra?: unknown;
+    };
     try {
       payload = await request.json();
     } catch {
@@ -321,9 +371,11 @@ export default {
     }
 
     const sistema = construirSistema(modo, payload.leccion);
+    // Visión: adjunta la obra al primer turno (solo si es una URL de Wikimedia).
+    const mensajesApi = adjuntarImagen(messages, imagenPermitida(payload.imagenObra));
 
     try {
-      const cuerpo = await streamAnthropic(env, modo, MODELO[modo], MAX_TOKENS[modo], sistema, messages);
+      const cuerpo = await streamAnthropic(env, modo, MODELO[modo], MAX_TOKENS[modo], sistema, mensajesApi);
       return new Response(cuerpo, {
         headers: {
           ...cors,

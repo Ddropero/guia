@@ -104,7 +104,10 @@ export default function Lightbox() {
 
   const analizar = () => {
     window.dispatchEvent(
-      new CustomEvent("tutor:analizar", { detail: { titulo: obra.titulo, autor: obra.autor } }),
+      new CustomEvent("tutor:analizar", {
+        // Se manda la miniatura (≈640px): suficiente para el análisis y barata en tokens.
+        detail: { titulo: obra.titulo, autor: obra.autor, imagen: obra.thumb },
+      }),
     );
     cerrar();
   };
