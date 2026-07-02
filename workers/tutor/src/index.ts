@@ -10,18 +10,30 @@
  * ANTHROPIC_API_KEY`). NUNCA viaja al cliente: el frontend estático llama a
  * este Worker y este llama a la API de Claude.
  *
- * Modelo por tarea (híbrido, para controlar costo):
- *   - chat / quiz  → Claude Haiku 4.5  (rápido y económico)
- *   - socratico    → Claude Sonnet 5   (análisis más profundo de la obra)
+ * Los tres modos usan Claude Sonnet 5. El control de gasto se apoya en:
+ *   - exigir un Origin permitido en cada POST (nada de clientes anónimos),
+ *   - rate limit por IP y un segundo rate limit GLOBAL (techo de gasto conocido),
+ *   - caché de prompt del prefijo (base + lección), compartido entre modos,
+ *   - topes de max_tokens por modo y recorte de historial/contexto,
+ *   - medición: cada respuesta registra los tokens usados (visible con wrangler tail).
  */
+
+interface RateLimiter {
+  limit(opts: { key: string }): Promise<{ success: boolean }>;
+}
 
 export interface Env {
   ANTHROPIC_API_KEY?: string;
   /** Orígenes permitidos, separados por comas. Admite "https://*.sufijo" para previews. */
   ALLOW_ORIGIN?: string;
-  /** Binding opcional de rate limiting de Cloudflare (ver wrangler.jsonc). */
-  TUTOR_RL?: { limit(opts: { key: string }): Promise<{ success: boolean }> };
+  /** Rate limiting por IP (ver wrangler.jsonc). */
+  TUTOR_RL?: RateLimiter;
+  /** Rate limiting GLOBAL (clave fija): techo de gasto total aunque roten IPs. */
+  TUTOR_RL_GLOBAL?: RateLimiter;
 }
+
+/** Tamaño máximo del cuerpo de la petición (anti-abuso de tokens de entrada). */
+const MAX_BODY_BYTES = 50_000;
 
 type Modo = "chat" | "socratico" | "quiz";
 
@@ -92,15 +104,33 @@ const MODO_SISTEMA: Record<Modo, string> = {
   quiz: `Modo: PRÁCTICA Y EVALUACIÓN. Si el estudiante pide preguntas ("ponme a prueba"), genera 1-3 preguntas a la vez sobre la lección (mezcla opción múltiple y abiertas) y espera su respuesta. Cuando responda, EVALÚA con feedback constructivo: di si acierta, explica por qué y añade un dato extra. Mantén un tono de entrenador que anima.`,
 };
 
-function construirSistema(modo: Modo, leccion: { titulo?: string; modulo?: string; contexto?: string } | undefined): string {
-  const partes = [BASE_SISTEMA, MODO_SISTEMA[modo]];
+interface BloqueSistema {
+  type: "text";
+  text: string;
+  cache_control?: { type: "ephemeral" };
+}
+
+// Devuelve el `system` como bloques. El PRIMER bloque (base + contexto de la
+// lección) lleva cache_control y es idéntico para los 3 modos de una misma
+// lección → una sola entrada de caché por lección, no una por lección×modo.
+// La instrucción de modo va en un segundo bloque, corto y fuera del prefijo
+// cacheado, para que el reordenamiento no rompa el acierto de caché.
+function construirSistema(
+  modo: Modo,
+  leccion: { titulo?: string; modulo?: string; contexto?: string } | undefined,
+): BloqueSistema[] {
+  let prefijo = BASE_SISTEMA;
   if (leccion?.titulo) {
-    let ctx = `\n--- CONTEXTO DE LA LECCIÓN ---\nLección: "${leccion.titulo}"`;
-    if (leccion.modulo) ctx += `\nMódulo: ${leccion.modulo}`;
-    if (leccion.contexto) ctx += `\n\nContenido de la lección (úsalo como base de verdad):\n${leccion.contexto.slice(0, 6000)}`;
-    partes.push(ctx);
+    prefijo += `\n\n--- CONTEXTO DE LA LECCIÓN ---\nLección: "${leccion.titulo}"`;
+    if (leccion.modulo) prefijo += `\nMódulo: ${leccion.modulo}`;
+    if (leccion.contexto) {
+      prefijo += `\n\nContenido de la lección (úsalo como base de verdad):\n${leccion.contexto.slice(0, 6000)}`;
+    }
   }
-  return partes.join("\n\n");
+  return [
+    { type: "text", text: prefijo, cache_control: { type: "ephemeral" } },
+    { type: "text", text: MODO_SISTEMA[modo] },
+  ];
 }
 
 interface Mensaje {
@@ -126,17 +156,18 @@ function sanearMensajes(raw: unknown): Mensaje[] {
 
 async function streamAnthropic(
   env: Env,
+  modo: Modo,
   modelo: string,
   maxTokens: number,
-  sistema: string,
+  sistema: BloqueSistema[],
   messages: Mensaje[],
 ): Promise<ReadableStream<Uint8Array>> {
   const body: Record<string, unknown> = {
     model: modelo,
     max_tokens: maxTokens,
-    // Caché de prompt: el system (base + lección) se repite en cada turno y entre
-    // estudiantes de la misma lección → tras la 1.ª vez se cobra a ~10%.
-    system: [{ type: "text", text: sistema, cache_control: { type: "ephemeral" } }],
+    // Caché de prompt: el prefijo (base + lección) se repite en cada turno y
+    // entre estudiantes/modos de la misma lección → tras la 1.ª vez se cobra a ~10%.
+    system: sistema,
     messages,
     stream: true,
   };
@@ -165,11 +196,26 @@ async function streamAnthropic(
   const decoder = new TextDecoder();
   const encoder = new TextEncoder();
   let buffer = "";
+  // Uso de tokens (para medir coste): se arma con message_start + message_delta.
+  const uso: Record<string, number> = {};
+
+  function registrarUso(u: unknown) {
+    if (!u || typeof u !== "object") return;
+    for (const [k, v] of Object.entries(u as Record<string, unknown>)) {
+      if (typeof v === "number") uso[k] = v;
+    }
+  }
 
   const stream = new ReadableStream<Uint8Array>({
     async pull(controller) {
       const { done, value } = await reader.read();
       if (done) {
+        // Medición: una línea por respuesta, visible con `wrangler tail`.
+        console.log(
+          `tutor uso · modo=${modo} modelo=${modelo} in=${uso.input_tokens ?? 0} ` +
+            `cache_read=${uso.cache_read_input_tokens ?? 0} cache_creation=${uso.cache_creation_input_tokens ?? 0} ` +
+            `out=${uso.output_tokens ?? 0}`,
+        );
         controller.close();
         return;
       }
@@ -185,6 +231,10 @@ async function streamAnthropic(
           const evt = JSON.parse(datos);
           if (evt.type === "content_block_delta" && evt.delta?.type === "text_delta") {
             controller.enqueue(encoder.encode(evt.delta.text as string));
+          } else if (evt.type === "message_start") {
+            registrarUso(evt.message?.usage);
+          } else if (evt.type === "message_delta") {
+            registrarUso(evt.usage);
           } else if (evt.type === "error") {
             controller.enqueue(encoder.encode(`\n[Error del tutor: ${evt.error?.message ?? "desconocido"}]`));
           }
@@ -209,11 +259,6 @@ export default {
     if (request.method === "OPTIONS") {
       return new Response(null, { status: origenPermitido ? 204 : 403, headers: cors });
     }
-    // Rechaza POSTs de navegador desde orígenes no permitidos (control de gasto).
-    const origenReq = request.headers.get("origin");
-    if (origenReq && !origenPermitido) {
-      return new Response("Origen no permitido", { status: 403, headers: cors });
-    }
 
     const url = new URL(request.url);
     if (url.pathname !== "/api/tutor") {
@@ -225,6 +270,20 @@ export default {
     if (request.method !== "POST") {
       return new Response("Method Not Allowed", { status: 405, headers: cors });
     }
+    // Control de gasto: exige un Origin PERMITIDO. Antes solo se rechazaban los
+    // orígenes explícitamente no permitidos, dejando pasar los POST SIN Origin
+    // (curl/scripts) → cualquiera podía quemar tokens. Ahora se exige origen.
+    if (!origenPermitido) {
+      return new Response("Origen no permitido", { status: 403, headers: cors });
+    }
+    // Cuerpo desproporcionado → 413 (evita inflar tokens de entrada).
+    const declarado = Number(request.headers.get("content-length") || "0");
+    if (declarado > MAX_BODY_BYTES) {
+      return new Response("Petición demasiado grande.", {
+        status: 413,
+        headers: { ...cors, "content-type": "text/plain; charset=utf-8" },
+      });
+    }
     if (!env.ANTHROPIC_API_KEY) {
       return new Response("El tutor no está configurado (falta ANTHROPIC_API_KEY).", {
         status: 503,
@@ -232,16 +291,20 @@ export default {
       });
     }
 
-    // Rate limiting opcional por IP (binding TUTOR_RL) — control de gasto/abuso.
+    // Rate limiting por IP (TUTOR_RL) y GLOBAL (TUTOR_RL_GLOBAL, clave fija):
+    // el segundo es un techo de gasto total aunque un atacante rote de IP.
+    const limit429 = new Response("Demasiadas solicitudes. Inténtalo en un momento.", {
+      status: 429,
+      headers: { ...cors, "content-type": "text/plain; charset=utf-8", "retry-after": "30" },
+    });
     if (env.TUTOR_RL) {
       const ip = request.headers.get("cf-connecting-ip") || "anon";
       const { success } = await env.TUTOR_RL.limit({ key: ip });
-      if (!success) {
-        return new Response("Demasiadas solicitudes. Inténtalo en un momento.", {
-          status: 429,
-          headers: { ...cors, "content-type": "text/plain; charset=utf-8", "retry-after": "30" },
-        });
-      }
+      if (!success) return limit429.clone();
+    }
+    if (env.TUTOR_RL_GLOBAL) {
+      const { success } = await env.TUTOR_RL_GLOBAL.limit({ key: "global" });
+      if (!success) return limit429.clone();
     }
 
     let payload: { modo?: string; leccion?: { titulo?: string; modulo?: string; contexto?: string }; messages?: unknown };
@@ -260,7 +323,7 @@ export default {
     const sistema = construirSistema(modo, payload.leccion);
 
     try {
-      const cuerpo = await streamAnthropic(env, MODELO[modo], MAX_TOKENS[modo], sistema, messages);
+      const cuerpo = await streamAnthropic(env, modo, MODELO[modo], MAX_TOKENS[modo], sistema, messages);
       return new Response(cuerpo, {
         headers: {
           ...cors,
