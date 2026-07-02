@@ -67,6 +67,12 @@ export default function CursoHome() {
               >
                 🗂 Repaso espaciado
               </Link>
+              <Link
+                href="/curso/logros"
+                className="inline-flex items-center gap-2 rounded-md border border-line px-4 py-2 text-sm text-muted transition hover:border-accent hover:text-fg"
+              >
+                ★ Logros
+              </Link>
             </div>
             <GestionProgreso />
           </div>

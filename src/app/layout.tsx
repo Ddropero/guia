@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, DM_Mono } from "next/font/google";
 import "./globals.css";
+import RegistrarSW from "@/components/RegistrarSW";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="es" className={`${fraunces.variable} ${dmMono.variable}`}>
       <body className="min-h-screen bg-bg text-fg antialiased">
         {children}
+        <RegistrarSW />
         {cfBeacon && (
           <script
             defer

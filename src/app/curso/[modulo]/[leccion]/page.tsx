@@ -5,6 +5,7 @@ import { getModulos, getModulo, getLeccion } from "@/lib/curso";
 import TutorPanel from "@/components/TutorPanel";
 import Galeria from "@/components/Galeria";
 import Lightbox from "@/components/Lightbox";
+import EscucharLeccion from "@/components/EscucharLeccion";
 import { LeccionCompletaToggle } from "@/components/Progreso";
 import { getObras } from "@/lib/obras";
 
@@ -41,6 +42,22 @@ export default async function LeccionPage({
   if (!l) notFound();
   const obras = getObras(modulo, leccion);
 
+  // Texto plano de la lección para la lectura por voz (quita el marcado Markdown).
+  const textoPlano = l.texto
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, " ")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replace(/^#{1,6}\s+/gm, "")
+    .replace(/^\s*>\s?/gm, "")
+    .replace(/^\s*(?:[-*+]|\d+\.)\s+/gm, "")
+    .replace(/^\s*[-*_]{3,}\s*$/gm, " ")
+    .replace(/[*_~]{1,3}([^*_~]+)[*_~]{1,3}/g, "$1")
+    .replace(/\|/g, " ")
+    .replace(/\r?\n{2,}/g, ". ")
+    .replace(/\s+/g, " ")
+    .trim();
+
   return (
     <main className="mx-auto max-w-7xl px-5 py-8 sm:px-8">
       <nav className="mb-6 text-sm text-muted">
@@ -65,6 +82,9 @@ export default async function LeccionPage({
 
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="min-w-0">
+          <div className="mb-6">
+            <EscucharLeccion texto={textoPlano} />
+          </div>
           <article
             className="leccion-prose"
             dangerouslySetInnerHTML={{ __html: l.html }}
