@@ -59,6 +59,10 @@ const OBRAS = cargar<Record<string, Obra[]>>("obras.json", {});
 const IMAGENES = cargar<Record<string, ImagenObra>>("obras-imagenes.json", {});
 const WIKIPEDIA = cargar<Record<string, WikipediaObra>>("obras-wikipedia.json", {});
 const WIKIDATA = cargar<Record<string, WikidataObra>>("obras-wikidata.json", {});
+// Curación MANUAL (obras-imagenes-override.json). Gana sobre todas las fuentes:
+//   { "<q>": { "none": true } }                          → forzar sin imagen (la automática era errónea)
+//   { "<q>": { "thumb": "...", "licencia": "...", ... } } → fijar una imagen concreta
+const OVERRIDE = cargar<Record<string, ImagenObra>>("obras-imagenes-override.json", {});
 
 export function getObras(moduloId: string, slug: string): Obra[] {
   return OBRAS[`${moduloId}/${slug}`] ?? [];
@@ -66,9 +70,14 @@ export function getObras(moduloId: string, slug: string): Obra[] {
 
 /**
  * Miniatura libre de la obra (con `thumb` garantizado). Precedencia:
- * Wikidata (P18, verificado contra la ficha) → Wikimedia Commons (búsqueda).
+ * curación manual (override) → Wikidata (P18, verificado) → Wikimedia Commons.
  */
 export function imagenDe(q: string): (ImagenObra & { thumb: string }) | null {
+  const ov = OVERRIDE[q];
+  if (ov) {
+    if (ov.none || !ov.thumb) return null; // curado como "sin imagen"
+    return ov as ImagenObra & { thumb: string };
+  }
   const wd = WIKIDATA[q]?.imagen;
   if (wd?.thumb) {
     return { thumb: wd.thumb, enlace: wd.enlace, credito: wd.credito, licencia: wd.licencia };
