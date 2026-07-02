@@ -1,7 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getModulos, getRecursos } from "@/lib/curso";
-import { ProgresoModulo, ProgresoGlobal } from "@/components/Progreso";
+import {
+  ProgresoModulo,
+  ProgresoGlobal,
+  ContinuarDondeLoDejaste,
+  GestionProgreso,
+} from "@/components/Progreso";
 
 export const metadata: Metadata = {
   title: "Historia del Arte · Curso interactivo con tutor de IA",
@@ -51,6 +56,11 @@ export default function CursoHome() {
                 ))}
               </div>
             )}
+          </div>
+
+          <div className="mb-10 flex flex-wrap items-center justify-between gap-4">
+            <ContinuarDondeLoDejaste />
+            <GestionProgreso />
           </div>
 
           <section className="space-y-3">
