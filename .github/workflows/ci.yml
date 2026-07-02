@@ -46,5 +46,15 @@ jobs:
           git diff --exit-code src/data/obras.json src/data/quiz.json \
             || (echo "::error::obras.json/quiz.json están desincronizados de su fuente. Corre 'npm run datos' y commitea." && exit 1)
 
+      - name: Revalidar enriquecimiento de Wikidata (sin red)
+        run: |
+          if [ -f src/data/obras-wikidata.json ]; then
+            node scripts/fetch-wikidata.mjs --purge-only
+            git diff --exit-code src/data/obras-wikidata.json \
+              || (echo "::error::obras-wikidata.json tiene entradas obsoletas. Corre 'node scripts/fetch-wikidata.mjs' y commitea." && exit 1)
+          else
+            echo "obras-wikidata.json aún no existe; se omite."
+          fi
+
       - name: Build estático
         run: SITE_URL=https://historia.hilvan.org npm run build

@@ -36,6 +36,15 @@ export interface WikipediaObra {
   none?: boolean; // se buscó y no hay artículo de confianza → no reintentar
 }
 
+// Enriquecimiento desde Wikidata (obras-wikidata.json; lo genera fetch-wikidata.mjs).
+// Verificado contra la ficha (autor/fecha/museo): fuente PREFERENTE de imagen y enlace.
+interface WikidataObra {
+  qid?: string;
+  wikipedia?: string; // URL del artículo eswiki
+  imagen?: { thumb: string; enlace: string; licencia: string; credito?: string };
+  none?: boolean;
+}
+
 const DATA = path.join(process.cwd(), "src", "data");
 
 function cargar<T>(archivo: string, fallback: T): T {
@@ -49,13 +58,21 @@ function cargar<T>(archivo: string, fallback: T): T {
 const OBRAS = cargar<Record<string, Obra[]>>("obras.json", {});
 const IMAGENES = cargar<Record<string, ImagenObra>>("obras-imagenes.json", {});
 const WIKIPEDIA = cargar<Record<string, WikipediaObra>>("obras-wikipedia.json", {});
+const WIKIDATA = cargar<Record<string, WikidataObra>>("obras-wikidata.json", {});
 
 export function getObras(moduloId: string, slug: string): Obra[] {
   return OBRAS[`${moduloId}/${slug}`] ?? [];
 }
 
-/** Miniatura de dominio público, si se resolvió una (con `thumb` garantizado). */
+/**
+ * Miniatura libre de la obra (con `thumb` garantizado). Precedencia:
+ * Wikidata (P18, verificado contra la ficha) → Wikimedia Commons (búsqueda).
+ */
 export function imagenDe(q: string): (ImagenObra & { thumb: string }) | null {
+  const wd = WIKIDATA[q]?.imagen;
+  if (wd?.thumb) {
+    return { thumb: wd.thumb, enlace: wd.enlace, credito: wd.credito, licencia: wd.licencia };
+  }
   const img = IMAGENES[q];
   if (!img || img.none || !img.thumb) return null;
   return img as ImagenObra & { thumb: string };
@@ -71,8 +88,16 @@ export function fullDe(thumb: string): string {
   return thumb.replace(/\/\d+px-/, "/1600px-");
 }
 
-/** Artículo de Wikipedia verificado para esta obra, si se resolvió uno. */
+/**
+ * Artículo de Wikipedia (es) para esta obra. Precedencia: Wikidata (sitelink
+ * eswiki, verificado) → resolución directa de fetch-wikipedia.mjs (verificada).
+ */
 export function wikipediaDe(q: string): WikipediaObra | null {
+  const wdUrl = WIKIDATA[q]?.wikipedia;
+  if (wdUrl) {
+    const titulo = decodeURIComponent(wdUrl.split("/wiki/")[1] ?? "").replace(/_/g, " ");
+    return { titulo: titulo || q, url: wdUrl };
+  }
   const w = WIKIPEDIA[q];
   if (!w || w.none || !w.url) return null;
   return w;

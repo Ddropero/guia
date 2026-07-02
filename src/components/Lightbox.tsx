@@ -206,6 +206,26 @@ export default function Lightbox() {
           >
             ✨ Analizar con el tutor
           </button>
+          <button
+            onClick={() =>
+              window.dispatchEvent(
+                new CustomEvent("comparar:fijar", {
+                  detail: {
+                    titulo: obra.titulo,
+                    autor: obra.autor,
+                    thumb: obra.thumb,
+                    full: obra.full,
+                    fecha: obra.fecha,
+                    ubicacion: obra.ubicacion,
+                    wiki: obra.wiki,
+                  },
+                }),
+              )
+            }
+            className="rounded-md border border-white/30 px-3 py-2 text-sm text-white/90 hover:bg-white/10"
+          >
+            📌 Comparar
+          </button>
           {obra.wiki && (
             <a
               href={obra.wiki}

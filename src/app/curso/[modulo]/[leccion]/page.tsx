@@ -5,6 +5,7 @@ import { getModulos, getModulo, getLeccion } from "@/lib/curso";
 import TutorPanel from "@/components/TutorPanel";
 import Galeria from "@/components/Galeria";
 import Lightbox from "@/components/Lightbox";
+import Comparador from "@/components/Comparador";
 import EscucharLeccion from "@/components/EscucharLeccion";
 import { LeccionCompletaToggle } from "@/components/Progreso";
 import { getObras } from "@/lib/obras";
@@ -130,6 +131,7 @@ export default async function LeccionPage({
       </div>
 
       <Lightbox />
+      <Comparador />
     </main>
   );
 }

@@ -9,8 +9,27 @@ import fs from "node:fs";
 import path from "node:path";
 import { marked } from "marked";
 import { fullDe, imagenDe, wikipediaBuscar, wikipediaDe } from "@/lib/obras";
+import { getGlosario } from "@/lib/glosario";
+import { enlazarGlosario, slugTermino } from "@/lib/glosario-enlaces";
 
 marked.setOptions({ gfm: true, breaks: false });
+
+// Glosario cargado una vez: términos para auto-enlazar y sus anclas.
+const RUTA_GLOSARIO = "/curso/recursos/glosario";
+const GLOSARIO_TERMINOS = getGlosario().map((t) => t.termino);
+const GLOSARIO_SLUGS = new Set(GLOSARIO_TERMINOS.map(slugTermino));
+
+// Añade id={slug} al primer <strong>Término</strong> de cada término, para que
+// los enlaces "…#slug" del glosario aterricen en la entrada correcta.
+function anclarGlosario(html: string): string {
+  const usados = new Set<string>();
+  return html.replace(/<strong>([^<]+)<\/strong>/g, (m, txt: string) => {
+    const slug = slugTermino(txt.trim());
+    if (!GLOSARIO_SLUGS.has(slug) || usados.has(slug)) return m;
+    usados.add(slug);
+    return `<strong id="${slug}">${txt}</strong>`;
+  });
+}
 
 // Documentos de nivel superior → ruta del sitio.
 const RUTAS_TOP: Record<string, string> = {
@@ -282,7 +301,11 @@ export function getLeccion(moduloId: string, slug: string): Leccion | null {
     slug,
     titulo: tituloDe(md) ?? prettify(slug),
     subtitulo: subtituloDe(md),
-    html: render(inyectarObras(md), `modulos/${moduloId}`),
+    html: enlazarGlosario(
+      render(inyectarObras(md), `modulos/${moduloId}`),
+      GLOSARIO_TERMINOS,
+      RUTA_GLOSARIO,
+    ),
     texto: md,
     prev: prevRef ? { moduloId, slug: prevRef.slug, titulo: prevRef.titulo } : null,
     next: nextRef ? { moduloId, slug: nextRef.slug, titulo: nextRef.titulo } : null,
@@ -339,5 +362,8 @@ export function getRecurso(slug: string): { titulo: string; html: string } | nul
   if (!p || !existe(p)) return null;
   const md = leer(p);
   const relDir = path.relative(BASE, path.dirname(p)).split(path.sep).join("/");
-  return { titulo: tituloDe(md) ?? prettify(slug), html: render(md, relDir) };
+  let html = render(md, relDir);
+  // La página del glosario recibe anclas por término (destino de los auto-enlaces).
+  if (slug === "glosario") html = anclarGlosario(html);
+  return { titulo: tituloDe(md) ?? prettify(slug), html };
 }

@@ -96,6 +96,17 @@ input[type="range"]::-moz-range-thumb {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+/* Enlace al glosario (auto-enlazado): discreto, no compite con los enlaces reales. */
+.leccion-prose a.glo {
+  color: inherit;
+  text-decoration-color: var(--color-muted);
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+.leccion-prose a.glo:hover {
+  color: var(--color-accent);
+  text-decoration-color: var(--color-accent);
+}
 .leccion-prose strong {
   color: #fff;
   font-weight: 600;

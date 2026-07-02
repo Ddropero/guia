@@ -79,6 +79,12 @@ export default function CursoHome() {
               >
                 🖼 Índice de obras
               </Link>
+              <Link
+                href="/curso/cronologia"
+                className="inline-flex items-center gap-2 rounded-md border border-line px-4 py-2 text-sm text-muted transition hover:border-accent hover:text-fg"
+              >
+                📅 Línea de tiempo
+              </Link>
             </div>
             <GestionProgreso />
           </div>
