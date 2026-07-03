@@ -68,6 +68,11 @@ export function getObras(moduloId: string, slug: string): Obra[] {
   return OBRAS[`${moduloId}/${slug}`] ?? [];
 }
 
+/** Overrides de imagen ya existentes (para precargar la herramienta de revisión). */
+export function getOverridesImagenes(): Record<string, ImagenObra> {
+  return OVERRIDE;
+}
+
 /**
  * Miniatura libre de la obra (con `thumb` garantizado). Precedencia:
  * curación manual (override) → Wikidata (P18, verificado) → Wikimedia Commons.
@@ -85,6 +90,59 @@ export function imagenDe(q: string): (ImagenObra & { thumb: string }) | null {
   const img = IMAGENES[q];
   if (!img || img.none || !img.thumb) return null;
   return img as ImagenObra & { thumb: string };
+}
+
+export interface ImagenMostrada {
+  q: string;
+  titulo: string;
+  autor: string;
+  fecha?: string;
+  tecnica?: string;
+  ubicacion?: string;
+  thumb: string;
+  fuente: "override" | "wikidata" | "commons";
+}
+
+/**
+ * Lista de TODAS las obras que hoy muestran una imagen, con su ficha y la
+ * fuente de la que sale (para la herramienta de revisión /curso/revisar).
+ * Aplica la misma precedencia que imagenDe(); una obra sin imagen se omite.
+ */
+export function imagenesMostradas(): ImagenMostrada[] {
+  const ficha = new Map<string, Obra>();
+  for (const lista of Object.values(OBRAS)) {
+    for (const o of lista) if (!ficha.has(o.q)) ficha.set(o.q, o);
+  }
+  const out: ImagenMostrada[] = [];
+  for (const [q, o] of ficha) {
+    const ov = OVERRIDE[q];
+    let thumb: string | undefined;
+    let fuente: ImagenMostrada["fuente"];
+    if (ov) {
+      if (ov.none || !ov.thumb) continue; // curada como "sin imagen"
+      thumb = ov.thumb;
+      fuente = "override";
+    } else if (WIKIDATA[q]?.imagen?.thumb) {
+      thumb = WIKIDATA[q]!.imagen!.thumb;
+      fuente = "wikidata";
+    } else {
+      const img = IMAGENES[q];
+      if (!img || img.none || !img.thumb) continue;
+      thumb = img.thumb;
+      fuente = "commons";
+    }
+    out.push({
+      q,
+      titulo: o.titulo,
+      autor: o.autor,
+      fecha: o.fecha,
+      tecnica: o.tecnica,
+      ubicacion: o.ubicacion,
+      thumb,
+      fuente,
+    });
+  }
+  return out;
 }
 
 /**
