@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getModulos } from "@/lib/curso";
 import Logros from "@/components/Logros";
 import Certificado from "@/components/Certificado";
+import ApoyaCTA from "@/components/ApoyaCTA";
 import type { ModuloLecciones } from "@/lib/logros";
 
 export const metadata: Metadata = {
@@ -47,6 +48,10 @@ export default function LogrosPage() {
       <section>
         <h2 className="mb-3 font-serif text-xl text-fg">Certificado</h2>
         <Certificado total={idsLecciones.length} ids={idsLecciones} />
+      </section>
+
+      <section className="mt-10">
+        <ApoyaCTA mensaje="¿Te ha servido este curso?" />
       </section>
     </main>
   );
