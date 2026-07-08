@@ -9,7 +9,9 @@
  * PROVEEDOR configurable (variable TUTOR_PROVEEDOR):
  *   - "anthropic" (por defecto): Claude Sonnet 5, con caché de prompt y visión.
  *   - "groq": modelo abierto de OpenAI en Groq (openai/gpt-oss-120b), API
- *     compatible con OpenAI. Mucho más barato/rápido; texto solo (sin visión).
+ *     compatible con OpenAI. Mucho más barato/rápido; texto solo. HÍBRIDO: si
+ *     además hay ANTHROPIC_API_KEY, los turnos con imagen (analizar obra) van a
+ *     Claude para tener visión real; el resto se queda en Groq.
  * En ambos casos la API key es un secret del Worker (`wrangler secret put
  * ANTHROPIC_API_KEY` o `GROQ_API_KEY`) y NUNCA viaja al cliente: el frontend
  * estático llama a este Worker y este llama a la API del proveedor. La salida
@@ -48,6 +50,18 @@ export type Proveedor = "anthropic" | "groq";
 /** Proveedor activo según la config (por defecto Anthropic). */
 export function proveedor(env: Env): Proveedor {
   return (env.TUTOR_PROVEEDOR || "").trim().toLowerCase() === "groq" ? "groq" : "anthropic";
+}
+
+/**
+ * Proveedor EFECTIVO para un turno concreto (modo híbrido). Con Groq como base,
+ * si el turno trae una imagen de obra Y hay clave de Anthropic, se usa Claude
+ * para ESE turno (visión real, que gpt-oss no tiene); el resto sigue en Groq.
+ * Sin clave de Anthropic, se queda en Groq (análisis solo-texto).
+ */
+export function proveedorEfectivo(env: Env, tieneImagen: boolean): Proveedor {
+  const base = proveedor(env);
+  if (base === "groq" && tieneImagen && env.ANTHROPIC_API_KEY) return "anthropic";
+  return base;
 }
 
 const GROQ_MODELO_DEFECTO = "openai/gpt-oss-120b";
@@ -485,16 +499,20 @@ export default {
     }
 
     const sistema = construirSistema(modo, payload.leccion);
+    const imagen = imagenPermitida(payload.imagenObra);
+    // Híbrido: si es un turno con imagen y hay clave de Anthropic, va a Claude
+    // (visión real) aunque el proveedor base sea Groq.
+    const provEfectivo = proveedorEfectivo(env, !!imagen);
 
     try {
       let cuerpo: ReadableStream<Uint8Array>;
-      if (prov === "groq") {
+      if (provEfectivo === "groq") {
         // gpt-oss es texto: no se adjunta la imagen (análisis solo-texto).
         const modelo = (env.GROQ_MODELO || GROQ_MODELO_DEFECTO).trim();
         cuerpo = await streamGroq(env, modo, modelo, MAX_TOKENS[modo], sistemaATexto(sistema), messages);
       } else {
         // Visión: adjunta la obra al primer turno (solo si es URL de Wikimedia).
-        const mensajesApi = adjuntarImagen(messages, imagenPermitida(payload.imagenObra));
+        const mensajesApi = adjuntarImagen(messages, imagen);
         cuerpo = await streamAnthropic(env, modo, MODELO[modo], MAX_TOKENS[modo], sistema, mensajesApi);
       }
       return new Response(cuerpo, {
