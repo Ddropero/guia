@@ -6,11 +6,18 @@
  *   - modo: "chat" | "socratico" | "quiz"
  *   - messages: historial [{ role: "user"|"assistant", content: string }]
  *
- * La API key de Anthropic es un secret del Worker (`wrangler secret put
- * ANTHROPIC_API_KEY`). NUNCA viaja al cliente: el frontend estático llama a
- * este Worker y este llama a la API de Claude.
+ * PROVEEDOR configurable (variable TUTOR_PROVEEDOR):
+ *   - "anthropic" (por defecto): Claude Sonnet 5, con caché de prompt y visión.
+ *   - "groq": modelo abierto de OpenAI en Groq (openai/gpt-oss-120b), API
+ *     compatible con OpenAI. Mucho más barato/rápido; texto solo. HÍBRIDO: si
+ *     además hay ANTHROPIC_API_KEY, los turnos con imagen (analizar obra) van a
+ *     Claude para tener visión real; el resto se queda en Groq.
+ * En ambos casos la API key es un secret del Worker (`wrangler secret put
+ * ANTHROPIC_API_KEY` o `GROQ_API_KEY`) y NUNCA viaja al cliente: el frontend
+ * estático llama a este Worker y este llama a la API del proveedor. La salida
+ * al cliente es texto plano en streaming, idéntica sea cual sea el proveedor.
  *
- * Los tres modos usan Claude Sonnet 5. El control de gasto se apoya en:
+ * El control de gasto se apoya en:
  *   - exigir un Origin permitido en cada POST (nada de clientes anónimos),
  *   - rate limit por IP y un segundo rate limit GLOBAL (techo de gasto conocido),
  *   - caché de prompt del prefijo (base + lección), compartido entre modos,
@@ -24,6 +31,12 @@ interface RateLimiter {
 
 export interface Env {
   ANTHROPIC_API_KEY?: string;
+  /** API key de Groq (secret). Necesaria si TUTOR_PROVEEDOR="groq". */
+  GROQ_API_KEY?: string;
+  /** Proveedor del tutor: "anthropic" (por defecto) o "groq". */
+  TUTOR_PROVEEDOR?: string;
+  /** Modelo de Groq (por defecto openai/gpt-oss-120b). */
+  GROQ_MODELO?: string;
   /** Orígenes permitidos, separados por comas. Admite "https://*.sufijo" para previews. */
   ALLOW_ORIGIN?: string;
   /** Rate limiting por IP (ver wrangler.jsonc). */
@@ -31,6 +44,27 @@ export interface Env {
   /** Rate limiting GLOBAL (clave fija): techo de gasto total aunque roten IPs. */
   TUTOR_RL_GLOBAL?: RateLimiter;
 }
+
+export type Proveedor = "anthropic" | "groq";
+
+/** Proveedor activo según la config (por defecto Anthropic). */
+export function proveedor(env: Env): Proveedor {
+  return (env.TUTOR_PROVEEDOR || "").trim().toLowerCase() === "groq" ? "groq" : "anthropic";
+}
+
+/**
+ * Proveedor EFECTIVO para un turno concreto (modo híbrido). Con Groq como base,
+ * si el turno trae una imagen de obra Y hay clave de Anthropic, se usa Claude
+ * para ESE turno (visión real, que gpt-oss no tiene); el resto sigue en Groq.
+ * Sin clave de Anthropic, se queda en Groq (análisis solo-texto).
+ */
+export function proveedorEfectivo(env: Env, tieneImagen: boolean): Proveedor {
+  const base = proveedor(env);
+  if (base === "groq" && tieneImagen && env.ANTHROPIC_API_KEY) return "anthropic";
+  return base;
+}
+
+const GROQ_MODELO_DEFECTO = "openai/gpt-oss-120b";
 
 /** Tamaño máximo del cuerpo de la petición (anti-abuso de tokens de entrada). */
 const MAX_BODY_BYTES = 50_000;
@@ -296,6 +330,97 @@ async function streamAnthropic(
   return stream;
 }
 
+// El `system` de Anthropic va en bloques (para la caché); OpenAI/Groq usa un
+// único mensaje de sistema con texto plano. Se concatenan los bloques.
+function sistemaATexto(sistema: BloqueSistema[]): string {
+  return sistema.map((b) => b.text).join("\n\n");
+}
+
+// Streaming con Groq (API compatible con OpenAI). Modelo por defecto
+// openai/gpt-oss-120b: es de RAZONAMIENTO, así que pedimos reasoning_effort
+// bajo (tutor ágil) y emitimos SOLO `content` al cliente, nunca el
+// `reasoning`. gpt-oss es texto: la imagen de la obra no se adjunta.
+async function streamGroq(
+  env: Env,
+  modo: Modo,
+  modelo: string,
+  maxTokens: number,
+  sistema: string,
+  messages: Mensaje[],
+): Promise<ReadableStream<Uint8Array>> {
+  const body = {
+    model: modelo,
+    max_tokens: maxTokens,
+    reasoning_effort: "low",
+    messages: [{ role: "system", content: sistema }, ...messages],
+    stream: true,
+    stream_options: { include_usage: true },
+  };
+
+  const upstream = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${env.GROQ_API_KEY as string}`,
+      "content-type": "application/json",
+    },
+    body: JSON.stringify(body),
+  });
+
+  if (!upstream.ok || !upstream.body) {
+    const detalle = await upstream.text().catch(() => "");
+    throw new Error(`Groq HTTP ${upstream.status}: ${detalle.slice(0, 300)}`);
+  }
+
+  const reader = upstream.body.getReader();
+  const decoder = new TextDecoder();
+  const encoder = new TextEncoder();
+  let buffer = "";
+  const uso: Record<string, number> = {};
+
+  const stream = new ReadableStream<Uint8Array>({
+    async pull(controller) {
+      const { done, value } = await reader.read();
+      if (done) {
+        console.log(
+          `tutor uso · proveedor=groq modo=${modo} modelo=${modelo} ` +
+            `in=${uso.prompt_tokens ?? 0} out=${uso.completion_tokens ?? 0}`,
+        );
+        controller.close();
+        return;
+      }
+      buffer += decoder.decode(value, { stream: true });
+      const lineas = buffer.split("\n");
+      buffer = lineas.pop() ?? "";
+      for (const linea of lineas) {
+        const l = linea.trim();
+        if (!l.startsWith("data:")) continue;
+        const datos = l.slice(5).trim();
+        if (!datos || datos === "[DONE]") continue;
+        try {
+          const evt = JSON.parse(datos);
+          const delta = evt.choices?.[0]?.delta;
+          // Solo el contenido visible; el canal `reasoning` no se reenvía.
+          if (delta && typeof delta.content === "string") {
+            controller.enqueue(encoder.encode(delta.content));
+          }
+          if (evt.usage && typeof evt.usage === "object") {
+            for (const [k, v] of Object.entries(evt.usage as Record<string, unknown>)) {
+              if (typeof v === "number") uso[k] = v;
+            }
+          }
+        } catch {
+          /* línea SSE incompleta o no-JSON: se ignora */
+        }
+      }
+    },
+    cancel() {
+      reader.cancel().catch(() => {});
+    },
+  });
+
+  return stream;
+}
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const origenPermitido = resolverOrigen(request, env);
@@ -329,8 +454,11 @@ export default {
         headers: { ...cors, "content-type": "text/plain; charset=utf-8" },
       });
     }
-    if (!env.ANTHROPIC_API_KEY) {
-      return new Response("El tutor no está configurado (falta ANTHROPIC_API_KEY).", {
+    const prov = proveedor(env);
+    const faltaClave = prov === "groq" ? !env.GROQ_API_KEY : !env.ANTHROPIC_API_KEY;
+    if (faltaClave) {
+      const secreto = prov === "groq" ? "GROQ_API_KEY" : "ANTHROPIC_API_KEY";
+      return new Response(`El tutor no está configurado (falta ${secreto}).`, {
         status: 503,
         headers: { ...cors, "content-type": "text/plain; charset=utf-8" },
       });
@@ -371,11 +499,22 @@ export default {
     }
 
     const sistema = construirSistema(modo, payload.leccion);
-    // Visión: adjunta la obra al primer turno (solo si es una URL de Wikimedia).
-    const mensajesApi = adjuntarImagen(messages, imagenPermitida(payload.imagenObra));
+    const imagen = imagenPermitida(payload.imagenObra);
+    // Híbrido: si es un turno con imagen y hay clave de Anthropic, va a Claude
+    // (visión real) aunque el proveedor base sea Groq.
+    const provEfectivo = proveedorEfectivo(env, !!imagen);
 
     try {
-      const cuerpo = await streamAnthropic(env, modo, MODELO[modo], MAX_TOKENS[modo], sistema, mensajesApi);
+      let cuerpo: ReadableStream<Uint8Array>;
+      if (provEfectivo === "groq") {
+        // gpt-oss es texto: no se adjunta la imagen (análisis solo-texto).
+        const modelo = (env.GROQ_MODELO || GROQ_MODELO_DEFECTO).trim();
+        cuerpo = await streamGroq(env, modo, modelo, MAX_TOKENS[modo], sistemaATexto(sistema), messages);
+      } else {
+        // Visión: adjunta la obra al primer turno (solo si es URL de Wikimedia).
+        const mensajesApi = adjuntarImagen(messages, imagen);
+        cuerpo = await streamAnthropic(env, modo, MODELO[modo], MAX_TOKENS[modo], sistema, mensajesApi);
+      }
       return new Response(cuerpo, {
         headers: {
           ...cors,

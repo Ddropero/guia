@@ -1,8 +1,428 @@
 {
-  "El hombre de León León de Hohlenstein-Stadel": { "none": true },
-  "Catedral gótica : el caso de Chartres": { "none": true },
-  "Frescos de la Capilla Sixtina , Miguel Ángel": { "none": true },
-  "Panel de los leones / Panel de los caballos, cueva de Chauvet": { "none": true },
-  "Recinto D , Göbekli Tepe": { "none": true },
-  "Anunciación La": { "none": true }
+  "El hombre de León León de Hohlenstein-Stadel": {
+    "none": true
+  },
+  "Catedral gótica : el caso de Chartres": {
+    "none": true
+  },
+  "Frescos de la Capilla Sixtina , Miguel Ángel": {
+    "none": true
+  },
+  "Panel de los leones / Panel de los caballos, cueva de Chauvet": {
+    "none": true
+  },
+  "Recinto D , Göbekli Tepe": {
+    "none": true
+  },
+  "Anunciación La": {
+    "none": true
+  },
+  "Una vasija de cerámica zuni o un manto Paracas": {
+    "none": true
+  },
+  "Latas de sopa Campbell Andy Warhol": {
+    "none": true
+  },
+  "¿Por qué no ha habido grandes mujeres artistas?, de Linda Nochlin": {
+    "none": true
+  },
+  "Cabeza de Warka": {
+    "none": true
+  },
+  "Relieves de la caza del león de Asurbanipal": {
+    "none": true
+  },
+  "Vasija de estilo de Kamares": {
+    "none": true
+  },
+  "El Partenón y su escultura": {
+    "none": true
+  },
+  "Tumbas pintadas de Tarquinia": {
+    "none": true
+  },
+  "El Coliseo": {
+    "none": true
+  },
+  "Cabeza colosal de Constantino y Arco de Constantino": {
+    "none": true
+  },
+  "Sello y figuras de la civilización del Indo": {
+    "none": true
+  },
+  "Jarrón Ming azul y blanco de Jingdezhen": {
+    "none": true
+  },
+  "Prefacio al Pabellón de las Orquídeas Caligrafía: el legado de Wang Xizhi": {
+    "none": true
+  },
+  "Lirios Biombos Rinpa: Korin, e Iris": {
+    "none": true
+  },
+  "Pintura a la tinta zen: paisaje de Sesshu": {
+    "none": true
+  },
+  "Corona de oro de Silla": {
+    "none": true
+  },
+  "Aguamanil celadón de Goryeo con incrustación": {
+    "none": true
+  },
+  "Tarro de la luna, porcelana blanca de Joseon": {
+    "none": true
+  },
+  "Escuela del pueblo del álbum de género de Kim Hong-do": {
+    "none": true
+  },
+  "Süleymaniye , de Sinán": {
+    "none": true
+  },
+  "Jarra y platos de lustre dorado abasíes": {
+    "none": true
+  },
+  "Bustan Miniaturas del de Saadi": {
+    "none": true
+  },
+  "Mezquita de Selimiye, Edirne": {
+    "none": true
+  },
+  "Trinidad Iglesia bizantina media y tardía: programa de mosaicos y la de Rubliov": {
+    "none": true
+  },
+  "Capilla palatina de Aquisgrán , de Odón de Metz": {
+    "none": true
+  },
+  "Tímpano de la Pentecostés , Sainte-Madeleine de Vézelay": {
+    "none": true
+  },
+  "Tímpano de la Maiestas Domini, abadía de Saint-Pierre de Moissac": {
+    "none": true
+  },
+  "Coro de la abadía de Saint-Denis": {
+    "none": true
+  },
+  "Pila bautismal de bronce, San Bartolomé de Lieja, por Renier de Huy": {
+    "none": true
+  },
+  "Pozo de Moisés El de Claus Sluter": {
+    "none": true
+  },
+  "Ciclo de frescos de la Capilla Scrovegni , Padua": {
+    "none": true
+  },
+  "Maestà de Ognissanti de Giotto": {
+    "none": true
+  },
+  "Frescos de la basílica de San Francisco de Asís": {
+    "none": true
+  },
+  "Cúpula de Santa María del Fiore": {
+    "none": true
+  },
+  "David de bronce": {
+    "none": true
+  },
+  "La Trinidad": {
+    "none": true
+  },
+  "Ospedale degli Innocenti": {
+    "none": true
+  },
+  "Santa Maria Novella Fachada de": {
+    "none": true
+  },
+  "Capilla Pazzi": {
+    "none": true
+  },
+  "Villa Almerico-Capra La Rotonda": {
+    "none": true
+  },
+  "David": {
+    "none": true
+  },
+  "Juicio Final": {
+    "none": true
+  },
+  "La cúpula de San Pedro": {
+    "none": true
+  },
+  "La última cena Tintoretto": {
+    "none": true
+  },
+  "El rapto de las sabinas Giambologna, 1581 1583": {
+    "none": true
+  },
+  "La cena de Emaús Caravaggio": {
+    "none": true
+  },
+  "San Carlo alle Quattro Fontane, San Carlino": {
+    "none": true
+  },
+  "Sant'Ivo alla Sapienza": {
+    "none": true
+  },
+  "Sant'Andrea al Quirinale": {
+    "none": true
+  },
+  "La plaza de San Pedro y su columnata": {
+    "none": true
+  },
+  "El ciclo de María de Médici Peter Paul Rubens": {
+    "none": true
+  },
+  "El descendimiento de la cruz Peter Paul Rubens": {
+    "none": true
+  },
+  "Puerto de mar con el embarco de la reina de Saba Claudio de Lorena": {
+    "none": true
+  },
+  "Autorretrato tardío Rembrandt van Rijn": {
+    "none": true
+  },
+  "Versalles: la Galería de los Espejos - Jules Hardouin-Mansart y Charles Le Brun": {
+    "none": true
+  },
+  "El triunfo de Apolo / Apoteosis de España Giambattista Tiépolo": {
+    "none": true
+  },
+  "Bulevar del Temple Louis Daguerre": {
+    "none": true
+  },
+  "Olympia Édouard Manet": {
+    "none": true
+  },
+  "El ciruelo en flor Vincent van Gogh": {
+    "none": true
+  },
+  "La estrella Edgar Degas": {
+    "none": true
+  },
+  "Templo Expiatorio de la Sagrada Familia Antoni Gaudí": {
+    "none": true
+  },
+  "El pensador Auguste Rodin": {
+    "none": true
+  },
+  "Crystal Palace Joseph Paxton": {
+    "none": true
+  },
+  "Marcella escenas de calle berlinesas Ernst Ludwig Kirchner": {
+    "none": true
+  },
+  "Les demoiselles d'Avignon Pablo Picasso": {
+    "none": true
+  },
+  "Botella, vaso y violín Georges Braque / Pablo Picasso": {
+    "none": true
+  },
+  "Naturaleza muerta con tablero de ajedrez Retrato de Picasso Juan Gris": {
+    "none": true
+  },
+  "Monumento a la Tercera Internacional Vladímir Tatlin": {
+    "none": true
+  },
+  "La persistencia de la memoria Salvador Dalí": {
+    "none": true
+  },
+  "Cut with the Kitchen Knife Dada... Hannah Höch": {
+    "none": true
+  },
+  "La traición de las imágenes René Magritte": {
+    "none": true
+  },
+  "Las dos Fridas Frida Kahlo": {
+    "none": true
+  },
+  "Edificio de la Bauhaus en Dessau - Walter Gropius": {
+    "none": true
+  },
+  "Villa Saboya - Le Corbusier": {
+    "none": true
+  },
+  "Epopeya del pueblo mexicano Diego Rivera": {
+    "none": true
+  },
+  "La creación y los frescos de la Secretaría de Educación Pública Diego Rivera": {
+    "none": true
+  },
+  "Seagram Building - Mies van der Rohe": {
+    "none": true
+  },
+  "Silla Wassily - Marcel Breuer": {
+    "none": true
+  },
+  "Pabellón de Alemania en Barcelona - Mies van der Rohe": {
+    "none": true
+  },
+  "Langosta, nasa y cola de pez Alexander Calder": {
+    "none": true
+  },
+  "The Steerage Alfred Stieglitz": {
+    "none": true
+  },
+  "Power House Mechanic Lewis Hine, y las fotografías del trabajo infantil": {
+    "none": true
+  },
+  "Derrière la gare Saint-Lazare Henri Cartier-Bresson": {
+    "none": true
+  },
+  "Los padres Käthe Kollwitz, , 1914 1932": {
+    "none": true
+  },
+  "Las columnas de la sociedad George Grosz, , 1926": {
+    "none": true
+  },
+  "Camarones Qi Baishi": {
+    "none": true
+  },
+  "Number 1, 1950 Jackson Pollock": {
+    "none": true
+  },
+  "No. 61 Mark Rothko": {
+    "none": true
+  },
+  "The Seasons Lee Krasner": {
+    "none": true
+  },
+  "Whaam! Roy Lichtenstein": {
+    "none": true
+  },
+  "Die Fahne hoch! Frank Stella": {
+    "none": true
+  },
+  "Untitled Donald Judd": {
+    "none": true
+  },
+  "Equivalent VIII Carl Andre": {
+    "none": true
+  },
+  "Saraband Morris Louis": {
+    "none": true
+  },
+  "Untitled Agnes Martin": {
+    "none": true
+  },
+  "Cut Piece Yoko Ono": {
+    "none": true
+  },
+  "Statements / Declaración de intenciones Lawrence Weiner": {
+    "none": true
+  },
+  "TV Buddha Nam June Paik": {
+    "none": true
+  },
+  "Rhythm 0 Marina Abramović": {
+    "none": true
+  },
+  "Shoot Chris Burden": {
+    "none": true
+  },
+  "Interior Scroll Carolee Schneemann": {
+    "none": true
+  },
+  "Seedbed Vito Acconci": {
+    "none": true
+  },
+  "A Sudden Gust of Wind Jeff Wall": {
+    "none": true
+  },
+  "99 Cent Andreas Gursky": {
+    "none": true
+  },
+  "Sunflower Seeds Ai Weiwei": {
+    "none": true
+  },
+  "Mama El Anatsui": {
+    "none": true
+  },
+  "My Boyfriend Came Back from the War Olia Lialina": {
+    "none": true
+  },
+  "The Weather Project Olafur Eliasson": {
+    "none": true
+  },
+  "%Location jodi.org / Jodi": {
+    "none": true
+  },
+  "Everydays: The First 5000 Days Beeple": {
+    "none": true
+  },
+  "Unsupervised Refik Anadol": {
+    "none": true
+  },
+  "Cabeza conmemorativa de un Oba con marfil": {
+    "none": true
+  },
+  "Coatlicue": {
+    "none": true
+  },
+  "El Lanzón de Chavín de Huántar": {
+    "none": true
+  },
+  "El espíritu de Haida Gwaii Tótem y obra monumental haida , de Bill Reid": {
+    "none": true
+  },
+  "Los moái de Rapa Nui": {
+    "none": true
+  },
+  "wharenui Casa de reunión maorí Aotearoa/Nueva Zelanda": {
+    "none": true
+  },
+  "Pintura rupestre de rayos X - Arnhem Land": {
+    "none": true
+  },
+  "Abaporu Tarsila do Amaral": {
+    "none": true
+  },
+  "La jungla Wifredo Lam": {
+    "none": true
+  },
+  "Kilwa Kisiwani: la Gran Mezquita y el palacio de Husuni Kubwa": {
+    "none": true
+  },
+  "Nuit de Noël de Malick Sidibé": {
+    "none": true
+  },
+  "Anyanwu de Ben Enwonwu": {
+    "none": true
+  },
+  "The Refusal of Time de William Kentridge": {
+    "none": true
+  },
+  "La jungla de Wifredo Lam": {
+    "none": true
+  },
+  "Ogou Feray de Hector Hyppolite": {
+    "none": true
+  },
+  "Templo de Oxalá de Rubem Valentim": {
+    "none": true
+  },
+  "A Subtlety, or the Marvelous Sugar Baby de Kara Walker": {
+    "none": true
+  },
+  "La Trinidad de Masaccio": {
+    "none": true
+  },
+  "Justiniano y su corte Mosaicos de , San Vitale de Rávena": {
+    "none": true
+  },
+  "Éxtasis de Santa Teresa de Gian Lorenzo Bernini": {
+    "none": true
+  },
+  "Puerto de mar con el embarco de la reina de Saba Claudio de Lorena, , 1648": {
+    "none": true
+  },
+  "Buda El de Bāmiyān y la conservación de lo perdido": {
+    "none": true
+  },
+  "Los mármoles del Partenón": {
+    "none": true
+  },
+  "toi moko Las cabezas tatuadas maoríes": {
+    "none": true
+  },
+  "Los Budas de Bamiyán": {
+    "none": true
+  }
 }

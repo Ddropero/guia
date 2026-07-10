@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { imagenPermitida, resolverOrigen, sanearMensajes } from "./index";
+import { imagenPermitida, proveedor, proveedorEfectivo, resolverOrigen, sanearMensajes } from "./index";
 
 function req(origin?: string): Request {
   const headers = new Headers();
@@ -61,6 +61,40 @@ describe("sanearMensajes", () => {
   it("recorta el contenido demasiado largo", () => {
     const out = sanearMensajes([{ role: "user", content: "a".repeat(5000) }]);
     expect(out[0].content.length).toBe(4000);
+  });
+});
+
+describe("proveedor", () => {
+  it("por defecto es anthropic", () => {
+    expect(proveedor({})).toBe("anthropic");
+    expect(proveedor({ TUTOR_PROVEEDOR: "" })).toBe("anthropic");
+    expect(proveedor({ TUTOR_PROVEEDOR: "claude" })).toBe("anthropic");
+  });
+
+  it("groq cuando TUTOR_PROVEEDOR lo indica (sin distinguir mayúsculas/espacios)", () => {
+    expect(proveedor({ TUTOR_PROVEEDOR: "groq" })).toBe("groq");
+    expect(proveedor({ TUTOR_PROVEEDOR: "  GROQ " })).toBe("groq");
+  });
+});
+
+describe("proveedorEfectivo (híbrido)", () => {
+  const groq = { TUTOR_PROVEEDOR: "groq" };
+
+  it("Groq sin imagen se queda en Groq", () => {
+    expect(proveedorEfectivo({ ...groq, ANTHROPIC_API_KEY: "k" }, false)).toBe("groq");
+  });
+
+  it("Groq con imagen + clave de Anthropic → Claude (visión real)", () => {
+    expect(proveedorEfectivo({ ...groq, ANTHROPIC_API_KEY: "k" }, true)).toBe("anthropic");
+  });
+
+  it("Groq con imagen pero SIN clave de Anthropic → se queda en Groq (texto)", () => {
+    expect(proveedorEfectivo(groq, true)).toBe("groq");
+  });
+
+  it("Con base Anthropic siempre Anthropic", () => {
+    expect(proveedorEfectivo({ ANTHROPIC_API_KEY: "k" }, false)).toBe("anthropic");
+    expect(proveedorEfectivo({ ANTHROPIC_API_KEY: "k" }, true)).toBe("anthropic");
   });
 });
 

@@ -85,6 +85,12 @@ export default function CursoHome() {
               >
                 📅 Línea de tiempo
               </Link>
+              <Link
+                href="/curso/apoya"
+                className="inline-flex items-center gap-2 rounded-md border border-line px-4 py-2 text-sm text-muted transition hover:border-accent hover:text-fg"
+              >
+                ♡ Apoyar
+              </Link>
             </div>
             <GestionProgreso />
           </div>
