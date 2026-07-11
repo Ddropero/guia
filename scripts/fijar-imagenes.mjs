@@ -39,6 +39,23 @@ const COMMONS = "https://commons.wikimedia.org/w/api.php";
 const WIKIDATA = "https://www.wikidata.org/w/api.php";
 const ANCHO = 1024;
 
+// Falsos positivos detectados en la revisión del primer dry-run: el resolutor
+// acertó el NOMBRE pero cogió el objeto equivocado (homónimos de Wikidata o
+// títulos demasiado genéricos). Se dejan en blanco a propósito.
+const EXCLUIR = new Set([
+  "La Trinidad", // → juego de comunión en Auckland (título genérico)
+  "La Trinidad de Masaccio", // → ídem
+  "Olympia Édouard Manet", // → la ciudad de Olympia, Washington
+  "Camarones Qi Baishi", // → foto de un camarón (la especie)
+  "La jungla Wifredo Lam", // → portada de la novela "The Jungle" (Upton Sinclair)
+  "La jungla de Wifredo Lam", // → ídem
+  "Mama El Anatsui", // → una iglesia del pueblo de Mama, Yucatán
+  "The Seasons Lee Krasner", // → frontispicio de un libro
+  "Whaam! Roy Lichtenstein", // → retrato del artista, no la obra
+  "Shoot Chris Burden", // → foto de tiro deportivo
+  "Statements / Declaración de intenciones Lawrence Weiner", // → obra de Joseph Kosuth
+]);
+
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const stripHtml = (s) => (s || "").replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
 const IMG_MIME = /^image\/(jpeg|png|tiff|gif|webp)$/;
@@ -175,8 +192,13 @@ async function main() {
   const pendientes = Object.keys(cand).filter((q) => override[q]?.none === true);
   console.log(`Obras blanqueadas con candidato: ${pendientes.length}${DRY ? "  (dry-run)" : ""}`);
 
-  let fijadas = 0, sinSuerte = 0;
+  let fijadas = 0, sinSuerte = 0, excluidas = 0;
   for (const q of pendientes) {
+    if (EXCLUIR.has(q)) {
+      excluidas++;
+      console.log(`  ✗ ${q} — excluida (falso positivo, se queda en blanco)`);
+      continue;
+    }
     const c = cand[q];
     let r = null;
     try {
@@ -200,7 +222,9 @@ async function main() {
   if (!DRY) {
     fs.writeFileSync(F_OVERRIDE, JSON.stringify(override, null, 2) + "\n");
   }
-  console.log(`\nFijadas: ${fijadas}  ·  sin suerte: ${sinSuerte}  ·  total: ${pendientes.length}`);
+  console.log(
+    `\nFijadas: ${fijadas}  ·  sin suerte: ${sinSuerte}  ·  excluidas: ${excluidas}  ·  total: ${pendientes.length}`,
+  );
   console.log(DRY ? "(dry-run: no se escribió nada)" : `Escrito ${path.relative(RAIZ, F_OVERRIDE)}`);
   console.log("Revisa el resultado en /curso/revisar y despliega cuando estés conforme.");
 }
