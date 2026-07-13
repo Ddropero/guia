@@ -61,7 +61,7 @@ Estado: ⬜ pendiente · 🟡 en curso · ✅ hecho (con evidencia).
 |---|---|---|
 | 1 | Integridad de imágenes y licencias (P0) | 🟡 en curso |
 | 2 | Contenido y evaluación | ⬜ |
-| 3 | Seguridad del tutor (P0) | ⬜ |
+| 3 | Seguridad del tutor (P0) | 🟡 en curso |
 | 4 | Privacidad y seguridad web | ⬜ |
 | 5 | Accesibilidad WCAG 2.2 AA | ⬜ |
 | 6 | UX de aprendizaje | ⬜ |
@@ -70,6 +70,36 @@ Estado: ⬜ pendiente · 🟡 en curso · ✅ hecho (con evidencia).
 | 9 | Producto y monetización | ⬜ |
 
 _(Cada fase se detalla más abajo a medida que avanza.)_
+
+### Fase 3 — Seguridad del tutor (en curso)
+
+**Hecho y verificado** (`4a6b3e8`, `4139fcc`):
+
+- **3B — Corpus del servidor**: `workers/tutor/src/corpus.json` (86 lecciones +
+  446 obras con imagen), generado en build y bundleado en el Worker (230 KB gzip).
+- **3A/3C — Contrato + contexto server-side**: `{ lessonId, mode, messages,
+  workId? }`. El cliente ya **no** envía el contexto de la lección ni URLs de
+  imagen: el Worker lo resuelve del corpus. Instrucción anti-inyección en el
+  sistema.
+- **3D — Body por bytes**: rechazo >50 KB aunque no haya `Content-Length`.
+- **3E — Validación estricta**: `validarPeticion()` (modo, 1..10 mensajes,
+  ≤4000 chars, alternancia user…user, lessonId existente).
+- **3H — Rate limits fail-closed**: sin bindings → 503.
+- **3K — Visión solo por workId del catálogo**: nunca una URL del cliente; un
+  workId no catalogado se ignora (sin visión).
+- **3L/3M — Errores genéricos con requestId + logs JSON** sin prompts/texto/IP.
+- **3N — Kill switch** `TUTOR_KILL=1` + health check.
+- **3O — Pruebas** de esquema y guardias del handler (origin, fail-closed,
+  429, 413, 400, kill). Worker: 35 tests; total 86.
+
+**Pendiente en Fase 3 (gating de lanzamiento de PAGO):**
+
+- 3G — Token de sesión firmado de corta duración + Turnstile (anti-bot). No es
+  identidad de usuario.
+- 3I — Presupuesto GLOBAL exacto / circuit breaker (el Rate Limiting de
+  Cloudflare es local por datacenter). **Hasta tenerlo, el lanzamiento de pago
+  queda bloqueado** (decisión explícita del spec).
+- 3J — Cuotas por sesión/usuario y por proveedor; separar texto y visión.
 
 ### Fase 1 — Integridad de imágenes y licencias (en curso)
 
