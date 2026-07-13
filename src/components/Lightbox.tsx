@@ -10,6 +10,9 @@ interface ObraVisor {
   wiki: string;
   credito: string;
   licencia: string;
+  licenciaUrl: string;
+  fuente: string;
+  cambios: string;
   fecha: string;
   ubicacion: string;
 }
@@ -24,6 +27,9 @@ function leerObra(el: HTMLElement): ObraVisor {
     wiki: d.wiki ?? "",
     credito: d.credito ?? "",
     licencia: d.licencia ?? "",
+    licenciaUrl: d.licenciaUrl ?? "",
+    fuente: d.fuente ?? "",
+    cambios: d.cambios ?? "",
     fecha: d.fecha ?? "",
     ubicacion: d.ubicacion ?? "",
   };
@@ -195,8 +201,37 @@ export default function Lightbox() {
             </p>
           )}
           <p className="mt-1 text-xs text-white/50">
-            {obra.credito ? `Imagen: ${obra.credito}` : "Imagen"}
-            {obra.licencia ? ` · ${obra.licencia}` : ""} · Wikimedia
+            Imagen:{obra.credito ? ` ${obra.credito} ·` : ""}{" "}
+            {obra.fuente ? (
+              <a
+                href={obra.fuente}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline decoration-white/30 hover:text-white/80"
+              >
+                Wikimedia Commons
+              </a>
+            ) : (
+              "Wikimedia Commons"
+            )}
+            {obra.licencia && (
+              <>
+                {" · "}
+                {obra.licenciaUrl ? (
+                  <a
+                    href={obra.licenciaUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-white/30 hover:text-white/80"
+                  >
+                    {obra.licencia}
+                  </a>
+                ) : (
+                  obra.licencia
+                )}
+              </>
+            )}
+            {obra.cambios ? ` · ${obra.cambios}` : ""}
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-2">

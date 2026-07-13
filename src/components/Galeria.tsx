@@ -1,4 +1,11 @@
-import { fullDe, imagenDe, wikipediaBuscar, wikipediaDe, type Obra } from "@/lib/obras";
+import {
+  fullDe,
+  imagenDe,
+  manifiestoImagen,
+  wikipediaBuscar,
+  wikipediaDe,
+  type Obra,
+} from "@/lib/obras";
 
 /**
  * Galería de las obras comentadas en una lección.
@@ -15,6 +22,12 @@ export default function Galeria({ obras }: { obras: Obra[] }) {
         const img = imagenDe(o.q);
         const wiki = wikipediaDe(o.q);
         const enlaceObra = wiki?.url ?? wikipediaBuscar(o.q);
+        const man = img ? manifiestoImagen(o.q) : null;
+        const fuente = man?.sourceUrl || img?.enlace || "";
+        const licName = man?.licenseName || img?.licencia || "";
+        const licUrl = man?.licenseUrl || "";
+        const creador = man?.creador || img?.credito || "";
+        const cambios = man?.cambios || "";
         return (
           <li
             key={i}
@@ -29,8 +42,11 @@ export default function Galeria({ obras }: { obras: Obra[] }) {
                 data-thumb={img.thumb}
                 data-full={fullDe(img.thumb)}
                 data-wiki={enlaceObra}
-                data-credito={img.credito ?? ""}
-                data-licencia={img.licencia ?? ""}
+                data-credito={creador}
+                data-licencia={licName}
+                data-licencia-url={licUrl}
+                data-fuente={fuente}
+                data-cambios={cambios}
                 data-fecha={o.fecha ?? ""}
                 data-ubicacion={o.ubicacion ?? ""}
                 target="_blank"
@@ -64,8 +80,29 @@ export default function Galeria({ obras }: { obras: Obra[] }) {
               >
                 {wiki ? "Ver en Wikipedia ↗" : "Buscar en Wikipedia ↗"}
               </a>
-              {img?.licencia && (
-                <span className="text-[10px] text-muted/70">imagen: {img.licencia} · Wikimedia</span>
+              {img && (
+                <span className="text-[10px] text-muted/70">
+                  imagen:{creador ? ` ${creador} ·` : ""}{" "}
+                  {fuente ? (
+                    <a href={fuente} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      Wikimedia Commons
+                    </a>
+                  ) : (
+                    "Wikimedia Commons"
+                  )}
+                  {licName && (
+                    <>
+                      {" · "}
+                      {licUrl ? (
+                        <a href={licUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                          {licName}
+                        </a>
+                      ) : (
+                        licName
+                      )}
+                    </>
+                  )}
+                </span>
               )}
             </div>
           </li>
