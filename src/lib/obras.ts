@@ -63,6 +63,16 @@ const WIKIDATA = cargar<Record<string, WikidataObra>>("obras-wikidata.json", {})
 //   { "<q>": { "none": true } }                          → forzar sin imagen (la automática era errónea)
 //   { "<q>": { "thumb": "...", "licencia": "...", ... } } → fijar una imagen concreta
 const OVERRIDE = cargar<Record<string, ImagenObra>>("obras-imagenes-override.json", {});
+// Imágenes RECHAZADAS (obras-imagenes-rechazadas.json): se comprobó que NO
+// corresponden a la obra. Máxima autoridad: imagenDe() devuelve null para estas,
+// aunque una regeneración de datos vuelva a proponer una imagen. Es la red de
+// seguridad de integridad visual (P0) contra falsos positivos conocidos.
+interface Rechazada {
+  status: "rejected";
+  motivo?: string;
+}
+const RECHAZADAS =
+  cargar<{ obras?: Record<string, Rechazada> }>("obras-imagenes-rechazadas.json", {}).obras ?? {};
 
 export function getObras(moduloId: string, slug: string): Obra[] {
   return OBRAS[`${moduloId}/${slug}`] ?? [];
@@ -73,11 +83,22 @@ export function getOverridesImagenes(): Record<string, ImagenObra> {
   return OVERRIDE;
 }
 
+/** Motivo del rechazo de una imagen, si la obra está en la lista de rechazadas. */
+export function imagenRechazada(q: string): { motivo?: string } | null {
+  return RECHAZADAS[q] ?? null;
+}
+
+/** Registro completo de imágenes rechazadas (para pruebas y validador CI). */
+export function getRechazadas(): Record<string, { status: string; motivo?: string }> {
+  return RECHAZADAS;
+}
+
 /**
  * Miniatura libre de la obra (con `thumb` garantizado). Precedencia:
  * curación manual (override) → Wikidata (P18, verificado) → Wikimedia Commons.
  */
 export function imagenDe(q: string): (ImagenObra & { thumb: string }) | null {
+  if (RECHAZADAS[q]) return null; // imagen conocida como errónea → nunca se publica
   const ov = OVERRIDE[q];
   if (ov) {
     if (ov.none || !ov.thumb) return null; // curado como "sin imagen"
@@ -115,6 +136,7 @@ export function imagenesMostradas(): ImagenMostrada[] {
   }
   const out: ImagenMostrada[] = [];
   for (const [q, o] of ficha) {
+    if (RECHAZADAS[q]) continue; // imagen rechazada → no se muestra
     const ov = OVERRIDE[q];
     let thumb: string | undefined;
     let fuente: ImagenMostrada["fuente"];
