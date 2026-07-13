@@ -23,12 +23,14 @@ export const metadata: Metadata = {
 };
 
 import PieCurso from "@/components/PieCurso";
+import EstadoConexion from "@/components/EstadoConexion";
 
 export default function CursoLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-screen flex-col">
       <div className="flex-1">{children}</div>
       <PieCurso />
+      <EstadoConexion />
     </div>
   );
 }

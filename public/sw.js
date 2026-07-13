@@ -10,11 +10,11 @@
 // El progreso del alumno vive en localStorage (no se toca aquí). Solo el tutor
 // necesita red, y vive en otro origen (Worker aparte), que NO interceptamos.
 
-const CACHE = "historia-v1";
-const FALLBACK = "/curso"; // página de reserva cuando se navega offline
+const CACHE = "historia-v2";
+const OFFLINE = "/curso/sin-conexion"; // página amable cuando se navega offline a algo no cacheado
 
 // Mínimo a precachear para que la app arranque sin conexión.
-const PRECACHE = [FALLBACK];
+const PRECACHE = ["/curso", OFFLINE];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -70,8 +70,9 @@ async function networkFirst(request) {
   } catch {
     const enCache = await cache.match(request);
     if (enCache) return enCache;
-    const reserva = await cache.match(FALLBACK);
-    if (reserva) return reserva;
+    // Página offline amable (precacheada) en vez de texto plano.
+    const offline = await cache.match(OFFLINE);
+    if (offline) return offline;
     return new Response("Sin conexión", {
       status: 503,
       headers: { "Content-Type": "text/plain; charset=utf-8" },
