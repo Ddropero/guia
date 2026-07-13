@@ -11,6 +11,7 @@ import { marked } from "marked";
 import { fullDe, imagenDe, manifiestoImagen, wikipediaBuscar, wikipediaDe } from "@/lib/obras";
 import { getGlosario } from "@/lib/glosario";
 import { enlazarGlosario, slugTermino } from "@/lib/glosario-enlaces";
+import { sanitizarHtml } from "@/lib/sanitizar";
 
 marked.setOptions({ gfm: true, breaks: false });
 
@@ -175,7 +176,8 @@ function inyectarObras(md: string): string {
 
 /** Renderiza Markdown a HTML reescribiendo los enlaces internos .md a rutas del sitio. */
 function render(md: string, baseRelDir: string): string {
-  const html = marked.parse(md) as string;
+  // Sanitiza la salida de marked (defensa en profundidad; marked@14 no sanitiza).
+  const html = sanitizarHtml(marked.parse(md) as string);
   return html.replace(/href="([^"]+)"/g, (full, target: string) => {
     if (/^(https?:|mailto:|#|\/)/i.test(target)) return full; // externo/ancla/absoluto
     if (!/\.md(#|$)/i.test(target)) return full;

@@ -69,6 +69,17 @@ for (const file of archivos) {
   if (enModulo && /^\d+-/.test(nombre) && nombre !== "00-modulo.md") {
     if (!/^#\s+.+/m.test(md)) problemas.push(`sin título H1: ${rel}`);
   }
+
+  // 3. HTML peligroso crudo en el fuente (defensa temprana de XSS, antes de
+  //    renderizar). Se ignoran los bloques de código (marked los escapa).
+  const sinCodigo = md.replace(/```[\s\S]*?```/g, " ").replace(/`[^`]*`/g, " ");
+  const PELIGROSOS = [
+    /<script\b/i, /<iframe\b/i, /<object\b/i, /<embed\b/i, /<svg\b/i,
+    /<style\b/i, /<form\b/i, /<noscript\b/i, /\son[a-z]+\s*=\s*["']/i,
+  ];
+  for (const pat of PELIGROSOS) {
+    if (pat.test(sinCodigo)) problemas.push(`HTML peligroso en ${rel}: ${pat.source}`);
+  }
 }
 
 if (problemas.length) {
