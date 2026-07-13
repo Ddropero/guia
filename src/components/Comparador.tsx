@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useFocoModal } from "@/lib/foco-modal";
 
 /**
  * Comparador de obras: permite FIJAR hasta 2 obras y verlas lado a lado.
@@ -154,6 +155,9 @@ export default function Comparador() {
     setAbierto(false);
   }
 
+  const dialogRef = useRef<HTMLDivElement>(null);
+  useFocoModal(abierto, dialogRef);
+
   if (!listo || fijadas.length === 0) return null;
 
   return (
@@ -210,10 +214,12 @@ export default function Comparador() {
       {/* Overlay a pantalla completa: las 2 obras enfrentadas */}
       {mostrarOverlay && (
         <div
+          ref={dialogRef}
+          tabIndex={-1}
           role="dialog"
           aria-modal="true"
           aria-label="Comparación de obras"
-          className="fixed inset-0 z-50 flex flex-col bg-bg/95 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex flex-col bg-bg/95 outline-none backdrop-blur-sm"
           onClick={() => setAbierto(false)}
         >
           {/* Barra superior */}

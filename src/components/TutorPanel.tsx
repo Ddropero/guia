@@ -53,8 +53,17 @@ export default function TutorPanel({ lessonId }: Props) {
 
   const modoActual = MODOS.find((m) => m.id === modo)!;
 
+  // Respeta prefers-reduced-motion en los desplazamientos automáticos (WCAG 2.3.3).
+  const comportamientoScroll = (): ScrollBehavior =>
+    typeof window !== "undefined" &&
+    window.matchMedia?.("(prefers-reduced-motion: reduce)").matches
+      ? "auto"
+      : "smooth";
+
   function scrollAbajo() {
-    requestAnimationFrame(() => finRef.current?.scrollIntoView({ behavior: "smooth", block: "end" }));
+    requestAnimationFrame(() =>
+      finRef.current?.scrollIntoView({ behavior: comportamientoScroll(), block: "end" }),
+    );
   }
 
   // Ref siempre apuntando a la última `enviar` (evita closure obsoleta en el listener).
@@ -72,7 +81,7 @@ export default function TutorPanel({ lessonId }: Props) {
       const wid = typeof workId === "string" ? workId : null;
       setModo("socratico");
       if (wid && img) setObraVista({ workId: wid, imagen: img, titulo: t });
-      asideRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      asideRef.current?.scrollIntoView({ behavior: comportamientoScroll(), block: "start" });
       const arranque = wid
         ? `Estoy mirando ${obra}, que tienes a la vista en esta conversación. Guíame paso a paso, con preguntas, para aprender a mirarla: empieza pidiéndome que describa lo que veo.`
         : `Quiero analizar ${obra} de esta lección. Guíame paso a paso, con preguntas, para aprender a mirarla por mí mismo.`;
@@ -177,10 +186,11 @@ export default function TutorPanel({ lessonId }: Props) {
             <button
               key={m.id}
               onClick={() => setModo(m.id)}
+              aria-pressed={modo === m.id}
               className={`rounded-full px-3 py-1 text-xs transition ${
                 modo === m.id
                   ? "bg-accent text-bg"
-                  : "border border-line text-muted hover:text-fg"
+                  : "border border-control text-muted hover:text-fg"
               }`}
             >
               {m.etiqueta}
@@ -205,7 +215,12 @@ export default function TutorPanel({ lessonId }: Props) {
         )}
       </div>
 
-      <div className="flex-1 space-y-3 overflow-y-auto p-4">
+      <div
+        role="log"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="flex-1 space-y-3 overflow-y-auto p-4"
+      >
         {mensajes.length === 0 && (
           <button
             onClick={() => enviar(modoActual.arranque)}
@@ -226,7 +241,11 @@ export default function TutorPanel({ lessonId }: Props) {
             {m.content || (cargando && i === mensajes.length - 1 ? "…" : "")}
           </div>
         ))}
-        {error && <p className="text-sm text-warn">{error}</p>}
+        {error && (
+          <p role="alert" className="text-sm text-warn">
+            {error}
+          </p>
+        )}
         <div ref={finRef} />
       </div>
 
@@ -251,7 +270,7 @@ export default function TutorPanel({ lessonId }: Props) {
           placeholder="Escribe tu mensaje…"
           aria-label="Escribe tu pregunta al tutor de IA"
           disabled={cargando}
-          className="min-w-0 flex-1 rounded-md border border-line bg-bg px-3 py-2 text-sm text-fg outline-none placeholder:text-muted focus:border-accent"
+          className="min-w-0 flex-1 rounded-md border border-control bg-bg px-3 py-2 text-sm text-fg outline-none placeholder:text-muted focus:border-accent"
         />
         <button
           type="submit"

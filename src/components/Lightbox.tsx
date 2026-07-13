@@ -1,6 +1,7 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { useFocoModal } from "@/lib/foco-modal";
 
 interface ObraVisor {
   workId: string;
@@ -111,6 +112,9 @@ export default function Lightbox() {
     };
   }, [idx, cerrar, mover]);
 
+  const dialogRef = useRef<HTMLDivElement>(null);
+  useFocoModal(idx != null, dialogRef);
+
   const obra = idx == null ? null : (obras[idx] ?? null);
   if (idx == null || !obra) return null;
 
@@ -127,10 +131,12 @@ export default function Lightbox() {
 
   return (
     <div
+      ref={dialogRef}
+      tabIndex={-1}
       role="dialog"
       aria-modal="true"
       aria-label={`Obra: ${obra.titulo}`}
-      className="fixed inset-0 z-50 flex flex-col bg-black/90 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex flex-col bg-black/90 outline-none backdrop-blur-sm"
       onClick={cerrar}
     >
       {/* Barra superior */}
