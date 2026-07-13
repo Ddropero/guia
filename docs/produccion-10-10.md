@@ -59,7 +59,7 @@ Estado: ⬜ pendiente · 🟡 en curso · ✅ hecho (con evidencia).
 
 | Fase | Título | Estado |
 |---|---|---|
-| 1 | Integridad de imágenes y licencias (P0) | 🟡 |
+| 1 | Integridad de imágenes y licencias (P0) | 🟡 en curso |
 | 2 | Contenido y evaluación | ⬜ |
 | 3 | Seguridad del tutor (P0) | ⬜ |
 | 4 | Privacidad y seguridad web | ⬜ |
@@ -70,3 +70,33 @@ Estado: ⬜ pendiente · 🟡 en curso · ✅ hecho (con evidencia).
 | 9 | Producto y monetización | ⬜ |
 
 _(Cada fase se detalla más abajo a medida que avanza.)_
+
+### Fase 1 — Integridad de imágenes y licencias (en curso)
+
+**Hecho y verificado:**
+
+- **1C — Registro de rechazadas + regresión** (`b56d6ad`). Nuevo
+  `src/data/obras-imagenes-rechazadas.json`: máxima autoridad en `imagenDe()` y
+  `imagenesMostradas()` → esas obras nunca publican imagen, aunque una
+  regeneración de datos vuelva a proponer una. Cubre los 10 falsos positivos del
+  spec. **Detectó y bloqueó 3 imágenes erróneas que aún se publicaban** (no
+  estaban blanqueadas): Siluetas de Ana Mendieta → una jirafa; Placas de latón
+  del palacio de Benín (2 claves) → un retrato de un antipapa. Cobertura 315→312.
+  Pruebas de regresión en `src/lib/obras.test.ts` (build limpio confirma que las
+  URLs erróneas ya no están en el HTML). 65 tests.
+
+**Pendiente en Fase 1:**
+
+- 1A/1B — Manifiesto con `status: pending|verified|rejected` + TASL completo, y
+  **dejar de publicar lo no `verified`**. Decisión con impacto visible: hoy hay
+  **0 imágenes verificadas por humano**, así que aplicar el gate esconde todas
+  las imágenes hasta revisión. Se implementará el manifiesto y el gate en la
+  rama (no se despliega), con la promoción `pending→verified` vía la interfaz de
+  revisión interna (tras flag de build). Requiere sign-off humano antes de
+  publicar.
+- 1D — Sustituir el token único de `relevante()` por validación múltiple
+  (QID+título+autor+fecha+colección+tipo). El verificador `fijar-imagenes.mjs` ya
+  hace parte (QID/P18, licencia libre); falta endurecer y unificar.
+- 1F — Atribución TASL unificada en tarjeta/figura/lightbox.
+- 1H — Validador CI que falle si se renderiza algo no `verified` o sin TASL
+  (parcialmente cubierto: el test ya falla si se renderiza una rechazada).

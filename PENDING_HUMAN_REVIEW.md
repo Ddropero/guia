@@ -7,6 +7,23 @@ lleva firma de revisor: no se inventan revisores ni resultados de auditoría.
 Convención: cada ítem tiene un `id`, el motivo, y queda `needs_human_review`
 hasta que una persona lo valide (y registre quién y cuándo, a mano).
 
+## Imágenes rechazadas que necesitan reemplazo verificado (Fase 1C)
+
+Estas obras tienen la imagen automática marcada `rejected` (mostraba otra cosa) y
+hoy **no muestran nada**. Un humano debe buscar y verificar una imagen libre
+correcta, o dejarlas sin imagen:
+
+- El hombre de León (Löwenmensch) — mostraba un mural de Orozco
+- Cabeza de Warka — mostraba un mapa de Uruk
+- Aguamanil celadón de Goryeo — mostraba realeza española
+- Ciclo de María de Médici (Rubens) — mostraba un presidente brasileño
+- Versalles, Galería de los Espejos — mostraba un barrio de Buenos Aires
+- Siluetas de Ana Mendieta — mostraba una jirafa
+- Seedbed (Acconci) — mostraba un semillero agrícola
+- Placas de latón del palacio de Benín (2 fichas) — mostraba un antipapa
+- Anyanwu (Ben Enwonwu) — mostraba a una política nigeriana
+- Justiniano y su corte (San Vitale) — mostraba a un historietista
+
 ## Integridad de imágenes (Fase 1)
 
 - Las imágenes recuperadas automáticamente por `scripts/fijar-imagenes.mjs`
