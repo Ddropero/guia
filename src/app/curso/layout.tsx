@@ -22,6 +22,13 @@ export const metadata: Metadata = {
   },
 };
 
+import PieCurso from "@/components/PieCurso";
+
 export default function CursoLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <div className="flex min-h-screen flex-col">
+      <div className="flex-1">{children}</div>
+      <PieCurso />
+    </div>
+  );
 }

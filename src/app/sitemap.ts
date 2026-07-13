@@ -31,6 +31,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["logros", "monthly", 0.3],
     ["apoya", "monthly", 0.5],
     ["privacidad", "yearly", 0.3],
+    ["cookies", "yearly", 0.2],
+    ["terminos", "yearly", 0.2],
   ];
   for (const [slug, changeFrequency, priority] of extra) {
     urls.push({ url: `${SITE_URL}/curso/${slug}`, changeFrequency, priority });
