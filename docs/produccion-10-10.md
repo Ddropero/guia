@@ -61,16 +61,47 @@ Estado: ⬜ pendiente · 🟡 en curso · ✅ hecho (con evidencia).
 | Fase | Título | Estado |
 |---|---|---|
 | 1 | Integridad de imágenes y licencias (P0) | 🟡 en curso |
-| 2 | Contenido y evaluación | ⬜ |
+| 2 | Contenido y evaluación | 🟡 en curso |
 | 3 | Seguridad del tutor (P0) | 🟡 en curso |
-| 4 | Privacidad y seguridad web | ⬜ |
-| 5 | Accesibilidad WCAG 2.2 AA | ⬜ |
+| 4 | Privacidad y seguridad web | 🟡 en curso |
+| 5 | Accesibilidad WCAG 2.2 AA | 🟡 auditada |
 | 6 | UX de aprendizaje | ⬜ |
 | 7 | Rendimiento y PWA | ⬜ |
-| 8 | SEO y despliegue | ⬜ |
+| 8 | SEO y despliegue | 🟡 auditada |
 | 9 | Producto y monetización | ⬜ |
 
 _(Cada fase se detalla más abajo a medida que avanza.)_
+
+### Auditoría multi-agente (fases 2/4/5/8)
+
+Workflow `auditoria-10-10`: 4 agentes Sonnet en paralelo (solo lectura, 0
+errores) auditaron contenido, privacidad/seguridad web, accesibilidad y SEO.
+Hallazgos con ubicación exacta; los accionables se integran abajo. Resultado
+crudo en el journal del workflow (no versionado).
+
+### Fase 2 — Contenido (en curso) — `b3cd419`
+
+Correcciones de la auditoría: Joseon (superlativo sin fuente retirado), tarro de
+la luna (dimensión errónea corregida), cierre de 11.08 (ya no cierra el módulo),
+conteos (README 86; docs 527/508). Marcadas en `PENDING_HUMAN_REVIEW.md`.
+**Pendiente:** tabla de especificaciones (competencia×lección), ampliar banco
+interactivo, citas trazables.
+
+### Fase 4 — Privacidad y seguridad web (en curso)
+
+- **4E/4F — Sanitización + guard XSS** (`b4e164f`): `src/lib/sanitizar.ts`
+  aplicado en `render()` (marked@14 no sanitiza) + guard en `validar-contenido`
+  que falla el build si hay HTML peligroso en el `.md` fuente. 6 pruebas XSS.
+- **4G — Cabeceras** (`99270b7`): CSP + nosniff + Referrer/Permissions-Policy +
+  HSTS + X-Frame-Options en el Worker de historia (scoped). Nota: `'unsafe-inline'`
+  es inevitable en Next export → la CSP es defensa en profundidad; la
+  sanitización es la mitigación real de XSS.
+- **4A/4B/4C — Página `/curso/privacidad`** (`0179989`): divulgaciones factuales
+  verificadas (Groq/Anthropic/Cloudflare, sin cookies, localStorage) con banner
+  de borrador pendiente de revisión legal; aviso de datos personales junto al
+  input del tutor.
+- **Pendiente:** páginas separadas de cookies/términos + footer global; revisión
+  legal humana; actualizar deps mínimamente (sin `--force`).
 
 ### Fase 3 — Seguridad del tutor (en curso)
 
