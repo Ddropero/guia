@@ -65,10 +65,10 @@ Estado: ⬜ pendiente · 🟡 en curso · ✅ hecho (con evidencia).
 | 3 | Seguridad del tutor (P0) | 🟡 en curso |
 | 4 | Privacidad y seguridad web | 🟡 en curso |
 | 5 | Accesibilidad WCAG 2.2 AA | 🟡 en curso |
-| 6 | UX de aprendizaje | ⬜ |
-| 7 | Rendimiento y PWA | ⬜ |
+| 6 | UX de aprendizaje | 🟡 en curso |
+| 7 | Rendimiento y PWA | 🟡 en curso |
 | 8 | SEO y despliegue | 🟡 en curso |
-| 9 | Producto y monetización | ⬜ |
+| 9 | Producto y monetización | 🟡 auditada (diseño) |
 
 _(Cada fase se detalla más abajo a medida que avanza.)_
 
@@ -120,6 +120,39 @@ Playwright + axe y checklist manual (no se declara «cero violaciones» sin corr
 (regla 8); sitemap amplía obras/cronología/repaso/logros/apoya/privacidad; robots
 `Disallow /curso/revisar`; dashboard de costos `/` con `noindex`. **Pendiente:**
 separar dashboard de costos del producto (route groups o apps); `og:image`.
+
+### Auditoría multi-agente B (fases 6/7/9)
+
+Workflow `auditoria-10-10-b`: 3 agentes Sonnet (solo lectura, 0 errores)
+auditaron UX, rendimiento/PWA y monetización. Integrados los hallazgos aditivos
+y de bajo riesgo; el resto queda documentado como pendiente.
+
+### Fase 6 — UX de aprendizaje (en curso) — `ccdaf47`
+
+Anclas `id` en h2/h3 (deep-link + TOC); tiempo estimado de lectura ("≈ N min");
+botón **Borrar progreso** (+ `borrar()`) que hace veraz la página de privacidad.
+**Pendiente:** selector de rutas (exprés/completa/temática/docente); búsqueda
+global (índice compacto); mostrar objetivos como checklist; descripciones de
+lección en la lista del módulo (y quitar la lista duplicada); guardar posición de
+scroll.
+
+### Fase 7 — Rendimiento y PWA (en curso) — `ccdaf47`
+
+`srcset`/`sizes` en galería y figura (thumb320/640/960 del manifiesto); primera
+imagen de galería `eager`+`fetchPriority`; `preconnect` a Wikimedia. **Pendiente:**
+paginar/virtualizar `/curso/obras`, `/curso/repaso`, `/curso/revisar` (hoy
+embeben el catálogo); página offline real + "descargar módulo" + indicador de
+estado; presupuesto de tamaño en CI; **medir** CWV (no se afirman sin datos).
+
+### Fase 9 — Producto y monetización (diseño, sin activar)
+
+Auditada. Hallazgos: hoy solo hay RUM agregado de Cloudflare (sin eventos de
+producto); esquema propuesto de 7 eventos agregados sin PII y sus puntos de
+enganche; feature flags por env/config (patrón de `apoyo.ts`); esbozos (sin
+implementar ni precios) de Plus/Docente Pro/piloto; el certificado actual es
+honestamente autoevaluado; unit economics "medibles pero no medidos". Todo lo de
+negocio/precio queda `needs_human_review`. **No se implementa cobro ni
+instrumentación en esta fase** (requiere decisiones de producto).
 
 ### Fase 3 — Seguridad del tutor (en curso)
 
