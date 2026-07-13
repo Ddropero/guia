@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 type Modo = "chat" | "socratico" | "quiz";
@@ -229,6 +230,14 @@ export default function TutorPanel({ lessonId }: Props) {
         <div ref={finRef} />
       </div>
 
+      <p className="border-t border-line px-3 pt-2 text-[11px] text-muted">
+        No compartas nombres, teléfonos, correos u otros datos personales: tus
+        mensajes se envían a un proveedor de IA para generar la respuesta.{" "}
+        <Link href="/curso/privacidad" className="underline hover:text-fg">
+          Privacidad
+        </Link>
+        .
+      </p>
       <form
         onSubmit={(e) => {
           e.preventDefault();
