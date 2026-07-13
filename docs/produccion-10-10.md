@@ -194,3 +194,82 @@ separar dashboard de costos del producto (route groups o apps); `og:image`.
   (QID/P18 + licencia libre).
 - 1G — Interfaz de revisión interna (promover pending→verified) tras flag de
   build, fuera de producción.
+
+---
+
+## Informe final (provisional)
+
+Provisional: las fases 6/7/9 se están auditando; se actualizará al integrarlas.
+Rama `claude/art-history-10-10`, PR #9. Cambios vs `main`: **44 archivos**
+(18 nuevos, 26 modificados). Todo el trabajo está en la rama; **nada desplegado**.
+
+### Estado por fase (resumen)
+
+- **P0 — Fase 1 (integridad visual):** 1A/1B/1C/1F/1H hechos y verificados
+  (rechazadas + regresión, manifiesto + gate tras flag, TASL enlazado, validador
+  CI). Pendiente menor: 1D, 1G.
+- **P0 — Fase 3 (seguridad del tutor):** A/B/C/D/E/H/K/L/M/N/O hechos (contrato
+  por IDs, corpus en el Worker, validación estricta, body por bytes, rate-limits
+  fail-closed, visión solo por catálogo, logs sin PII, kill switch, pruebas).
+  Pendiente (gating de pago): 3G, 3I, 3J.
+- **Fase 2 (contenido):** correcciones del audit aplicadas. Pendiente: tabla de
+  especificaciones, ampliar banco, citas trazables.
+- **Fase 4 (privacidad/seguridad web):** sanitización + guard XSS, cabeceras
+  (CSP…), páginas privacidad/cookies/términos + footer. Pendiente: revisión
+  legal, actualización de deps.
+- **Fase 5 (accesibilidad):** foco de modales, radios de cuestionario, ARIA del
+  tutor, contraste de controles, reduced-motion. Pendiente: Playwright+axe,
+  decisión de `alt` en Repaso.
+- **Fase 8 (SEO):** metadata+canonical+OG, JSON-LD, sitemap, robots, og:image.
+  Pendiente: separar dashboard de costos.
+- **Fases 6/7/9:** en auditoría multi-agente.
+
+### Decisiones clave
+
+1. **Gate de imágenes tras flag** (`PUBLICAR_SOLO_VERIFICADAS`, apagado): con 0
+   imágenes verificadas por humano, activarlo esconde el catálogo; el generador
+   **nunca** marca `verified` (regla 9). Requiere sign-off humano para activarlo.
+2. **CSP con `'unsafe-inline'`**: inevitable en Next static export (scripts de
+   hidratación) → la CSP es defensa en profundidad; la **sanitización** de marked
+   es la mitigación real de XSS.
+3. **No inventar** (regla 8): sin fuentes, sin texto legal final, sin nombre de
+   organización en JSON-LD, sin cifras de dimensiones sin verificar → todo eso
+   queda en `PENDING_HUMAN_REVIEW.md`.
+4. **Cabeceras por dominio**: se fijan en el Worker de `historia` (no globales)
+   para no imponer al dashboard de costos una CSP con `connect-src` al tutor.
+
+### Pruebas y verificación
+
+96 tests (sitio + Workers de tutor e historia), `lint`, `tsc` (sitio + 2
+Workers), `validar-contenido` + `validar-imagenes`, `build` (140 páginas), y
+`wrangler deploy --dry-run` de ambos Workers — todo en verde en cada commit.
+
+### Riesgos residuales
+
+- **Imágenes**: 312 renderizables tienen atribución pero **0 verificadas por
+  humano**; para producto de pago hay que verificar licencias una a una.
+- **Tutor de pago bloqueado** hasta tener presupuesto global exacto (3I): el
+  rate-limit de Cloudflare es local por datacenter.
+- **Legal**: páginas en borrador; sin revisión jurídica no deben promocionarse
+  (menos aún a menores).
+- **CWV**: no se afirman LCP/INP/CLS sin medición de campo real (Fase 7).
+
+### Tareas que requieren especialista humano
+
+Ver `PENDING_HUMAN_REVIEW.md` (imágenes a verificar/reemplazar, afirmaciones de
+contenido con fuente, revisión legal, decisión de `alt` en Repaso, identidad del
+responsable/organización).
+
+### Pasos de despliegue (cuando se autorice)
+
+1. **Sitio y Worker del tutor DEBEN desplegarse juntos**: el contrato del tutor
+   cambió (`{lessonId,mode,messages,workId}`); un frontend viejo contra el Worker
+   nuevo (o viceversa) rompe el tutor.
+2. Regenerar datos si cambió contenido: `npm run datos` (obras, quiz, manifiesto,
+   corpus). CI verifica que no haya drift.
+3. Desplegar el sitio: `npm run deploy:historia` (incluye el Worker de historia
+   con las cabeceras).
+4. Desplegar el tutor: en `workers/tutor`, `wrangler deploy` (requiere
+   `GROQ_API_KEY` y, para visión híbrida, `ANTHROPIC_API_KEY`).
+5. Activar el gate de imágenes solo tras revisión humana
+   (`PUBLICAR_SOLO_VERIFICADAS=1`), cuando haya imágenes `verified`.
