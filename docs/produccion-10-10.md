@@ -132,12 +132,15 @@ _(Cada fase se detalla más abajo a medida que avanza.)_
   creativecommons.org / Commons:Public_domain), con autor de imagen y
   modificaciones. Verificado en build (licencias enlazadas en el HTML).
 
-**Pendiente en Fase 1:**
+- **1H — Validador CI de integridad visual** (`9227d3e`). `scripts/validar-imagenes.mjs`
+  falla el build si una renderizable está rechazada, no está en el manifiesto,
+  carece de atribución (fuente+licencia) o su miniatura no es de Wikimedia.
+  En CI y en `npm run validar`. Estado: 312 con imagen OK, 11 rechazadas bloqueadas.
+
+**Pendiente en Fase 1 (menor):**
 
 - 1D — Sustituir el token único de `relevante()` por validación múltiple
   (QID+título+autor+fecha+colección+tipo) en el verificador. Parcial hoy
   (QID/P18 + licencia libre).
 - 1G — Interfaz de revisión interna (promover pending→verified) tras flag de
   build, fuera de producción.
-- 1H — Validador CI dedicado (hoy: los tests fallan si se renderiza una rechazada
-  o si una renderizable no tiene fuente+licencia; falta el gate como fallo duro).
