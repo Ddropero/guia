@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 
 interface ObraVisor {
+  workId: string;
   titulo: string;
   autor: string;
   thumb: string;
@@ -20,6 +21,7 @@ interface ObraVisor {
 function leerObra(el: HTMLElement): ObraVisor {
   const d = el.dataset;
   return {
+    workId: d.workid ?? "",
     titulo: d.titulo ?? "",
     autor: d.autor ?? "",
     thumb: d.thumb ?? "",
@@ -115,8 +117,9 @@ export default function Lightbox() {
   const analizar = () => {
     window.dispatchEvent(
       new CustomEvent("tutor:analizar", {
-        // Se manda la miniatura (≈640px): suficiente para el análisis y barata en tokens.
-        detail: { titulo: obra.titulo, autor: obra.autor, imagen: obra.thumb },
+        // Se manda el workId (el Worker resuelve la imagen del catálogo) + la
+        // miniatura solo para mostrarla en el panel del tutor.
+        detail: { titulo: obra.titulo, autor: obra.autor, imagen: obra.thumb, workId: obra.workId },
       }),
     );
     cerrar();

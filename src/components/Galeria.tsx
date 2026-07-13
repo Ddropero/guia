@@ -37,6 +37,7 @@ export default function Galeria({ obras }: { obras: Obra[] }) {
               <a
                 href={enlaceObra}
                 data-obra
+                data-workid={o.q}
                 data-titulo={o.titulo}
                 data-autor={o.autor}
                 data-thumb={img.thumb}

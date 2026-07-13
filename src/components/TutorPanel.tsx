@@ -10,9 +10,9 @@ interface Mensaje {
 }
 
 interface Props {
-  titulo: string;
-  modulo: string;
-  contexto: string;
+  /** Identificador de la lección ("moduloId/slug"). El Worker resuelve el
+   * contexto contra su corpus; el cliente NO envía el contenido de la lección. */
+  lessonId: string;
 }
 
 const TUTOR_URL = process.env.NEXT_PUBLIC_TUTOR_URL;
@@ -38,14 +38,15 @@ const MODOS: { id: Modo; etiqueta: string; pista: string; arranque: string }[] =
   },
 ];
 
-export default function TutorPanel({ titulo, modulo, contexto }: Props) {
+export default function TutorPanel({ lessonId }: Props) {
   const [modo, setModo] = useState<Modo>("chat");
   const [mensajes, setMensajes] = useState<Mensaje[]>([]);
   const [input, setInput] = useState("");
   const [cargando, setCargando] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  // Obra que el tutor está "viendo" en esta conversación (URL de miniatura + título).
-  const [obraVista, setObraVista] = useState<{ imagen: string; titulo: string } | null>(null);
+  // Obra que el tutor está "viendo": workId (para el Worker) + miniatura y título
+  // (solo para mostrar en el panel; la imagen la resuelve el Worker por workId).
+  const [obraVista, setObraVista] = useState<{ workId: string; imagen: string; titulo: string } | null>(null);
   const finRef = useRef<HTMLDivElement>(null);
   const asideRef = useRef<HTMLElement>(null);
 
@@ -63,29 +64,30 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
   // el tutor pasa a modo socrático y arranca guiando la mirada de ESA obra.
   useEffect(() => {
     const alAnalizar = (e: Event) => {
-      const { titulo: t, autor, imagen } = (e as CustomEvent).detail ?? {};
+      const { titulo: t, autor, imagen, workId } = (e as CustomEvent).detail ?? {};
       if (!t) return;
       const obra = autor ? `«${t}» (${autor})` : `«${t}»`;
       const img = typeof imagen === "string" ? imagen : null;
+      const wid = typeof workId === "string" ? workId : null;
       setModo("socratico");
-      if (img) setObraVista({ imagen: img, titulo: t });
+      if (wid && img) setObraVista({ workId: wid, imagen: img, titulo: t });
       asideRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-      const arranque = img
+      const arranque = wid
         ? `Estoy mirando ${obra}, que tienes a la vista en esta conversación. Guíame paso a paso, con preguntas, para aprender a mirarla: empieza pidiéndome que describa lo que veo.`
         : `Quiero analizar ${obra} de esta lección. Guíame paso a paso, con preguntas, para aprender a mirarla por mí mismo.`;
-      enviarRef.current(arranque, "socratico", img);
+      enviarRef.current(arranque, "socratico", wid);
     };
     window.addEventListener("tutor:analizar", alAnalizar);
     return () => window.removeEventListener("tutor:analizar", alAnalizar);
   }, []);
 
-  async function enviar(texto: string, modoForzado?: Modo, imagenForzada?: string | null) {
+  async function enviar(texto: string, modoForzado?: Modo, workIdForzado?: string | null) {
     const limpio = texto.trim();
     if (!limpio || cargando || !TUTOR_URL) return;
     const modoActivo = modoForzado ?? modo;
-    // La imagen se mantiene durante toda la conversación; se envía en cada turno
-    // (el Worker la cachea) para que el tutor la siga viendo.
-    const imagenObra = imagenForzada ?? obraVista?.imagen ?? null;
+    // El workId de la obra se mantiene durante la conversación; se envía en cada
+    // turno para que el tutor la siga "viendo" (el Worker resuelve la imagen).
+    const workId = workIdForzado ?? obraVista?.workId ?? null;
     setError(null);
     setInput("");
 
@@ -99,10 +101,10 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
-          modo: modoActivo,
-          leccion: { titulo, modulo, contexto },
+          lessonId,
+          mode: modoActivo,
           messages: historial,
-          ...(imagenObra ? { imagenObra } : {}),
+          ...(workId ? { workId } : {}),
         }),
       });
 

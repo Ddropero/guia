@@ -122,11 +122,7 @@ export default async function LeccionPage({
         </div>
 
         <div className="lg:sticky lg:top-6 lg:self-start">
-          <TutorPanel
-            titulo={l.titulo}
-            modulo={l.moduloTitulo}
-            contexto={l.texto.slice(0, 8000)}
-          />
+          <TutorPanel lessonId={`${modulo}/${leccion}`} />
         </div>
       </div>
 

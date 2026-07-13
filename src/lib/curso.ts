@@ -131,7 +131,7 @@ function figuraObra(titulo: string, q: string, autor = ""): string | null {
   const credLine = `imagen: ${partes.join(" · ")}`;
 
   const attrs =
-    `data-obra data-titulo="${t}" data-autor="${escapeHtml(autor)}" ` +
+    `data-obra data-workid="${escapeHtml(q)}" data-titulo="${t}" data-autor="${escapeHtml(autor)}" ` +
     `data-thumb="${escapeHtml(img.thumb)}" data-full="${escapeHtml(fullDe(img.thumb))}" ` +
     `data-wiki="${escapeHtml(enlace)}" data-credito="${escapeHtml(creador)}" ` +
     `data-licencia="${escapeHtml(licName)}" data-licencia-url="${escapeHtml(licUrl)}" ` +
