@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 type Modo = "chat" | "socratico" | "quiz";
@@ -10,9 +11,9 @@ interface Mensaje {
 }
 
 interface Props {
-  titulo: string;
-  modulo: string;
-  contexto: string;
+  /** Identificador de la lección ("moduloId/slug"). El Worker resuelve el
+   * contexto contra su corpus; el cliente NO envía el contenido de la lección. */
+  lessonId: string;
 }
 
 const TUTOR_URL = process.env.NEXT_PUBLIC_TUTOR_URL;
@@ -38,21 +39,31 @@ const MODOS: { id: Modo; etiqueta: string; pista: string; arranque: string }[] =
   },
 ];
 
-export default function TutorPanel({ titulo, modulo, contexto }: Props) {
+export default function TutorPanel({ lessonId }: Props) {
   const [modo, setModo] = useState<Modo>("chat");
   const [mensajes, setMensajes] = useState<Mensaje[]>([]);
   const [input, setInput] = useState("");
   const [cargando, setCargando] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  // Obra que el tutor está "viendo" en esta conversación (URL de miniatura + título).
-  const [obraVista, setObraVista] = useState<{ imagen: string; titulo: string } | null>(null);
+  // Obra que el tutor está "viendo": workId (para el Worker) + miniatura y título
+  // (solo para mostrar en el panel; la imagen la resuelve el Worker por workId).
+  const [obraVista, setObraVista] = useState<{ workId: string; imagen: string; titulo: string } | null>(null);
   const finRef = useRef<HTMLDivElement>(null);
   const asideRef = useRef<HTMLElement>(null);
 
   const modoActual = MODOS.find((m) => m.id === modo)!;
 
+  // Respeta prefers-reduced-motion en los desplazamientos automáticos (WCAG 2.3.3).
+  const comportamientoScroll = (): ScrollBehavior =>
+    typeof window !== "undefined" &&
+    window.matchMedia?.("(prefers-reduced-motion: reduce)").matches
+      ? "auto"
+      : "smooth";
+
   function scrollAbajo() {
-    requestAnimationFrame(() => finRef.current?.scrollIntoView({ behavior: "smooth", block: "end" }));
+    requestAnimationFrame(() =>
+      finRef.current?.scrollIntoView({ behavior: comportamientoScroll(), block: "end" }),
+    );
   }
 
   // Ref siempre apuntando a la última `enviar` (evita closure obsoleta en el listener).
@@ -63,29 +74,30 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
   // el tutor pasa a modo socrático y arranca guiando la mirada de ESA obra.
   useEffect(() => {
     const alAnalizar = (e: Event) => {
-      const { titulo: t, autor, imagen } = (e as CustomEvent).detail ?? {};
+      const { titulo: t, autor, imagen, workId } = (e as CustomEvent).detail ?? {};
       if (!t) return;
       const obra = autor ? `«${t}» (${autor})` : `«${t}»`;
       const img = typeof imagen === "string" ? imagen : null;
+      const wid = typeof workId === "string" ? workId : null;
       setModo("socratico");
-      if (img) setObraVista({ imagen: img, titulo: t });
-      asideRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-      const arranque = img
+      if (wid && img) setObraVista({ workId: wid, imagen: img, titulo: t });
+      asideRef.current?.scrollIntoView({ behavior: comportamientoScroll(), block: "start" });
+      const arranque = wid
         ? `Estoy mirando ${obra}, que tienes a la vista en esta conversación. Guíame paso a paso, con preguntas, para aprender a mirarla: empieza pidiéndome que describa lo que veo.`
         : `Quiero analizar ${obra} de esta lección. Guíame paso a paso, con preguntas, para aprender a mirarla por mí mismo.`;
-      enviarRef.current(arranque, "socratico", img);
+      enviarRef.current(arranque, "socratico", wid);
     };
     window.addEventListener("tutor:analizar", alAnalizar);
     return () => window.removeEventListener("tutor:analizar", alAnalizar);
   }, []);
 
-  async function enviar(texto: string, modoForzado?: Modo, imagenForzada?: string | null) {
+  async function enviar(texto: string, modoForzado?: Modo, workIdForzado?: string | null) {
     const limpio = texto.trim();
     if (!limpio || cargando || !TUTOR_URL) return;
     const modoActivo = modoForzado ?? modo;
-    // La imagen se mantiene durante toda la conversación; se envía en cada turno
-    // (el Worker la cachea) para que el tutor la siga viendo.
-    const imagenObra = imagenForzada ?? obraVista?.imagen ?? null;
+    // El workId de la obra se mantiene durante la conversación; se envía en cada
+    // turno para que el tutor la siga "viendo" (el Worker resuelve la imagen).
+    const workId = workIdForzado ?? obraVista?.workId ?? null;
     setError(null);
     setInput("");
 
@@ -99,10 +111,10 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
-          modo: modoActivo,
-          leccion: { titulo, modulo, contexto },
+          lessonId,
+          mode: modoActivo,
           messages: historial,
-          ...(imagenObra ? { imagenObra } : {}),
+          ...(workId ? { workId } : {}),
         }),
       });
 
@@ -174,10 +186,11 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
             <button
               key={m.id}
               onClick={() => setModo(m.id)}
+              aria-pressed={modo === m.id}
               className={`rounded-full px-3 py-1 text-xs transition ${
                 modo === m.id
                   ? "bg-accent text-bg"
-                  : "border border-line text-muted hover:text-fg"
+                  : "border border-control text-muted hover:text-fg"
               }`}
             >
               {m.etiqueta}
@@ -202,7 +215,12 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
         )}
       </div>
 
-      <div className="flex-1 space-y-3 overflow-y-auto p-4">
+      <div
+        role="log"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="flex-1 space-y-3 overflow-y-auto p-4"
+      >
         {mensajes.length === 0 && (
           <button
             onClick={() => enviar(modoActual.arranque)}
@@ -223,10 +241,22 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
             {m.content || (cargando && i === mensajes.length - 1 ? "…" : "")}
           </div>
         ))}
-        {error && <p className="text-sm text-warn">{error}</p>}
+        {error && (
+          <p role="alert" className="text-sm text-warn">
+            {error}
+          </p>
+        )}
         <div ref={finRef} />
       </div>
 
+      <p className="border-t border-line px-3 pt-2 text-[11px] text-muted">
+        No compartas nombres, teléfonos, correos u otros datos personales: tus
+        mensajes se envían a un proveedor de IA para generar la respuesta.{" "}
+        <Link href="/curso/privacidad" className="underline hover:text-fg">
+          Privacidad
+        </Link>
+        .
+      </p>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -240,7 +270,7 @@ export default function TutorPanel({ titulo, modulo, contexto }: Props) {
           placeholder="Escribe tu mensaje…"
           aria-label="Escribe tu pregunta al tutor de IA"
           disabled={cargando}
-          className="min-w-0 flex-1 rounded-md border border-line bg-bg px-3 py-2 text-sm text-fg outline-none placeholder:text-muted focus:border-accent"
+          className="min-w-0 flex-1 rounded-md border border-control bg-bg px-3 py-2 text-sm text-fg outline-none placeholder:text-muted focus:border-accent"
         />
         <button
           type="submit"

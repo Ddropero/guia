@@ -1,8 +1,10 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { useFocoModal } from "@/lib/foco-modal";
 
 interface ObraVisor {
+  workId: string;
   titulo: string;
   autor: string;
   thumb: string;
@@ -10,6 +12,9 @@ interface ObraVisor {
   wiki: string;
   credito: string;
   licencia: string;
+  licenciaUrl: string;
+  fuente: string;
+  cambios: string;
   fecha: string;
   ubicacion: string;
 }
@@ -17,6 +22,7 @@ interface ObraVisor {
 function leerObra(el: HTMLElement): ObraVisor {
   const d = el.dataset;
   return {
+    workId: d.workid ?? "",
     titulo: d.titulo ?? "",
     autor: d.autor ?? "",
     thumb: d.thumb ?? "",
@@ -24,6 +30,9 @@ function leerObra(el: HTMLElement): ObraVisor {
     wiki: d.wiki ?? "",
     credito: d.credito ?? "",
     licencia: d.licencia ?? "",
+    licenciaUrl: d.licenciaUrl ?? "",
+    fuente: d.fuente ?? "",
+    cambios: d.cambios ?? "",
     fecha: d.fecha ?? "",
     ubicacion: d.ubicacion ?? "",
   };
@@ -103,14 +112,18 @@ export default function Lightbox() {
     };
   }, [idx, cerrar, mover]);
 
+  const dialogRef = useRef<HTMLDivElement>(null);
+  useFocoModal(idx != null, dialogRef);
+
   const obra = idx == null ? null : (obras[idx] ?? null);
   if (idx == null || !obra) return null;
 
   const analizar = () => {
     window.dispatchEvent(
       new CustomEvent("tutor:analizar", {
-        // Se manda la miniatura (≈640px): suficiente para el análisis y barata en tokens.
-        detail: { titulo: obra.titulo, autor: obra.autor, imagen: obra.thumb },
+        // Se manda el workId (el Worker resuelve la imagen del catálogo) + la
+        // miniatura solo para mostrarla en el panel del tutor.
+        detail: { titulo: obra.titulo, autor: obra.autor, imagen: obra.thumb, workId: obra.workId },
       }),
     );
     cerrar();
@@ -118,10 +131,12 @@ export default function Lightbox() {
 
   return (
     <div
+      ref={dialogRef}
+      tabIndex={-1}
       role="dialog"
       aria-modal="true"
       aria-label={`Obra: ${obra.titulo}`}
-      className="fixed inset-0 z-50 flex flex-col bg-black/90 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex flex-col bg-black/90 outline-none backdrop-blur-sm"
       onClick={cerrar}
     >
       {/* Barra superior */}
@@ -195,8 +210,37 @@ export default function Lightbox() {
             </p>
           )}
           <p className="mt-1 text-xs text-white/50">
-            {obra.credito ? `Imagen: ${obra.credito}` : "Imagen"}
-            {obra.licencia ? ` · ${obra.licencia}` : ""} · Wikimedia
+            Imagen:{obra.credito ? ` ${obra.credito} ·` : ""}{" "}
+            {obra.fuente ? (
+              <a
+                href={obra.fuente}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline decoration-white/30 hover:text-white/80"
+              >
+                Wikimedia Commons
+              </a>
+            ) : (
+              "Wikimedia Commons"
+            )}
+            {obra.licencia && (
+              <>
+                {" · "}
+                {obra.licenciaUrl ? (
+                  <a
+                    href={obra.licenciaUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-white/30 hover:text-white/80"
+                  >
+                    {obra.licencia}
+                  </a>
+                ) : (
+                  obra.licencia
+                )}
+              </>
+            )}
+            {obra.cambios ? ` · ${obra.cambios}` : ""}
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-2">

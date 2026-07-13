@@ -43,8 +43,11 @@ function Ficha({ o }: { o: ObraIndice }) {
   );
 }
 
+const POR_TANDA = 60;
+
 export default function IndiceObras({ modulos, obras }: Props) {
   const [q, setQ] = useState("");
+  const [limite, setLimite] = useState(POR_TANDA);
 
   // Obra del día: determinista por fecha, entre las que tienen imagen.
   const delDia = useMemo(() => {
@@ -68,6 +71,21 @@ export default function IndiceObras({ modulos, obras }: Props) {
   }, [obras, filtro]);
 
   const totalFiltradas = [...porModulo.values()].reduce((n, a) => n + a.length, 0);
+
+  // Renderiza por tandas: al buscar se muestran todas las coincidencias; sin
+  // buscar, solo `limite` tarjetas (evita montar 508 nodos de golpe → mejor INP).
+  const cap = filtro ? totalFiltradas : Math.min(limite, totalFiltradas);
+  const plan: { m: { id: string; titulo: string }; lista: ObraIndice[] }[] = [];
+  let acumulado = 0;
+  for (const m of modulos) {
+    if (acumulado >= cap) break;
+    const lista = porModulo.get(m.id) ?? [];
+    if (lista.length === 0) continue;
+    const toma = lista.slice(0, cap - acumulado);
+    acumulado += toma.length;
+    plan.push({ m, lista: toma });
+  }
+  const hayMas = !filtro && cap < totalFiltradas;
 
   return (
     <div>
@@ -112,9 +130,7 @@ export default function IndiceObras({ modulos, obras }: Props) {
       )}
 
       <div className="space-y-8">
-        {modulos.map((m) => {
-          const lista = porModulo.get(m.id);
-          if (!lista || lista.length === 0) return null;
+        {plan.map(({ m, lista }) => {
           return (
             <section key={m.id}>
               <h2 className="mb-3 border-b border-line pb-1 font-serif text-lg text-fg">
@@ -159,6 +175,17 @@ export default function IndiceObras({ modulos, obras }: Props) {
           );
         })}
       </div>
+
+      {hayMas && (
+        <div className="mt-8 text-center">
+          <button
+            onClick={() => setLimite((n) => n + POR_TANDA)}
+            className="rounded-md border border-control px-5 py-2 text-sm text-muted transition hover:border-accent hover:text-fg"
+          >
+            Ver más obras ({totalFiltradas - cap} restantes)
+          </button>
+        </div>
+      )}
     </div>
   );
 }

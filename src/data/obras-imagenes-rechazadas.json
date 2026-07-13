@@ -1,0 +1,16 @@
+{
+  "_doc": "Imágenes RECHAZADAS: no corresponden a la obra. Gana sobre todas las fuentes en imagenDe() → nunca se publican, aunque una regeneración de datos vuelva a proponerlas. Motivo = objeto que mostraba en su lugar (hallazgos de revisión humana previa y del spec de endurecimiento). status: rejected. Requieren búsqueda de reemplazo verificado por un humano (ver PENDING_HUMAN_REVIEW.md).",
+  "obras": {
+    "El hombre de León León de Hohlenstein-Stadel": { "status": "rejected", "motivo": "mostraba un mural de Orozco" },
+    "Cabeza de Warka": { "status": "rejected", "motivo": "mostraba un mapa de Uruk" },
+    "Aguamanil celadón de Goryeo con incrustación": { "status": "rejected", "motivo": "mostraba realeza española" },
+    "El ciclo de María de Médici Peter Paul Rubens": { "status": "rejected", "motivo": "mostraba a un presidente brasileño" },
+    "Versalles: la Galería de los Espejos - Jules Hardouin-Mansart y Charles Le Brun": { "status": "rejected", "motivo": "mostraba un barrio de Buenos Aires" },
+    "Siluetas Ana Mendieta, serie": { "status": "rejected", "motivo": "mostraba una jirafa (angolana)" },
+    "Seedbed Vito Acconci": { "status": "rejected", "motivo": "mostraba un semillero agrícola" },
+    "Placas de latón del palacio de Benín": { "status": "rejected", "motivo": "mostraba un antipapa (Juan XVI)" },
+    "Placas de latón del palacio real de Benín": { "status": "rejected", "motivo": "mostraba un antipapa (Juan XVI)" },
+    "Anyanwu de Ben Enwonwu": { "status": "rejected", "motivo": "mostraba a una política nigeriana" },
+    "Justiniano y su corte Mosaicos de , San Vitale de Rávena": { "status": "rejected", "motivo": "mostraba a un historietista" }
+  }
+}

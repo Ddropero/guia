@@ -63,6 +63,48 @@ const WIKIDATA = cargar<Record<string, WikidataObra>>("obras-wikidata.json", {})
 //   { "<q>": { "none": true } }                          → forzar sin imagen (la automática era errónea)
 //   { "<q>": { "thumb": "...", "licencia": "...", ... } } → fijar una imagen concreta
 const OVERRIDE = cargar<Record<string, ImagenObra>>("obras-imagenes-override.json", {});
+// Imágenes RECHAZADAS (obras-imagenes-rechazadas.json): se comprobó que NO
+// corresponden a la obra. Máxima autoridad: imagenDe() devuelve null para estas,
+// aunque una regeneración de datos vuelva a proponer una imagen. Es la red de
+// seguridad de integridad visual (P0) contra falsos positivos conocidos.
+interface Rechazada {
+  status: "rejected";
+  motivo?: string;
+}
+const RECHAZADAS =
+  cargar<{ obras?: Record<string, Rechazada> }>("obras-imagenes-rechazadas.json", {}).obras ?? {};
+
+// Manifiesto de integridad visual (obras-imagenes-manifiesto.json, lo genera
+// scripts/construir-manifiesto-imagenes.mjs). Fuente de la atribución (TASL) y
+// del `status` (pending|verified|rejected). Solo un humano marca verified.
+export interface ManifiestoImagen {
+  workId: string;
+  titulo: string;
+  autor: string;
+  qid?: string;
+  commonsFile?: string;
+  thumb320?: string;
+  thumb640?: string;
+  thumb960?: string;
+  full?: string;
+  creador?: string;
+  sourceUrl?: string;
+  licenseName?: string;
+  licenseUrl?: string;
+  cambios?: string;
+  status: "pending" | "verified" | "rejected";
+  motivoRechazo?: string;
+  verifiedAt?: string | null;
+  verifiedBy?: string | null;
+}
+const MANIFIESTO =
+  cargar<{ obras?: Record<string, ManifiestoImagen> }>("obras-imagenes-manifiesto.json", {}).obras ?? {};
+
+// Gate de integridad (Fase 1A). Con PUBLICAR_SOLO_VERIFICADAS=1 en el build,
+// imagenDe() solo devuelve imágenes con status "verified" (revisadas por un
+// humano). Apagado por defecto para no esconder el catálogo hasta que exista
+// revisión; el interruptor se activa cuando haya imágenes verificadas.
+const SOLO_VERIFICADAS = process.env.PUBLICAR_SOLO_VERIFICADAS === "1";
 
 export function getObras(moduloId: string, slug: string): Obra[] {
   return OBRAS[`${moduloId}/${slug}`] ?? [];
@@ -73,11 +115,38 @@ export function getOverridesImagenes(): Record<string, ImagenObra> {
   return OVERRIDE;
 }
 
+/** Motivo del rechazo de una imagen, si la obra está en la lista de rechazadas. */
+export function imagenRechazada(q: string): { motivo?: string } | null {
+  return RECHAZADAS[q] ?? null;
+}
+
+/** Registro completo de imágenes rechazadas (para pruebas y validador CI). */
+export function getRechazadas(): Record<string, { status: string; motivo?: string }> {
+  return RECHAZADAS;
+}
+
+/** Entrada del manifiesto de integridad visual (atribución TASL + status). */
+export function manifiestoImagen(q: string): ManifiestoImagen | null {
+  return MANIFIESTO[q] ?? null;
+}
+
+/** Manifiesto completo (para el validador CI). */
+export function getManifiesto(): Record<string, ManifiestoImagen> {
+  return MANIFIESTO;
+}
+
+/** ¿Está activo el gate que solo publica imágenes verificadas? */
+export function soloVerificadas(): boolean {
+  return SOLO_VERIFICADAS;
+}
+
 /**
  * Miniatura libre de la obra (con `thumb` garantizado). Precedencia:
  * curación manual (override) → Wikidata (P18, verificado) → Wikimedia Commons.
  */
 export function imagenDe(q: string): (ImagenObra & { thumb: string }) | null {
+  if (RECHAZADAS[q]) return null; // imagen conocida como errónea → nunca se publica
+  if (SOLO_VERIFICADAS && MANIFIESTO[q]?.status !== "verified") return null; // gate de integridad
   const ov = OVERRIDE[q];
   if (ov) {
     if (ov.none || !ov.thumb) return null; // curado como "sin imagen"
@@ -115,6 +184,7 @@ export function imagenesMostradas(): ImagenMostrada[] {
   }
   const out: ImagenMostrada[] = [];
   for (const [q, o] of ficha) {
+    if (RECHAZADAS[q]) continue; // imagen rechazada → no se muestra
     const ov = OVERRIDE[q];
     let thumb: string | undefined;
     let fuente: ImagenMostrada["fuente"];

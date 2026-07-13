@@ -8,9 +8,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { marked } from "marked";
-import { fullDe, imagenDe, wikipediaBuscar, wikipediaDe } from "@/lib/obras";
+import { fullDe, imagenDe, manifiestoImagen, wikipediaBuscar, wikipediaDe } from "@/lib/obras";
 import { getGlosario } from "@/lib/glosario";
 import { enlazarGlosario, slugTermino } from "@/lib/glosario-enlaces";
+import { sanitizarHtml } from "@/lib/sanitizar";
 
 marked.setOptions({ gfm: true, breaks: false });
 
@@ -101,27 +102,51 @@ function escapeHtml(s: string): string {
     .replace(/"/g, "&quot;");
 }
 
+/** Enlace externo seguro (o texto plano si no hay URL). Inner ya viene escapado. */
+function enlaceExt(url: string, inner: string): string {
+  return url
+    ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${inner}</a>`
+    : inner;
+}
+
 /** `<figure>` en una sola línea (bloque HTML para marked) o null si no hay imagen libre. */
 function figuraObra(titulo: string, q: string, autor = ""): string | null {
   const img = imagenDe(q);
   if (!img?.thumb) return null;
+  const man = manifiestoImagen(q);
   const enlace = wikipediaDe(q)?.url ?? wikipediaBuscar(q);
   const t = escapeHtml(titulo);
-  const lic = img.licencia ? `${escapeHtml(img.licencia)} · ` : "";
-  const credito = img.enlace
-    ? `<a href="${escapeHtml(img.enlace)}" target="_blank" rel="noopener noreferrer">Wikimedia</a>`
-    : "Wikimedia";
+
+  // Atribución TASL (de la imagen): fuente enlazada + licencia enlazada + autor
+  // de la imagen + modificaciones. Datos del manifiesto (con respaldo en imagenDe).
+  const fuente = man?.sourceUrl || img.enlace || "";
+  const licName = man?.licenseName || img.licencia || "";
+  const licUrl = man?.licenseUrl || "";
+  const creador = man?.creador || img.credito || "";
+  const cambios = man?.cambios || "";
+  const partes = [];
+  if (creador) partes.push(escapeHtml(creador));
+  partes.push(enlaceExt(fuente, "Wikimedia Commons"));
+  if (licName) partes.push(enlaceExt(licUrl, escapeHtml(licName)));
+  if (cambios) partes.push(escapeHtml(cambios));
+  const credLine = `imagen: ${partes.join(" · ")}`;
+
   const attrs =
-    `data-obra data-titulo="${t}" data-autor="${escapeHtml(autor)}" ` +
+    `data-obra data-workid="${escapeHtml(q)}" data-titulo="${t}" data-autor="${escapeHtml(autor)}" ` +
     `data-thumb="${escapeHtml(img.thumb)}" data-full="${escapeHtml(fullDe(img.thumb))}" ` +
-    `data-wiki="${escapeHtml(enlace)}" data-credito="${escapeHtml(img.credito ?? "")}" ` +
-    `data-licencia="${escapeHtml(img.licencia ?? "")}"`;
+    `data-wiki="${escapeHtml(enlace)}" data-credito="${escapeHtml(creador)}" ` +
+    `data-licencia="${escapeHtml(licName)}" data-licencia-url="${escapeHtml(licUrl)}" ` +
+    `data-fuente="${escapeHtml(fuente)}" data-cambios="${escapeHtml(cambios)}"`;
   return (
     `<figure class="obra-inline">` +
     `<a href="${escapeHtml(enlace)}" ${attrs} target="_blank" rel="noopener noreferrer" ` +
     `title="Ver «${t}» en grande" class="cursor-zoom-in">` +
-    `<img src="${escapeHtml(img.thumb)}" alt="${t}" loading="lazy" /></a>` +
-    `<figcaption>${t}<span class="credito">imagen: ${lic}${credito}</span></figcaption>` +
+    `<img src="${escapeHtml(img.thumb)}"${
+      man?.thumb320 && man?.thumb640 && man?.thumb960
+        ? ` srcset="${escapeHtml(`${man.thumb320} 320w, ${man.thumb640} 640w, ${man.thumb960} 960w`)}" sizes="(max-width: 640px) 90vw, 19rem"`
+        : ""
+    } alt="${t}" loading="lazy" /></a>` +
+    `<figcaption>${t}<span class="credito">${credLine}</span></figcaption>` +
     `</figure>`
   );
 }
@@ -153,10 +178,25 @@ function inyectarObras(md: string): string {
   return out.join("\n");
 }
 
+// Añade id a cada h2/h3 (derivado del texto) para deep-links y tabla de contenidos.
+function anclarEncabezados(html: string): string {
+  const usados = new Set<string>();
+  return html.replace(/<(h[23])>([\s\S]*?)<\/\1>/g, (full, tag: string, inner: string) => {
+    const texto = inner.replace(/<[^>]+>/g, "").trim();
+    const base = slugTermino(texto);
+    if (!base) return full;
+    let slug = base;
+    for (let i = 2; usados.has(slug); i++) slug = `${base}-${i}`;
+    usados.add(slug);
+    return `<${tag} id="${slug}">${inner}</${tag}>`;
+  });
+}
+
 /** Renderiza Markdown a HTML reescribiendo los enlaces internos .md a rutas del sitio. */
 function render(md: string, baseRelDir: string): string {
-  const html = marked.parse(md) as string;
-  return html.replace(/href="([^"]+)"/g, (full, target: string) => {
+  // Sanitiza la salida de marked (defensa en profundidad; marked@14 no sanitiza).
+  const html = sanitizarHtml(marked.parse(md) as string);
+  const conEnlaces = html.replace(/href="([^"]+)"/g, (full, target: string) => {
     if (/^(https?:|mailto:|#|\/)/i.test(target)) return full; // externo/ancla/absoluto
     if (!/\.md(#|$)/i.test(target)) return full;
     const ruta = resolverRuta(target, baseRelDir);
@@ -164,6 +204,7 @@ function render(md: string, baseRelDir: string): string {
     const hash = target.includes("#") ? `#${target.split("#")[1]}` : "";
     return `href="${ruta}${hash}"`;
   });
+  return anclarEncabezados(conEnlaces);
 }
 
 const BASE = path.join(process.cwd(), "curso-historia-del-arte");

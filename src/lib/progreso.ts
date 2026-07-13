@@ -71,6 +71,16 @@ function guardar(e: Estado) {
   }
 }
 
+/** Borra TODO el progreso local (lecciones, quizzes, repaso). Irreversible. */
+export function borrar() {
+  try {
+    window.localStorage.removeItem(CLAVE);
+    window.dispatchEvent(new Event(EVENTO));
+  } catch {
+    /* almacenamiento no disponible */
+  }
+}
+
 // --- Lecciones --------------------------------------------------------------
 
 export function estaCompletada(id: string): boolean {

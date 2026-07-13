@@ -18,7 +18,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { modulo } = await params;
   const m = getModulo(modulo);
-  return { title: m ? m.titulo : "Módulo" };
+  if (!m) return { title: "Módulo" };
+  const n = m.lecciones?.length ?? 0;
+  const description = `${m.titulo}: ${n} ${n === 1 ? "lección" : "lecciones"} del curso de Historia del Arte.`;
+  const url = `https://historia.hilvan.org/curso/${modulo}`;
+  return {
+    title: m.titulo,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title: m.titulo, description, url },
+  };
 }
 
 export default async function ModuloPage({

@@ -45,7 +45,8 @@ export default function Cuestionario({ moduloId, preguntas }: Props) {
     if (respondidas < total) return;
     setCorregido(true);
     guardarQuiz(moduloId, aciertos, total);
-    requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
+    const suave = !window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: suave ? "smooth" : "auto" }));
   }
 
   function reintentar() {
@@ -83,38 +84,52 @@ export default function Cuestionario({ moduloId, preguntas }: Props) {
           const elegida = respuestas[p.n];
           return (
             <li key={p.n} className="rounded-lg border border-line bg-panel p-4">
-              <p className="font-serif text-fg">
-                <span className="mr-2 font-mono text-xs text-muted">{idx + 1}.</span>
-                {p.enunciado}
-              </p>
-              <ul className="mt-3 space-y-2">
-                {p.opciones.map((o) => {
-                  const seleccionada = elegida === o.letra;
-                  const esCorrecta = o.letra === p.correcta;
-                  let estilo = "border-line text-muted hover:border-accent hover:text-fg";
-                  if (corregido) {
-                    if (esCorrecta) estilo = "border-accent bg-accent/10 text-accent";
-                    else if (seleccionada) estilo = "border-warn bg-warn/10 text-warn";
-                    else estilo = "border-line text-muted";
-                  } else if (seleccionada) {
-                    estilo = "border-accent bg-accent/10 text-fg";
-                  }
-                  return (
-                    <li key={o.letra}>
-                      <button
-                        onClick={() => elegir(p.n, o.letra)}
-                        disabled={corregido}
-                        className={`flex w-full items-start gap-2 rounded-md border px-3 py-2 text-left text-sm transition ${estilo}`}
+              <fieldset>
+                <legend className="font-serif text-fg">
+                  <span className="mr-2 font-mono text-xs text-muted">{idx + 1}.</span>
+                  {p.enunciado}
+                </legend>
+                <div className="mt-3 space-y-2">
+                  {p.opciones.map((o) => {
+                    const seleccionada = elegida === o.letra;
+                    const esCorrecta = o.letra === p.correcta;
+                    let estilo = "border-control text-muted hover:border-accent hover:text-fg";
+                    if (corregido) {
+                      if (esCorrecta) estilo = "border-accent bg-accent/10 text-accent";
+                      else if (seleccionada) estilo = "border-warn bg-warn/10 text-warn";
+                      else estilo = "border-line text-muted";
+                    } else if (seleccionada) {
+                      estilo = "border-accent bg-accent/10 text-fg";
+                    }
+                    const estado = corregido && esCorrecta
+                      ? "Correcta"
+                      : corregido && seleccionada
+                        ? "Tu respuesta, incorrecta"
+                        : "";
+                    return (
+                      <label
+                        key={o.letra}
+                        className={`flex w-full items-start gap-2 rounded-md border px-3 py-2 text-left text-sm transition focus-within:ring-2 focus-within:ring-accent ${estilo} ${corregido ? "" : "cursor-pointer"}`}
                       >
+                        <input
+                          type="radio"
+                          name={`p-${p.n}`}
+                          value={o.letra}
+                          checked={seleccionada}
+                          onChange={() => elegir(p.n, o.letra)}
+                          disabled={corregido}
+                          className="sr-only"
+                        />
                         <span aria-hidden className="mt-0.5">
                           {corregido && esCorrecta ? "✓" : corregido && seleccionada ? "✗" : "○"}
                         </span>
                         <span>{o.texto}</span>
-                      </button>
-                    </li>
-                  );
-                })}
-              </ul>
+                        {estado && <span className="sr-only"> ({estado})</span>}
+                      </label>
+                    );
+                  })}
+                </div>
+              </fieldset>
             </li>
           );
         })}

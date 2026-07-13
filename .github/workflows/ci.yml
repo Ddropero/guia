@@ -33,18 +33,26 @@ jobs:
       - name: Tipos (Worker del tutor)
         run: npx tsc -p workers/tutor/tsconfig.json
 
+      - name: Tipos (Worker de historia)
+        run: npx tsc -p workers/historia/tsconfig.json
+
       - name: Tests
         run: npm test
 
       - name: Validar contenido (enlaces .md, títulos)
         run: node scripts/validar-contenido.mjs
 
-      - name: Datos al día (obras + quiz sin drift)
+      - name: Validar integridad visual (imágenes con atribución, sin rechazadas)
+        run: node scripts/validar-imagenes.mjs
+
+      - name: Datos al día (obras + quiz + manifiesto sin drift)
         run: |
           node scripts/construir-obras.mjs
           node scripts/construir-quiz.mjs
-          git diff --exit-code src/data/obras.json src/data/quiz.json \
-            || (echo "::error::obras.json/quiz.json están desincronizados de su fuente. Corre 'npm run datos' y commitea." && exit 1)
+          node scripts/construir-manifiesto-imagenes.mjs
+          node scripts/construir-corpus-tutor.mjs
+          git diff --exit-code src/data/obras.json src/data/quiz.json src/data/obras-imagenes-manifiesto.json workers/tutor/src/corpus.json \
+            || (echo "::error::datos generados desincronizados (obras/quiz/manifiesto/corpus). Corre 'npm run datos' y commitea." && exit 1)
 
       - name: Revalidar enriquecimiento de Wikidata (sin red)
         run: |

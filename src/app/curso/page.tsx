@@ -8,10 +8,25 @@ import {
   GestionProgreso,
 } from "@/components/Progreso";
 
+const DESCRIPCION_CURSO =
+  "Un curso completo de Historia del Arte: de la prehistoria al arte contemporáneo global, con un tutor de IA que resuelve dudas, te guía a mirar obras y te pone a prueba.";
+
 export const metadata: Metadata = {
   title: "Historia del Arte · Curso interactivo con tutor de IA",
-  description:
-    "Un curso completo de Historia del Arte: de la prehistoria al arte contemporáneo global, con un tutor de IA que resuelve dudas, te guía a mirar obras y te pone a prueba.",
+  description: DESCRIPCION_CURSO,
+  alternates: { canonical: "https://historia.hilvan.org/curso" },
+};
+
+// Dato estructurado del curso. Sin `provider` (el nombre de la organización
+// requiere decisión humana; no se inventa — regla 8).
+const CURSO_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  name: "Historia del Arte",
+  description: DESCRIPCION_CURSO,
+  url: "https://historia.hilvan.org/curso",
+  inLanguage: "es",
+  isAccessibleForFree: true,
 };
 
 export default function CursoHome() {
@@ -23,6 +38,10 @@ export default function CursoHome() {
 
   return (
     <main className="mx-auto max-w-5xl px-5 py-10 sm:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(CURSO_JSONLD).replace(/</g, "\\u003c") }}
+      />
       <header className="mb-10 border-b border-line pb-8">
         <p className="font-mono text-xs uppercase tracking-widest text-accent">Curso interactivo</p>
         <h1 className="mt-2 font-serif text-4xl font-semibold tracking-tight text-fg sm:text-5xl">

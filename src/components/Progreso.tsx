@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import {
   alternarLeccion,
+  borrar,
   contarCompletadas,
   estaCompletada,
   exportar,
@@ -200,6 +201,21 @@ export function GestionProgreso() {
         Importar
       </button>
       <input ref={fileRef} type="file" accept="application/json" onChange={alElegir} className="hidden" />
+      <span className="text-line" aria-hidden>
+        ·
+      </span>
+      <button
+        onClick={() => {
+          if (window.confirm("¿Borrar todo tu progreso? Esta acción no se puede deshacer.")) {
+            borrar();
+            setMsg("Progreso borrado ✓");
+            setTimeout(() => setMsg(null), 4000);
+          }
+        }}
+        className="text-muted underline-offset-2 hover:text-warn hover:underline"
+      >
+        Borrar progreso
+      </button>
       {msg && <span className="text-accent">{msg}</span>}
     </div>
   );

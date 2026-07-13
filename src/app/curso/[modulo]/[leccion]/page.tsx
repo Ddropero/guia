@@ -23,6 +23,21 @@ export function generateStaticParams() {
   return params;
 }
 
+const CANON = "https://historia.hilvan.org";
+
+/** Resumen corto (~155 car.) desde el subtítulo o el texto de la lección. */
+function resumenLeccion(l: { subtitulo: string | null; texto: string }): string {
+  const base =
+    l.subtitulo ||
+    l.texto
+      .replace(/^#.*$/m, "")
+      .replace(/[#*_>`~|-]/g, " ")
+      .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+      .replace(/\s+/g, " ")
+      .trim();
+  return base.length > 155 ? `${base.slice(0, 152).trimEnd()}…` : base;
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -30,7 +45,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { modulo, leccion } = await params;
   const l = getLeccion(modulo, leccion);
-  return { title: l ? l.titulo : "Lección" };
+  if (!l) return { title: "Lección" };
+  const description = resumenLeccion(l);
+  const url = `${CANON}/curso/${modulo}/${leccion}`;
+  return {
+    title: l.titulo,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title: l.titulo, description, url, type: "article" },
+  };
 }
 
 export default async function LeccionPage({
@@ -42,6 +65,31 @@ export default async function LeccionPage({
   const l = getLeccion(modulo, leccion);
   if (!l) notFound();
   const obras = getObras(modulo, leccion);
+
+  // Datos estructurados: migas + recurso de aprendizaje (sin datos de "proveedor"
+  // no verificados; regla 8). Se inserta como JSON-LD en la página.
+  const urlLeccion = `${CANON}/curso/${modulo}/${leccion}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LearningResource",
+        name: l.titulo,
+        url: urlLeccion,
+        inLanguage: "es",
+        learningResourceType: "lección",
+        isPartOf: { "@type": "Course", name: "Historia del Arte", url: `${CANON}/curso` },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Curso", item: `${CANON}/curso` },
+          { "@type": "ListItem", position: 2, name: l.moduloTitulo, item: `${CANON}/curso/${l.moduloId}` },
+          { "@type": "ListItem", position: 3, name: l.titulo, item: urlLeccion },
+        ],
+      },
+    ],
+  };
 
   // Texto plano de la lección para la lectura por voz (quita el marcado Markdown).
   const textoPlano = l.texto
@@ -59,8 +107,17 @@ export default async function LeccionPage({
     .replace(/\s+/g, " ")
     .trim();
 
+  // Tiempo estimado de lectura (~210 palabras/min sobre el texto real). Estimación,
+  // no medición: se muestra con "≈".
+  const palabras = textoPlano.split(/\s+/).filter(Boolean).length;
+  const minutosLectura = Math.max(1, Math.round(palabras / 210));
+
   return (
     <main className="mx-auto max-w-7xl px-5 py-8 sm:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+      />
       <nav className="mb-6 text-sm text-muted">
         <Link href="/curso" className="hover:text-fg">
           Curso
@@ -83,8 +140,9 @@ export default async function LeccionPage({
 
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="min-w-0">
-          <div className="mb-6">
+          <div className="mb-6 flex flex-wrap items-center gap-3">
             <EscucharLeccion texto={textoPlano} />
+            <span className="text-xs text-muted">≈ {minutosLectura} min de lectura</span>
           </div>
           <article
             className="leccion-prose"
@@ -122,11 +180,7 @@ export default async function LeccionPage({
         </div>
 
         <div className="lg:sticky lg:top-6 lg:self-start">
-          <TutorPanel
-            titulo={l.titulo}
-            modulo={l.moduloTitulo}
-            contexto={l.texto.slice(0, 8000)}
-          />
+          <TutorPanel lessonId={`${modulo}/${leccion}`} />
         </div>
       </div>
 
