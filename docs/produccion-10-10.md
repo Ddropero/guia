@@ -139,10 +139,13 @@ scroll.
 ### Fase 7 — Rendimiento y PWA (en curso) — `ccdaf47`
 
 `srcset`/`sizes` en galería y figura (thumb320/640/960 del manifiesto); primera
-imagen de galería `eager`+`fetchPriority`; `preconnect` a Wikimedia. **Pendiente:**
-paginar/virtualizar `/curso/obras`, `/curso/repaso`, `/curso/revisar` (hoy
-embeben el catálogo); página offline real + "descargar módulo" + indicador de
-estado; presupuesto de tamaño en CI; **medir** CWV (no se afirman sin datos).
+imagen de galería `eager`+`fetchPriority`; `preconnect` a Wikimedia
+(`ccdaf47`). **Índice de obras paginado** (60 + "Ver más"; DOM inicial 508→60,
+`2677235`). **PWA offline real** (`d7b940e`): página `/curso/sin-conexion`,
+`sw.js` v2 la usa de fallback, indicador flotante de conexión. **Pendiente:**
+reducir el *payload* de `/curso/obras` (aún incluye el catálogo para hidratar →
+servirlo como JSON estático por fetch); trimear el mazo de `/curso/repaso`;
+botón "Descargar módulo"; presupuesto de tamaño en CI; **medir** CWV reales.
 
 ### Fase 9 — Producto y monetización (diseño, sin activar)
 
