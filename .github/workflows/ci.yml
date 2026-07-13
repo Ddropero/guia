@@ -33,6 +33,9 @@ jobs:
       - name: Tipos (Worker del tutor)
         run: npx tsc -p workers/tutor/tsconfig.json
 
+      - name: Tipos (Worker de historia)
+        run: npx tsc -p workers/historia/tsconfig.json
+
       - name: Tests
         run: npm test
 
