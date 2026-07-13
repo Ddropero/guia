@@ -96,12 +96,17 @@ _(Cada fase se detalla más abajo a medida que avanza.)_
   determinista. **Decisión pendiente de sign-off humano:** activar el gate
   esconde el catálogo hasta que haya imágenes `verified` (opción 3 del acuerdo).
 
+- **1F — Atribución TASL unificada** (`1296046`). Figura inline, tarjeta de
+  galería y lightbox toman del manifiesto la **fuente** y la **licencia** y las
+  renderizan **enlazadas** (Commons → página del archivo; licencia →
+  creativecommons.org / Commons:Public_domain), con autor de imagen y
+  modificaciones. Verificado en build (licencias enlazadas en el HTML).
+
 **Pendiente en Fase 1:**
 
 - 1D — Sustituir el token único de `relevante()` por validación múltiple
   (QID+título+autor+fecha+colección+tipo) en el verificador. Parcial hoy
   (QID/P18 + licencia libre).
-- 1F — Renderizar la atribución TASL del manifiesto en tarjeta/figura/lightbox.
 - 1G — Interfaz de revisión interna (promover pending→verified) tras flag de
   build, fuera de producción.
 - 1H — Validador CI dedicado (hoy: los tests fallan si se renderiza una rechazada
