@@ -23,5 +23,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const r of getRecursos()) {
     urls.push({ url: `${SITE_URL}/curso/recursos/${r.slug}`, changeFrequency: "monthly", priority: 0.5 });
   }
+  // Páginas públicas del curso (se excluye /curso/revisar: herramienta interna noindex).
+  const extra: [string, MetadataRoute.Sitemap[number]["changeFrequency"], number][] = [
+    ["obras", "weekly", 0.6],
+    ["cronologia", "weekly", 0.5],
+    ["repaso", "monthly", 0.4],
+    ["logros", "monthly", 0.3],
+    ["apoya", "monthly", 0.5],
+    ["privacidad", "yearly", 0.3],
+  ];
+  for (const [slug, changeFrequency, priority] of extra) {
+    urls.push({ url: `${SITE_URL}/curso/${slug}`, changeFrequency, priority });
+  }
   return urls;
 }

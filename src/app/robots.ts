@@ -11,7 +11,8 @@ export default function robots(): MetadataRoute.Robots {
     return { rules: { userAgent: "*", disallow: "/" } };
   }
   return {
-    rules: { userAgent: "*", allow: "/" },
+    // Disallow de /curso/revisar: refuerza el noindex de esa herramienta interna.
+    rules: { userAgent: "*", allow: "/", disallow: ["/curso/revisar"] },
     sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }
