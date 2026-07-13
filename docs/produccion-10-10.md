@@ -85,18 +85,24 @@ _(Cada fase se detalla más abajo a medida que avanza.)_
   Pruebas de regresión en `src/lib/obras.test.ts` (build limpio confirma que las
   URLs erróneas ya no están en el HTML). 65 tests.
 
+- **1A/1B — Manifiesto + gate `verified`** (`4727c26`). Nuevo
+  `src/data/obras-imagenes-manifiesto.json` (generador
+  `scripts/construir-manifiesto-imagenes.mjs`): por obra con imagen — workId,
+  título, autor, QID, commonsFile, thumb320/640/960, full, creador, sourceUrl,
+  licenseName/licenseUrl, cambios, `status`, verifiedAt/By. **457 obras: 446
+  pending, 11 rejected, 0 verified.** El generador **nunca** marca `verified`
+  (regla 9). Gate `imagenDe()` con `PUBLICAR_SOLO_VERIFICADAS=1` (apagado por
+  defecto). Pruebas de estructura/TASL/gate; drift en CI; manifiesto
+  determinista. **Decisión pendiente de sign-off humano:** activar el gate
+  esconde el catálogo hasta que haya imágenes `verified` (opción 3 del acuerdo).
+
 **Pendiente en Fase 1:**
 
-- 1A/1B — Manifiesto con `status: pending|verified|rejected` + TASL completo, y
-  **dejar de publicar lo no `verified`**. Decisión con impacto visible: hoy hay
-  **0 imágenes verificadas por humano**, así que aplicar el gate esconde todas
-  las imágenes hasta revisión. Se implementará el manifiesto y el gate en la
-  rama (no se despliega), con la promoción `pending→verified` vía la interfaz de
-  revisión interna (tras flag de build). Requiere sign-off humano antes de
-  publicar.
 - 1D — Sustituir el token único de `relevante()` por validación múltiple
-  (QID+título+autor+fecha+colección+tipo). El verificador `fijar-imagenes.mjs` ya
-  hace parte (QID/P18, licencia libre); falta endurecer y unificar.
-- 1F — Atribución TASL unificada en tarjeta/figura/lightbox.
-- 1H — Validador CI que falle si se renderiza algo no `verified` o sin TASL
-  (parcialmente cubierto: el test ya falla si se renderiza una rechazada).
+  (QID+título+autor+fecha+colección+tipo) en el verificador. Parcial hoy
+  (QID/P18 + licencia libre).
+- 1F — Renderizar la atribución TASL del manifiesto en tarjeta/figura/lightbox.
+- 1G — Interfaz de revisión interna (promover pending→verified) tras flag de
+  build, fuera de producción.
+- 1H — Validador CI dedicado (hoy: los tests fallan si se renderiza una rechazada
+  o si una renderizable no tiene fuente+licencia; falta el gate como fallo duro).
