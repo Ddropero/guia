@@ -74,6 +74,38 @@ interface Rechazada {
 const RECHAZADAS =
   cargar<{ obras?: Record<string, Rechazada> }>("obras-imagenes-rechazadas.json", {}).obras ?? {};
 
+// Manifiesto de integridad visual (obras-imagenes-manifiesto.json, lo genera
+// scripts/construir-manifiesto-imagenes.mjs). Fuente de la atribución (TASL) y
+// del `status` (pending|verified|rejected). Solo un humano marca verified.
+export interface ManifiestoImagen {
+  workId: string;
+  titulo: string;
+  autor: string;
+  qid?: string;
+  commonsFile?: string;
+  thumb320?: string;
+  thumb640?: string;
+  thumb960?: string;
+  full?: string;
+  creador?: string;
+  sourceUrl?: string;
+  licenseName?: string;
+  licenseUrl?: string;
+  cambios?: string;
+  status: "pending" | "verified" | "rejected";
+  motivoRechazo?: string;
+  verifiedAt?: string | null;
+  verifiedBy?: string | null;
+}
+const MANIFIESTO =
+  cargar<{ obras?: Record<string, ManifiestoImagen> }>("obras-imagenes-manifiesto.json", {}).obras ?? {};
+
+// Gate de integridad (Fase 1A). Con PUBLICAR_SOLO_VERIFICADAS=1 en el build,
+// imagenDe() solo devuelve imágenes con status "verified" (revisadas por un
+// humano). Apagado por defecto para no esconder el catálogo hasta que exista
+// revisión; el interruptor se activa cuando haya imágenes verificadas.
+const SOLO_VERIFICADAS = process.env.PUBLICAR_SOLO_VERIFICADAS === "1";
+
 export function getObras(moduloId: string, slug: string): Obra[] {
   return OBRAS[`${moduloId}/${slug}`] ?? [];
 }
@@ -93,12 +125,28 @@ export function getRechazadas(): Record<string, { status: string; motivo?: strin
   return RECHAZADAS;
 }
 
+/** Entrada del manifiesto de integridad visual (atribución TASL + status). */
+export function manifiestoImagen(q: string): ManifiestoImagen | null {
+  return MANIFIESTO[q] ?? null;
+}
+
+/** Manifiesto completo (para el validador CI). */
+export function getManifiesto(): Record<string, ManifiestoImagen> {
+  return MANIFIESTO;
+}
+
+/** ¿Está activo el gate que solo publica imágenes verificadas? */
+export function soloVerificadas(): boolean {
+  return SOLO_VERIFICADAS;
+}
+
 /**
  * Miniatura libre de la obra (con `thumb` garantizado). Precedencia:
  * curación manual (override) → Wikidata (P18, verificado) → Wikimedia Commons.
  */
 export function imagenDe(q: string): (ImagenObra & { thumb: string }) | null {
   if (RECHAZADAS[q]) return null; // imagen conocida como errónea → nunca se publica
+  if (SOLO_VERIFICADAS && MANIFIESTO[q]?.status !== "verified") return null; // gate de integridad
   const ov = OVERRIDE[q];
   if (ov) {
     if (ov.none || !ov.thumb) return null; // curado como "sin imagen"

@@ -39,12 +39,13 @@ jobs:
       - name: Validar contenido (enlaces .md, títulos)
         run: node scripts/validar-contenido.mjs
 
-      - name: Datos al día (obras + quiz sin drift)
+      - name: Datos al día (obras + quiz + manifiesto sin drift)
         run: |
           node scripts/construir-obras.mjs
           node scripts/construir-quiz.mjs
-          git diff --exit-code src/data/obras.json src/data/quiz.json \
-            || (echo "::error::obras.json/quiz.json están desincronizados de su fuente. Corre 'npm run datos' y commitea." && exit 1)
+          node scripts/construir-manifiesto-imagenes.mjs
+          git diff --exit-code src/data/obras.json src/data/quiz.json src/data/obras-imagenes-manifiesto.json \
+            || (echo "::error::obras.json/quiz.json/manifiesto están desincronizados de su fuente. Corre 'npm run datos' y commitea." && exit 1)
 
       - name: Revalidar enriquecimiento de Wikidata (sin red)
         run: |
