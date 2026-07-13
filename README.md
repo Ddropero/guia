@@ -79,7 +79,7 @@ npm run deploy:cf
 ## Curso de Historia del Arte (con tutor de IA)
 
 Sección aparte del dashboard: un **curso completo de Historia del Arte** (13
-módulos, ~80 lecciones, de la prehistoria al arte digital) con un **tutor de IA**
+módulos, 86 lecciones, de la prehistoria al arte digital) con un **tutor de IA**
 interactivo. Vive en `/curso` y no afecta al Centro de Costos.
 
 | Pieza | Qué contiene |

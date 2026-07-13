@@ -46,9 +46,10 @@ Ejecutado sobre `21aa0d3`. Log completo: `scratchpad/baseline.log` (no versionad
 
 ### Métricas de partida
 
-- Contenido: **13 módulos**, **86 lecciones** (`.md`), 508 obras catalogadas.
-- Integridad visual: **315/508** obras con imagen (tras curación previa; 142
-  blanqueadas a la espera de recuperación verificada).
+- Contenido: **13 módulos**, **86 lecciones** (`.md`), **527 fichas de obra**
+  (508 obras únicas por `q`; las proporciones de imagen usan las únicas).
+- Integridad visual: **315/508** obras únicas con imagen (tras curación previa;
+  142 blanqueadas a la espera de recuperación verificada).
 - Dependencias clave: `next@16.2.6`, `wrangler@^4.95.0`.
 
 ---

@@ -35,9 +35,27 @@ correcta, o dejarlas sin imagen:
   confirmar autor de la imagen, licencia y enlace antes de publicar, sobre todo
   para cualquier producto de pago.
 
-## Contenido (Fase 2)
+## Contenido (Fase 2) — correcciones aplicadas que requieren validación
 
-_(Se irá poblando con las afirmaciones corregidas y las citas a verificar.)_
+Correcciones hechas a partir de la auditoría multi-agente. Necesitan revisión de
+un especialista (y, donde se indica, una fuente que NO se ha inventado):
+
+- **Joseon** (`03-asia-clasica/05-arte-de-corea.md`): se retiró el superlativo
+  sin fuente "la dinastía más larga de Asia oriental" (falso frente a la Zhou
+  china, ~790 años) → "una de las dinastías más longevas… y la más duradera de
+  la historia de Corea". Confirmar la formulación con una fuente de historia
+  comparada de Asia oriental. `needs_human_review`.
+- **Tarro de la luna** (mismo archivo): "de un metro escaso" (erróneo; los
+  ejemplares documentados miden ~40–49 cm) → "de casi medio metro". Falta ligar
+  la cifra a la dimensión publicada de un ejemplar concreto (p. ej. el moon jar
+  del British Museum). No se inventó una cifra exacta. `needs_human_review`.
+- **Cierre de la lección 11.08** (`11-tradiciones-globales/08-…md`): se corrigió
+  el párrafo final, que daba por cerrado el módulo 11 e introducía el módulo 12,
+  cuando aún siguen las lecciones 09 y 10. Ahora enlaza con la 09. Corrección
+  estructural verificada contra el índice del módulo (no requiere fuente).
+- Conteos actualizados: `README.md` raíz ("~80"→"86 lecciones") y
+  `docs/produccion-10-10.md` (508→527 fichas / 508 únicas). Verificados contra
+  `src/data/obras.json`.
 
 ---
 
