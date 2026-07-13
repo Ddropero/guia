@@ -141,7 +141,11 @@ function figuraObra(titulo: string, q: string, autor = ""): string | null {
     `<figure class="obra-inline">` +
     `<a href="${escapeHtml(enlace)}" ${attrs} target="_blank" rel="noopener noreferrer" ` +
     `title="Ver «${t}» en grande" class="cursor-zoom-in">` +
-    `<img src="${escapeHtml(img.thumb)}" alt="${t}" loading="lazy" /></a>` +
+    `<img src="${escapeHtml(img.thumb)}"${
+      man?.thumb320 && man?.thumb640 && man?.thumb960
+        ? ` srcset="${escapeHtml(`${man.thumb320} 320w, ${man.thumb640} 640w, ${man.thumb960} 960w`)}" sizes="(max-width: 640px) 90vw, 19rem"`
+        : ""
+    } alt="${t}" loading="lazy" /></a>` +
     `<figcaption>${t}<span class="credito">${credLine}</span></figcaption>` +
     `</figure>`
   );
@@ -174,11 +178,25 @@ function inyectarObras(md: string): string {
   return out.join("\n");
 }
 
+// Añade id a cada h2/h3 (derivado del texto) para deep-links y tabla de contenidos.
+function anclarEncabezados(html: string): string {
+  const usados = new Set<string>();
+  return html.replace(/<(h[23])>([\s\S]*?)<\/\1>/g, (full, tag: string, inner: string) => {
+    const texto = inner.replace(/<[^>]+>/g, "").trim();
+    const base = slugTermino(texto);
+    if (!base) return full;
+    let slug = base;
+    for (let i = 2; usados.has(slug); i++) slug = `${base}-${i}`;
+    usados.add(slug);
+    return `<${tag} id="${slug}">${inner}</${tag}>`;
+  });
+}
+
 /** Renderiza Markdown a HTML reescribiendo los enlaces internos .md a rutas del sitio. */
 function render(md: string, baseRelDir: string): string {
   // Sanitiza la salida de marked (defensa en profundidad; marked@14 no sanitiza).
   const html = sanitizarHtml(marked.parse(md) as string);
-  return html.replace(/href="([^"]+)"/g, (full, target: string) => {
+  const conEnlaces = html.replace(/href="([^"]+)"/g, (full, target: string) => {
     if (/^(https?:|mailto:|#|\/)/i.test(target)) return full; // externo/ancla/absoluto
     if (!/\.md(#|$)/i.test(target)) return full;
     const ruta = resolverRuta(target, baseRelDir);
@@ -186,6 +204,7 @@ function render(md: string, baseRelDir: string): string {
     const hash = target.includes("#") ? `#${target.split("#")[1]}` : "";
     return `href="${ruta}${hash}"`;
   });
+  return anclarEncabezados(conEnlaces);
 }
 
 const BASE = path.join(process.cwd(), "curso-historia-del-arte");

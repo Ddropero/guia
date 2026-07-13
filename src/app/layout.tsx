@@ -32,6 +32,10 @@ export default function RootLayout({
   const cfBeacon = process.env.NEXT_PUBLIC_CF_BEACON;
   return (
     <html lang="es" className={`${fraunces.variable} ${dmMono.variable}`}>
+      <head>
+        {/* Las imágenes de obras vienen de Wikimedia: adelantar la conexión (LCP). */}
+        <link rel="preconnect" href="https://upload.wikimedia.org" crossOrigin="" />
+      </head>
       <body className="min-h-screen bg-bg text-fg antialiased">
         {children}
         <RegistrarSW />

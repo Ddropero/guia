@@ -107,6 +107,11 @@ export default async function LeccionPage({
     .replace(/\s+/g, " ")
     .trim();
 
+  // Tiempo estimado de lectura (~210 palabras/min sobre el texto real). Estimación,
+  // no medición: se muestra con "≈".
+  const palabras = textoPlano.split(/\s+/).filter(Boolean).length;
+  const minutosLectura = Math.max(1, Math.round(palabras / 210));
+
   return (
     <main className="mx-auto max-w-7xl px-5 py-8 sm:px-8">
       <script
@@ -135,8 +140,9 @@ export default async function LeccionPage({
 
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="min-w-0">
-          <div className="mb-6">
+          <div className="mb-6 flex flex-wrap items-center gap-3">
             <EscucharLeccion texto={textoPlano} />
+            <span className="text-xs text-muted">≈ {minutosLectura} min de lectura</span>
           </div>
           <article
             className="leccion-prose"

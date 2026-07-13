@@ -23,6 +23,10 @@ export default function Galeria({ obras }: { obras: Obra[] }) {
         const wiki = wikipediaDe(o.q);
         const enlaceObra = wiki?.url ?? wikipediaBuscar(o.q);
         const man = img ? manifiestoImagen(o.q) : null;
+        const srcSet =
+          man?.thumb320 && man?.thumb640 && man?.thumb960
+            ? `${man.thumb320} 320w, ${man.thumb640} 640w, ${man.thumb960} 960w`
+            : undefined;
         const fuente = man?.sourceUrl || img?.enlace || "";
         const licName = man?.licenseName || img?.licencia || "";
         const licUrl = man?.licenseUrl || "";
@@ -58,8 +62,11 @@ export default function Galeria({ obras }: { obras: Obra[] }) {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={img.thumb}
+                  srcSet={srcSet}
+                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
                   alt={o.titulo}
-                  loading="lazy"
+                  loading={i === 0 ? "eager" : "lazy"}
+                  fetchPriority={i === 0 ? "high" : undefined}
                   className="aspect-[4/3] w-full bg-panel2 object-cover"
                 />
               </a>
