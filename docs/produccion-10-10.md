@@ -64,10 +64,10 @@ Estado: ⬜ pendiente · 🟡 en curso · ✅ hecho (con evidencia).
 | 2 | Contenido y evaluación | 🟡 en curso |
 | 3 | Seguridad del tutor (P0) | 🟡 en curso |
 | 4 | Privacidad y seguridad web | 🟡 en curso |
-| 5 | Accesibilidad WCAG 2.2 AA | 🟡 auditada |
+| 5 | Accesibilidad WCAG 2.2 AA | 🟡 en curso |
 | 6 | UX de aprendizaje | ⬜ |
 | 7 | Rendimiento y PWA | ⬜ |
-| 8 | SEO y despliegue | 🟡 auditada |
+| 8 | SEO y despliegue | 🟡 en curso |
 | 9 | Producto y monetización | ⬜ |
 
 _(Cada fase se detalla más abajo a medida que avanza.)_
@@ -102,6 +102,24 @@ interactivo, citas trazables.
   input del tutor.
 - **Pendiente:** páginas separadas de cookies/términos + footer global; revisión
   legal humana; actualizar deps mínimamente (sin `--force`).
+
+### Fase 5 — Accesibilidad (en curso) — `085698d`
+
+Hallazgos del audit implementados: modales (Lightbox/Comparador) con hook
+`useFocoModal` (foco inicial, trampa de Tab, restauración); Cuestionario con
+`fieldset/legend` + radios reales y estado `sr-only`; TutorPanel con
+`aria-pressed`, `role=log`/`aria-live` y `role=alert`; token `--color-control`
+(≥3:1, SC 1.4.11) en controles; `prefers-reduced-motion` en scrolls + media query
+global. **Pendiente:** Repaso `alt=""` (decisión de diseño, `needs_human`);
+Playwright + axe y checklist manual (no se declara «cero violaciones» sin correrlo).
+
+### Fase 8 — SEO (en curso) — `7f1f4b7`
+
+`description` + `canonical` (host fijo) + `openGraph` en lección y módulo; JSON-LD
+`Course` (home) y `LearningResource` + `BreadcrumbList` (lección), sin `provider`
+(regla 8); sitemap amplía obras/cronología/repaso/logros/apoya/privacidad; robots
+`Disallow /curso/revisar`; dashboard de costos `/` con `noindex`. **Pendiente:**
+separar dashboard de costos del producto (route groups o apps); `og:image`.
 
 ### Fase 3 — Seguridad del tutor (en curso)
 
